@@ -1,2 +1,5 @@
-Introduction
-Using an Arduino with an MCP2515 module allows one to control a SPARK MAX and take advantage of the numerous built-in sensors and onboard PID controller. 
+CAN_CONTROLLER:
+Arduino program for controlling SPARK MAXs through a CAN Bus.
+
+CAN_SNIFFER:
+Arduino program for reading and parsing periodic CAN frames from SPARK MAXs.
