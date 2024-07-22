@@ -7,21 +7,21 @@ struct can_frame canMsg;
 
 const bool EXTENDED_CAN_ID = true;
 
-// Mask everything but device ID bits (last 6)
+// Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
 const uint32_t DEVICE_ID_MASK = 0xFFFFFFC0; // 0xFFFFFFC0
 
+// SPARK MAX periodic CAN frames
 const uint32_t PERIODIC_STATUS_0_FILTER = 0x82051800;
-const uint32_t PERIODIC_STATUS_1_FILTER = 0x82051840; // 0x82051840
+const uint32_t PERIODIC_STATUS_1_FILTER = 0x82051840;
 const uint32_t PERIODIC_STATUS_2_FILTER = 0x82051880;
 const uint32_t EMPTY_FILTER = 0x00000000;
-
 
 // Function Prototypes
 void parse_status_frame_0(uint8_t * data);
 void parse_status_frame_1(uint8_t * data, uint8_t size);
 void parse_status_frame_2(uint8_t * data, uint8_t size);
-
 float data_to_float(uint8_t * data, uint8_t size);
+
 
 void setup() {
   Serial.begin(115200);
@@ -36,7 +36,7 @@ void setup() {
   mcp2515.setFilterMask(MCP2515::MASK0, EXTENDED_CAN_ID, DEVICE_ID_MASK);
   mcp2515.setFilterMask(MCP2515::MASK1, EXTENDED_CAN_ID, DEVICE_ID_MASK);
 
-  // Work better to have less frequent messages on mask1 (RFX0 and RFX1)
+  // Works better to have less frequent messages on mask0 (RFX0 and RFX1)
   mcp2515.setFilter(MCP2515::RXF0, EXTENDED_CAN_ID, PERIODIC_STATUS_2_FILTER);
   mcp2515.setFilter(MCP2515::RXF1, EXTENDED_CAN_ID, PERIODIC_STATUS_1_FILTER);
   mcp2515.setFilter(MCP2515::RXF2, EXTENDED_CAN_ID, PERIODIC_STATUS_0_FILTER);
@@ -104,7 +104,7 @@ void parse_status_frame_2(uint8_t * data, uint8_t size){
   Serial.println(data_to_float(data, size)); // Rotations
 }
 
-// Converts four bytes (little endian (LSB first)) to a IEEE floating point number
+// Converts four bytes (little-endian) to a IEEE floating point number
 float data_to_float(uint8_t * data, uint8_t size){
   if (size >= 4 && data != nullptr){
     uint32_t intValue = ((uint32_t)data[3] << 24) |
