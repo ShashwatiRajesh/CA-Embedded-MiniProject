@@ -4,7 +4,7 @@ package_name = 'jetson_topic_relay'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.0.1',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='amadorjosephg',
     maintainer_email='amadorjosephg@gmail.com',
-    description='TODO: Package description',
+    description='Relay between ESP32 and Laptop package for Jetson Nano',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
