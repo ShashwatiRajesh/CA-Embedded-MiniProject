@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/lunabot_control/lunabot_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/lunabot_control/lunabot_control.egg-info/dependency_links.txt
+writing entry points to ../../build/lunabot_control/lunabot_control.egg-info/entry_points.txt
+writing requirements to ../../build/lunabot_control/lunabot_control.egg-info/requires.txt
+writing top-level names to ../../build/lunabot_control/lunabot_control.egg-info/top_level.txt
+reading manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/amadorjosephg/comet_bot_ws/install/lunabot_control/share/lunabot_control
+running install_egg_info
+removing '/home/amadorjosephg/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages/lunabot_control-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/lunabot_control/lunabot_control.egg-info to /home/amadorjosephg/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages/lunabot_control-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/amadorjosephg/comet_bot_ws/build/lunabot_control/install.log'

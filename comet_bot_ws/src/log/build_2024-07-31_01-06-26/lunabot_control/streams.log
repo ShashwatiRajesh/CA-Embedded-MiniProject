@@ -1,0 +1,38 @@
+[0.608s] Invoking command in '/home/amadorjosephg/comet_bot_ws/src/lunabot_control': PYTHONPATH=/home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/lunabot_control build --build-base /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build install --record /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/install.log --single-version-externally-managed install_data
+[0.811s] running egg_info
+[0.812s] creating ../build/lunabot_control/lunabot_control.egg-info
+[0.812s] writing ../build/lunabot_control/lunabot_control.egg-info/PKG-INFO
+[0.813s] writing dependency_links to ../build/lunabot_control/lunabot_control.egg-info/dependency_links.txt
+[0.813s] writing entry points to ../build/lunabot_control/lunabot_control.egg-info/entry_points.txt
+[0.817s] writing requirements to ../build/lunabot_control/lunabot_control.egg-info/requires.txt
+[0.817s] writing top-level names to ../build/lunabot_control/lunabot_control.egg-info/top_level.txt
+[0.817s] writing manifest file '../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+[0.819s] reading manifest file '../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+[0.819s] adding license file 'LICENSE'
+[0.822s] writing manifest file '../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+[0.823s] running build
+[0.823s] running build_py
+[0.823s] creating /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build
+[0.823s] creating /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib
+[0.823s] creating /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib/lunabot_control
+[0.823s] copying lunabot_control/teleop_publisher.py -> /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib/lunabot_control
+[0.823s] copying lunabot_control/__init__.py -> /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib/lunabot_control
+[0.823s] running install
+[0.823s] running install_lib
+[0.832s] creating /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control
+[0.832s] copying /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib/lunabot_control/teleop_publisher.py -> /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control
+[0.832s] copying /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build/lib/lunabot_control/__init__.py -> /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control
+[0.832s] byte-compiling /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control/teleop_publisher.py to teleop_publisher.cpython-310.pyc
+[0.832s] byte-compiling /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control/__init__.py to __init__.cpython-310.pyc
+[0.833s] running install_data
+[0.833s] creating /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/share/ament_index
+[0.833s] creating /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/share/ament_index/resource_index
+[0.833s] creating /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/share/ament_index/resource_index/packages
+[0.833s] copying resource/lunabot_control -> /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/share/ament_index/resource_index/packages
+[0.833s] copying package.xml -> /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/share/lunabot_control
+[0.833s] running install_egg_info
+[0.833s] Copying ../build/lunabot_control/lunabot_control.egg-info to /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages/lunabot_control-0.0.0-py3.10.egg-info
+[0.833s] running install_scripts
+[0.845s] Installing teleop_publisher script to /home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/lunabot_control
+[0.846s] writing list of installed files to '/home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/install.log'
+[0.865s] Invoked command in '/home/amadorjosephg/comet_bot_ws/src/lunabot_control' returned '0': PYTHONPATH=/home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/comet_bot_ws/src/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/lunabot_control build --build-base /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/build install --record /home/amadorjosephg/comet_bot_ws/src/build/lunabot_control/install.log --single-version-externally-managed install_data
