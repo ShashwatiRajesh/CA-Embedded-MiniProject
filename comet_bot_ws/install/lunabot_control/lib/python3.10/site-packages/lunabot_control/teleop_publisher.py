@@ -1,27 +1,34 @@
 import rclpy
+import math
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
 
 class TeleopPublisher(Node):
     def __init__(self):
-        super().__init__('teleop_publisher')  # Renamed node for clarity
+        super().__init__('teleop_publisher')  # Initialize the node with the name 'teleop_publisher'
 
-        # Create a subscription to the 'joy' topic with a QoS profile of depth 10
+        # Declare parameters with default values
+        self.declare_parameter('cmd_vel_pub_frequency', 50.0)  # Frequency to publish cmd_vel messages in Hz
+        self.declare_parameter('deadzone', 0.1)  # Deadzone for joystick input
+        self.declare_parameter('joystick_power', 3)  # Exponent for scaling joystick input
+
+        # Create a subscription to the 'joy' topic
         self.subscription = self.create_subscription(
             Joy,  # Message type: Joy
             'joy',  # Topic name: 'joy'
             self.listener_callback,  # Callback function to handle incoming messages
-            10)  # QoS profile depth
+            10  # QoS profile depth
+        )
 
         # Create a publisher for the 'cmd_vel' topic
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
-        # Set up a timer to publish Twist messages at set frequency
-        timer_frequency = 50.0 #hz
+        # Set up a timer to publish Twist messages at the specified frequency
+        timer_frequency = self.get_parameter('cmd_vel_pub_frequency').get_parameter_value().double_value
         self.timer = self.create_timer(1.0 / timer_frequency, self.timer_callback)
 
-        # Create an initial Twist message
+        # Initialize a Twist message
         self.twist_msg = Twist()
         
         # Prevent unused variable warning
@@ -29,24 +36,31 @@ class TeleopPublisher(Node):
 
     def listener_callback(self, msg: Joy):
         # Map joystick axes to linear and angular velocities
-        # These axis indices depend on the joystick configuration
         self.twist_msg.linear.x = msg.axes[1]  # Forward/backward movement
         self.twist_msg.angular.z = msg.axes[0]  # Left/right rotation
 
-        # Log the generated Twist message data
-        self.get_logger().info(
-            'Updated Twist: Linear x: "%f", Angular z: "%f"' % 
-            (self.twist_msg.linear.x, self.twist_msg.angular.z)
-        )
+        # Log the updated Twist message data
+        self.get_logger().info(f'Updated Twist: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
 
     def timer_callback(self):
-        # Publish the Twist message at the timer's frequency
-        self.publisher.publish(self.twist_msg)
+        x = self.twist_msg.linear.x
+        y = self.twist_msg.angular.z
+        deadzone = self.get_parameter('deadzone').get_parameter_value().double_value
+
+        # Apply deadzone filtering
+        if math.hypot(x, y) < deadzone:
+            self.twist_msg.linear.x = 0.0
+            self.twist_msg.angular.z = 0.0
+        else:
+            # Apply scaling to joystick input
+            power = self.get_parameter('joystick_power').get_parameter_value().integer_value
+            self.twist_msg.linear.x = math.pow(x, power)
+            self.twist_msg.angular.z = math.pow(y, power)
+            
+        self.publisher.publish(self.twist_msg)  # Publish the Twist message
+
         # Log the publishing event
-        self.get_logger().info(
-            'Publishing: Linear x: "%f", Angular z: "%f"' % 
-            (self.twist_msg.linear.x, self.twist_msg.angular.z)
-        )
+        self.get_logger().info(f'Publishing: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
 
 def main(args=None):
     # Initialize the ROS 2 Python client library

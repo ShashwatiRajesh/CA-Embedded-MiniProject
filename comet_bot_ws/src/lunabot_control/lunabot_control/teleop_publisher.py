@@ -49,13 +49,15 @@ class TeleopPublisher(Node):
 
         # Apply deadzone filtering
         if math.hypot(x, y) < deadzone:
-            self.publisher.publish(Twist())  # Publish a zero Twist message
+            self.twist_msg.linear.x = 0.0
+            self.twist_msg.angular.z = 0.0
         else:
             # Apply scaling to joystick input
             power = self.get_parameter('joystick_power').get_parameter_value().integer_value
             self.twist_msg.linear.x = math.pow(x, power)
             self.twist_msg.angular.z = math.pow(y, power)
-            self.publisher.publish(self.twist_msg)  # Publish the scaled Twist message
+            
+        self.publisher.publish(self.twist_msg)  # Publish the Twist message
 
         # Log the publishing event
         self.get_logger().info(f'Publishing: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')

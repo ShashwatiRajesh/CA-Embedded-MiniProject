@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/jetson_topic_relay/jetson_topic_relay.egg-info
+writing ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/PKG-INFO
+writing dependency_links to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/dependency_links.txt
+writing entry points to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/entry_points.txt
+writing requirements to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/requires.txt
+writing top-level names to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/top_level.txt
+writing manifest file '../../build/jetson_topic_relay/jetson_topic_relay.egg-info/SOURCES.txt'
+reading manifest file '../../build/jetson_topic_relay/jetson_topic_relay.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/jetson_topic_relay/jetson_topic_relay.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib/jetson_topic_relay
+copying jetson_topic_relay/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib/jetson_topic_relay
+copying jetson_topic_relay/relay_node.py -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib/jetson_topic_relay
+running install
+running install_lib
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay
+copying /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib/jetson_topic_relay/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay
+copying /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/build/lib/jetson_topic_relay/relay_node.py -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay/relay_node.py to relay_node.cpython-310.pyc
+running install_data
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/share/ament_index
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/share/ament_index/resource_index
+creating /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/share/ament_index/resource_index/packages
+copying resource/jetson_topic_relay -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/share/ament_index/resource_index/packages
+copying package.xml -> /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/share/jetson_topic_relay
+running install_egg_info
+Copying ../../build/jetson_topic_relay/jetson_topic_relay.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay-0.0.0-py3.10.egg-info
+running install_scripts
+Installing relay_node script to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/jetson_topic_relay
+writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/install.log'

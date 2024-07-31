@@ -1,0 +1,3 @@
+[console_scripts]
+relay_node = jetson_topic_relay.relay_node:main
+
