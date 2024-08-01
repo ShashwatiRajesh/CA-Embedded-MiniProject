@@ -8,10 +8,23 @@ class TeleopPublisher(Node):
     def __init__(self):
         super().__init__('teleop_publisher')  # Initialize the node with the name 'teleop_publisher'
 
+        from rcl_interfaces.msg import ParameterDescriptor, FloatingPointRange, IntegerRange
+
         # Declare parameters with default values
-        self.declare_parameter('cmd_vel_pub_frequency', 50.0)  # Frequency to publish cmd_vel messages in Hz
-        self.declare_parameter('deadzone', 0.1)  # Deadzone for joystick input
-        self.declare_parameter('joystick_power', 3)  # Exponent for scaling joystick input
+        self.declare_parameter('cmd_vel_pub_frequency', 50.0, ParameterDescriptor(description='Frequency to publish cmd_vel messages in Hz'))
+
+        self.declare_parameter(
+            'deadzone',
+            0.1,
+            ParameterDescriptor(
+                description='Deadzone for joystick input',
+                floating_point_range=[
+                    FloatingPointRange(from_value=0.0, to_value=1.0, step=0.01)
+                ]
+            )
+        )
+
+        self.declare_parameter('joystick_power', 3, ParameterDescriptor(description='Exponent for scaling joystick input'))  # Exponent for scaling joystick input
 
         # Create a subscription to the 'joy' topic
         self.subscription = self.create_subscription(

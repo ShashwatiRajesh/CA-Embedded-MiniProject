@@ -1,0 +1,7 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/microcdr.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/edit_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/rebuild_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/list_install_components.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/install.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/install/local.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr/CMakeFiles/install/strip.dir

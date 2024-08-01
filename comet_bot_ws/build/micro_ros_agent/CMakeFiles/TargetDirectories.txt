@@ -1,0 +1,10 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/micro_ros_agent_uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/micro_ros_agent.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/test.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/edit_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/rebuild_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/list_install_components.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/install.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/install/local.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_agent/CMakeFiles/install/strip.dir

@@ -1,0 +1,10 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/static_type_handling_uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/static_type_handling.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/test.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/edit_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/rebuild_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/list_install_components.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/install.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/install/local.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build/CMakeFiles/install/strip.dir

@@ -1,0 +1,13 @@
+# Target labels
+ epoch_synchronization
+# Source files and their labels
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/epoch_synchronization
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/epoch_synchronization.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/epoch_synchronization-complete.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-build.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-configure.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-download.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-install.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-mkdir.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-patch.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-stamp/epoch_synchronization-update.rule

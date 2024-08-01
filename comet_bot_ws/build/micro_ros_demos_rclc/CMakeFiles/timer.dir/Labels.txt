@@ -1,0 +1,13 @@
+# Target labels
+ timer
+# Source files and their labels
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/timer
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/timer.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/CMakeFiles/timer-complete.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-build.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-configure.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-download.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-install.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-mkdir.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-patch.rule
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-stamp/timer-update.rule
