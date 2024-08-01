@@ -1,0 +1,332 @@
+[0.031s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/std_srvs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs
+[0.102s] -- The C compiler identification is GNU 11.4.0
+[0.226s] -- The CXX compiler identification is GNU 11.4.0
+[0.255s] -- Detecting C compiler ABI info
+[0.510s] -- Detecting C compiler ABI info - done
+[0.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.510s] -- Detecting C compile features
+[0.510s] -- Detecting C compile features - done
+[0.525s] -- Detecting CXX compiler ABI info
+[0.828s] -- Detecting CXX compiler ABI info - done
+[0.829s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.829s] -- Detecting CXX compile features
+[0.829s] -- Detecting CXX compile features - done
+[0.829s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.015s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.136s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.155s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.215s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.781s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.234s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.841s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.844s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.869s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.870s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.870s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.870s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.905s] -- Found PythonExtra: .so  
+[2.962s] -- Configuring done
+[3.041s] -- Generating done
+[3.045s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs
+[3.053s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/std_srvs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs
+[3.054s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs -- -j4 -l4
+[3.134s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.760s] [  1%] Built target std_srvs__cpp
+[3.921s] [  1%] Built target ament_cmake_python_copy_std_srvs
+[3.975s] [  3%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[4.625s] [  5%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/std_srvs/srv/detail/microxrcedds/empty__type_support_cpp.cpp.o[0m
+[4.983s] [  6%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/std_srvs/srv/detail/microxrcedds/set_bool__type_support_cpp.cpp.o[0m
+[5.448s] [  8%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/std_srvs/srv/detail/microxrcedds/trigger__type_support_cpp.cpp.o[0m
+[5.879s] [ 10%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[5.972s] [ 10%] Built target std_srvs__rosidl_typesupport_microxrcedds_cpp
+[5.990s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.530s] [ 13%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/std_srvs/srv/detail/dds_fastrtps/empty__type_support.cpp.o[0m
+[7.266s] [ 15%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/std_srvs/srv/detail/dds_fastrtps/set_bool__type_support.cpp.o[0m
+[7.728s] [ 16%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/std_srvs/srv/detail/dds_fastrtps/trigger__type_support.cpp.o[0m
+[8.212s] [ 18%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.350s] [ 18%] Built target std_srvs__rosidl_typesupport_fastrtps_cpp
+[8.366s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.928s] [ 22%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/std_srvs/srv/detail/empty__type_support.cpp.o[0m
+[9.443s] [ 23%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/std_srvs/srv/detail/set_bool__type_support.cpp.o[0m
+[9.827s] [ 25%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/std_srvs/srv/detail/trigger__type_support.cpp.o[0m
+[10.239s] [ 27%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_introspection_cpp.so[0m
+[10.418s] [ 27%] Built target std_srvs__rosidl_typesupport_introspection_cpp
+[10.741s] running egg_info
+[10.742s] creating std_srvs.egg-info
+[10.742s] writing std_srvs.egg-info/PKG-INFO
+[10.742s] writing dependency_links to std_srvs.egg-info/dependency_links.txt
+[10.743s] writing top-level names to std_srvs.egg-info/top_level.txt
+[10.743s] writing manifest file 'std_srvs.egg-info/SOURCES.txt'
+[10.745s] reading manifest file 'std_srvs.egg-info/SOURCES.txt'
+[10.745s] writing manifest file 'std_srvs.egg-info/SOURCES.txt'
+[10.781s] [ 27%] Built target ament_cmake_python_build_std_srvs_egg
+[10.800s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.191s] [ 30%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/std_srvs/srv/empty__type_support.cpp.o[0m
+[11.497s] [ 32%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/std_srvs/srv/trigger__type_support.cpp.o[0m
+[11.885s] [ 33%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/std_srvs/srv/set_bool__type_support.cpp.o[0m
+[12.282s] [ 35%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_cpp.so[0m
+[12.334s] [ 35%] Built target std_srvs__rosidl_typesupport_cpp
+[12.491s] [ 37%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.503s] [ 38%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_c.dir/rosidl_generator_c/std_srvs/srv/detail/empty__functions.c.o[0m
+[13.671s] [ 40%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_c.dir/rosidl_generator_c/std_srvs/srv/detail/trigger__functions.c.o[0m
+[13.765s] [ 42%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_c.dir/rosidl_generator_c/std_srvs/srv/detail/set_bool__functions.c.o[0m
+[13.823s] [ 44%] [32m[1mLinking C shared library libstd_srvs__rosidl_generator_c.so[0m
+[13.873s] [ 44%] Built target std_srvs__rosidl_generator_c
+[13.890s] [ 45%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[14.485s] [ 47%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/std_srvs/srv/detail/microxrcedds/empty__type_support_c.c.o[0m
+[14.672s] [ 49%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/std_srvs/srv/detail/microxrcedds/set_bool__type_support_c.c.o[0m
+[14.775s] [ 50%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/std_srvs/srv/detail/microxrcedds/trigger__type_support_c.c.o[0m
+[14.874s] [ 52%] [32m[1mLinking C shared library libstd_srvs__rosidl_typesupport_microxrcedds_c.so[0m
+[15.005s] [ 52%] Built target std_srvs__rosidl_typesupport_microxrcedds_c
+[15.039s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.664s] [ 55%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/std_srvs/srv/empty__type_support.cpp.o[0m
+[15.713s] [ 57%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/std_srvs/srv/set_bool__type_support.cpp.o[0m
+[15.767s] [ 59%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/std_srvs/srv/trigger__type_support.cpp.o[0m
+[15.804s] [ 61%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_c.so[0m
+[16.057s] [ 61%] Built target std_srvs__rosidl_typesupport_c
+[16.078s] [ 62%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[16.872s] [ 64%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/std_srvs/srv/detail/empty__type_support.c.o[0m
+[16.928s] [ 66%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/std_srvs/srv/detail/trigger__type_support.c.o[0m
+[16.969s] [ 67%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/std_srvs/srv/detail/set_bool__type_support.c.o[0m
+[17.009s] [ 69%] [32m[1mLinking C shared library libstd_srvs__rosidl_typesupport_introspection_c.so[0m
+[17.106s] [ 69%] Built target std_srvs__rosidl_typesupport_introspection_c
+[17.157s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[17.828s] [ 72%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/std_srvs/srv/detail/empty__type_support_c.cpp.o[0m
+[18.326s] [ 74%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/std_srvs/srv/detail/trigger__type_support_c.cpp.o[0m
+[18.838s] [ 76%] [32mBuilding CXX object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/std_srvs/srv/detail/set_bool__type_support_c.cpp.o[0m
+[19.209s] [ 77%] [32m[1mLinking CXX shared library libstd_srvs__rosidl_typesupport_fastrtps_c.so[0m
+[19.330s] [ 77%] Built target std_srvs__rosidl_typesupport_fastrtps_c
+[19.365s] [ 77%] Built target std_srvs
+[19.454s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[20.377s] [ 79%] Built target std_srvs__py
+[20.431s] [ 81%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_py.dir/rosidl_generator_py/std_srvs/srv/_empty_s.c.o[0m
+[20.590s] [ 83%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_py.dir/rosidl_generator_py/std_srvs/srv/_trigger_s.c.o[0m
+[20.699s] [ 84%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_generator_py.dir/rosidl_generator_py/std_srvs/srv/_set_bool_s.c.o[0m
+[20.867s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/std_srvs/libstd_srvs__rosidl_generator_py.so[0m
+[20.928s] [ 86%] Built target std_srvs__rosidl_generator_py
+[21.099s] [ 88%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/std_srvs/_std_srvs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[21.268s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/std_srvs/std_srvs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[21.329s] [ 89%] Built target std_srvs__rosidl_typesupport_microxrcedds_c__pyext
+[21.426s] [ 91%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/std_srvs/_std_srvs_s.ep.rosidl_typesupport_c.c.o[0m
+[21.592s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/std_srvs/std_srvs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[21.641s] [ 93%] Built target std_srvs__rosidl_typesupport_c__pyext
+[21.681s] [ 94%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/std_srvs/_std_srvs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[21.825s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/std_srvs/std_srvs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[21.908s] [ 96%] Built target std_srvs__rosidl_typesupport_introspection_c__pyext
+[21.947s] [ 98%] [32mBuilding C object CMakeFiles/std_srvs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/std_srvs/_std_srvs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[22.170s] [100%] [32m[1mLinking C shared library rosidl_generator_py/std_srvs/std_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.331s] [100%] Built target std_srvs__rosidl_typesupport_fastrtps_c__pyext
+[22.356s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs -- -j4 -l4
+[22.777s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs
+[22.790s] -- Install configuration: ""
+[22.790s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/ament_index/resource_index/rosidl_interfaces/std_srvs
+[22.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/set_bool.h
+[22.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/empty.h
+[22.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/trigger.h
+[22.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__functions.h
+[22.793s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__type_support.h
+[22.793s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__functions.h
+[22.794s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__functions.c
+[22.794s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__functions.h
+[22.794s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__functions.c
+[22.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__struct.h
+[22.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__struct.h
+[22.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__functions.c
+[22.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.h
+[22.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__type_support.h
+[22.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__struct.h
+[22.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg
+[22.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg/rosidl_generator_c__visibility_control.h
+[22.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/library_path.sh
+[22.798s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/library_path.dsv
+[22.798s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_generator_c.so
+[22.799s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_generator_c.so" to ""
+[22.799s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs
+[22.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv
+[22.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail
+[22.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/empty__rosidl_typesupport_microxrcedds_c.h
+[22.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/trigger__rosidl_typesupport_microxrcedds_c.h
+[22.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/microxrcedds
+[22.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/set_bool__rosidl_typesupport_microxrcedds_c.h
+[22.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/msg
+[22.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[22.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_microxrcedds_c.so
+[22.801s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_microxrcedds_c.so" to ""
+[22.801s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.801s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.801s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.801s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h
+[22.801s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__rosidl_typesupport_fastrtps_c.h
+[22.801s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__rosidl_typesupport_fastrtps_c.h
+[22.802s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg
+[22.802s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[22.802s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+[22.803s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so" to ""
+[22.803s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.803s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.803s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__rosidl_typesupport_introspection_c.h
+[22.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__rosidl_typesupport_introspection_c.h
+[22.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__rosidl_typesupport_introspection_c.h
+[22.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__type_support.c
+[22.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__type_support.c
+[22.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.c
+[22.804s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg
+[22.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[22.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+[22.805s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_introspection_c.so" to ""
+[22.805s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_c.so
+[22.805s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_c.so" to ""
+[22.805s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.806s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/empty.hpp
+[22.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/set_bool.hpp
+[22.806s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp
+[22.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__builder.hpp
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp
+[22.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp
+[22.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__struct.hpp
+[22.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp
+[22.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/trigger.hpp
+[22.809s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs
+[22.809s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv
+[22.809s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail
+[22.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/empty__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.809s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/microxrcedds
+[22.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/microxrcedds/empty__type_support_cpp.cpp
+[22.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/microxrcedds/trigger__type_support_cpp.cpp
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/microxrcedds/set_bool__type_support_cpp.cpp
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/trigger__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/srv/detail/set_bool__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.810s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/msg
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[22.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_microxrcedds_cpp.so
+[22.811s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[22.811s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.811s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.811s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp
+[22.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__rosidl_typesupport_fastrtps_cpp.hpp
+[22.812s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__rosidl_typesupport_fastrtps_cpp.hpp
+[22.812s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/dds_fastrtps
+[22.812s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg
+[22.812s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+[22.813s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[22.813s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs
+[22.813s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv
+[22.813s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail
+[22.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__rosidl_typesupport_introspection_cpp.hpp
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__rosidl_typesupport_introspection_cpp.hpp
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__type_support.cpp
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.cpp
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/empty__type_support.cpp
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/include/std_srvs/std_srvs/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp
+[22.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+[22.815s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so" to ""
+[22.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_cpp.so
+[22.816s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_typesupport_cpp.so" to ""
+[22.816s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/pythonpath.sh
+[22.816s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/pythonpath.dsv
+[22.816s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs-4.2.4-py3.10.egg-info
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs-4.2.4-py3.10.egg-info/PKG-INFO
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs-4.2.4-py3.10.egg-info/dependency_links.txt
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs-4.2.4-py3.10.egg-info/top_level.txt
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs-4.2.4-py3.10.egg-info/SOURCES.txt
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/_std_srvs_s.ep.rosidl_typesupport_introspection_c.c
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/_std_srvs_s.ep.rosidl_typesupport_c.c
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/_std_srvs_s.ep.rosidl_typesupport_fastrtps_c.c
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/libstd_srvs__rosidl_generator_py.so
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/__init__.py
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_set_bool_s.c
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_trigger.py
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/__init__.py
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_set_bool.py
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_empty_s.c
+[22.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_empty.py
+[22.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_trigger_s.c
+[22.870s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.870s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/_std_srvs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[22.871s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.871s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs'...
+[22.871s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/__init__.py'...
+[22.871s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv'...
+[22.871s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/__init__.py'...
+[22.871s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_empty.py'...
+[22.871s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_set_bool.py'...
+[22.871s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/srv/_trigger.py'...
+[22.931s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[22.931s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.932s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.932s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.932s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.933s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.933s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.934s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/local/lib/python3.10/dist-packages/std_srvs/std_srvs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.934s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_generator_py.so
+[22.934s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/lib/libstd_srvs__rosidl_generator_py.so" to ""
+[22.935s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Empty.idl
+[22.935s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/SetBool.idl
+[22.936s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Trigger.idl
+[22.936s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Empty.srv
+[22.936s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Empty_Request.msg
+[22.937s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Empty_Response.msg
+[22.937s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/SetBool.srv
+[22.938s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/SetBool_Request.msg
+[22.938s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/SetBool_Response.msg
+[22.938s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Trigger.srv
+[22.939s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Trigger_Request.msg
+[22.939s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/srv/Trigger_Response.msg
+[22.939s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/ament_index/resource_index/package_run_dependencies/std_srvs
+[22.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/ament_index/resource_index/parent_prefix_path/std_srvs
+[22.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/ament_prefix_path.sh
+[22.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/ament_prefix_path.dsv
+[22.941s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/path.sh
+[22.941s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/environment/path.dsv
+[22.941s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/local_setup.bash
+[22.942s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/local_setup.sh
+[22.942s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/local_setup.zsh
+[22.942s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/local_setup.dsv
+[22.943s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/package.dsv
+[22.943s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/ament_index/resource_index/packages/std_srvs
+[22.943s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_generator_cExport.cmake
+[22.944s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_generator_cExport-noconfig.cmake
+[22.944s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_typesupport_fastrtps_cExport.cmake
+[22.944s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[22.944s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_introspection_cExport.cmake
+[22.945s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[22.945s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_cExport.cmake
+[22.945s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_cExport-noconfig.cmake
+[22.946s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_generator_cppExport.cmake
+[22.946s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_typesupport_fastrtps_cppExport.cmake
+[22.946s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[22.949s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_introspection_cppExport.cmake
+[22.949s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[22.950s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_cppExport.cmake
+[22.950s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvs__rosidl_typesupport_cppExport-noconfig.cmake
+[22.953s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_generator_pyExport.cmake
+[22.954s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/export_std_srvs__rosidl_generator_pyExport-noconfig.cmake
+[22.954s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/rosidl_cmake-extras.cmake
+[22.955s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.955s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/ament_cmake_export_libraries-extras.cmake
+[22.955s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/ament_cmake_export_targets-extras.cmake
+[22.956s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[22.956s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.957s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[22.957s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvsConfig.cmake
+[22.958s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/cmake/std_srvsConfig-version.cmake
+[22.959s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_srvs/share/std_srvs/package.xml
+[22.978s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_srvs

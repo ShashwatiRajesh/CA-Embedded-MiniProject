@@ -1,0 +1,553 @@
+[0.061s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/nav_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs
+[0.178s] -- The C compiler identification is GNU 11.4.0
+[0.344s] -- The CXX compiler identification is GNU 11.4.0
+[0.359s] -- Detecting C compiler ABI info
+[0.478s] -- Detecting C compiler ABI info - done
+[0.500s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.500s] -- Detecting C compile features
+[0.501s] -- Detecting C compile features - done
+[0.504s] -- Detecting CXX compiler ABI info
+[0.736s] -- Detecting CXX compiler ABI info - done
+[0.755s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.756s] -- Detecting CXX compile features
+[0.757s] -- Detecting CXX compile features - done
+[0.767s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.015s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.129s] -- Found builtin_interfaces: 1.2.1 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake)
+[1.190s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.200s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.247s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.268s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.298s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.322s] -- Found geometry_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/share/geometry_msgs/cmake)
+[1.439s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.128s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.957s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.383s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.407s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.413s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.509s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.510s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.510s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.510s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.510s] -- Found PythonExtra: .so  
+[3.641s] -- Configuring done
+[3.722s] -- Generating done
+[3.726s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs
+[3.740s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/nav_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs
+[3.741s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs -- -j4 -l4
+[4.339s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.353s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.588s] [  1%] Built target ament_cmake_python_copy_nav_msgs
+[5.544s] running egg_info
+[5.549s] creating nav_msgs.egg-info
+[5.552s] writing nav_msgs.egg-info/PKG-INFO
+[5.552s] writing dependency_links to nav_msgs.egg-info/dependency_links.txt
+[5.552s] writing top-level names to nav_msgs.egg-info/top_level.txt
+[5.552s] writing manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[5.555s] reading manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[5.555s] writing manifest file 'nav_msgs.egg-info/SOURCES.txt'
+[5.602s] [  1%] Built target ament_cmake_python_build_nav_msgs_egg
+[7.521s] [  1%] Built target nav_msgs__cpp
+[7.570s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.571s] [  3%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[9.970s] [  3%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/grid_cells__type_support.cpp.o[0m
+[10.972s] [  4%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/grid_cells__functions.c.o[0m
+[11.159s] [  5%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/map_meta_data__type_support.cpp.o[0m
+[11.236s] [  6%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/map_meta_data__functions.c.o[0m
+[11.423s] [  7%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/occupancy_grid__functions.c.o[0m
+[11.884s] [  8%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/occupancy_grid__type_support.cpp.o[0m
+[11.971s] [  8%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/odometry__functions.c.o[0m
+[12.140s] [  9%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/msg/detail/microxrcedds/grid_cells__type_support_cpp.cpp.o[0m
+[12.162s] [ 10%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/msg/detail/path__functions.c.o[0m
+[12.756s] [ 11%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/msg/detail/microxrcedds/map_meta_data__type_support_cpp.cpp.o[0m
+[12.844s] [ 12%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/odometry__type_support.cpp.o[0m
+[12.851s] [ 13%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_map__functions.c.o[0m
+[13.195s] [ 14%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/get_plan__functions.c.o[0m
+[13.656s] [ 15%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/msg/path__type_support.cpp.o[0m
+[13.695s] [ 16%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/load_map__functions.c.o[0m
+[13.697s] [ 17%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/msg/detail/microxrcedds/occupancy_grid__type_support_cpp.cpp.o[0m
+[14.072s] [ 18%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_c.dir/rosidl_generator_c/nav_msgs/srv/detail/set_map__functions.c.o[0m
+[14.335s] [ 18%] [32m[1mLinking C shared library libnav_msgs__rosidl_generator_c.so[0m
+[14.526s] [ 18%] Built target nav_msgs__rosidl_generator_c
+[14.663s] [ 18%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/msg/detail/microxrcedds/odometry__type_support_cpp.cpp.o[0m
+[15.046s] [ 19%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/get_map__type_support.cpp.o[0m
+[15.648s] [ 20%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/msg/detail/microxrcedds/path__type_support_cpp.cpp.o[0m
+[15.663s] [ 20%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/get_plan__type_support.cpp.o[0m
+[16.234s] [ 21%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/load_map__type_support.cpp.o[0m
+[16.569s] [ 22%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/srv/detail/microxrcedds/get_map__type_support_cpp.cpp.o[0m
+[16.641s] [ 23%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_msgs/srv/set_map__type_support.cpp.o[0m
+[17.037s] [ 24%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_cpp.so[0m
+[17.093s] [ 25%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/srv/detail/microxrcedds/get_plan__type_support_cpp.cpp.o[0m
+[17.200s] [ 25%] Built target nav_msgs__rosidl_typesupport_cpp
+[17.574s] [ 26%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/srv/detail/microxrcedds/load_map__type_support_cpp.cpp.o[0m
+[18.139s] [ 27%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/nav_msgs/srv/detail/microxrcedds/set_map__type_support_cpp.cpp.o[0m
+[18.760s] [ 28%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[18.955s] [ 28%] Built target nav_msgs__rosidl_typesupport_microxrcedds_cpp
+[18.998s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.455s] [ 30%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/grid_cells__type_support_c.cpp.o[0m
+[20.863s] [ 31%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/map_meta_data__type_support_c.cpp.o[0m
+[21.258s] [ 31%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/occupancy_grid__type_support_c.cpp.o[0m
+[21.964s] [ 32%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/odometry__type_support_c.cpp.o[0m
+[22.742s] [ 33%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/msg/detail/path__type_support_c.cpp.o[0m
+[23.268s] [ 34%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/get_map__type_support_c.cpp.o[0m
+[23.730s] [ 35%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/get_plan__type_support_c.cpp.o[0m
+[24.182s] [ 36%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/load_map__type_support_c.cpp.o[0m
+[24.653s] [ 36%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_msgs/srv/detail/set_map__type_support_c.cpp.o[0m
+[25.085s] [ 37%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[25.375s] [ 37%] Built target nav_msgs__rosidl_typesupport_fastrtps_c
+[25.398s] [ 38%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[27.096s] [ 39%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/msg/detail/microxrcedds/grid_cells__type_support_c.c.o[0m
+[27.333s] [ 40%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/msg/detail/microxrcedds/map_meta_data__type_support_c.c.o[0m
+[27.469s] [ 41%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/msg/detail/microxrcedds/occupancy_grid__type_support_c.c.o[0m
+[27.545s] [ 42%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/msg/detail/microxrcedds/odometry__type_support_c.c.o[0m
+[27.813s] [ 42%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/msg/detail/microxrcedds/path__type_support_c.c.o[0m
+[27.889s] [ 43%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/srv/detail/microxrcedds/get_map__type_support_c.c.o[0m
+[27.999s] [ 44%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/srv/detail/microxrcedds/get_plan__type_support_c.c.o[0m
+[28.069s] [ 45%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/srv/detail/microxrcedds/load_map__type_support_c.c.o[0m
+[28.194s] [ 46%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/nav_msgs/srv/detail/microxrcedds/set_map__type_support_c.c.o[0m
+[28.312s] [ 47%] [32m[1mLinking C shared library libnav_msgs__rosidl_typesupport_microxrcedds_c.so[0m
+[28.462s] [ 47%] Built target nav_msgs__rosidl_typesupport_microxrcedds_c
+[28.485s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[30.131s] [ 49%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/grid_cells__type_support.c.o[0m
+[30.195s] [ 50%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/map_meta_data__type_support.c.o[0m
+[30.276s] [ 51%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/occupancy_grid__type_support.c.o[0m
+[30.361s] [ 51%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/odometry__type_support.c.o[0m
+[30.538s] [ 52%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/msg/detail/path__type_support.c.o[0m
+[30.709s] [ 53%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/get_map__type_support.c.o[0m
+[30.829s] [ 54%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/get_plan__type_support.c.o[0m
+[30.938s] [ 55%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/load_map__type_support.c.o[0m
+[31.000s] [ 56%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_msgs/srv/detail/set_map__type_support.c.o[0m
+[31.141s] [ 56%] [32m[1mLinking C shared library libnav_msgs__rosidl_typesupport_introspection_c.so[0m
+[31.241s] [ 56%] Built target nav_msgs__rosidl_typesupport_introspection_c
+[31.264s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[32.320s] [ 58%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/grid_cells__type_support.cpp.o[0m
+[32.373s] [ 58%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/map_meta_data__type_support.cpp.o[0m
+[32.472s] [ 59%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/occupancy_grid__type_support.cpp.o[0m
+[32.607s] [ 60%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/odometry__type_support.cpp.o[0m
+[32.694s] [ 61%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/msg/path__type_support.cpp.o[0m
+[32.856s] [ 62%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/get_map__type_support.cpp.o[0m
+[32.970s] [ 63%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/get_plan__type_support.cpp.o[0m
+[33.064s] [ 63%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/load_map__type_support.cpp.o[0m
+[33.148s] [ 64%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_msgs/srv/set_map__type_support.cpp.o[0m
+[33.205s] [ 65%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_c.so[0m
+[33.280s] [ 65%] Built target nav_msgs__rosidl_typesupport_c
+[33.299s] [ 66%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[34.880s] [ 67%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/grid_cells__type_support.cpp.o[0m
+[35.261s] [ 67%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/occupancy_grid__type_support.cpp.o[0m
+[35.710s] [ 68%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/odometry__type_support.cpp.o[0m
+[36.181s] [ 69%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/path__type_support.cpp.o[0m
+[36.676s] [ 70%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/get_map__type_support.cpp.o[0m
+[37.537s] [ 71%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/get_plan__type_support.cpp.o[0m
+[38.101s] [ 72%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/load_map__type_support.cpp.o[0m
+[38.694s] [ 72%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/srv/detail/set_map__type_support.cpp.o[0m
+[39.271s] [ 73%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_msgs/msg/detail/map_meta_data__type_support.cpp.o[0m
+[39.712s] [ 74%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[39.836s] [ 74%] Built target nav_msgs__rosidl_typesupport_introspection_cpp
+[39.853s] [ 75%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[41.284s] [ 76%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/grid_cells__type_support.cpp.o[0m
+[41.878s] [ 77%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/odometry__type_support.cpp.o[0m
+[42.284s] [ 78%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/path__type_support.cpp.o[0m
+[42.717s] [ 79%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/get_map__type_support.cpp.o[0m
+[43.364s] [ 80%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/get_plan__type_support.cpp.o[0m
+[43.813s] [ 80%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/load_map__type_support.cpp.o[0m
+[44.299s] [ 81%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/srv/detail/dds_fastrtps/set_map__type_support.cpp.o[0m
+[44.763s] [ 82%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/occupancy_grid__type_support.cpp.o[0m
+[45.303s] [ 82%] [32mBuilding CXX object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_msgs/msg/detail/dds_fastrtps/map_meta_data__type_support.cpp.o[0m
+[45.789s] [ 83%] [32m[1mLinking CXX shared library libnav_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[46.073s] [ 83%] Built target nav_msgs__rosidl_typesupport_fastrtps_cpp
+[46.111s] [ 83%] Built target nav_msgs
+[46.156s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[48.593s] [ 84%] Built target nav_msgs__py
+[48.641s] [ 85%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_grid_cells_s.c.o[0m
+[48.840s] [ 86%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_odometry_s.c.o[0m
+[49.121s] [ 87%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_path_s.c.o[0m
+[49.360s] [ 87%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_get_map_s.c.o[0m
+[49.548s] [ 88%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_get_plan_s.c.o[0m
+[49.739s] [ 89%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_load_map_s.c.o[0m
+[49.920s] [ 90%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/srv/_set_map_s.c.o[0m
+[50.459s] [ 91%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_occupancy_grid_s.c.o[0m
+[50.624s] [ 92%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_generator_py.dir/rosidl_generator_py/nav_msgs/msg/_map_meta_data_s.c.o[0m
+[50.768s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/nav_msgs/libnav_msgs__rosidl_generator_py.so[0m
+[50.990s] [ 93%] Built target nav_msgs__rosidl_generator_py
+[51.285s] [ 93%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[51.687s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[51.863s] [ 94%] Built target nav_msgs__rosidl_typesupport_microxrcedds_c__pyext
+[52.147s] [ 95%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[52.526s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[52.648s] [ 96%] Built target nav_msgs__rosidl_typesupport_c__pyext
+[52.715s] [ 97%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[53.141s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[53.361s] [ 98%] Built target nav_msgs__rosidl_typesupport_introspection_c__pyext
+[53.402s] [ 99%] [32mBuilding C object CMakeFiles/nav_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[53.755s] [100%] [32m[1mLinking C shared library rosidl_generator_py/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[53.923s] [100%] Built target nav_msgs__rosidl_typesupport_fastrtps_c__pyext
+[53.970s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs -- -j4 -l4
+[55.716s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs
+[55.749s] -- Install configuration: ""
+[55.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/ament_index/resource_index/rosidl_interfaces/nav_msgs
+[55.750s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.750s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/get_map.h
+[55.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/get_plan.h
+[55.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.752s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.h
+[55.752s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__functions.c
+[55.752s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.h
+[55.753s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__functions.h
+[55.753s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__functions.c
+[55.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__struct.h
+[55.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.h
+[55.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__functions.h
+[55.755s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__struct.h
+[55.755s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__struct.h
+[55.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__functions.c
+[55.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__functions.h
+[55.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__functions.c
+[55.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__struct.h
+[55.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__functions.h
+[55.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.h
+[55.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/set_map.h
+[55.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/load_map.h
+[55.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/occupancy_grid.h
+[55.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/map_meta_data.h
+[55.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/grid_cells.h
+[55.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/path.h
+[55.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/rosidl_generator_c__visibility_control.h
+[55.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.h
+[55.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.h
+[55.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__struct.h
+[55.762s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.h
+[55.762s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__functions.c
+[55.762s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__functions.h
+[55.763s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__functions.c
+[55.763s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__functions.h
+[55.763s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__functions.c
+[55.763s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__functions.c
+[55.764s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__type_support.h
+[55.764s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__struct.h
+[55.764s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__functions.c
+[55.764s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__functions.h
+[55.765s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.h
+[55.765s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__functions.h
+[55.765s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.h
+[55.766s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.h
+[55.766s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.h
+[55.766s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__functions.h
+[55.766s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/odometry.h
+[55.767s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/library_path.sh
+[55.767s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/library_path.dsv
+[55.767s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_generator_c.so
+[55.768s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_generator_c.so" to ""
+[55.768s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.768s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.769s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.769s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_fastrtps_c.h
+[55.769s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_fastrtps_c.h
+[55.769s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_c.h
+[55.770s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_fastrtps_c.h
+[55.770s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.770s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.770s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_fastrtps_c.h
+[55.770s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_fastrtps_c.h
+[55.771s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_fastrtps_c.h
+[55.771s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_fastrtps_c.h
+[55.771s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_fastrtps_c.h
+[55.772s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[55.772s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+[55.772s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[55.773s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.773s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.773s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/set_map.hpp
+[55.773s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/get_plan.hpp
+[55.773s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.774s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__builder.hpp
+[55.774s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__traits.hpp
+[55.774s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__builder.hpp
+[55.775s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__builder.hpp
+[55.775s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__struct.hpp
+[55.775s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__traits.hpp
+[55.775s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__traits.hpp
+[55.776s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__builder.hpp
+[55.776s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__traits.hpp
+[55.776s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__struct.hpp
+[55.777s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__struct.hpp
+[55.777s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__struct.hpp
+[55.777s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/get_map.hpp
+[55.777s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/load_map.hpp
+[55.778s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.778s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/map_meta_data.hpp
+[55.778s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/path.hpp
+[55.778s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/odometry.hpp
+[55.779s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/grid_cells.hpp
+[55.779s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.779s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp
+[55.779s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__builder.hpp
+[55.780s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__struct.hpp
+[55.780s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp
+[55.780s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__traits.hpp
+[55.780s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp
+[55.781s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp
+[55.781s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp
+[55.781s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp
+[55.782s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp
+[55.782s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__builder.hpp
+[55.782s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp
+[55.782s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp
+[55.783s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__builder.hpp
+[55.783s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp
+[55.783s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp
+[55.784s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.784s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.784s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.784s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_fastrtps_cpp.hpp
+[55.784s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_fastrtps_cpp.hpp
+[55.785s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_cpp.hpp
+[55.785s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_fastrtps_cpp.hpp
+[55.785s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/dds_fastrtps
+[55.786s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.786s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.786s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_fastrtps_cpp.hpp
+[55.786s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_fastrtps_cpp.hpp
+[55.786s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_fastrtps_cpp.hpp
+[55.787s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_fastrtps_cpp.hpp
+[55.787s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_fastrtps_cpp.hpp
+[55.787s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/dds_fastrtps
+[55.788s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[55.788s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+[55.789s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[55.789s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs
+[55.789s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv
+[55.789s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail
+[55.790s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/get_plan__rosidl_typesupport_microxrcedds_c.h
+[55.790s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/load_map__rosidl_typesupport_microxrcedds_c.h
+[55.790s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/set_map__rosidl_typesupport_microxrcedds_c.h
+[55.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds
+[55.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/get_map__rosidl_typesupport_microxrcedds_c.h
+[55.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg
+[55.791s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail
+[55.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_microxrcedds_c.h
+[55.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/path__rosidl_typesupport_microxrcedds_c.h
+[55.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_microxrcedds_c.h
+[55.792s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/odometry__rosidl_typesupport_microxrcedds_c.h
+[55.793s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_microxrcedds_c.h
+[55.793s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds
+[55.793s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[55.794s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_microxrcedds_c.so
+[55.794s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_microxrcedds_c.so" to ""
+[55.794s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.794s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.795s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.c
+[55.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_introspection_c.h
+[55.795s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_introspection_c.h
+[55.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.c
+[55.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.c
+[55.796s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_introspection_c.h
+[55.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_introspection_c.h
+[55.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.c
+[55.797s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.797s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[55.798s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.798s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.c
+[55.798s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_introspection_c.h
+[55.798s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_introspection_c.h
+[55.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.c
+[55.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_introspection_c.h
+[55.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.c
+[55.799s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_introspection_c.h
+[55.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_introspection_c.h
+[55.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__type_support.c
+[55.800s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.c
+[55.801s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+[55.801s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_introspection_c.so" to ""
+[55.801s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_c.so
+[55.802s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_c.so" to ""
+[55.802s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs
+[55.802s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv
+[55.802s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail
+[55.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/set_map__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/get_map__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/get_plan__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.803s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/load_map__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.804s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds
+[55.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds/get_plan__type_support_cpp.cpp
+[55.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds/load_map__type_support_cpp.cpp
+[55.804s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds/set_map__type_support_cpp.cpp
+[55.805s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/srv/detail/microxrcedds/get_map__type_support_cpp.cpp
+[55.805s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg
+[55.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[55.806s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail
+[55.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/odometry__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/path__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.807s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds
+[55.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds/occupancy_grid__type_support_cpp.cpp
+[55.808s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds/path__type_support_cpp.cpp
+[55.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds/map_meta_data__type_support_cpp.cpp
+[55.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds/grid_cells__type_support_cpp.cpp
+[55.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/microxrcedds/odometry__type_support_cpp.cpp
+[55.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_microxrcedds_cpp.hpp
+[55.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_microxrcedds_cpp.so
+[55.812s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[55.812s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs
+[55.812s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv
+[55.813s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail
+[55.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__rosidl_typesupport_introspection_cpp.hpp
+[55.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__type_support.cpp
+[55.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__rosidl_typesupport_introspection_cpp.hpp
+[55.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/set_map__rosidl_typesupport_introspection_cpp.hpp
+[55.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_plan__type_support.cpp
+[55.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__rosidl_typesupport_introspection_cpp.hpp
+[55.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/get_map__type_support.cpp
+[55.816s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/srv/detail/load_map__type_support.cpp
+[55.816s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg
+[55.817s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail
+[55.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__rosidl_typesupport_introspection_cpp.hpp
+[55.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__rosidl_typesupport_introspection_cpp.hpp
+[55.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__rosidl_typesupport_introspection_cpp.hpp
+[55.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/grid_cells__type_support.cpp
+[55.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__rosidl_typesupport_introspection_cpp.hpp
+[55.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.cpp
+[55.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__type_support.cpp
+[55.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__rosidl_typesupport_introspection_cpp.hpp
+[55.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/path__type_support.cpp
+[55.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.cpp
+[55.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+[55.822s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[55.823s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_cpp.so
+[55.823s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_typesupport_cpp.so" to ""
+[55.824s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/pythonpath.sh
+[55.824s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/pythonpath.dsv
+[55.825s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs-4.2.4-py3.10.egg-info
+[55.825s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs-4.2.4-py3.10.egg-info/PKG-INFO
+[55.826s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs-4.2.4-py3.10.egg-info/dependency_links.txt
+[55.826s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs-4.2.4-py3.10.egg-info/top_level.txt
+[55.826s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs-4.2.4-py3.10.egg-info/SOURCES.txt
+[55.827s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs
+[55.827s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[55.828s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[55.828s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/__init__.py
+[55.828s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv
+[55.829s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_set_map.py
+[55.829s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_map.py
+[55.830s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_load_map.py
+[55.830s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/__init__.py
+[55.830s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_set_map_s.c
+[55.831s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_plan.py
+[55.831s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_load_map_s.c
+[55.832s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_map_s.c
+[55.832s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_plan_s.c
+[55.833s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[55.833s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg
+[55.833s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_odometry_s.c
+[55.834s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_odometry.py
+[55.834s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/__init__.py
+[55.835s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_occupancy_grid_s.c
+[55.836s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_grid_cells_s.c
+[55.836s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_path.py
+[55.837s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_map_meta_data_s.c
+[55.837s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_grid_cells.py
+[55.837s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_occupancy_grid.py
+[55.838s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_path_s.c
+[55.838s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_map_meta_data.py
+[55.839s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[55.839s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[55.840s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[55.840s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/_nav_msgs_s.ep.rosidl_typesupport_c.c
+[55.841s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[55.841s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/libnav_msgs__rosidl_generator_py.so
+[55.902s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs'...
+[55.902s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/__init__.py'...
+[55.903s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/__init__.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_grid_cells.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_map_meta_data.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_occupancy_grid.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_odometry.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/msg/_path.py'...
+[55.903s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/__init__.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_map.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_get_plan.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_load_map.py'...
+[55.903s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/srv/_set_map.py'...
+[55.908s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[55.908s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[55.909s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[55.909s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[55.910s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[55.910s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[55.910s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[55.911s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/local/lib/python3.10/dist-packages/nav_msgs/nav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[55.911s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_generator_py.so
+[55.912s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/lib/libnav_msgs__rosidl_generator_py.so" to ""
+[55.912s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/GridCells.idl
+[55.912s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/MapMetaData.idl
+[55.913s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/OccupancyGrid.idl
+[55.913s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/Odometry.idl
+[55.913s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/Path.idl
+[55.914s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetMap.idl
+[55.914s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetPlan.idl
+[55.915s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/LoadMap.idl
+[55.915s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/SetMap.idl
+[55.916s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/GridCells.msg
+[55.916s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/MapMetaData.msg
+[55.917s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/OccupancyGrid.msg
+[55.917s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/Odometry.msg
+[55.918s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/msg/Path.msg
+[55.918s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetMap.srv
+[55.918s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetMap_Request.msg
+[55.919s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetMap_Response.msg
+[55.919s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetPlan.srv
+[55.920s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetPlan_Request.msg
+[55.920s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/GetPlan_Response.msg
+[55.921s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/LoadMap.srv
+[55.921s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/LoadMap_Request.msg
+[55.922s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/LoadMap_Response.msg
+[55.922s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/SetMap.srv
+[55.923s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/SetMap_Request.msg
+[55.923s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/srv/SetMap_Response.msg
+[55.924s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/ament_index/resource_index/package_run_dependencies/nav_msgs
+[55.924s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/ament_index/resource_index/parent_prefix_path/nav_msgs
+[55.925s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/ament_prefix_path.sh
+[55.925s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/ament_prefix_path.dsv
+[55.925s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/path.sh
+[55.926s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/environment/path.dsv
+[55.926s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/local_setup.bash
+[55.927s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/local_setup.sh
+[55.927s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/local_setup.zsh
+[55.928s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/local_setup.dsv
+[55.928s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/package.dsv
+[55.929s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/ament_index/resource_index/packages/nav_msgs
+[55.929s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cExport.cmake
+[55.930s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cExport-noconfig.cmake
+[55.930s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[55.931s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[55.931s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_cppExport.cmake
+[55.932s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[55.932s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[55.933s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cExport.cmake
+[55.933s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[55.934s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cExport.cmake
+[55.934s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[55.935s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[55.935s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[55.936s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cppExport.cmake
+[55.937s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[55.937s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_pyExport.cmake
+[55.938s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/export_nav_msgs__rosidl_generator_pyExport-noconfig.cmake
+[55.938s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/rosidl_cmake-extras.cmake
+[55.939s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[55.939s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[55.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[55.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[55.940s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[55.941s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[55.941s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgsConfig.cmake
+[55.942s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/cmake/nav_msgsConfig-version.cmake
+[55.942s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/nav_msgs/share/nav_msgs/package.xml
+[55.952s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/nav_msgs

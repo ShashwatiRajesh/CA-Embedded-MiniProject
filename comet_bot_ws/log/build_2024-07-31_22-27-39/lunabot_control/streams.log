@@ -1,0 +1,22 @@
+[1.184s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/lunabot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lunabot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/install.log --single-version-externally-managed install_data
+[1.424s] running egg_info
+[1.424s] writing ../../build/lunabot_control/lunabot_control.egg-info/PKG-INFO
+[1.428s] writing dependency_links to ../../build/lunabot_control/lunabot_control.egg-info/dependency_links.txt
+[1.429s] writing entry points to ../../build/lunabot_control/lunabot_control.egg-info/entry_points.txt
+[1.432s] writing requirements to ../../build/lunabot_control/lunabot_control.egg-info/requires.txt
+[1.432s] writing top-level names to ../../build/lunabot_control/lunabot_control.egg-info/top_level.txt
+[1.440s] reading manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+[1.441s] adding license file 'LICENSE'
+[1.444s] writing manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+[1.447s] running build
+[1.447s] running build_py
+[1.449s] running install
+[1.449s] running install_lib
+[1.452s] running install_data
+[1.455s] running install_egg_info
+[1.456s] removing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages/lunabot_control-0.0.1-py3.10.egg-info' (and everything under it)
+[1.457s] Copying ../../build/lunabot_control/lunabot_control.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages/lunabot_control-0.0.1-py3.10.egg-info
+[1.460s] running install_scripts
+[1.479s] Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control/lib/lunabot_control
+[1.480s] writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/install.log'
+[1.521s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/lunabot_control' returned '0': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lunabot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lunabot_control/install.log --single-version-externally-managed install_data

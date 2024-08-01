@@ -1,0 +1,333 @@
+[0.021s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/composition_interfaces -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces
+[0.143s] -- The C compiler identification is GNU 11.4.0
+[0.244s] -- The CXX compiler identification is GNU 11.4.0
+[0.257s] -- Detecting C compiler ABI info
+[0.393s] -- Detecting C compiler ABI info - done
+[0.401s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.401s] -- Detecting C compile features
+[0.402s] -- Detecting C compile features - done
+[0.405s] -- Detecting CXX compiler ABI info
+[0.512s] -- Detecting CXX compiler ABI info - done
+[0.545s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.545s] -- Detecting CXX compile features
+[0.545s] -- Detecting CXX compile features - done
+[0.549s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.046s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.051s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.062s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.302s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.342s] -- Found rcl_interfaces: 1.2.1 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/share/rcl_interfaces/cmake)
+[1.850s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.828s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.853s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.872s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.907s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.907s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.907s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.907s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.934s] -- Found PythonExtra: .so  
+[2.993s] -- Configuring done
+[3.048s] -- Generating done
+[3.061s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces
+[3.099s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/composition_interfaces -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces
+[3.100s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces -- -j4 -l4
+[3.274s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.151s] [  1%] Built target composition_interfaces__cpp
+[4.206s] [  1%] Built target ament_cmake_python_copy_composition_interfaces
+[4.259s] [  3%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[4.853s] [  5%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_cpp.cpp.o[0m
+[5.468s] [  6%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_cpp.cpp.o[0m
+[5.894s] [  8%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_cpp.cpp.o[0m
+[6.249s] [ 10%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so[0m
+[6.355s] [ 10%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_cpp
+[6.369s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.201s] [ 13%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/load_node__type_support.cpp.o[0m
+[7.781s] [ 15%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/list_nodes__type_support.cpp.o[0m
+[8.381s] [ 16%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/composition_interfaces/srv/detail/dds_fastrtps/unload_node__type_support.cpp.o[0m
+[8.809s] [ 18%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.912s] [ 18%] Built target composition_interfaces__rosidl_typesupport_fastrtps_cpp
+[8.928s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.732s] [ 22%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/load_node__type_support.cpp.o[0m
+[10.511s] [ 23%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/list_nodes__type_support.cpp.o[0m
+[11.008s] [ 25%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/composition_interfaces/srv/detail/unload_node__type_support.cpp.o[0m
+[11.390s] [ 27%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[11.524s] [ 27%] Built target composition_interfaces__rosidl_typesupport_introspection_cpp
+[11.767s] running egg_info
+[11.767s] creating composition_interfaces.egg-info
+[11.768s] writing composition_interfaces.egg-info/PKG-INFO
+[11.768s] writing dependency_links to composition_interfaces.egg-info/dependency_links.txt
+[11.768s] writing top-level names to composition_interfaces.egg-info/top_level.txt
+[11.768s] writing manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[11.768s] reading manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[11.768s] writing manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[11.810s] [ 27%] Built target ament_cmake_python_build_composition_interfaces_egg
+[11.819s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.405s] [ 30%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[12.741s] [ 32%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[13.048s] [ 33%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[13.396s] [ 35%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_cpp.so[0m
+[13.504s] [ 35%] Built target composition_interfaces__rosidl_typesupport_cpp
+[13.531s] [ 37%] [34m[1mGenerating C code for ROS interfaces[0m
+[14.477s] [ 38%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/load_node__functions.c.o[0m
+[14.548s] [ 40%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/unload_node__functions.c.o[0m
+[14.625s] [ 42%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_c.dir/rosidl_generator_c/composition_interfaces/srv/detail/list_nodes__functions.c.o[0m
+[14.764s] [ 44%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_generator_c.so[0m
+[14.907s] [ 44%] Built target composition_interfaces__rosidl_generator_c
+[14.925s] [ 45%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[15.509s] [ 47%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_c.c.o[0m
+[15.620s] [ 49%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_c.c.o[0m
+[15.697s] [ 50%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_c.c.o[0m
+[15.799s] [ 52%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so[0m
+[15.886s] [ 52%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_c
+[15.903s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[16.344s] [ 55%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[16.435s] [ 57%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[16.487s] [ 59%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[16.560s] [ 61%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_c.so[0m
+[16.676s] [ 61%] Built target composition_interfaces__rosidl_typesupport_c
+[16.696s] [ 62%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[17.361s] [ 64%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/load_node__type_support.c.o[0m
+[17.415s] [ 66%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/unload_node__type_support.c.o[0m
+[17.460s] [ 67%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/composition_interfaces/srv/detail/list_nodes__type_support.c.o[0m
+[17.509s] [ 69%] [32m[1mLinking C shared library libcomposition_interfaces__rosidl_typesupport_introspection_c.so[0m
+[17.586s] [ 69%] Built target composition_interfaces__rosidl_typesupport_introspection_c
+[17.604s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.171s] [ 72%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/load_node__type_support_c.cpp.o[0m
+[18.574s] [ 74%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/unload_node__type_support_c.cpp.o[0m
+[18.954s] [ 76%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/composition_interfaces/srv/detail/list_nodes__type_support_c.cpp.o[0m
+[19.269s] [ 77%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[19.354s] [ 77%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c
+[19.386s] [ 77%] Built target composition_interfaces
+[19.418s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[20.595s] [ 79%] Built target composition_interfaces__py
+[20.630s] [ 81%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_load_node_s.c.o[0m
+[20.770s] [ 83%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_unload_node_s.c.o[0m
+[20.891s] [ 84%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_generator_py.dir/rosidl_generator_py/composition_interfaces/srv/_list_nodes_s.c.o[0m
+[21.041s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so[0m
+[21.128s] [ 86%] Built target composition_interfaces__rosidl_generator_py
+[21.162s] [ 88%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[21.326s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[21.403s] [ 89%] Built target composition_interfaces__rosidl_typesupport_microxrcedds_c__pyext
+[21.464s] [ 91%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[21.634s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[21.695s] [ 93%] Built target composition_interfaces__rosidl_typesupport_c__pyext
+[21.755s] [ 94%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[21.941s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.057s] [ 96%] Built target composition_interfaces__rosidl_typesupport_introspection_c__pyext
+[22.094s] [ 98%] [32mBuilding C object CMakeFiles/composition_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[22.228s] [100%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.286s] [100%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[22.304s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces -- -j4 -l4
+[22.710s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces
+[22.723s] -- Install configuration: ""
+[22.724s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/ament_index/resource_index/rosidl_interfaces/composition_interfaces
+[22.724s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.725s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.725s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.h
+[22.725s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.726s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.c
+[22.726s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.h
+[22.726s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.h
+[22.727s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.h
+[22.727s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.c
+[22.727s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.h
+[22.727s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.h
+[22.728s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.h
+[22.728s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.h
+[22.728s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.h
+[22.728s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.c
+[22.729s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.h
+[22.729s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.h
+[22.729s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.h
+[22.730s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[22.730s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_generator_c__visibility_control.h
+[22.730s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.sh
+[22.731s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.dsv
+[22.731s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_c.so
+[22.731s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_c.so" to ""
+[22.732s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces
+[22.732s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv
+[22.732s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail
+[22.732s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_microxrcedds_c.h
+[22.733s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/load_node__rosidl_typesupport_microxrcedds_c.h
+[22.733s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds
+[22.733s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_microxrcedds_c.h
+[22.733s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/msg
+[22.733s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[22.734s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so
+[22.734s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_c.so" to ""
+[22.734s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.735s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.735s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.735s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_c.h
+[22.735s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_c.h
+[22.735s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_c.h
+[22.736s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[22.736s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[22.736s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
+[22.737s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[22.737s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.737s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.737s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.738s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_c.h
+[22.738s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_c.h
+[22.738s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.c
+[22.738s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.c
+[22.739s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_c.h
+[22.739s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.c
+[22.739s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[22.739s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[22.740s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
+[22.740s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[22.740s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so
+[22.741s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so" to ""
+[22.741s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.741s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.741s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.hpp
+[22.742s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.hpp
+[22.742s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.743s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__builder.hpp
+[22.743s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__builder.hpp
+[22.744s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__traits.hpp
+[22.746s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__traits.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__traits.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__builder.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.hpp
+[22.747s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.hpp
+[22.748s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces
+[22.748s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv
+[22.748s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail
+[22.748s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/load_node__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.748s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/unload_node__type_support_cpp.cpp
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/list_nodes__type_support_cpp.cpp
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/microxrcedds/load_node__type_support_cpp.cpp
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_microxrcedds_cpp.hpp
+[22.749s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/msg
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[22.749s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so
+[22.750s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[22.750s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.750s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.751s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_cpp.hpp
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_cpp.hpp
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_cpp.hpp
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/dds_fastrtps
+[22.751s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.751s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[22.752s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[22.752s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[22.752s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[22.752s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[22.752s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_cpp.hpp
+[22.752s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_cpp.hpp
+[22.753s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_cpp.hpp
+[22.753s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.cpp
+[22.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.cpp
+[22.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.cpp
+[22.754s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
+[22.755s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[22.755s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
+[22.755s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so" to ""
+[22.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.sh
+[22.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.dsv
+[22.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info
+[22.756s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/PKG-INFO
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/dependency_links.txt
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/top_level.txt
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/SOURCES.txt
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.757s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[22.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py
+[22.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[22.758s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[22.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv
+[22.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node.py
+[22.759s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes.py
+[22.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node.py
+[22.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node_s.c
+[22.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/__init__.py
+[22.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node_s.c
+[22.760s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes_s.c
+[22.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+[22.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so
+[22.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.761s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_c.c
+[22.800s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces'...
+[22.800s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py'...
+[22.800s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv'...
+[22.800s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/__init__.py'...
+[22.800s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes.py'...
+[22.800s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node.py'...
+[22.800s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node.py'...
+[22.805s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[22.805s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.805s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.806s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.806s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.807s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.807s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[22.807s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so
+[22.808s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so" to ""
+[22.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.idl
+[22.809s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.idl
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.idl
+[22.810s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.srv
+[22.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Request.msg
+[22.811s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Response.msg
+[22.812s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.srv
+[22.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Request.msg
+[22.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Response.msg
+[22.813s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.srv
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Request.msg
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Response.msg
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/ament_index/resource_index/package_run_dependencies/composition_interfaces
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/ament_index/resource_index/parent_prefix_path/composition_interfaces
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.sh
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.dsv
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/path.sh
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/environment/path.dsv
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/local_setup.bash
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/local_setup.sh
+[22.814s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/local_setup.zsh
+[22.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/local_setup.dsv
+[22.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/package.dsv
+[22.815s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/ament_index/resource_index/packages/composition_interfaces
+[22.816s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport-noconfig.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[22.817s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport.cmake
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cppExport.cmake
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[22.818s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport.cmake
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport.cmake
+[22.819s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake-extras.cmake
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.820s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[22.821s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[22.822s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[22.822s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[22.822s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig.cmake
+[22.822s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig-version.cmake
+[22.822s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/composition_interfaces/share/composition_interfaces/package.xml
+[22.826s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/composition_interfaces

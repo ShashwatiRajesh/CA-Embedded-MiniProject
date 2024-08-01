@@ -1,0 +1,516 @@
+[0.041s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/lifecycle_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs
+[0.111s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.239s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.365s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.366s] -- Detecting C compile features
+[0.366s] -- Detecting C compile features - done
+[0.369s] -- Detecting CXX compiler ABI info
+[0.565s] -- Detecting CXX compiler ABI info - done
+[0.615s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.615s] -- Detecting CXX compile features
+[0.615s] -- Detecting CXX compile features - done
+[0.615s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.830s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.957s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.964s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.973s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.068s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.557s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.941s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.367s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.399s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.403s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.430s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.430s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.430s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.430s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.455s] -- Found PythonExtra: .so  
+[2.539s] -- Configuring done
+[2.616s] -- Generating done
+[2.621s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs
+[2.635s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/lifecycle_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs
+[2.635s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs -- -j4 -l4
+[2.794s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.594s] [  0%] Built target lifecycle_msgs__cpp
+[4.634s] [  0%] Built target ament_cmake_python_copy_lifecycle_msgs
+[4.651s] [  1%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[6.081s] [  2%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/msg/detail/microxrcedds/state__type_support_cpp.cpp.o[0m
+[6.395s] [  3%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/msg/detail/microxrcedds/transition__type_support_cpp.cpp.o[0m
+[6.741s] [  4%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/msg/detail/microxrcedds/transition_description__type_support_cpp.cpp.o[0m
+[7.274s] [  5%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/msg/detail/microxrcedds/transition_event__type_support_cpp.cpp.o[0m
+[7.675s] [  6%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/srv/detail/microxrcedds/change_state__type_support_cpp.cpp.o[0m
+[8.060s] [  7%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/srv/detail/microxrcedds/get_available_states__type_support_cpp.cpp.o[0m
+[8.677s] [  8%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/srv/detail/microxrcedds/get_available_transitions__type_support_cpp.cpp.o[0m
+[9.288s] [  9%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/lifecycle_msgs/srv/detail/microxrcedds/get_state__type_support_cpp.cpp.o[0m
+[9.700s] [ 10%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[9.833s] [ 10%] Built target lifecycle_msgs__rosidl_typesupport_microxrcedds_cpp
+[9.897s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.577s] [ 12%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o[0m
+[11.931s] [ 13%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/msg/detail/dds_fastrtps/transition__type_support.cpp.o[0m
+[12.363s] [ 14%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/msg/detail/dds_fastrtps/transition_description__type_support.cpp.o[0m
+[12.945s] [ 15%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/msg/detail/dds_fastrtps/transition_event__type_support.cpp.o[0m
+[13.444s] [ 15%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/srv/detail/dds_fastrtps/change_state__type_support.cpp.o[0m
+[13.990s] [ 16%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/srv/detail/dds_fastrtps/get_available_states__type_support.cpp.o[0m
+[14.491s] [ 17%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/srv/detail/dds_fastrtps/get_available_transitions__type_support.cpp.o[0m
+[15.053s] [ 18%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lifecycle_msgs/srv/detail/dds_fastrtps/get_state__type_support.cpp.o[0m
+[15.432s] [ 19%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.535s] [ 19%] Built target lifecycle_msgs__rosidl_typesupport_fastrtps_cpp
+[15.605s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.045s] [ 21%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/msg/detail/state__type_support.cpp.o[0m
+[17.496s] [ 22%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/msg/detail/transition__type_support.cpp.o[0m
+[17.837s] [ 23%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/msg/detail/transition_description__type_support.cpp.o[0m
+[18.271s] [ 24%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/msg/detail/transition_event__type_support.cpp.o[0m
+[18.746s] [ 25%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/srv/detail/change_state__type_support.cpp.o[0m
+[19.230s] [ 26%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/srv/detail/get_available_states__type_support.cpp.o[0m
+[19.701s] [ 26%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/srv/detail/get_available_transitions__type_support.cpp.o[0m
+[20.392s] [ 27%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lifecycle_msgs/srv/detail/get_state__type_support.cpp.o[0m
+[20.905s] [ 28%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[21.112s] [ 28%] Built target lifecycle_msgs__rosidl_typesupport_introspection_cpp
+[21.462s] running egg_info
+[21.467s] creating lifecycle_msgs.egg-info
+[21.468s] writing lifecycle_msgs.egg-info/PKG-INFO
+[21.468s] writing dependency_links to lifecycle_msgs.egg-info/dependency_links.txt
+[21.469s] writing top-level names to lifecycle_msgs.egg-info/top_level.txt
+[21.469s] writing manifest file 'lifecycle_msgs.egg-info/SOURCES.txt'
+[21.472s] reading manifest file 'lifecycle_msgs.egg-info/SOURCES.txt'
+[21.473s] writing manifest file 'lifecycle_msgs.egg-info/SOURCES.txt'
+[21.575s] [ 28%] Built target ament_cmake_python_build_lifecycle_msgs_egg
+[21.611s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[22.831s] [ 30%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/msg/state__type_support.cpp.o[0m
+[23.250s] [ 30%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/msg/transition_description__type_support.cpp.o[0m
+[23.500s] [ 31%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/msg/transition_event__type_support.cpp.o[0m
+[23.825s] [ 32%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/srv/change_state__type_support.cpp.o[0m
+[24.099s] [ 33%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/srv/get_available_states__type_support.cpp.o[0m
+[24.567s] [ 34%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/srv/get_available_transitions__type_support.cpp.o[0m
+[24.821s] [ 35%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/srv/get_state__type_support.cpp.o[0m
+[25.204s] [ 36%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lifecycle_msgs/msg/transition__type_support.cpp.o[0m
+[25.450s] [ 37%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_cpp.so[0m
+[25.690s] [ 37%] Built target lifecycle_msgs__rosidl_typesupport_cpp
+[25.748s] [ 38%] [34m[1mGenerating C code for ROS interfaces[0m
+[28.122s] [ 39%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/msg/detail/state__functions.c.o[0m
+[28.264s] [ 40%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/msg/detail/transition_event__functions.c.o[0m
+[28.403s] [ 41%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/srv/detail/change_state__functions.c.o[0m
+[28.500s] [ 42%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/srv/detail/get_available_states__functions.c.o[0m
+[28.608s] [ 43%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/srv/detail/get_available_transitions__functions.c.o[0m
+[28.727s] [ 44%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/srv/detail/get_state__functions.c.o[0m
+[28.881s] [ 45%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/msg/detail/transition_description__functions.c.o[0m
+[28.992s] [ 46%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_c.dir/rosidl_generator_c/lifecycle_msgs/msg/detail/transition__functions.c.o[0m
+[29.055s] [ 47%] [32m[1mLinking C shared library liblifecycle_msgs__rosidl_generator_c.so[0m
+[29.182s] [ 47%] Built target lifecycle_msgs__rosidl_generator_c
+[29.201s] [ 48%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[30.697s] [ 49%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/msg/detail/microxrcedds/state__type_support_c.c.o[0m
+[30.754s] [ 50%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/msg/detail/microxrcedds/transition__type_support_c.c.o[0m
+[30.847s] [ 51%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/msg/detail/microxrcedds/transition_description__type_support_c.c.o[0m
+[30.895s] [ 52%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/msg/detail/microxrcedds/transition_event__type_support_c.c.o[0m
+[30.943s] [ 53%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/srv/detail/microxrcedds/change_state__type_support_c.c.o[0m
+[30.991s] [ 54%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/srv/detail/microxrcedds/get_available_states__type_support_c.c.o[0m
+[31.041s] [ 55%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/srv/detail/microxrcedds/get_available_transitions__type_support_c.c.o[0m
+[31.111s] [ 56%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/lifecycle_msgs/srv/detail/microxrcedds/get_state__type_support_c.c.o[0m
+[31.163s] [ 56%] [32m[1mLinking C shared library liblifecycle_msgs__rosidl_typesupport_microxrcedds_c.so[0m
+[31.246s] [ 56%] Built target lifecycle_msgs__rosidl_typesupport_microxrcedds_c
+[31.262s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[32.243s] [ 58%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/msg/state__type_support.cpp.o[0m
+[32.312s] [ 59%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/msg/transition__type_support.cpp.o[0m
+[32.390s] [ 59%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/msg/transition_description__type_support.cpp.o[0m
+[32.455s] [ 60%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/msg/transition_event__type_support.cpp.o[0m
+[32.568s] [ 61%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/srv/change_state__type_support.cpp.o[0m
+[32.611s] [ 62%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/srv/get_available_states__type_support.cpp.o[0m
+[32.668s] [ 63%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/srv/get_available_transitions__type_support.cpp.o[0m
+[32.805s] [ 64%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lifecycle_msgs/srv/get_state__type_support.cpp.o[0m
+[32.905s] [ 65%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_c.so[0m
+[32.990s] [ 65%] Built target lifecycle_msgs__rosidl_typesupport_c
+[33.037s] [ 66%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[34.837s] [ 67%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/msg/detail/state__type_support.c.o[0m
+[34.930s] [ 68%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/msg/detail/transition_description__type_support.c.o[0m
+[35.065s] [ 69%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/msg/detail/transition_event__type_support.c.o[0m
+[35.113s] [ 70%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/srv/detail/change_state__type_support.c.o[0m
+[35.204s] [ 71%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/srv/detail/get_available_states__type_support.c.o[0m
+[35.252s] [ 71%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/srv/detail/get_available_transitions__type_support.c.o[0m
+[35.298s] [ 72%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/srv/detail/get_state__type_support.c.o[0m
+[35.341s] [ 73%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lifecycle_msgs/msg/detail/transition__type_support.c.o[0m
+[35.383s] [ 74%] [32m[1mLinking C shared library liblifecycle_msgs__rosidl_typesupport_introspection_c.so[0m
+[35.443s] [ 74%] Built target lifecycle_msgs__rosidl_typesupport_introspection_c
+[35.463s] [ 75%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[36.918s] [ 76%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/msg/detail/state__type_support_c.cpp.o[0m
+[37.267s] [ 77%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/msg/detail/transition_event__type_support_c.cpp.o[0m
+[37.719s] [ 77%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/srv/detail/change_state__type_support_c.cpp.o[0m
+[38.059s] [ 78%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/srv/detail/get_available_states__type_support_c.cpp.o[0m
+[38.652s] [ 79%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/srv/detail/get_available_transitions__type_support_c.cpp.o[0m
+[39.065s] [ 80%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/srv/detail/get_state__type_support_c.cpp.o[0m
+[39.610s] [ 81%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/msg/detail/transition_description__type_support_c.cpp.o[0m
+[40.045s] [ 82%] [32mBuilding CXX object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lifecycle_msgs/msg/detail/transition__type_support_c.cpp.o[0m
+[40.575s] [ 83%] [32m[1mLinking CXX shared library liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[40.747s] [ 83%] Built target lifecycle_msgs__rosidl_typesupport_fastrtps_c
+[40.788s] [ 83%] Built target lifecycle_msgs
+[40.885s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[43.636s] [ 84%] Built target lifecycle_msgs__py
+[43.668s] [ 84%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/msg/_state_s.c.o[0m
+[43.792s] [ 85%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/msg/_transition_event_s.c.o[0m
+[43.937s] [ 86%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/srv/_change_state_s.c.o[0m
+[44.071s] [ 87%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/srv/_get_available_states_s.c.o[0m
+[44.200s] [ 88%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/srv/_get_available_transitions_s.c.o[0m
+[44.370s] [ 89%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/srv/_get_state_s.c.o[0m
+[44.588s] [ 90%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/msg/_transition_description_s.c.o[0m
+[44.743s] [ 91%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_generator_py.dir/rosidl_generator_py/lifecycle_msgs/msg/_transition_s.c.o[0m
+[44.872s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/lifecycle_msgs/liblifecycle_msgs__rosidl_generator_py.so[0m
+[44.934s] [ 92%] Built target lifecycle_msgs__rosidl_generator_py
+[44.963s] [ 93%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[45.091s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[45.136s] [ 94%] Built target lifecycle_msgs__rosidl_typesupport_microxrcedds_c__pyext
+[45.170s] [ 95%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[45.317s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[45.361s] [ 96%] Built target lifecycle_msgs__rosidl_typesupport_c__pyext
+[45.392s] [ 97%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[45.637s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[45.722s] [ 98%] Built target lifecycle_msgs__rosidl_typesupport_introspection_c__pyext
+[45.755s] [ 99%] [32mBuilding C object CMakeFiles/lifecycle_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[46.038s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[46.125s] [100%] Built target lifecycle_msgs__rosidl_typesupport_fastrtps_c__pyext
+[46.147s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs -- -j4 -l4
+[47.019s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs
+[47.127s] -- Install configuration: ""
+[47.128s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/ament_index/resource_index/rosidl_interfaces/lifecycle_msgs
+[47.129s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.129s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.130s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/change_state.h
+[47.130s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_available_states.h
+[47.131s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.131s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__functions.c
+[47.131s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__functions.h
+[47.132s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__type_support.h
+[47.132s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__type_support.h
+[47.133s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__type_support.h
+[47.133s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__struct.h
+[47.133s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__functions.c
+[47.134s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__struct.h
+[47.135s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__functions.h
+[47.135s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__functions.c
+[47.136s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__functions.h
+[47.136s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__struct.h
+[47.137s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__struct.h
+[47.137s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__functions.h
+[47.138s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__functions.c
+[47.138s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__type_support.h
+[47.139s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_state.h
+[47.139s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_available_transitions.h
+[47.139s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.140s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition.h
+[47.140s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_c__visibility_control.h
+[47.140s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/state.h
+[47.140s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.141s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__functions.c
+[47.141s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h
+[47.141s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__type_support.h
+[47.141s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__functions.h
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__functions.c
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__functions.c
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__functions.h
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.h
+[47.142s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__type_support.h
+[47.143s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__functions.h
+[47.143s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__functions.c
+[47.144s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__type_support.h
+[47.144s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__struct.h
+[47.145s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__struct.h
+[47.146s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__functions.h
+[47.146s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition_event.h
+[47.147s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition_description.h
+[47.147s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/library_path.sh
+[47.147s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/library_path.dsv
+[47.147s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_generator_c.so
+[47.147s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_generator_c.so" to ""
+[47.148s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs
+[47.148s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv
+[47.148s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail
+[47.148s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_microxrcedds_c.h
+[47.149s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_microxrcedds_c.h
+[47.149s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_microxrcedds_c.h
+[47.149s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_microxrcedds_c.h
+[47.150s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds
+[47.150s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg
+[47.150s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail
+[47.150s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/state__rosidl_typesupport_microxrcedds_c.h
+[47.151s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_microxrcedds_c.h
+[47.151s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_microxrcedds_c.h
+[47.151s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds
+[47.151s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_microxrcedds_c.h
+[47.152s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[47.152s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_microxrcedds_c.so
+[47.152s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_microxrcedds_c.so" to ""
+[47.152s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.152s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.153s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.153s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_fastrtps_c.h
+[47.153s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_fastrtps_c.h
+[47.153s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_fastrtps_c.h
+[47.153s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_fastrtps_c.h
+[47.154s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.154s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.154s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_fastrtps_c.h
+[47.154s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+[47.155s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_fastrtps_c.h
+[47.155s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_fastrtps_c.h
+[47.155s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[47.155s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
+[47.155s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[47.156s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.156s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.156s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.156s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__type_support.c
+[47.157s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__type_support.c
+[47.157s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_introspection_c.h
+[47.157s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__type_support.c
+[47.157s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_introspection_c.h
+[47.158s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__type_support.c
+[47.158s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_introspection_c.h
+[47.158s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_introspection_c.h
+[47.159s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.159s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[47.159s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.159s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+[47.159s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__type_support.c
+[47.159s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_introspection_c.h
+[47.160s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_introspection_c.h
+[47.161s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__type_support.c
+[47.179s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_introspection_c.h
+[47.179s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.c
+[47.179s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__type_support.c
+[47.179s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
+[47.180s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so" to ""
+[47.180s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_c.so
+[47.180s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_c.so" to ""
+[47.180s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.180s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.180s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_available_transitions.hpp
+[47.181s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_state.hpp
+[47.181s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/change_state.hpp
+[47.182s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__builder.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__struct.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__traits.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__struct.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__traits.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__traits.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__traits.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__struct.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__builder.hpp
+[47.182s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__builder.hpp
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__builder.hpp
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__struct.hpp
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/get_available_states.hpp
+[47.183s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition_event.hpp
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp
+[47.183s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__traits.hpp
+[47.183s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__builder.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__traits.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__traits.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__builder.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__struct.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__traits.hpp
+[47.184s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__struct.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__builder.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__builder.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/state.hpp
+[47.185s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/transition_description.hpp
+[47.186s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs
+[47.186s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv
+[47.186s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail
+[47.186s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.186s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.186s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.186s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.186s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds
+[47.186s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds/get_state__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds/get_available_transitions__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds/change_state__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/srv/detail/microxrcedds/get_available_states__type_support_cpp.cpp
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds/state__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds/transition_description__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds/transition_event__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/microxrcedds/transition__type_support_cpp.cpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/state__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_microxrcedds_cpp.hpp
+[47.187s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.so
+[47.187s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.187s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/dds_fastrtps
+[47.188s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.188s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/dds_fastrtps
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
+[47.188s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[47.188s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs
+[47.188s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv
+[47.188s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__rosidl_typesupport_introspection_cpp.hpp
+[47.188s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/change_state__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_transitions__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_state__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/srv/detail/get_available_states__type_support.cpp
+[47.189s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg
+[47.189s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_description__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__type_support.cpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__rosidl_typesupport_introspection_cpp.hpp
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
+[47.189s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[47.189s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
+[47.189s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so" to ""
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/pythonpath.sh
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/pythonpath.dsv
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs-1.2.1-py3.10.egg-info
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs-1.2.1-py3.10.egg-info/PKG-INFO
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs-1.2.1-py3.10.egg-info/dependency_links.txt
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs-1.2.1-py3.10.egg-info/top_level.txt
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs-1.2.1-py3.10.egg-info/SOURCES.txt
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/__init__.py
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv
+[47.190s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_transitions.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_state.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_change_state_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_transitions_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/__init__.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_states_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_state_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_change_state.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_states.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_state.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/__init__.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_event_s.c
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_event.py
+[47.191s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_description.py
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_state_s.c
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_description_s.c
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/liblifecycle_msgs__rosidl_generator_py.so
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_c.c
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[47.192s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/_lifecycle_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[47.244s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs'...
+[47.244s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/__init__.py'...
+[47.245s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/__init__.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_state.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_description.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/msg/_transition_event.py'...
+[47.245s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/__init__.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_change_state.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_states.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_available_transitions.py'...
+[47.245s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/srv/_get_state.py'...
+[47.249s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[47.250s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.250s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[47.251s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.251s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[47.256s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.256s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[47.257s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages/lifecycle_msgs/lifecycle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[47.265s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_generator_py.so
+[47.271s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/lib/liblifecycle_msgs__rosidl_generator_py.so" to ""
+[47.271s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/State.idl
+[47.271s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/Transition.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/TransitionDescription.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/TransitionEvent.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/ChangeState.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableStates.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableTransitions.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetState.idl
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/State.msg
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/Transition.msg
+[47.272s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/TransitionDescription.msg
+[47.273s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/msg/TransitionEvent.msg
+[47.274s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/ChangeState.srv
+[47.275s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/ChangeState_Request.msg
+[47.275s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/ChangeState_Response.msg
+[47.275s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableStates.srv
+[47.316s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableStates_Request.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableStates_Response.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableTransitions.srv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableTransitions_Request.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetAvailableTransitions_Response.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetState.srv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetState_Request.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/srv/GetState_Response.msg
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/ament_index/resource_index/package_run_dependencies/lifecycle_msgs
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/ament_index/resource_index/parent_prefix_path/lifecycle_msgs
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/ament_prefix_path.sh
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/ament_prefix_path.dsv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/path.sh
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/environment/path.dsv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/local_setup.bash
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/local_setup.sh
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/local_setup.zsh
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/local_setup.dsv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/package.dsv
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/ament_index/resource_index/packages/lifecycle_msgs
+[47.317s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_generator_cExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_generator_cExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_introspection_cExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_cExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_generator_cppExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_cppExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_generator_pyExport.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/export_lifecycle_msgs__rosidl_generator_pyExport-noconfig.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/rosidl_cmake-extras.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[47.318s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgsConfig.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/cmake/lifecycle_msgsConfig-version.cmake
+[47.319s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lifecycle_msgs/share/lifecycle_msgs/package.xml
+[47.319s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/lifecycle_msgs

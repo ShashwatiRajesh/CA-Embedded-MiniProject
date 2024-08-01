@@ -1,0 +1,6 @@
+setup.py
+trajectory_msgs/__init__.py
+trajectory_msgs.egg-info/PKG-INFO
+trajectory_msgs.egg-info/SOURCES.txt
+trajectory_msgs.egg-info/dependency_links.txt
+trajectory_msgs.egg-info/top_level.txt

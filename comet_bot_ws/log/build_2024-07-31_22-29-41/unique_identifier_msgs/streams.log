@@ -1,0 +1,255 @@
+[0.074s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/unique_identifier_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs
+[0.194s] -- The C compiler identification is GNU 11.4.0
+[0.292s] -- The CXX compiler identification is GNU 11.4.0
+[0.300s] -- Detecting C compiler ABI info
+[0.404s] -- Detecting C compiler ABI info - done
+[0.411s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.411s] -- Detecting C compile features
+[0.415s] -- Detecting C compile features - done
+[0.478s] -- Detecting CXX compiler ABI info
+[0.561s] -- Detecting CXX compiler ABI info - done
+[0.568s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.569s] -- Detecting CXX compile features
+[0.570s] -- Detecting CXX compile features - done
+[0.608s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.903s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.037s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.051s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.094s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.220s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.666s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.089s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.725s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.797s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.797s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.859s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.859s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.859s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.859s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.893s] -- Found PythonExtra: .so  
+[3.072s] -- Configuring done
+[3.134s] -- Generating done
+[3.149s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs
+[3.164s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/unique_identifier_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs
+[3.165s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs -- -j4 -l4
+[3.394s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.528s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.535s] [  5%] Built target ament_cmake_python_copy_unique_identifier_msgs
+[4.370s] [  5%] Built target unique_identifier_msgs__cpp
+[4.453s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.453s] [ 10%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[4.512s] running egg_info
+[4.512s] creating unique_identifier_msgs.egg-info
+[4.512s] writing unique_identifier_msgs.egg-info/PKG-INFO
+[4.518s] writing dependency_links to unique_identifier_msgs.egg-info/dependency_links.txt
+[4.518s] writing top-level names to unique_identifier_msgs.egg-info/top_level.txt
+[4.519s] writing manifest file 'unique_identifier_msgs.egg-info/SOURCES.txt'
+[4.520s] reading manifest file 'unique_identifier_msgs.egg-info/SOURCES.txt'
+[4.529s] [ 12%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_generator_c.dir/rosidl_generator_c/unique_identifier_msgs/msg/detail/uuid__functions.c.o[0m
+[4.541s] writing manifest file 'unique_identifier_msgs.egg-info/SOURCES.txt'
+[4.682s] [ 12%] Built target ament_cmake_python_build_unique_identifier_msgs_egg
+[4.853s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.893s] [ 17%] [32m[1mLinking C shared library libunique_identifier_msgs__rosidl_generator_c.so[0m
+[5.028s] [ 17%] Built target unique_identifier_msgs__rosidl_generator_c
+[5.072s] [ 20%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.501s] [ 23%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/unique_identifier_msgs/msg/detail/microxrcedds/uuid__type_support_cpp.cpp.o[0m
+[5.604s] [ 25%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unique_identifier_msgs/msg/detail/dds_fastrtps/uuid__type_support.cpp.o[0m
+[5.611s] [ 28%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unique_identifier_msgs/msg/uuid__type_support.cpp.o[0m
+[5.867s] [ 30%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unique_identifier_msgs/msg/detail/uuid__type_support.cpp.o[0m
+[6.566s] [ 33%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[6.721s] [ 35%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_cpp.so[0m
+[6.899s] [ 35%] Built target unique_identifier_msgs__rosidl_typesupport_microxrcedds_cpp
+[6.921s] [ 38%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.955s] [ 41%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.988s] [ 43%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[7.049s] [ 43%] Built target unique_identifier_msgs__rosidl_typesupport_cpp
+[7.179s] [ 43%] Built target unique_identifier_msgs__rosidl_typesupport_fastrtps_cpp
+[7.215s] [ 46%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.226s] [ 46%] Built target unique_identifier_msgs__rosidl_typesupport_introspection_cpp
+[7.388s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.393s] [ 51%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.189s] [ 53%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unique_identifier_msgs/msg/detail/uuid__type_support_c.cpp.o[0m
+[8.189s] [ 56%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/unique_identifier_msgs/msg/detail/microxrcedds/uuid__type_support_c.c.o[0m
+[8.487s] [ 58%] [32m[1mLinking C shared library libunique_identifier_msgs__rosidl_typesupport_microxrcedds_c.so[0m
+[8.488s] [ 61%] [32mBuilding CXX object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/unique_identifier_msgs/msg/uuid__type_support.cpp.o[0m
+[8.538s] [ 64%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unique_identifier_msgs/msg/detail/uuid__type_support.c.o[0m
+[8.739s] [ 64%] Built target unique_identifier_msgs__rosidl_typesupport_microxrcedds_c
+[8.828s] [ 66%] [32m[1mLinking C shared library libunique_identifier_msgs__rosidl_typesupport_introspection_c.so[0m
+[8.888s] [ 69%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_c.so[0m
+[9.076s] [ 69%] Built target unique_identifier_msgs__rosidl_typesupport_introspection_c
+[9.101s] [ 69%] Built target unique_identifier_msgs__rosidl_typesupport_c
+[9.163s] [ 71%] [32m[1mLinking CXX shared library libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[9.551s] [ 71%] Built target unique_identifier_msgs__rosidl_typesupport_fastrtps_c
+[9.652s] [ 71%] Built target unique_identifier_msgs
+[9.809s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.664s] [ 74%] Built target unique_identifier_msgs__py
+[10.758s] [ 76%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_generator_py.dir/rosidl_generator_py/unique_identifier_msgs/msg/_uuid_s.c.o[0m
+[10.988s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/unique_identifier_msgs/libunique_identifier_msgs__rosidl_generator_py.so[0m
+[11.111s] [ 79%] Built target unique_identifier_msgs__rosidl_generator_py
+[11.149s] [ 82%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[11.389s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.437s] [ 84%] Built target unique_identifier_msgs__rosidl_typesupport_microxrcedds_c__pyext
+[11.468s] [ 87%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[11.564s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.612s] [ 89%] Built target unique_identifier_msgs__rosidl_typesupport_c__pyext
+[11.708s] [ 92%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.852s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.929s] [ 94%] Built target unique_identifier_msgs__rosidl_typesupport_introspection_c__pyext
+[12.001s] [ 97%] [32mBuilding C object CMakeFiles/unique_identifier_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.111s] [100%] [32m[1mLinking C shared library rosidl_generator_py/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.161s] [100%] Built target unique_identifier_msgs__rosidl_typesupport_fastrtps_c__pyext
+[12.196s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs -- -j4 -l4
+[12.599s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs
+[12.610s] -- Install configuration: ""
+[12.611s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/ament_index/resource_index/rosidl_interfaces/unique_identifier_msgs
+[12.611s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.611s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.612s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.612s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.612s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.c
+[12.612s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h
+[12.613s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h
+[12.613s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h
+[12.613s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h
+[12.614s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/library_path.sh
+[12.614s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/library_path.dsv
+[12.614s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_generator_c.so
+[12.615s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_generator_c.so" to ""
+[12.615s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs
+[12.615s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg
+[12.615s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail
+[12.616s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_microxrcedds_c.h
+[12.616s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail/microxrcedds
+[12.616s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[12.616s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_microxrcedds_c.so
+[12.617s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_microxrcedds_c.so" to ""
+[12.617s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.617s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.617s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.618s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_fastrtps_c.h
+[12.618s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.618s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+[12.619s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.619s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.619s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.619s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.619s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.619s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h
+[12.620s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.c
+[12.620s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+[12.621s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.621s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+[12.621s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_c.so" to ""
+[12.621s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.622s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.622s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.622s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp
+[12.622s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__builder.hpp
+[12.622s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp
+[12.623s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.hpp
+[12.623s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs
+[12.623s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg
+[12.623s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[12.624s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail
+[12.624s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_microxrcedds_cpp.hpp
+[12.624s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail/microxrcedds
+[12.625s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/msg/detail/microxrcedds/uuid__type_support_cpp.cpp
+[12.626s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_microxrcedds_cpp.so
+[12.627s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[12.627s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.627s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.627s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.627s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_fastrtps_cpp.hpp
+[12.628s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/dds_fastrtps
+[12.628s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.628s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.629s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.629s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs
+[12.629s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg
+[12.629s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail
+[12.629s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.cpp
+[12.629s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_cpp.hpp
+[12.630s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+[12.630s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.631s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+[12.631s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so" to ""
+[12.632s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/pythonpath.sh
+[12.632s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/pythonpath.dsv
+[12.632s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs-2.2.1-py3.10.egg-info
+[12.633s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs-2.2.1-py3.10.egg-info/PKG-INFO
+[12.633s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs-2.2.1-py3.10.egg-info/dependency_links.txt
+[12.633s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs-2.2.1-py3.10.egg-info/top_level.txt
+[12.633s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs-2.2.1-py3.10.egg-info/SOURCES.txt
+[12.634s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs
+[12.634s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.634s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.634s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/__init__.py
+[12.635s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[12.635s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.635s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg
+[12.636s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg/_uuid.py
+[12.636s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg/__init__.py
+[12.636s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg/_uuid_s.c
+[12.636s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.637s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/libunique_identifier_msgs__rosidl_generator_py.so
+[12.637s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[12.637s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.638s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/_unique_identifier_msgs_s.ep.rosidl_typesupport_c.c
+[12.686s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs'...
+[12.686s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/__init__.py'...
+[12.686s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg'...
+[12.686s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg/__init__.py'...
+[12.687s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/msg/_uuid.py'...
+[12.691s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[12.691s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.692s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.692s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.692s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.693s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.693s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.694s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages/unique_identifier_msgs/unique_identifier_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.694s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_generator_py.so
+[12.694s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib/libunique_identifier_msgs__rosidl_generator_py.so" to ""
+[12.695s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/msg/UUID.idl
+[12.695s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/msg/UUID.msg
+[12.695s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/ament_index/resource_index/package_run_dependencies/unique_identifier_msgs
+[12.696s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/ament_index/resource_index/parent_prefix_path/unique_identifier_msgs
+[12.696s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/ament_prefix_path.sh
+[12.696s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/ament_prefix_path.dsv
+[12.697s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/path.sh
+[12.697s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/environment/path.dsv
+[12.697s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/local_setup.bash
+[12.698s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/local_setup.sh
+[12.698s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/local_setup.zsh
+[12.698s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/local_setup.dsv
+[12.699s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/package.dsv
+[12.699s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/ament_index/resource_index/packages/unique_identifier_msgs
+[12.699s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_generator_cExport.cmake
+[12.700s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_generator_cExport-noconfig.cmake
+[12.700s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.700s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.701s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.701s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.701s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_cExport.cmake
+[12.702s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[12.702s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_generator_cppExport.cmake
+[12.702s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.703s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.703s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.704s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.704s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_cppExport.cmake
+[12.704s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[12.705s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_generator_pyExport.cmake
+[12.705s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/export_unique_identifier_msgs__rosidl_generator_pyExport-noconfig.cmake
+[12.706s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/rosidl_cmake-extras.cmake
+[12.706s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.707s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.707s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.707s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.708s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.708s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.709s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgsConfig.cmake
+[12.709s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/cmake/unique_identifier_msgsConfig-version.cmake
+[12.710s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/package.xml
+[12.713s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/share/unique_identifier_msgs/mapping_rules.yaml
+[12.721s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/unique_identifier_msgs

@@ -1,0 +1,356 @@
+[0.052s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/shape_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs
+[0.239s] -- The C compiler identification is GNU 11.4.0
+[0.359s] -- The CXX compiler identification is GNU 11.4.0
+[0.373s] -- Detecting C compiler ABI info
+[0.592s] -- Detecting C compiler ABI info - done
+[0.605s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.606s] -- Detecting C compile features
+[0.606s] -- Detecting C compile features - done
+[0.612s] -- Detecting CXX compiler ABI info
+[0.930s] -- Detecting CXX compiler ABI info - done
+[0.937s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.938s] -- Detecting CXX compile features
+[0.939s] -- Detecting CXX compile features - done
+[0.943s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.187s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.321s] -- Found geometry_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/share/geometry_msgs/cmake)
+[1.366s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.375s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.389s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.496s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.637s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.136s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.090s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.510s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.545s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.548s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.624s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.625s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.625s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.625s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.647s] -- Found PythonExtra: .so  
+[3.863s] -- Configuring done
+[3.929s] -- Generating done
+[3.934s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs
+[3.974s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/shape_msgs -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs
+[3.974s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs -- -j4 -l4
+[4.302s] [  0%] Built target ament_cmake_python_copy_shape_msgs
+[4.412s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.593s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.778s] running egg_info
+[4.780s] creating shape_msgs.egg-info
+[4.833s] writing shape_msgs.egg-info/PKG-INFO
+[4.833s] writing dependency_links to shape_msgs.egg-info/dependency_links.txt
+[4.833s] writing top-level names to shape_msgs.egg-info/top_level.txt
+[4.834s] writing manifest file 'shape_msgs.egg-info/SOURCES.txt'
+[4.835s] reading manifest file 'shape_msgs.egg-info/SOURCES.txt'
+[4.836s] writing manifest file 'shape_msgs.egg-info/SOURCES.txt'
+[4.918s] [  2%] Built target ament_cmake_python_build_shape_msgs_egg
+[6.125s] [  2%] Built target shape_msgs__cpp
+[6.161s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.932s] [  5%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_msgs/msg/mesh__type_support.cpp.o[0m
+[7.440s] [  7%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_msgs/msg/mesh_triangle__type_support.cpp.o[0m
+[7.730s] [  8%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_c.dir/rosidl_generator_c/shape_msgs/msg/detail/mesh__functions.c.o[0m
+[7.909s] [ 10%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_c.dir/rosidl_generator_c/shape_msgs/msg/detail/mesh_triangle__functions.c.o[0m
+[7.952s] [ 11%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_msgs/msg/plane__type_support.cpp.o[0m
+[8.234s] [ 13%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_msgs/msg/solid_primitive__type_support.cpp.o[0m
+[8.526s] [ 14%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_cpp.so[0m
+[8.761s] [ 15%] [34m[1mGenerating C++ type support for eProsima Micro XRCE-DDS[0m
+[8.772s] [ 17%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_c.dir/rosidl_generator_c/shape_msgs/msg/detail/plane__functions.c.o[0m
+[8.921s] [ 17%] Built target shape_msgs__rosidl_typesupport_cpp
+[8.947s] [ 18%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_c.dir/rosidl_generator_c/shape_msgs/msg/detail/solid_primitive__functions.c.o[0m
+[9.006s] [ 20%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.523s] [ 21%] [32m[1mLinking C shared library libshape_msgs__rosidl_generator_c.so[0m
+[9.956s] [ 21%] Built target shape_msgs__rosidl_generator_c
+[10.049s] [ 23%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.061s] [ 24%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/shape_msgs/msg/detail/microxrcedds/mesh__type_support_cpp.cpp.o[0m
+[10.625s] [ 26%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_msgs/msg/detail/dds_fastrtps/mesh__type_support.cpp.o[0m
+[11.136s] [ 27%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/shape_msgs/msg/detail/microxrcedds/mesh_triangle__type_support_cpp.cpp.o[0m
+[11.965s] [ 28%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/shape_msgs/msg/detail/microxrcedds/plane__type_support_cpp.cpp.o[0m
+[12.025s] [ 30%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_msgs/msg/detail/dds_fastrtps/mesh_triangle__type_support.cpp.o[0m
+[12.177s] [ 31%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_msgs/msg/detail/mesh__type_support.cpp.o[0m
+[13.180s] [ 33%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/shape_msgs/msg/detail/microxrcedds/solid_primitive__type_support_cpp.cpp.o[0m
+[13.182s] [ 34%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_msgs/msg/detail/mesh_triangle__type_support.cpp.o[0m
+[13.691s] [ 36%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_msgs/msg/detail/dds_fastrtps/plane__type_support.cpp.o[0m
+[14.336s] [ 37%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_msgs/msg/detail/plane__type_support.cpp.o[0m
+[14.358s] [ 39%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_microxrcedds_cpp.so[0m
+[14.846s] [ 40%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_msgs/msg/detail/dds_fastrtps/solid_primitive__type_support.cpp.o[0m
+[14.895s] [ 40%] Built target shape_msgs__rosidl_typesupport_microxrcedds_cpp
+[15.138s] [ 42%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_msgs/msg/detail/solid_primitive__type_support.cpp.o[0m
+[15.825s] [ 43%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.938s] [ 44%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.147s] [ 44%] Built target shape_msgs__rosidl_typesupport_fastrtps_cpp
+[16.259s] [ 44%] Built target shape_msgs__rosidl_typesupport_introspection_cpp
+[16.325s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[17.396s] [ 47%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_msgs/msg/detail/mesh__type_support.c.o[0m
+[17.578s] [ 49%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_msgs/msg/detail/mesh_triangle__type_support.c.o[0m
+[17.681s] [ 50%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_msgs/msg/detail/plane__type_support.c.o[0m
+[17.783s] [ 52%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_msgs/msg/detail/solid_primitive__type_support.c.o[0m
+[17.954s] [ 53%] [32m[1mLinking C shared library libshape_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.016s] [ 53%] Built target shape_msgs__rosidl_typesupport_introspection_c
+[18.032s] [ 55%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[18.885s] [ 56%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_msgs/msg/mesh__type_support.cpp.o[0m
+[18.947s] [ 57%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_msgs/msg/mesh_triangle__type_support.cpp.o[0m
+[19.015s] [ 59%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_msgs/msg/plane__type_support.cpp.o[0m
+[19.110s] [ 60%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_msgs/msg/solid_primitive__type_support.cpp.o[0m
+[19.177s] [ 62%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_c.so[0m
+[19.307s] [ 62%] Built target shape_msgs__rosidl_typesupport_c
+[19.344s] [ 63%] [34m[1mGenerating C type support for eProsima Micro XRCE-DDS[0m
+[20.213s] [ 65%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/shape_msgs/msg/detail/microxrcedds/mesh__type_support_c.c.o[0m
+[20.293s] [ 66%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/shape_msgs/msg/detail/microxrcedds/plane__type_support_c.c.o[0m
+[20.353s] [ 68%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/shape_msgs/msg/detail/microxrcedds/solid_primitive__type_support_c.c.o[0m
+[20.430s] [ 69%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/shape_msgs/msg/detail/microxrcedds/mesh_triangle__type_support_c.c.o[0m
+[20.566s] [ 71%] [32m[1mLinking C shared library libshape_msgs__rosidl_typesupport_microxrcedds_c.so[0m
+[20.847s] [ 71%] Built target shape_msgs__rosidl_typesupport_microxrcedds_c
+[20.897s] [ 72%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[21.753s] [ 73%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_msgs/msg/detail/mesh__type_support_c.cpp.o[0m
+[22.270s] [ 75%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_msgs/msg/detail/solid_primitive__type_support_c.cpp.o[0m
+[22.756s] [ 76%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_msgs/msg/detail/plane__type_support_c.cpp.o[0m
+[23.429s] [ 78%] [32mBuilding CXX object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_msgs/msg/detail/mesh_triangle__type_support_c.cpp.o[0m
+[24.073s] [ 79%] [32m[1mLinking CXX shared library libshape_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[24.197s] [ 79%] Built target shape_msgs__rosidl_typesupport_fastrtps_c
+[24.232s] [ 79%] Built target shape_msgs
+[24.270s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.779s] [ 81%] Built target shape_msgs__py
+[25.817s] [ 82%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_py.dir/rosidl_generator_py/shape_msgs/msg/_mesh_s.c.o[0m
+[25.963s] [ 84%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_py.dir/rosidl_generator_py/shape_msgs/msg/_solid_primitive_s.c.o[0m
+[26.209s] [ 85%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_py.dir/rosidl_generator_py/shape_msgs/msg/_plane_s.c.o[0m
+[26.454s] [ 86%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_generator_py.dir/rosidl_generator_py/shape_msgs/msg/_mesh_triangle_s.c.o[0m
+[26.596s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/shape_msgs/libshape_msgs__rosidl_generator_py.so[0m
+[26.696s] [ 88%] Built target shape_msgs__rosidl_generator_py
+[26.769s] [ 89%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o[0m
+[26.948s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/shape_msgs/shape_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.152s] [ 91%] Built target shape_msgs__rosidl_typesupport_microxrcedds_c__pyext
+[27.271s] [ 92%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[27.459s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/shape_msgs/shape_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.633s] [ 94%] Built target shape_msgs__rosidl_typesupport_c__pyext
+[27.681s] [ 95%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.829s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/shape_msgs/shape_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.968s] [ 97%] Built target shape_msgs__rosidl_typesupport_introspection_c__pyext
+[28.018s] [ 98%] [32mBuilding C object CMakeFiles/shape_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[28.167s] [100%] [32m[1mLinking C shared library rosidl_generator_py/shape_msgs/shape_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[28.369s] [100%] Built target shape_msgs__rosidl_typesupport_fastrtps_c__pyext
+[28.426s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs -- -j4 -l4
+[29.309s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs
+[29.385s] -- Install configuration: ""
+[29.385s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/ament_index/resource_index/rosidl_interfaces/shape_msgs
+[29.386s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.386s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.386s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/mesh_triangle.h
+[29.386s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/plane.h
+[29.387s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/mesh.h
+[29.387s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/rosidl_generator_c__visibility_control.h
+[29.387s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.387s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__type_support.h
+[29.388s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__functions.h
+[29.388s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__functions.h
+[29.388s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__type_support.h
+[29.389s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__functions.c
+[29.389s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__functions.h
+[29.389s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__functions.h
+[29.390s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__struct.h
+[29.390s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__struct.h
+[29.390s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__functions.c
+[29.391s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__functions.c
+[29.391s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__type_support.h
+[29.392s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__struct.h
+[29.392s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__struct.h
+[29.392s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__type_support.h
+[29.393s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__functions.c
+[29.393s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/solid_primitive.h
+[29.394s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/library_path.sh
+[29.394s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/library_path.dsv
+[29.395s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_generator_c.so
+[29.395s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_generator_c.so" to ""
+[29.396s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.396s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.396s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.396s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_fastrtps_c.h
+[29.397s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_c.h
+[29.397s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__rosidl_typesupport_fastrtps_c.h
+[29.398s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_fastrtps_c.h
+[29.398s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[29.398s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_fastrtps_c.so
+[29.399s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[29.399s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.400s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.400s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/mesh.hpp
+[29.400s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/mesh_triangle.hpp
+[29.401s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/solid_primitive.hpp
+[29.401s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.401s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__traits.hpp
+[29.402s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__builder.hpp
+[29.402s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__traits.hpp
+[29.402s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__traits.hpp
+[29.403s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__struct.hpp
+[29.403s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__struct.hpp
+[29.404s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__struct.hpp
+[29.404s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__struct.hpp
+[29.404s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__builder.hpp
+[29.405s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__builder.hpp
+[29.405s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__builder.hpp
+[29.406s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__traits.hpp
+[29.406s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/plane.hpp
+[29.406s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.407s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.407s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.407s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__rosidl_typesupport_fastrtps_cpp.hpp
+[29.408s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_fastrtps_cpp.hpp
+[29.408s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__rosidl_typesupport_fastrtps_cpp.hpp
+[29.408s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_fastrtps_cpp.hpp
+[29.409s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/dds_fastrtps
+[29.409s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[29.410s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_fastrtps_cpp.so
+[29.411s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[29.411s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs
+[29.411s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg
+[29.412s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail
+[29.412s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/plane__rosidl_typesupport_microxrcedds_c.h
+[29.412s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/mesh__rosidl_typesupport_microxrcedds_c.h
+[29.413s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds
+[29.414s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_microxrcedds_c.h
+[29.416s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_microxrcedds_c.h
+[29.416s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h
+[29.417s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_microxrcedds_c.so
+[29.417s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_microxrcedds_c.so" to ""
+[29.417s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.418s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.418s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[29.418s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.418s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_introspection_c.h
+[29.418s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__type_support.c
+[29.419s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__rosidl_typesupport_introspection_c.h
+[29.419s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_introspection_c.h
+[29.419s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__type_support.c
+[29.420s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__rosidl_typesupport_introspection_c.h
+[29.420s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__type_support.c
+[29.420s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__type_support.c
+[29.420s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_introspection_c.so
+[29.421s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_introspection_c.so" to ""
+[29.421s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_c.so
+[29.422s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_c.so" to ""
+[29.422s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs
+[29.422s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg
+[29.422s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h
+[29.422s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail
+[29.423s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/plane__rosidl_typesupport_microxrcedds_cpp.hpp
+[29.423s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_microxrcedds_cpp.hpp
+[29.423s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/mesh__rosidl_typesupport_microxrcedds_cpp.hpp
+[29.423s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_microxrcedds_cpp.hpp
+[29.424s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds
+[29.424s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds/mesh_triangle__type_support_cpp.cpp
+[29.424s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds/plane__type_support_cpp.cpp
+[29.424s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds/mesh__type_support_cpp.cpp
+[29.425s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/msg/detail/microxrcedds/solid_primitive__type_support_cpp.cpp
+[29.425s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_microxrcedds_cpp.so
+[29.426s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""
+[29.426s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs
+[29.426s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg
+[29.426s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail
+[29.426s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__type_support.cpp
+[29.427s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__rosidl_typesupport_introspection_cpp.hpp
+[29.427s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh__rosidl_typesupport_introspection_cpp.hpp
+[29.427s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__type_support.cpp
+[29.428s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/mesh_triangle__type_support.cpp
+[29.428s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__type_support.cpp
+[29.428s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/plane__rosidl_typesupport_introspection_cpp.hpp
+[29.429s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/include/shape_msgs/shape_msgs/msg/detail/solid_primitive__rosidl_typesupport_introspection_cpp.hpp
+[29.429s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.so
+[29.430s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[29.430s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_cpp.so
+[29.430s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_typesupport_cpp.so" to ""
+[29.431s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/pythonpath.sh
+[29.431s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/pythonpath.dsv
+[29.431s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs-4.2.4-py3.10.egg-info
+[29.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs-4.2.4-py3.10.egg-info/PKG-INFO
+[29.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs-4.2.4-py3.10.egg-info/dependency_links.txt
+[29.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs-4.2.4-py3.10.egg-info/top_level.txt
+[29.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs-4.2.4-py3.10.egg-info/SOURCES.txt
+[29.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs
+[29.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[29.434s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/__init__.py
+[29.434s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c
+[29.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_c.c
+[29.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg
+[29.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_solid_primitive.py
+[29.436s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh.py
+[29.437s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/__init__.py
+[29.437s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh_triangle.py
+[29.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh_triangle_s.c
+[29.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_plane.py
+[29.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh_s.c
+[29.439s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_plane_s.c
+[29.439s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_solid_primitive_s.c
+[29.439s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/_shape_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[29.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[29.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[29.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/libshape_msgs__rosidl_generator_py.so
+[29.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[29.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[29.531s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs'...
+[29.531s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/__init__.py'...
+[29.531s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg'...
+[29.532s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/__init__.py'...
+[29.532s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh.py'...
+[29.532s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_mesh_triangle.py'...
+[29.532s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_plane.py'...
+[29.532s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/msg/_solid_primitive.py'...
+[29.535s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[29.536s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.536s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[29.536s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.537s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[29.537s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.538s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[29.538s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/local/lib/python3.10/dist-packages/shape_msgs/shape_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[29.538s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_generator_py.so
+[29.539s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/lib/libshape_msgs__rosidl_generator_py.so" to ""
+[29.539s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/Mesh.idl
+[29.539s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/MeshTriangle.idl
+[29.539s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/Plane.idl
+[29.540s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/SolidPrimitive.idl
+[29.540s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/Mesh.msg
+[29.540s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/MeshTriangle.msg
+[29.540s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/Plane.msg
+[29.541s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/msg/SolidPrimitive.msg
+[29.541s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/ament_index/resource_index/package_run_dependencies/shape_msgs
+[29.541s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/ament_index/resource_index/parent_prefix_path/shape_msgs
+[29.541s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/ament_prefix_path.sh
+[29.542s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/ament_prefix_path.dsv
+[29.542s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/path.sh
+[29.542s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/environment/path.dsv
+[29.542s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/local_setup.bash
+[29.543s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/local_setup.sh
+[29.543s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/local_setup.zsh
+[29.543s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/local_setup.dsv
+[29.543s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/package.dsv
+[29.544s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/ament_index/resource_index/packages/shape_msgs
+[29.544s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_generator_cExport.cmake
+[29.544s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_generator_cExport-noconfig.cmake
+[29.545s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[29.545s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[29.545s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_generator_cppExport.cmake
+[29.546s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[29.546s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[29.546s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_introspection_cExport.cmake
+[29.546s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[29.547s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_cExport.cmake
+[29.547s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[29.547s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[29.548s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[29.548s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_cppExport.cmake
+[29.548s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[29.548s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_generator_pyExport.cmake
+[29.549s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/export_shape_msgs__rosidl_generator_pyExport-noconfig.cmake
+[29.549s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/rosidl_cmake-extras.cmake
+[29.549s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.549s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.550s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[29.550s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[29.550s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[29.550s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[29.550s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgsConfig.cmake
+[29.551s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/cmake/shape_msgsConfig-version.cmake
+[29.551s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/shape_msgs/share/shape_msgs/package.xml
+[29.555s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/shape_msgs

@@ -1,0 +1,1413 @@
+[0.144s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/uros/micro-ROS-demos/rclc -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc
+[0.242s] -- The C compiler identification is GNU 11.4.0
+[0.318s] -- The CXX compiler identification is GNU 11.4.0
+[0.329s] -- Detecting C compiler ABI info
+[0.461s] -- Detecting C compiler ABI info - done
+[0.475s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.476s] -- Detecting C compile features
+[0.476s] -- Detecting C compile features - done
+[0.479s] -- Detecting CXX compiler ABI info
+[0.641s] -- Detecting CXX compiler ABI info - done
+[0.648s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.649s] -- Detecting CXX compile features
+[0.649s] -- Detecting CXX compile features - done
+[0.655s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.907s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.451s] -- Configuring done
+[1.499s] -- Generating done
+[1.504s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc
+[1.529s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/uros/micro-ROS-demos/rclc -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc
+[1.534s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc -- -j4 -l4
+[1.659s] [  0%] [34m[1mCreating directories for 'publisher_count'[0m
+[1.659s] [  1%] [34m[1mCreating directories for 'subscription_count'[0m
+[1.662s] [  2%] [34m[1mCreating directories for 'graph_visualizer'[0m
+[1.844s] [  2%] [34m[1mNo download step for 'publisher_count'[0m
+[1.855s] [  4%] [34m[1mNo download step for 'subscription_count'[0m
+[1.855s] [  4%] [34m[1mNo download step for 'graph_visualizer'[0m
+[1.905s] [  5%] [34m[1mNo update step for 'subscription_count'[0m
+[1.936s] [  6%] [34m[1mNo update step for 'graph_visualizer'[0m
+[1.936s] [  6%] [34m[1mNo update step for 'publisher_count'[0m
+[1.956s] [  6%] [34m[1mNo patch step for 'subscription_count'[0m
+[2.067s] [  7%] [34m[1mNo patch step for 'publisher_count'[0m
+[2.067s] [  7%] [34m[1mNo patch step for 'graph_visualizer'[0m
+[2.067s] [  7%] [34m[1mPerforming configure step for 'subscription_count'[0m
+[2.084s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/subscription_count/tmp/subscription_count-cache-.cmake
+[2.129s] [  8%] [34m[1mPerforming configure step for 'publisher_count'[0m
+[2.147s] [  8%] [34m[1mPerforming configure step for 'graph_visualizer'[0m
+[2.151s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/publisher_count/tmp/publisher_count-cache-.cmake
+[2.170s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/graph_visualizer/tmp/graph_visualizer-cache-.cmake
+[2.189s] -- The C compiler identification is GNU 11.4.0
+[2.211s] -- Detecting C compiler ABI info
+[2.263s] -- The C compiler identification is GNU 11.4.0
+[2.271s] -- The C compiler identification is GNU 11.4.0
+[2.275s] -- Detecting C compiler ABI info
+[2.282s] -- Detecting C compiler ABI info
+[2.400s] -- Detecting C compiler ABI info - done
+[2.409s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.409s] -- Detecting C compile features
+[2.409s] -- Detecting C compile features - done
+[2.415s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.462s] -- Detecting C compiler ABI info - done
+[2.474s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.475s] -- Detecting C compile features
+[2.475s] -- Detecting C compile features - done
+[2.483s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.502s] -- Detecting C compiler ABI info - done
+[2.511s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.512s] -- Detecting C compile features
+[2.512s] -- Detecting C compile features - done
+[2.519s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.712s] [  8%] [34m[1mCreating directories for 'int32_publisher'[0m
+[2.778s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.808s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.812s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.869s] [  8%] [34m[1mNo download step for 'int32_publisher'[0m
+[2.921s] [  8%] [34m[1mNo update step for 'int32_publisher'[0m
+[2.956s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[2.975s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[2.989s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[3.057s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.067s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.074s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.076s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.083s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.093s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.101s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.105s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.121s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.137s] [  9%] [34m[1mNo patch step for 'int32_publisher'[0m
+[3.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.169s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.192s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.252s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.252s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.316s] [ 10%] [34m[1mPerforming configure step for 'int32_publisher'[0m
+[3.324s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.370s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.375s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.379s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.387s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_publisher/tmp/int32_publisher-cache-.cmake
+[3.419s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.427s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.503s] -- The C compiler identification is GNU 11.4.0
+[3.513s] -- Detecting C compiler ABI info
+[3.669s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.676s] -- Detecting C compiler ABI info - done
+[3.686s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.686s] -- Detecting C compile features
+[3.686s] -- Detecting C compile features - done
+[3.691s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.693s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.700s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.740s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.757s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.775s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.831s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.844s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.846s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.868s] -- Looking for pthread.h
+[3.870s] -- Looking for pthread.h
+[3.906s] -- Looking for pthread.h
+[4.039s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.049s] -- Looking for pthread.h - found
+[4.050s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.058s] -- Looking for pthread.h - found
+[4.059s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.067s] -- Looking for pthread.h - found
+[4.067s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.185s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.186s] -- Found Threads: TRUE  
+[4.196s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[4.218s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[4.222s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.223s] -- Found Threads: TRUE  
+[4.232s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[4.239s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.240s] -- Found Threads: TRUE  
+[4.249s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[4.320s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.330s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.346s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.353s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[4.394s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[4.394s] -- Configuring done
+[4.394s] -- Generating done
+[4.394s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/publisher_count/src/publisher_count-build
+[4.402s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[4.408s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.419s] -- Configuring done
+[4.420s] [ 10%] [34m[1mPerforming build step for 'publisher_count'[0m
+[4.436s] -- Generating done
+[4.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.495s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/graph_visualizer/src/graph_visualizer-build
+[4.497s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[4.511s] -- Configuring done
+[4.523s] -- Generating done
+[4.526s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/graph_introspection/subscription_count/src/subscription_count-build
+[4.619s] [ 50%] [32mBuilding C object CMakeFiles/publisher_count.dir/main.c.o[0m
+[4.620s] [ 11%] [34m[1mPerforming build step for 'graph_visualizer'[0m
+[4.669s] [100%] [32m[1mLinking C executable publisher_count[0m
+[4.685s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.691s] [ 11%] [34m[1mPerforming build step for 'subscription_count'[0m
+[4.725s] [ 50%] [32mBuilding C object CMakeFiles/graph_visualizer.dir/main.c.o[0m
+[4.727s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.835s] [100%] [32m[1mLinking C executable graph_visualizer[0m
+[4.855s] [100%] Built target publisher_count
+[4.896s] [ 50%] [32mBuilding C object CMakeFiles/subscription_count.dir/main.c.o[0m
+[4.920s] [ 12%] [34m[1mPerforming install step for 'publisher_count'[0m
+[4.955s] [100%] Built target graph_visualizer
+[4.996s] [ 12%] [34m[1mPerforming install step for 'graph_visualizer'[0m
+[5.037s] [35m[1mConsolidate compiler generated dependencies of target publisher_count[0m
+[5.039s] [100%] [32m[1mLinking C executable subscription_count[0m
+[5.070s] [100%] Built target publisher_count
+[5.084s] [35m[1mConsolidate compiler generated dependencies of target graph_visualizer[0m
+[5.102s] [36mInstall the project...[0m
+[5.106s] [100%] Built target graph_visualizer
+[5.118s] -- Install configuration: ""
+[5.118s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/publisher_count/publisher_count
+[5.119s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/publisher_count/publisher_count" to ""
+[5.136s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.153s] [36mInstall the project...[0m
+[5.160s] [ 13%] [34m[1mCompleted 'publisher_count'[0m
+[5.172s] -- Install configuration: ""
+[5.172s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/graph_visualizer/graph_visualizer
+[5.172s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/graph_visualizer/graph_visualizer" to ""
+[5.178s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.208s] [ 13%] [34m[1mCompleted 'graph_visualizer'[0m
+[5.227s] [ 13%] Built target publisher_count
+[5.227s] [100%] Built target subscription_count
+[5.271s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.276s] [ 14%] [34m[1mCreating directories for 'int32_subscriber'[0m
+[5.296s] [ 14%] Built target graph_visualizer
+[5.304s] -- Looking for pthread.h
+[5.309s] [ 14%] [34m[1mPerforming install step for 'subscription_count'[0m
+[5.357s] [ 15%] [34m[1mCreating directories for 'configured_publisher'[0m
+[5.394s] [35m[1mConsolidate compiler generated dependencies of target subscription_count[0m
+[5.420s] [100%] Built target subscription_count
+[5.469s] [36mInstall the project...[0m
+[5.484s] -- Install configuration: ""
+[5.484s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/subscription_count/subscription_count
+[5.485s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/subscription_count/subscription_count" to ""
+[5.539s] -- Looking for pthread.h - found
+[5.540s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.555s] [ 16%] [34m[1mCompleted 'subscription_count'[0m
+[5.567s] [ 17%] [34m[1mNo download step for 'int32_subscriber'[0m
+[5.579s] [ 18%] [34m[1mNo download step for 'configured_publisher'[0m
+[5.631s] [ 18%] Built target subscription_count
+[5.634s] [ 19%] [34m[1mNo update step for 'configured_publisher'[0m
+[5.684s] [ 19%] [34m[1mNo update step for 'int32_subscriber'[0m
+[5.688s] [ 19%] [34m[1mNo patch step for 'configured_publisher'[0m
+[5.689s] [ 20%] [34m[1mCreating directories for 'configured_subscriber'[0m
+[5.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.714s] -- Found Threads: TRUE  
+[5.755s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[5.774s] [ 20%] [34m[1mPerforming configure step for 'configured_publisher'[0m
+[5.780s] [ 20%] [34m[1mNo patch step for 'int32_subscriber'[0m
+[5.792s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/configuration_example/configured_publisher/tmp/configured_publisher-cache-.cmake
+[5.846s] [ 20%] [34m[1mPerforming configure step for 'int32_subscriber'[0m
+[5.867s] [ 21%] [34m[1mNo download step for 'configured_subscriber'[0m
+[5.872s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_subscriber/tmp/int32_subscriber-cache-.cmake
+[5.893s] -- The C compiler identification is GNU 11.4.0
+[5.903s] -- Detecting C compiler ABI info
+[5.929s] [ 21%] [34m[1mNo update step for 'configured_subscriber'[0m
+[5.934s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[5.970s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[5.990s] -- Configuring done
+[5.993s] -- The C compiler identification is GNU 11.4.0
+[6.003s] -- Detecting C compiler ABI info
+[6.003s] -- Generating done
+[6.006s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_publisher/src/int32_publisher-build
+[6.058s] [ 21%] [34m[1mNo patch step for 'configured_subscriber'[0m
+[6.068s] [ 21%] [34m[1mPerforming build step for 'int32_publisher'[0m
+[6.118s] [ 21%] [34m[1mPerforming configure step for 'configured_subscriber'[0m
+[6.137s] -- Detecting C compiler ABI info - done
+[6.137s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/configuration_example/configured_subscriber/tmp/configured_subscriber-cache-.cmake
+[6.148s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.148s] -- Detecting C compile features
+[6.149s] -- Detecting C compile features - done
+[6.157s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.175s] -- Detecting C compiler ABI info - done
+[6.178s] [ 50%] [32mBuilding C object CMakeFiles/int32_publisher.dir/main.c.o[0m
+[6.203s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.204s] -- Detecting C compile features
+[6.204s] -- Detecting C compile features - done
+[6.212s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.245s] -- The C compiler identification is GNU 11.4.0
+[6.254s] -- Detecting C compiler ABI info
+[6.406s] [100%] [32m[1mLinking C executable int32_publisher[0m
+[6.469s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.483s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.487s] -- Detecting C compiler ABI info - done
+[6.496s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.496s] -- Detecting C compile features
+[6.496s] -- Detecting C compile features - done
+[6.503s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.572s] [100%] Built target int32_publisher
+[6.608s] [ 22%] [34m[1mPerforming install step for 'int32_publisher'[0m
+[6.658s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[6.729s] [35m[1mConsolidate compiler generated dependencies of target int32_publisher[0m
+[6.750s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.764s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.779s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.781s] [100%] Built target int32_publisher
+[6.803s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.817s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[6.836s] [36mInstall the project...[0m
+[6.857s] -- Install configuration: ""
+[6.858s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_publisher/int32_publisher
+[6.859s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_publisher/int32_publisher" to ""
+[6.898s] [ 23%] [34m[1mCompleted 'int32_publisher'[0m
+[6.903s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.904s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.920s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.939s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.957s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.968s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.042s] [ 23%] Built target int32_publisher
+[7.042s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.081s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.089s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.094s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[7.184s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.192s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.192s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.219s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.223s] [ 23%] [34m[1mCreating directories for 'addtwoints_server'[0m
+[7.234s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.260s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.304s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.364s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.404s] [ 23%] [34m[1mNo download step for 'addtwoints_server'[0m
+[7.404s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.416s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.425s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.434s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.460s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.504s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.520s] [ 24%] [34m[1mNo update step for 'addtwoints_server'[0m
+[7.544s] -- Looking for pthread.h
+[7.553s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.583s] -- Looking for pthread.h
+[7.663s] [ 24%] [34m[1mNo patch step for 'addtwoints_server'[0m
+[7.728s] [ 25%] [34m[1mPerforming configure step for 'addtwoints_server'[0m
+[7.729s] -- Looking for pthread.h - found
+[7.730s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.751s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/addtwoints_server/tmp/addtwoints_server-cache-.cmake
+[7.768s] -- Looking for pthread.h - found
+[7.768s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.788s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.848s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.851s] -- The C compiler identification is GNU 11.4.0
+[7.877s] -- Detecting C compiler ABI info
+[7.931s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.933s] -- Found Threads: TRUE  
+[7.944s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[7.960s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.990s] -- Looking for pthread.h
+[8.009s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.011s] -- Found Threads: TRUE  
+[8.024s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[8.074s] -- Detecting C compiler ABI info - done
+[8.083s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.084s] -- Detecting C compile features
+[8.084s] -- Detecting C compile features - done
+[8.093s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.101s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[8.159s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[8.182s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[8.198s] -- Configuring done
+[8.214s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[8.215s] -- Generating done
+[8.218s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_subscriber/src/int32_subscriber-build
+[8.220s] -- Looking for pthread.h - found
+[8.220s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.240s] -- Configuring done
+[8.254s] -- Generating done
+[8.257s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/configuration_example/configured_publisher/src/configured_publisher-build
+[8.271s] [ 26%] [34m[1mPerforming build step for 'int32_subscriber'[0m
+[8.343s] [ 27%] [34m[1mPerforming build step for 'configured_publisher'[0m
+[8.404s] [ 50%] [32mBuilding C object CMakeFiles/int32_subscriber.dir/main.c.o[0m
+[8.439s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.440s] -- Found Threads: TRUE  
+[8.450s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[8.480s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[8.512s] [ 50%] [32mBuilding C object CMakeFiles/configured_publisher.dir/main.c.o[0m
+[8.528s] [100%] [32m[1mLinking C executable int32_subscriber[0m
+[8.586s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[8.638s] [100%] [32m[1mLinking C executable configured_publisher[0m
+[8.642s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[8.656s] -- Configuring done
+[8.670s] -- Generating done
+[8.678s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/configuration_example/configured_subscriber/src/configured_subscriber-build
+[8.678s] [100%] Built target int32_subscriber
+[8.729s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[8.730s] [ 28%] [34m[1mPerforming build step for 'configured_subscriber'[0m
+[8.749s] [ 28%] [34m[1mPerforming install step for 'int32_subscriber'[0m
+[8.824s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.841s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.854s] [100%] Built target configured_publisher
+[8.890s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.914s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.916s] [35m[1mConsolidate compiler generated dependencies of target int32_subscriber[0m
+[8.919s] [ 28%] [34m[1mPerforming install step for 'configured_publisher'[0m
+[8.933s] [ 50%] [32mBuilding C object CMakeFiles/configured_subscriber.dir/main.c.o[0m
+[8.941s] [100%] Built target int32_subscriber
+[8.988s] [36mInstall the project...[0m
+[8.997s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.020s] [35m[1mConsolidate compiler generated dependencies of target configured_publisher[0m
+[9.021s] -- Install configuration: ""
+[9.022s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_subscriber/int32_subscriber
+[9.022s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_subscriber/int32_subscriber" to ""
+[9.054s] [100%] Built target configured_publisher
+[9.112s] [ 28%] [34m[1mCompleted 'int32_subscriber'[0m
+[9.129s] [36mInstall the project...[0m
+[9.140s] [100%] [32m[1mLinking C executable configured_subscriber[0m
+[9.144s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.145s] -- Install configuration: ""
+[9.145s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/configured_publisher/configured_publisher
+[9.145s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/configured_publisher/configured_publisher" to ""
+[9.158s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.192s] [ 28%] [34m[1mCompleted 'configured_publisher'[0m
+[9.266s] [ 28%] Built target configured_publisher
+[9.273s] [ 28%] Built target int32_subscriber
+[9.290s] [100%] Built target configured_subscriber
+[9.340s] [ 28%] [34m[1mPerforming install step for 'configured_subscriber'[0m
+[9.342s] [ 28%] [34m[1mCreating directories for 'addtwoints_client'[0m
+[9.354s] [ 29%] [34m[1mCreating directories for 'fibonacci_action_server'[0m
+[9.428s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.474s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.530s] [35m[1mConsolidate compiler generated dependencies of target configured_subscriber[0m
+[9.551s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.555s] [ 29%] [34m[1mNo download step for 'addtwoints_client'[0m
+[9.564s] [ 30%] [34m[1mNo download step for 'fibonacci_action_server'[0m
+[9.584s] -- Looking for pthread.h
+[9.584s] [100%] Built target configured_subscriber
+[9.614s] [ 30%] [34m[1mNo update step for 'addtwoints_client'[0m
+[9.641s] [36mInstall the project...[0m
+[9.659s] -- Install configuration: ""
+[9.660s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/configured_subscriber/configured_subscriber
+[9.661s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/configured_subscriber/configured_subscriber" to ""
+[9.667s] [ 31%] [34m[1mNo update step for 'fibonacci_action_server'[0m
+[9.735s] [ 32%] [34m[1mNo patch step for 'addtwoints_client'[0m
+[9.736s] [ 32%] [34m[1mCompleted 'configured_subscriber'[0m
+[9.741s] [ 32%] [34m[1mNo patch step for 'fibonacci_action_server'[0m
+[9.788s] [ 33%] [34m[1mPerforming configure step for 'addtwoints_client'[0m
+[9.815s] -- Looking for pthread.h - found
+[9.815s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.815s] [ 33%] Built target configured_subscriber
+[9.832s] [ 33%] [34m[1mPerforming configure step for 'fibonacci_action_server'[0m
+[9.833s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/addtwoints_client/tmp/addtwoints_client-cache-.cmake
+[9.853s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fibonacci_action_server/tmp/fibonacci_action_server-cache-.cmake
+[9.882s] [ 34%] [34m[1mCreating directories for 'fibonacci_action_client'[0m
+[9.930s] -- The C compiler identification is GNU 11.4.0
+[9.935s] -- The C compiler identification is GNU 11.4.0
+[9.941s] -- Detecting C compiler ABI info
+[9.956s] -- Detecting C compiler ABI info
+[10.026s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.028s] -- Found Threads: TRUE  
+[10.045s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[10.117s] -- Detecting C compiler ABI info - done
+[10.124s] -- Check for working C compiler: /usr/bin/cc - skipped
+[10.125s] -- Detecting C compile features
+[10.128s] -- Detecting C compile features - done
+[10.135s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[10.140s] [ 34%] [34m[1mNo download step for 'fibonacci_action_client'[0m
+[10.183s] [ 35%] [34m[1mNo update step for 'fibonacci_action_client'[0m
+[10.188s] -- Detecting C compiler ABI info - done
+[10.194s] -- Found example_interfaces: 0.9.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/share/example_interfaces/cmake)
+[10.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[10.199s] -- Detecting C compile features
+[10.200s] -- Detecting C compile features - done
+[10.205s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[10.238s] [ 35%] [34m[1mNo patch step for 'fibonacci_action_client'[0m
+[10.323s] -- Configuring done
+[10.330s] [ 36%] [34m[1mPerforming configure step for 'fibonacci_action_client'[0m
+[10.336s] -- Generating done
+[10.338s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/addtwoints_server/src/addtwoints_server-build
+[10.349s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fibonacci_action_client/tmp/fibonacci_action_client-cache-.cmake
+[10.403s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[10.421s] [ 36%] [34m[1mPerforming build step for 'addtwoints_server'[0m
+[10.441s] -- The C compiler identification is GNU 11.4.0
+[10.454s] -- Detecting C compiler ABI info
+[10.473s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[10.615s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[10.685s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[10.698s] [ 50%] [32mBuilding C object CMakeFiles/addtwoints_server.dir/main.c.o[0m
+[10.718s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[10.731s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[10.747s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[10.757s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[10.767s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.769s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[10.789s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[10.808s] [100%] [32m[1mLinking C executable addtwoints_server[0m
+[10.811s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.827s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.930s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.931s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[10.939s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.939s] [100%] Built target addtwoints_server
+[10.966s] -- Detecting C compiler ABI info - done
+[10.973s] -- Check for working C compiler: /usr/bin/cc - skipped
+[10.973s] -- Detecting C compile features
+[10.976s] -- Detecting C compile features - done
+[10.981s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[11.005s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[11.027s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.072s] [ 37%] [34m[1mPerforming install step for 'addtwoints_server'[0m
+[11.190s] [35m[1mConsolidate compiler generated dependencies of target addtwoints_server[0m
+[11.207s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.217s] [100%] Built target addtwoints_server
+[11.248s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[11.251s] -- Found FastRTPS: /opt/ros/humble/include  
+[11.253s] [36mInstall the project...[0m
+[11.267s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.299s] -- Install configuration: ""
+[11.299s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/addtwoints_server/addtwoints_server
+[11.311s] -- Found FastRTPS: /opt/ros/humble/include  
+[11.337s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/addtwoints_server/addtwoints_server" to ""
+[11.370s] [ 38%] [34m[1mCompleted 'addtwoints_server'[0m
+[11.383s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.420s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.420s] -- Looking for pthread.h
+[11.448s] -- Looking for pthread.h
+[11.474s] [ 38%] Built target addtwoints_server
+[11.488s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[11.565s] [ 38%] [34m[1mCreating directories for 'int32_multinode'[0m
+[11.580s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[11.593s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[11.611s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[11.629s] -- Looking for pthread.h - found
+[11.629s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.652s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.693s] -- Looking for pthread.h - found
+[11.693s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.754s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.755s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.759s] -- Found Threads: TRUE  
+[11.768s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[11.832s] [ 39%] [34m[1mNo download step for 'int32_multinode'[0m
+[11.848s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.850s] -- Found Threads: TRUE  
+[11.859s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[11.880s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[11.887s] [ 39%] [34m[1mNo update step for 'int32_multinode'[0m
+[11.888s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.909s] -- Found example_interfaces: 0.9.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/share/example_interfaces/cmake)
+[11.935s] [ 40%] [34m[1mNo patch step for 'int32_multinode'[0m
+[11.979s] -- Configuring done
+[11.999s] [ 40%] [34m[1mPerforming configure step for 'int32_multinode'[0m
+[12.003s] -- Generating done
+[12.010s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fibonacci_action_server/src/fibonacci_action_server-build
+[12.027s] -- Found example_interfaces: 0.9.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/share/example_interfaces/cmake)
+[12.027s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_multinode/tmp/int32_multinode-cache-.cmake
+[12.096s] -- Configuring done
+[12.111s] [ 41%] [34m[1mPerforming build step for 'fibonacci_action_server'[0m
+[12.127s] -- Generating done
+[12.144s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/addtwoints_client/src/addtwoints_client-build
+[12.148s] -- The C compiler identification is GNU 11.4.0
+[12.160s] -- Detecting C compiler ABI info
+[12.208s] [ 41%] [34m[1mPerforming build step for 'addtwoints_client'[0m
+[12.243s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[12.267s] [ 50%] [32mBuilding C object CMakeFiles/fibonacci_action_server.dir/main.c.o[0m
+[12.307s] -- Found FastRTPS: /opt/ros/humble/include  
+[12.404s] -- Detecting C compiler ABI info - done
+[12.406s] -- Check for working C compiler: /usr/bin/cc - skipped
+[12.409s] -- Detecting C compile features
+[12.410s] -- Detecting C compile features - done
+[12.424s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.435s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[12.445s] [ 50%] [32mBuilding C object CMakeFiles/addtwoints_client.dir/main.c.o[0m
+[12.457s] [100%] [32m[1mLinking C executable fibonacci_action_server[0m
+[12.483s] -- Looking for pthread.h
+[12.591s] [100%] Built target fibonacci_action_server
+[12.609s] [100%] [32m[1mLinking C executable addtwoints_client[0m
+[12.627s] [ 41%] [34m[1mPerforming install step for 'fibonacci_action_server'[0m
+[12.680s] -- Looking for pthread.h - found
+[12.681s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.721s] [35m[1mConsolidate compiler generated dependencies of target fibonacci_action_server[0m
+[12.751s] [100%] Built target fibonacci_action_server
+[12.820s] [36mInstall the project...[0m
+[12.821s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[12.828s] [100%] Built target addtwoints_client
+[12.855s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[12.857s] -- Found Threads: TRUE  
+[12.887s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[12.891s] [ 42%] [34m[1mPerforming install step for 'addtwoints_client'[0m
+[12.895s] -- Install configuration: ""
+[12.895s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fibonacci_action_server/fibonacci_action_server
+[12.898s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fibonacci_action_server/fibonacci_action_server" to ""
+[12.937s] [ 42%] [34m[1mCompleted 'fibonacci_action_server'[0m
+[13.002s] [35m[1mConsolidate compiler generated dependencies of target addtwoints_client[0m
+[13.027s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[13.036s] [ 42%] Built target fibonacci_action_server
+[13.068s] [100%] Built target addtwoints_client
+[13.108s] -- Found example_interfaces: 0.9.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/share/example_interfaces/cmake)
+[13.119s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[13.124s] [ 43%] [34m[1mCreating directories for 'int32_publisher_subscriber'[0m
+[13.132s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[13.152s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[13.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.195s] -- Configuring done
+[13.207s] -- Generating done
+[13.208s] [36mInstall the project...[0m
+[13.211s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fibonacci_action_client/src/fibonacci_action_client-build
+[13.228s] -- Install configuration: ""
+[13.228s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/addtwoints_client/addtwoints_client
+[13.229s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/addtwoints_client/addtwoints_client" to ""
+[13.243s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.259s] [ 43%] [34m[1mPerforming build step for 'fibonacci_action_client'[0m
+[13.275s] [ 43%] [34m[1mCompleted 'addtwoints_client'[0m
+[13.372s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[13.380s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[13.382s] [ 50%] [32mBuilding C object CMakeFiles/fibonacci_action_client.dir/main.c.o[0m
+[13.413s] [ 44%] [34m[1mNo download step for 'int32_publisher_subscriber'[0m
+[13.414s] [ 44%] Built target addtwoints_client
+[13.458s] [ 45%] [34m[1mNo update step for 'int32_publisher_subscriber'[0m
+[13.460s] [ 46%] [34m[1mCreating directories for 'ping_pong'[0m
+[13.512s] [ 46%] [34m[1mNo patch step for 'int32_publisher_subscriber'[0m
+[13.545s] [100%] [32m[1mLinking C executable fibonacci_action_client[0m
+[13.592s] [ 46%] [34m[1mPerforming configure step for 'int32_publisher_subscriber'[0m
+[13.611s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_publisher_subscriber/tmp/int32_publisher_subscriber-cache-.cmake
+[13.674s] [ 47%] [34m[1mNo download step for 'ping_pong'[0m
+[13.694s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[13.730s] -- The C compiler identification is GNU 11.4.0
+[13.749s] -- Detecting C compiler ABI info
+[13.755s] [100%] Built target fibonacci_action_client
+[13.760s] -- Found FastRTPS: /opt/ros/humble/include  
+[13.773s] [ 48%] [34m[1mNo update step for 'ping_pong'[0m
+[13.835s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.840s] [ 48%] [34m[1mNo patch step for 'ping_pong'[0m
+[13.848s] [ 48%] [34m[1mPerforming install step for 'fibonacci_action_client'[0m
+[13.867s] -- Looking for pthread.h
+[13.913s] -- Detecting C compiler ABI info - done
+[13.913s] [ 48%] [34m[1mPerforming configure step for 'ping_pong'[0m
+[13.924s] -- Check for working C compiler: /usr/bin/cc - skipped
+[13.924s] -- Detecting C compile features
+[13.925s] -- Detecting C compile features - done
+[13.937s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[13.941s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/ping_pong/tmp/ping_pong-cache-.cmake
+[13.971s] [35m[1mConsolidate compiler generated dependencies of target fibonacci_action_client[0m
+[14.022s] -- The C compiler identification is GNU 11.4.0
+[14.046s] -- Detecting C compiler ABI info
+[14.062s] [100%] Built target fibonacci_action_client
+[14.156s] [36mInstall the project...[0m
+[14.168s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[14.171s] -- Install configuration: ""
+[14.172s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fibonacci_action_client/fibonacci_action_client
+[14.172s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fibonacci_action_client/fibonacci_action_client" to ""
+[14.203s] -- Looking for pthread.h - found
+[14.204s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[14.218s] [ 49%] [34m[1mCompleted 'fibonacci_action_client'[0m
+[14.247s] -- Detecting C compiler ABI info - done
+[14.255s] -- Check for working C compiler: /usr/bin/cc - skipped
+[14.256s] -- Detecting C compile features
+[14.256s] -- Detecting C compile features - done
+[14.263s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[14.306s] [ 49%] Built target fibonacci_action_client
+[14.379s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[14.441s] [ 49%] [34m[1mCreating directories for 'ping_uros_agent'[0m
+[14.462s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[14.471s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[14.472s] -- Found Threads: TRUE  
+[14.476s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[14.500s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[14.511s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[14.562s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.599s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[14.609s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.620s] [ 49%] [34m[1mNo download step for 'ping_uros_agent'[0m
+[14.654s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[14.670s] [ 49%] [34m[1mNo update step for 'ping_uros_agent'[0m
+[14.738s] [ 50%] [34m[1mNo patch step for 'ping_uros_agent'[0m
+[14.738s] -- Configuring done
+[14.738s] -- Generating done
+[14.744s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_multinode/src/int32_multinode-build
+[14.766s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[14.784s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[14.803s] [ 50%] [34m[1mPerforming configure step for 'ping_uros_agent'[0m
+[14.810s] [ 51%] [34m[1mPerforming build step for 'int32_multinode'[0m
+[14.824s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/ping_uros_agent/tmp/ping_uros_agent-cache-.cmake
+[14.887s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[14.948s] -- The C compiler identification is GNU 11.4.0
+[14.963s] [ 50%] [32mBuilding C object CMakeFiles/int32_multinode.dir/main.c.o[0m
+[14.964s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[14.984s] -- Detecting C compiler ABI info
+[14.995s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[15.015s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[15.067s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[15.097s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.111s] -- Found FastRTPS: /opt/ros/humble/include  
+[15.122s] [100%] [32m[1mLinking C executable int32_multinode[0m
+[15.154s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.187s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.213s] -- Looking for pthread.h
+[15.247s] -- Detecting C compiler ABI info - done
+[15.254s] [100%] Built target int32_multinode
+[15.256s] -- Check for working C compiler: /usr/bin/cc - skipped
+[15.257s] -- Detecting C compile features
+[15.257s] -- Detecting C compile features - done
+[15.266s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[15.297s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[15.303s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[15.310s] [ 51%] [34m[1mPerforming install step for 'int32_multinode'[0m
+[15.427s] [35m[1mConsolidate compiler generated dependencies of target int32_multinode[0m
+[15.470s] [100%] Built target int32_multinode
+[15.474s] -- Looking for pthread.h - found
+[15.475s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[15.510s] [36mInstall the project...[0m
+[15.541s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[15.567s] -- Install configuration: ""
+[15.568s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_multinode/int32_multinode
+[15.568s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_multinode/int32_multinode" to ""
+[15.598s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[15.609s] [ 51%] [34m[1mCompleted 'int32_multinode'[0m
+[15.677s] -- Found FastRTPS: /opt/ros/humble/include  
+[15.700s] [ 51%] Built target int32_multinode
+[15.727s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[15.728s] -- Found Threads: TRUE  
+[15.729s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[15.740s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[15.786s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.814s] -- Looking for pthread.h
+[15.838s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[15.850s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[15.865s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[15.868s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[15.886s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.911s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[15.923s] -- Configuring done
+[15.933s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.934s] -- Generating done
+[15.936s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/int32_publisher_subscriber/src/int32_publisher_subscriber-build
+[15.979s] -- Looking for pthread.h - found
+[15.985s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[16.019s] [ 51%] [34m[1mPerforming build step for 'int32_publisher_subscriber'[0m
+[16.093s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[16.102s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[16.138s] [ 50%] [32mBuilding C object CMakeFiles/int32_publisher_subscriber.dir/main.c.o[0m
+[16.214s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[16.215s] -- Found Threads: TRUE  
+[16.229s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[16.250s] [100%] [32m[1mLinking C executable int32_publisher_subscriber[0m
+[16.329s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[16.364s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[16.369s] -- Found FastRTPS: /opt/ros/humble/include  
+[16.404s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[16.417s] -- Configuring done
+[16.432s] -- Generating done
+[16.436s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/ping_pong/src/ping_pong-build
+[16.438s] [100%] Built target int32_publisher_subscriber
+[16.454s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[16.475s] [ 52%] [34m[1mPerforming build step for 'ping_pong'[0m
+[16.483s] -- Looking for pthread.h
+[16.530s] [ 52%] [34m[1mPerforming install step for 'int32_publisher_subscriber'[0m
+[16.565s] [ 50%] [32mBuilding C object CMakeFiles/ping_pong.dir/main.c.o[0m
+[16.623s] -- Looking for pthread.h - found
+[16.624s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[16.630s] [35m[1mConsolidate compiler generated dependencies of target int32_publisher_subscriber[0m
+[16.657s] [100%] Built target int32_publisher_subscriber
+[16.682s] [100%] [32m[1mLinking C executable ping_pong[0m
+[16.724s] [36mInstall the project...[0m
+[16.745s] -- Install configuration: ""
+[16.745s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_publisher_subscriber/int32_publisher_subscriber
+[16.745s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/int32_publisher_subscriber/int32_publisher_subscriber" to ""
+[16.804s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[16.805s] -- Found Threads: TRUE  
+[16.809s] [ 53%] [34m[1mCompleted 'int32_publisher_subscriber'[0m
+[16.820s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[16.839s] [100%] Built target ping_pong
+[16.872s] [ 53%] [34m[1mPerforming install step for 'ping_pong'[0m
+[16.873s] [ 53%] Built target int32_publisher_subscriber
+[16.934s] [35m[1mConsolidate compiler generated dependencies of target ping_pong[0m
+[16.939s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[16.947s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[16.992s] -- Configuring done
+[17.000s] [100%] Built target ping_pong
+[17.006s] -- Generating done
+[17.006s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/ping_uros_agent/src/ping_uros_agent-build
+[17.048s] [36mInstall the project...[0m
+[17.061s] [ 54%] [34m[1mPerforming build step for 'ping_uros_agent'[0m
+[17.066s] -- Install configuration: ""
+[17.067s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/ping_pong/ping_pong
+[17.068s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/ping_pong/ping_pong" to ""
+[17.118s] [ 54%] [34m[1mCompleted 'ping_pong'[0m
+[17.153s] [ 50%] [32mBuilding C object CMakeFiles/ping_uros_agent.dir/main.c.o[0m
+[17.184s] [ 54%] Built target ping_pong
+[17.262s] [100%] [32m[1mLinking C executable ping_uros_agent[0m
+[17.422s] [100%] Built target ping_uros_agent
+[17.457s] [ 55%] [34m[1mPerforming install step for 'ping_uros_agent'[0m
+[17.525s] [35m[1mConsolidate compiler generated dependencies of target ping_uros_agent[0m
+[17.552s] [100%] Built target ping_uros_agent
+[17.590s] [36mInstall the project...[0m
+[17.609s] -- Install configuration: ""
+[17.609s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/ping_uros_agent/ping_uros_agent
+[17.609s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/ping_uros_agent/ping_uros_agent" to ""
+[17.648s] [ 55%] [34m[1mCompleted 'ping_uros_agent'[0m
+[17.736s] [ 55%] Built target ping_uros_agent
+[17.780s] [ 55%] [34m[1mCreating directories for 'complex_msg_publisher'[0m
+[17.948s] [ 55%] [34m[1mNo download step for 'complex_msg_publisher'[0m
+[18.023s] [ 55%] [34m[1mNo update step for 'complex_msg_publisher'[0m
+[18.074s] [ 56%] [34m[1mNo patch step for 'complex_msg_publisher'[0m
+[18.120s] [ 56%] [34m[1mPerforming configure step for 'complex_msg_publisher'[0m
+[18.140s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/complex_msg_publisher/tmp/complex_msg_publisher-cache-.cmake
+[18.214s] -- The C compiler identification is GNU 11.4.0
+[18.225s] -- Detecting C compiler ABI info
+[18.371s] -- Detecting C compiler ABI info - done
+[18.379s] -- Check for working C compiler: /usr/bin/cc - skipped
+[18.379s] -- Detecting C compile features
+[18.379s] -- Detecting C compile features - done
+[18.415s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[18.591s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[18.748s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[18.825s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[18.839s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[18.856s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[18.881s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.925s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[19.041s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[19.048s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[19.238s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[19.278s] -- Found FastRTPS: /opt/ros/humble/include  
+[19.343s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[19.370s] -- Looking for pthread.h
+[19.513s] -- Looking for pthread.h - found
+[19.513s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[19.674s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[19.675s] -- Found Threads: TRUE  
+[19.686s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[19.804s] -- Found complex_msgs: 3.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/share/complex_msgs/cmake)
+[19.844s] [ 56%] [34m[1mCreating directories for 'complex_msg_subscriber'[0m
+[19.848s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[19.859s] -- Configuring done
+[19.872s] -- Generating done
+[19.874s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/complex_msg_publisher/src/complex_msg_publisher-build
+[19.949s] [ 57%] [34m[1mPerforming build step for 'complex_msg_publisher'[0m
+[19.989s] [ 57%] [34m[1mNo download step for 'complex_msg_subscriber'[0m
+[20.057s] [ 50%] [32mBuilding C object CMakeFiles/complex_msg_publisher.dir/main.c.o[0m
+[20.065s] [ 57%] [34m[1mNo update step for 'complex_msg_subscriber'[0m
+[20.113s] [ 58%] [34m[1mNo patch step for 'complex_msg_subscriber'[0m
+[20.169s] [100%] [32m[1mLinking C executable complex_msg_publisher[0m
+[20.191s] [ 59%] [34m[1mPerforming configure step for 'complex_msg_subscriber'[0m
+[20.209s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/complex_msg_subscriber/tmp/complex_msg_subscriber-cache-.cmake
+[20.320s] -- The C compiler identification is GNU 11.4.0
+[20.321s] [100%] Built target complex_msg_publisher
+[20.336s] -- Detecting C compiler ABI info
+[20.380s] [ 60%] [34m[1mPerforming install step for 'complex_msg_publisher'[0m
+[20.451s] [35m[1mConsolidate compiler generated dependencies of target complex_msg_publisher[0m
+[20.476s] [100%] Built target complex_msg_publisher
+[20.503s] -- Detecting C compiler ABI info - done
+[20.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[20.511s] -- Detecting C compile features
+[20.511s] -- Detecting C compile features - done
+[20.530s] [36mInstall the project...[0m
+[20.530s] -- Install configuration: ""
+[20.530s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/complex_msg_publisher/complex_msg_publisher
+[20.531s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/complex_msg_publisher/complex_msg_publisher" to ""
+[20.535s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[20.586s] [ 60%] [34m[1mCompleted 'complex_msg_publisher'[0m
+[20.674s] [ 60%] Built target complex_msg_publisher
+[20.700s] [ 60%] [34m[1mCreating directories for 'fragmented_subscription'[0m
+[20.720s] [ 60%] [34m[1mCreating directories for 'fragmented_publication'[0m
+[20.819s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[20.904s] [ 60%] [34m[1mNo download step for 'fragmented_subscription'[0m
+[20.917s] [ 60%] [34m[1mNo download step for 'fragmented_publication'[0m
+[20.963s] [ 60%] [34m[1mNo update step for 'fragmented_publication'[0m
+[20.985s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[21.014s] [ 61%] [34m[1mNo update step for 'fragmented_subscription'[0m
+[21.016s] [ 62%] [34m[1mNo patch step for 'fragmented_publication'[0m
+[21.064s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[21.077s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[21.097s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[21.103s] [ 62%] [34m[1mNo patch step for 'fragmented_subscription'[0m
+[21.119s] [ 63%] [34m[1mPerforming configure step for 'fragmented_publication'[0m
+[21.124s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[21.140s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fragmented_publication/tmp/fragmented_publication-cache-.cmake
+[21.165s] [ 64%] [34m[1mPerforming configure step for 'fragmented_subscription'[0m
+[21.182s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[21.184s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fragmented_subscription/tmp/fragmented_subscription-cache-.cmake
+[21.287s] -- The C compiler identification is GNU 11.4.0
+[21.297s] -- Detecting C compiler ABI info
+[21.302s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[21.309s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[21.311s] -- The C compiler identification is GNU 11.4.0
+[21.321s] -- Detecting C compiler ABI info
+[21.473s] -- Detecting C compiler ABI info - done
+[21.480s] -- Detecting C compiler ABI info - done
+[21.483s] -- Check for working C compiler: /usr/bin/cc - skipped
+[21.484s] -- Detecting C compile features
+[21.484s] -- Detecting C compile features - done
+[21.487s] -- Check for working C compiler: /usr/bin/cc - skipped
+[21.487s] -- Detecting C compile features
+[21.488s] -- Detecting C compile features - done
+[21.490s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[21.495s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[21.594s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[21.634s] -- Found FastRTPS: /opt/ros/humble/include  
+[21.703s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[21.734s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[21.736s] -- Looking for pthread.h
+[21.748s] [ 65%] [34m[1mCreating directories for 'timer'[0m
+[21.804s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[21.936s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[21.970s] [ 66%] [34m[1mNo download step for 'timer'[0m
+[21.983s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[22.021s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[22.043s] -- Looking for pthread.h - found
+[22.043s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[22.046s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[22.064s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[22.086s] [ 67%] [34m[1mNo update step for 'timer'[0m
+[22.109s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[22.118s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[22.134s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[22.148s] [ 67%] [34m[1mNo patch step for 'timer'[0m
+[22.161s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.173s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[22.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[22.241s] [ 67%] [34m[1mPerforming configure step for 'timer'[0m
+[22.258s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[22.260s] -- Found Threads: TRUE  
+[22.272s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[22.297s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[22.303s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[22.311s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.329s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/tmp/timer-cache-.cmake
+[22.417s] -- Found complex_msgs: 3.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/share/complex_msgs/cmake)
+[22.421s] -- The C compiler identification is GNU 11.4.0
+[22.425s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[22.430s] -- Detecting C compiler ABI info
+[22.435s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[22.474s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[22.474s] -- Configuring done
+[22.500s] -- Generating done
+[22.504s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/complex_msg_subscriber/src/complex_msg_subscriber-build
+[22.562s] [ 67%] [34m[1mPerforming build step for 'complex_msg_subscriber'[0m
+[22.643s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[22.672s] -- Detecting C compiler ABI info - done
+[22.679s] -- Check for working C compiler: /usr/bin/cc - skipped
+[22.679s] -- Detecting C compile features
+[22.680s] -- Detecting C compile features - done
+[22.686s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[22.700s] [ 50%] [32mBuilding C object CMakeFiles/complex_msg_subscriber.dir/main.c.o[0m
+[22.729s] -- Found FastRTPS: /opt/ros/humble/include  
+[22.815s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[22.834s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[22.847s] -- Looking for pthread.h
+[22.882s] -- Found FastRTPS: /opt/ros/humble/include  
+[22.924s] [100%] [32m[1mLinking C executable complex_msg_subscriber[0m
+[22.962s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[22.967s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[22.999s] -- Looking for pthread.h
+[23.103s] [100%] Built target complex_msg_subscriber
+[23.109s] -- Looking for pthread.h - found
+[23.109s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[23.158s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[23.192s] [ 68%] [34m[1mPerforming install step for 'complex_msg_subscriber'[0m
+[23.235s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[23.236s] -- Found Threads: TRUE  
+[23.238s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[23.246s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[23.251s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[23.267s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[23.282s] -- Looking for pthread.h - found
+[23.283s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[23.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[23.323s] [35m[1mConsolidate compiler generated dependencies of target complex_msg_subscriber[0m
+[23.357s] [100%] Built target complex_msg_subscriber
+[23.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[23.388s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[23.418s] [36mInstall the project...[0m
+[23.435s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[23.435s] -- Install configuration: ""
+[23.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/complex_msg_subscriber/complex_msg_subscriber
+[23.436s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/complex_msg_subscriber/complex_msg_subscriber" to ""
+[23.448s] -- Configuring done
+[23.484s] -- Generating done
+[23.486s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fragmented_subscription/src/fragmented_subscription-build
+[23.492s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[23.494s] -- Found Threads: TRUE  
+[23.499s] [ 69%] [34m[1mCompleted 'complex_msg_subscriber'[0m
+[23.508s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[23.535s] [ 69%] [34m[1mPerforming build step for 'fragmented_subscription'[0m
+[23.549s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[23.560s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[23.567s] [ 69%] Built target complex_msg_subscriber
+[23.608s] [ 69%] [34m[1mCreating directories for 'string_publisher'[0m
+[23.667s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[23.684s] [ 50%] [32mBuilding C object CMakeFiles/fragmented_subscription.dir/main.c.o[0m
+[23.731s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[23.743s] -- Configuring done
+[23.754s] -- Generating done
+[23.756s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/fragmented_publication/src/fragmented_publication-build
+[23.778s] [ 70%] [34m[1mNo download step for 'string_publisher'[0m
+[23.795s] [ 70%] [34m[1mPerforming build step for 'fragmented_publication'[0m
+[23.847s] [100%] [32m[1mLinking C executable fragmented_subscription[0m
+[23.887s] [ 70%] [34m[1mNo update step for 'string_publisher'[0m
+[23.940s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[23.993s] [ 71%] [34m[1mNo patch step for 'string_publisher'[0m
+[23.993s] [100%] Built target fragmented_subscription
+[24.003s] -- Found FastRTPS: /opt/ros/humble/include  
+[24.003s] [ 50%] [32mBuilding C object CMakeFiles/fragmented_publication.dir/main.c.o[0m
+[24.049s] [ 71%] [34m[1mPerforming configure step for 'string_publisher'[0m
+[24.049s] [ 72%] [34m[1mPerforming install step for 'fragmented_subscription'[0m
+[24.066s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/string_publisher/tmp/string_publisher-cache-.cmake
+[24.080s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[24.113s] -- Looking for pthread.h
+[24.124s] [35m[1mConsolidate compiler generated dependencies of target fragmented_subscription[0m
+[24.168s] [100%] [32m[1mLinking C executable fragmented_publication[0m
+[24.214s] [100%] Built target fragmented_subscription
+[24.215s] -- The C compiler identification is GNU 11.4.0
+[24.238s] -- Detecting C compiler ABI info
+[24.274s] [36mInstall the project...[0m
+[24.289s] -- Install configuration: ""
+[24.289s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fragmented_subscription/fragmented_subscription
+[24.290s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fragmented_subscription/fragmented_subscription" to ""
+[24.304s] -- Looking for pthread.h - found
+[24.305s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[24.313s] [100%] Built target fragmented_publication
+[24.349s] [ 73%] [34m[1mCompleted 'fragmented_subscription'[0m
+[24.367s] [ 74%] [34m[1mPerforming install step for 'fragmented_publication'[0m
+[24.432s] -- Detecting C compiler ABI info - done
+[24.440s] [ 74%] Built target fragmented_subscription
+[24.441s] -- Check for working C compiler: /usr/bin/cc - skipped
+[24.442s] -- Detecting C compile features
+[24.442s] -- Detecting C compile features - done
+[24.448s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[24.485s] [35m[1mConsolidate compiler generated dependencies of target fragmented_publication[0m
+[24.502s] [ 74%] [34m[1mCreating directories for 'string_subscriber'[0m
+[24.517s] [100%] Built target fragmented_publication
+[24.551s] [36mInstall the project...[0m
+[24.569s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[24.569s] -- Found Threads: TRUE  
+[24.572s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[24.572s] -- Install configuration: ""
+[24.572s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fragmented_publication/fragmented_publication
+[24.572s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/fragmented_publication/fragmented_publication" to ""
+[24.611s] [ 74%] [34m[1mCompleted 'fragmented_publication'[0m
+[24.679s] [ 74%] Built target fragmented_publication
+[24.691s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[24.696s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[24.700s] [ 74%] [34m[1mNo download step for 'string_subscriber'[0m
+[24.732s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[24.744s] -- Configuring done
+[24.746s] [ 74%] [34m[1mNo update step for 'string_subscriber'[0m
+[24.760s] -- Generating done
+[24.763s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/timer/src/timer-build
+[24.823s] [ 75%] [34m[1mNo patch step for 'string_subscriber'[0m
+[24.824s] [ 76%] [34m[1mPerforming build step for 'timer'[0m
+[24.863s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[24.941s] [ 77%] [34m[1mPerforming configure step for 'string_subscriber'[0m
+[24.943s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[24.957s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[24.967s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/string_subscriber/tmp/string_subscriber-cache-.cmake
+[24.977s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[24.985s] [ 50%] [32mBuilding C object CMakeFiles/timer.dir/main.c.o[0m
+[25.004s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[25.052s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[25.110s] [100%] [32m[1mLinking C executable timer[0m
+[25.112s] -- The C compiler identification is GNU 11.4.0
+[25.122s] -- Detecting C compiler ABI info
+[25.177s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[25.186s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[25.245s] [100%] Built target timer
+[25.303s] -- Detecting C compiler ABI info - done
+[25.311s] [ 77%] [34m[1mPerforming install step for 'timer'[0m
+[25.312s] -- Check for working C compiler: /usr/bin/cc - skipped
+[25.312s] -- Detecting C compile features
+[25.312s] -- Detecting C compile features - done
+[25.319s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[25.420s] [35m[1mConsolidate compiler generated dependencies of target timer[0m
+[25.436s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[25.449s] [100%] Built target timer
+[25.516s] -- Found FastRTPS: /opt/ros/humble/include  
+[25.517s] [36mInstall the project...[0m
+[25.534s] -- Install configuration: ""
+[25.534s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/timer/timer
+[25.534s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/timer/timer" to ""
+[25.545s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[25.571s] [ 77%] [34m[1mCompleted 'timer'[0m
+[25.585s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[25.617s] -- Looking for pthread.h
+[25.645s] [ 77%] Built target timer
+[25.707s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[25.796s] -- Looking for pthread.h - found
+[25.796s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[25.804s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[25.817s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[25.835s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[25.859s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[25.902s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[25.939s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[25.940s] -- Found Threads: TRUE  
+[25.949s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[26.012s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[26.069s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[26.137s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[26.180s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[26.193s] -- Configuring done
+[26.237s] -- Generating done
+[26.237s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/string_publisher/src/string_publisher-build
+[26.248s] [ 78%] [34m[1mPerforming build step for 'string_publisher'[0m
+[26.295s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[26.331s] -- Found FastRTPS: /opt/ros/humble/include  
+[26.363s] [ 50%] [32mBuilding C object CMakeFiles/string_publisher.dir/main.c.o[0m
+[26.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[26.443s] -- Looking for pthread.h
+[26.472s] [100%] [32m[1mLinking C executable string_publisher[0m
+[26.590s] -- Looking for pthread.h - found
+[26.590s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[26.592s] [100%] Built target string_publisher
+[26.629s] [ 78%] [34m[1mPerforming install step for 'string_publisher'[0m
+[26.726s] [35m[1mConsolidate compiler generated dependencies of target string_publisher[0m
+[26.730s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[26.732s] -- Found Threads: TRUE  
+[26.741s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[26.788s] [100%] Built target string_publisher
+[26.829s] [36mInstall the project...[0m
+[26.846s] -- Install configuration: ""
+[26.847s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/string_publisher/string_publisher
+[26.847s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/string_publisher/string_publisher" to ""
+[26.868s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[26.911s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[26.912s] [ 78%] [34m[1mCompleted 'string_publisher'[0m
+[26.925s] -- Configuring done
+[26.937s] -- Generating done
+[26.939s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/string_subscriber/src/string_subscriber-build
+[27.008s] [ 78%] Built target string_publisher
+[27.008s] [ 78%] [34m[1mPerforming build step for 'string_subscriber'[0m
+[27.119s] [ 50%] [32mBuilding C object CMakeFiles/string_subscriber.dir/main.c.o[0m
+[27.226s] [100%] [32m[1mLinking C executable string_subscriber[0m
+[27.336s] [100%] Built target string_subscriber
+[27.391s] [ 79%] [34m[1mPerforming install step for 'string_subscriber'[0m
+[27.485s] [35m[1mConsolidate compiler generated dependencies of target string_subscriber[0m
+[27.512s] [100%] Built target string_subscriber
+[27.548s] [36mInstall the project...[0m
+[27.565s] -- Install configuration: ""
+[27.566s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/string_subscriber/string_subscriber
+[27.566s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/string_subscriber/string_subscriber" to ""
+[27.619s] [ 80%] [34m[1mCompleted 'string_subscriber'[0m
+[27.702s] [ 80%] Built target string_subscriber
+[27.746s] [ 80%] [34m[1mCreating directories for 'epoch_synchronization'[0m
+[27.907s] [ 80%] [34m[1mNo download step for 'epoch_synchronization'[0m
+[27.956s] [ 80%] [34m[1mNo update step for 'epoch_synchronization'[0m
+[28.006s] [ 81%] [34m[1mNo patch step for 'epoch_synchronization'[0m
+[28.058s] [ 82%] [34m[1mPerforming configure step for 'epoch_synchronization'[0m
+[28.075s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/tmp/epoch_synchronization-cache-.cmake
+[28.187s] -- The C compiler identification is GNU 11.4.0
+[28.197s] -- Detecting C compiler ABI info
+[28.333s] -- Detecting C compiler ABI info - done
+[28.341s] -- Check for working C compiler: /usr/bin/cc - skipped
+[28.341s] -- Detecting C compile features
+[28.341s] -- Detecting C compile features - done
+[28.348s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[28.551s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[28.701s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[28.779s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[28.791s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[28.807s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[28.830s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[28.875s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[28.989s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[29.028s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[29.253s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[29.291s] -- Found FastRTPS: /opt/ros/humble/include  
+[29.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[29.387s] -- Looking for pthread.h
+[29.544s] -- Looking for pthread.h - found
+[29.544s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[29.700s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[29.702s] -- Found Threads: TRUE  
+[29.726s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[29.831s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[29.867s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[29.868s] [ 83%] [34m[1mCreating directories for 'parameter_server'[0m
+[29.878s] -- Configuring done
+[29.893s] -- Generating done
+[29.895s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/epoch_synchronization/src/epoch_synchronization-build
+[29.942s] [ 83%] [34m[1mPerforming build step for 'epoch_synchronization'[0m
+[30.047s] [ 50%] [32mBuilding C object CMakeFiles/epoch_synchronization.dir/main.c.o[0m
+[30.053s] [ 83%] [34m[1mNo download step for 'parameter_server'[0m
+[30.134s] [ 84%] [34m[1mNo update step for 'parameter_server'[0m
+[30.187s] [ 84%] [34m[1mNo patch step for 'parameter_server'[0m
+[30.225s] [100%] [32m[1mLinking C executable epoch_synchronization[0m
+[30.235s] [ 85%] [34m[1mPerforming configure step for 'parameter_server'[0m
+[30.256s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/parameter_server/tmp/parameter_server-cache-.cmake
+[30.353s] -- The C compiler identification is GNU 11.4.0
+[30.364s] -- Detecting C compiler ABI info
+[30.371s] [100%] Built target epoch_synchronization
+[30.429s] [ 86%] [34m[1mPerforming install step for 'epoch_synchronization'[0m
+[30.524s] [35m[1mConsolidate compiler generated dependencies of target epoch_synchronization[0m
+[30.539s] -- Detecting C compiler ABI info - done
+[30.547s] -- Check for working C compiler: /usr/bin/cc - skipped
+[30.547s] -- Detecting C compile features
+[30.547s] -- Detecting C compile features - done
+[30.549s] [100%] Built target epoch_synchronization
+[30.553s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[30.625s] [36mInstall the project...[0m
+[30.641s] -- Install configuration: ""
+[30.642s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/epoch_synchronization/epoch_synchronization
+[30.642s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/epoch_synchronization/epoch_synchronization" to ""
+[30.680s] [ 87%] [34m[1mCompleted 'epoch_synchronization'[0m
+[30.765s] [ 87%] Built target epoch_synchronization
+[30.790s] [ 88%] [34m[1mCreating directories for 'static_type_handling'[0m
+[30.797s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[30.928s] [ 89%] [34m[1mCreating directories for 'autodiscover_agent'[0m
+[30.928s] [ 90%] [34m[1mNo download step for 'static_type_handling'[0m
+[30.963s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[30.980s] [ 91%] [34m[1mNo update step for 'static_type_handling'[0m
+[31.043s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[31.056s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[31.075s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[31.099s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[31.126s] [ 91%] [34m[1mNo patch step for 'static_type_handling'[0m
+[31.148s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[31.186s] [ 92%] [34m[1mNo download step for 'autodiscover_agent'[0m
+[31.216s] [ 92%] [34m[1mPerforming configure step for 'static_type_handling'[0m
+[31.237s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/tmp/static_type_handling-cache-.cmake
+[31.273s] [ 93%] [34m[1mNo update step for 'autodiscover_agent'[0m
+[31.290s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[31.298s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[31.353s] [ 93%] [34m[1mNo patch step for 'autodiscover_agent'[0m
+[31.361s] -- The C compiler identification is GNU 11.4.0
+[31.371s] -- Detecting C compiler ABI info
+[31.444s] [ 93%] [34m[1mPerforming configure step for 'autodiscover_agent'[0m
+[31.461s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/autodiscover_agent/tmp/autodiscover_agent-cache-.cmake
+[31.511s] -- Detecting C compiler ABI info - done
+[31.518s] -- Check for working C compiler: /usr/bin/cc - skipped
+[31.537s] -- Detecting C compile features
+[31.538s] -- Detecting C compile features - done
+[31.546s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[31.551s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[31.578s] -- The C compiler identification is GNU 11.4.0
+[31.584s] -- Found FastRTPS: /opt/ros/humble/include  
+[31.588s] -- Detecting C compiler ABI info
+[31.714s] -- Detecting C compiler ABI info - done
+[31.727s] -- Check for working C compiler: /usr/bin/cc - skipped
+[31.727s] -- Detecting C compile features
+[31.728s] -- Detecting C compile features - done
+[31.744s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[31.754s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[31.765s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[31.780s] -- Looking for pthread.h
+[31.968s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[31.970s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[31.999s] -- Looking for pthread.h - found
+[32.000s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[32.011s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[32.025s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[32.045s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[32.087s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[32.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[32.182s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[32.196s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[32.197s] -- Found Threads: TRUE  
+[32.208s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[32.326s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[32.328s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[32.328s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[32.329s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[32.329s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[32.329s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[32.336s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[32.365s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[32.388s] -- Found rclc_parameter: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/share/rclc_parameter/cmake)
+[32.396s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[32.413s] -- Configuring done
+[32.425s] -- Generating done
+[32.428s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/parameter_server/src/parameter_server-build
+[32.474s] [ 93%] [34m[1mPerforming build step for 'parameter_server'[0m
+[32.518s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[32.525s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[32.535s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[32.572s] [ 50%] [32mBuilding C object CMakeFiles/parameter_server.dir/main.c.o[0m
+[32.576s] -- Found FastRTPS: /opt/ros/humble/include  
+[32.647s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[32.680s] -- Looking for pthread.h
+[32.698s] [100%] [32m[1mLinking C executable parameter_server[0m
+[32.757s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[32.796s] -- Found FastRTPS: /opt/ros/humble/include  
+[32.842s] [100%] Built target parameter_server
+[32.871s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[32.877s] [ 93%] [34m[1mPerforming install step for 'parameter_server'[0m
+[32.885s] -- Looking for pthread.h - found
+[32.891s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[32.896s] -- Looking for pthread.h
+[32.948s] [35m[1mConsolidate compiler generated dependencies of target parameter_server[0m
+[32.984s] [100%] Built target parameter_server
+[33.051s] -- Looking for pthread.h - found
+[33.051s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[33.055s] [36mInstall the project...[0m
+[33.072s] -- Install configuration: ""
+[33.072s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/parameter_server/parameter_server
+[33.073s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/parameter_server/parameter_server" to ""
+[33.097s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[33.098s] -- Found Threads: TRUE  
+[33.109s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[33.153s] [ 94%] [34m[1mCompleted 'parameter_server'[0m
+[33.220s] [ 94%] Built target parameter_server
+[33.245s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[33.247s] -- Found Threads: TRUE  
+[33.250s] -- Found visualization_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/share/visualization_msgs/cmake)
+[33.258s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[33.263s] [ 94%] [34m[1mCreating directories for 'multithread_publisher_subscriber'[0m
+[33.372s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[33.401s] [ 94%] [34m[1mNo download step for 'multithread_publisher_subscriber'[0m
+[33.432s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[33.444s] -- Configuring done
+[33.457s] -- Generating done
+[33.460s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/autodiscover_agent/src/autodiscover_agent-build
+[33.502s] [ 95%] [34m[1mPerforming build step for 'autodiscover_agent'[0m
+[33.540s] [ 95%] [34m[1mNo update step for 'multithread_publisher_subscriber'[0m
+[33.597s] [ 96%] [34m[1mNo patch step for 'multithread_publisher_subscriber'[0m
+[33.647s] [ 50%] [32mBuilding C object CMakeFiles/autodiscover_agent.dir/main.c.o[0m
+[33.672s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[33.686s] -- Found micro_ros_utilities: 3.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/share/micro_ros_utilities/cmake)
+[33.699s] -- Configuring done
+[33.702s] [ 97%] [34m[1mPerforming configure step for 'multithread_publisher_subscriber'[0m
+[33.717s] -- Generating done
+[33.720s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/static_type_handling/src/static_type_handling-build
+[33.721s] loading initial cache file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/multithread_publisher_subscriber/tmp/multithread_publisher_subscriber-cache-.cmake
+[33.763s] [ 98%] [34m[1mPerforming build step for 'static_type_handling'[0m
+[33.799s] -- The C compiler identification is GNU 11.4.0
+[33.804s] [100%] [32m[1mLinking C executable autodiscover_agent[0m
+[33.827s] -- Detecting C compiler ABI info
+[33.885s] [ 50%] [32mBuilding C object CMakeFiles/static_type_handling.dir/main.c.o[0m
+[33.927s] [100%] Built target autodiscover_agent
+[33.955s] -- Detecting C compiler ABI info - done
+[33.963s] [ 98%] [34m[1mPerforming install step for 'autodiscover_agent'[0m
+[33.966s] -- Check for working C compiler: /usr/bin/cc - skipped
+[33.966s] -- Detecting C compile features
+[33.967s] -- Detecting C compile features - done
+[33.974s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[34.012s] [100%] [32m[1mLinking C executable static_type_handling[0m
+[34.068s] [35m[1mConsolidate compiler generated dependencies of target autodiscover_agent[0m
+[34.126s] [100%] Built target autodiscover_agent
+[34.167s] [36mInstall the project...[0m
+[34.194s] -- Install configuration: ""
+[34.194s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/autodiscover_agent/autodiscover_agent
+[34.194s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/autodiscover_agent/autodiscover_agent" to ""
+[34.236s] [100%] Built target static_type_handling
+[34.239s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[34.252s] [ 98%] [34m[1mCompleted 'autodiscover_agent'[0m
+[34.268s] [ 98%] [34m[1mPerforming install step for 'static_type_handling'[0m
+[34.315s] [ 98%] Built target autodiscover_agent
+[34.369s] [35m[1mConsolidate compiler generated dependencies of target static_type_handling[0m
+[34.395s] -- Found rcl: 5.3.8 (/opt/ros/humble/share/rcl/cmake)
+[34.432s] [100%] Built target static_type_handling
+[34.467s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[34.470s] [36mInstall the project...[0m
+[34.479s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[34.490s] -- Install configuration: ""
+[34.490s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/static_type_handling/static_type_handling
+[34.490s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/static_type_handling/static_type_handling" to ""
+[34.498s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[34.519s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[34.564s] [ 98%] [34m[1mCompleted 'static_type_handling'[0m
+[34.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[34.660s] [ 98%] Built target static_type_handling
+[34.684s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[34.691s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[34.907s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[34.949s] -- Found FastRTPS: /opt/ros/humble/include  
+[35.013s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[35.044s] -- Looking for pthread.h
+[35.185s] -- Looking for pthread.h - found
+[35.185s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[35.312s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[35.313s] -- Found Threads: TRUE  
+[35.326s] -- Found rclc: 4.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/share/rclc/cmake)
+[35.434s] -- Found std_msgs: 4.2.4 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/share/std_msgs/cmake)
+[35.470s] -- Found rmw_microxrcedds: 3.0.3 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/share/rmw_microxrcedds/cmake)
+[35.479s] -- Found micro_ros_utilities: 3.0.2 (/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/share/micro_ros_utilities/cmake)
+[35.491s] -- Configuring done
+[35.505s] -- Generating done
+[35.508s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/multithread_publisher_subscriber/src/multithread_publisher_subscriber-build
+[35.566s] [ 98%] [34m[1mPerforming build step for 'multithread_publisher_subscriber'[0m
+[35.658s] [ 50%] [32mBuilding C object CMakeFiles/multithread_publisher_subscriber.dir/main.c.o[0m
+[35.785s] [100%] [32m[1mLinking C executable multithread_publisher_subscriber[0m
+[35.909s] [100%] Built target multithread_publisher_subscriber
+[35.957s] [ 99%] [34m[1mPerforming install step for 'multithread_publisher_subscriber'[0m
+[36.054s] [35m[1mConsolidate compiler generated dependencies of target multithread_publisher_subscriber[0m
+[36.081s] [100%] Built target multithread_publisher_subscriber
+[36.120s] [36mInstall the project...[0m
+[36.137s] -- Install configuration: ""
+[36.137s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/multithread_publisher_subscriber/multithread_publisher_subscriber
+[36.138s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc/temp_install/multithread_publisher_subscriber/multithread_publisher_subscriber" to ""
+[36.176s] [100%] [34m[1mCompleted 'multithread_publisher_subscriber'[0m
+[36.260s] [100%] Built target multithread_publisher_subscriber
+[36.286s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc -- -j4 -l4
+[36.397s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc
+[36.433s] -- Install configuration: ""
+[36.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc
+[36.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fragmented_subscription
+[36.437s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fragmented_subscription/fragmented_subscription
+[36.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/graph_visualizer
+[36.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/graph_visualizer/graph_visualizer
+[36.439s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_publisher
+[36.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_publisher/int32_publisher
+[36.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/addtwoints_client
+[36.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/addtwoints_client/addtwoints_client
+[36.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/subscription_count
+[36.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/subscription_count/subscription_count
+[36.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/string_publisher
+[36.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/string_publisher/string_publisher
+[36.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_subscriber
+[36.442s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_subscriber/int32_subscriber
+[36.442s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/string_subscriber
+[36.442s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/string_subscriber/string_subscriber
+[36.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/static_type_handling
+[36.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/static_type_handling/static_type_handling
+[36.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/autodiscover_agent
+[36.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/autodiscover_agent/autodiscover_agent
+[36.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/complex_msg_publisher
+[36.444s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/complex_msg_publisher/complex_msg_publisher
+[36.444s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/complex_msg_subscriber
+[36.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/complex_msg_subscriber/complex_msg_subscriber
+[36.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fragmented_publication
+[36.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fragmented_publication/fragmented_publication
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/ping_uros_agent
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/ping_uros_agent/ping_uros_agent
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/ping_pong
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/ping_pong/ping_pong
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/timer
+[36.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/timer/timer
+[36.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/multithread_publisher_subscriber
+[36.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/multithread_publisher_subscriber/multithread_publisher_subscriber
+[36.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fibonacci_action_server
+[36.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fibonacci_action_server/fibonacci_action_server
+[36.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/addtwoints_server
+[36.448s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/addtwoints_server/addtwoints_server
+[36.448s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/configured_subscriber
+[36.448s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/configured_subscriber/configured_subscriber
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/configured_publisher
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/configured_publisher/configured_publisher
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fibonacci_action_client
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/fibonacci_action_client/fibonacci_action_client
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/publisher_count
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/publisher_count/publisher_count
+[36.449s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_publisher_subscriber
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_publisher_subscriber/int32_publisher_subscriber
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_multinode
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/int32_multinode/int32_multinode
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/parameter_server
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/parameter_server/parameter_server
+[36.450s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/epoch_synchronization
+[36.451s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/lib/micro_ros_demos_rclc/epoch_synchronization/epoch_synchronization
+[36.451s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/ament_index/resource_index/package_run_dependencies/micro_ros_demos_rclc
+[36.452s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/ament_index/resource_index/parent_prefix_path/micro_ros_demos_rclc
+[36.452s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/environment/ament_prefix_path.sh
+[36.453s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/environment/ament_prefix_path.dsv
+[36.453s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/environment/path.sh
+[36.454s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/environment/path.dsv
+[36.455s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/local_setup.bash
+[36.455s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/local_setup.sh
+[36.455s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/local_setup.zsh
+[36.456s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/local_setup.dsv
+[36.456s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/package.dsv
+[36.456s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/ament_index/resource_index/packages/micro_ros_demos_rclc
+[36.456s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/cmake/micro_ros_demos_rclcConfig.cmake
+[36.457s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/cmake/micro_ros_demos_rclcConfig-version.cmake
+[36.457s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_demos_rclc/share/micro_ros_demos_rclc/package.xml
+[36.457s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc' returned '0': AMENT_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/lunabot_control:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay:/opt/ros/humble LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc_parameter/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rmw_microxrcedds/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rclc/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_utilities/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/micro_ros_demos_rclc

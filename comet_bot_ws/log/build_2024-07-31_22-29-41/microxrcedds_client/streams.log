@@ -1,0 +1,140 @@
+[0.022s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/eProsima/Micro-XRCE-DDS-Client -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DUCLIENT_ISOLATED_INSTALL=OFF -DUCLIENT_SUPERBUILD=OFF -DBUILD_SHARED_LIBS=ON -DUCLIENT_PROFILE_MULTITHREAD=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client
+[0.194s] -- The C compiler identification is GNU 11.4.0
+[0.204s] -- Detecting C compiler ABI info
+[0.384s] -- Detecting C compiler ABI info - done
+[0.392s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.392s] -- Detecting C compile features
+[0.393s] -- Detecting C compile features - done
+[0.393s] -- Setting build type to 'Release' as none was specified.
+[0.401s] -- Looking for pthread.h
+[0.676s] -- Looking for pthread.h - found
+[0.677s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.833s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.834s] -- Found Threads: TRUE  
+[0.836s] -- Configuring done
+[0.846s] -- Generating done
+[0.847s] [33mCMake Warning:
+[0.847s]   Manually-specified variables were not used by the project:
+[0.847s] 
+[0.847s]     BUILD_TESTING
+[0.847s] 
+[0.847s] [0m
+[0.848s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client
+[0.853s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client' returned '0': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/eProsima/Micro-XRCE-DDS-Client -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=ON -DUCLIENT_ISOLATED_INSTALL=OFF -DUCLIENT_SUPERBUILD=OFF -DBUILD_SHARED_LIBS=ON -DUCLIENT_PROFILE_MULTITHREAD=ON -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client
+[0.853s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client -- -j4 -l4
+[0.950s] [  2%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/input_reliable_stream.c.o[0m
+[0.989s] [  5%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/output_best_effort_stream.c.o[0m
+[0.992s] [  8%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/output_reliable_stream.c.o[0m
+[1.039s] [ 11%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/input_best_effort_stream.c.o[0m
+[1.119s] [ 14%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/stream_storage.c.o[0m
+[1.167s] [ 17%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/stream_id.c.o[0m
+[1.198s] [ 20%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/seq_num.c.o[0m
+[1.308s] [ 22%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/submessage.c.o[0m
+[1.308s] [ 25%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/session.c.o[0m
+[1.329s] [ 28%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/object_id.c.o[0m
+[1.332s] [ 31%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/session_info.c.o[0m
+[1.428s] [ 34%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_types.c.o[0m
+[1.448s] [ 37%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_header.c.o[0m
+[1.497s] [ 40%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_subheader.c.o[0m
+[1.570s] [ 42%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/util/time.c.o[0m
+[1.655s] [ 45%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/util/ping.c.o[0m
+[1.726s] [ 48%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_ref.c.o[0m
+[1.774s] [ 51%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/common_create_entities.c.o[0m
+[1.794s] [ 54%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_xml.c.o[0m
+[1.829s] [ 57%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_bin.c.o[0m
+[1.877s] [ 60%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/read_access.c.o[0m
+[1.927s] [ 62%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/write_access.c.o[0m
+[2.160s] [ 65%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/multithread/multithread.c.o[0m
+[2.235s] [ 68%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/stream_framing/stream_framing_protocol.c.o[0m
+[2.255s] [ 71%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/udp/udp_transport.c.o[0m
+[2.269s] [ 74%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/udp/udp_transport_posix.c.o[0m
+[2.432s] [ 77%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/tcp/tcp_transport.c.o[0m
+[2.862s] [ 80%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/serial/serial_transport.c.o[0m
+[2.938s] [ 82%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/serial/serial_transport_posix.c.o[0m
+[2.950s] [ 88%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/tcp/tcp_transport_posix.c.o[0m
+[2.964s] [ 85%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/ip_posix.c.o[0m
+[3.205s] [ 91%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/discovery/transport/udp_transport_datagram_posix.c.o[0m
+[3.225s] [ 94%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/discovery/discovery.c.o[0m
+[3.284s] [ 97%] [32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/custom/custom_transport.c.o[0m
+[3.601s] [100%] [32m[1mLinking C shared library libmicroxrcedds_client.so[0m
+[4.012s] [100%] Built target microxrcedds_client
+[4.133s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client' returned '0': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client -- -j4 -l4
+[7.418s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client
+[7.456s] -- Install configuration: "Release"
+[7.456s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib/libmicroxrcedds_client.so.2.4.2
+[7.457s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib/libmicroxrcedds_client.so.2.4
+[7.457s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib/libmicroxrcedds_client.so.2.4.2" to ""
+[7.457s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/lib/libmicroxrcedds_client.so
+[7.457s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client
+[7.458s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/transport.h
+[7.458s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/visibility.h
+[7.458s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/defines.h
+[7.459s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core
+[7.459s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/type
+[7.459s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/type/xrce_types.h
+[7.459s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session
+[7.459s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/common_create_entities.h
+[7.460s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/session.h
+[7.461s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/session_info.h
+[7.461s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/object_id.h
+[7.461s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/time_sync.h
+[7.470s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/read_access.h
+[7.471s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream
+[7.471s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/seq_num.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/reliable_stream.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/output_best_effort_stream.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/output_reliable_stream.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/stream_storage.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/stream_id.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/input_reliable_stream.h
+[7.472s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/stream/input_best_effort_stream.h
+[7.481s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/create_entities_bin.h
+[7.481s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/write_access.h
+[7.481s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/create_entities_xml.h
+[7.481s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/session/create_entities_ref.h
+[7.481s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/communication
+[7.482s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/core/communication/communication.h
+[7.482s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/client.h
+[7.482s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile
+[7.482s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport
+[7.482s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/can
+[7.483s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/can/can_transport_posix.h
+[7.483s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/can/can_transport.h
+[7.483s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/serial
+[7.483s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/serial/serial_transport.h
+[7.484s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/serial/serial_transport_posix.h
+[7.484s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/serial/serial_transport_platform.h
+[7.484s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/serial/serial_transport_rtems_bsd_net.h
+[7.484s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/custom
+[7.485s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/custom/custom_transport.h
+[7.485s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/stream_framing
+[7.486s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/stream_framing/stream_framing_protocol.h
+[7.486s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip
+[7.486s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp
+[7.486s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport_posix.h
+[7.487s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport_windows.h
+[7.487s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport_freertos_plus_tcp.h
+[7.488s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport_posix_nopoll.h
+[7.488s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport_rtems_bsd_net.h
+[7.488s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/udp/udp_transport.h
+[7.489s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp
+[7.489s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport_freertos_plus_tcp.h
+[7.490s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix.h
+[7.492s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport_windows.h
+[7.492s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport_rtems_bsd_net.h
+[7.493s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport.h
+[7.493s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix_nopoll.h
+[7.493s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/transport/ip/ip.h
+[7.496s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/multithread
+[7.496s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/multithread/multithread.h
+[7.497s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/discovery
+[7.497s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/profile/discovery/discovery.h
+[7.497s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/util
+[7.498s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/util/ping.h
+[7.498s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/util/time.h
+[7.509s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/include/uxr/client/config.h
+[7.510s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/share/microxrcedds_client/cmake/microxrcedds_clientTargets.cmake
+[7.510s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/share/microxrcedds_client/cmake/microxrcedds_clientTargets-release.cmake
+[7.510s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/share/microxrcedds_client/cmake/microxrcedds_clientConfig.cmake
+[7.510s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microxrcedds_client/share/microxrcedds_client/cmake/microxrcedds_clientConfigVersion.cmake
+[7.520s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client' returned '0': CMAKE_PREFIX_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_setup:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs LD_LIBRARY_PATH=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_agent/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microxrcedds_client

@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/PKG-INFO
+writing dependency_links to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/dependency_links.txt
+writing entry points to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/entry_points.txt
+writing requirements to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/requires.txt
+writing top-level names to ../../build/jetson_topic_relay/jetson_topic_relay.egg-info/top_level.txt
+reading manifest file '../../build/jetson_topic_relay/jetson_topic_relay.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/jetson_topic_relay/jetson_topic_relay.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/jetson_topic_relay/jetson_topic_relay.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/python3.10/site-packages/jetson_topic_relay-0.0.1-py3.10.egg-info
+running install_scripts
+Installing relay_node script to /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/jetson_topic_relay/lib/jetson_topic_relay
+writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/jetson_topic_relay/install.log'
