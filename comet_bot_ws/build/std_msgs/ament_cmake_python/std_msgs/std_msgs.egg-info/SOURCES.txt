@@ -1,0 +1,6 @@
+setup.py
+std_msgs/__init__.py
+std_msgs.egg-info/PKG-INFO
+std_msgs.egg-info/SOURCES.txt
+std_msgs.egg-info/dependency_links.txt
+std_msgs.egg-info/top_level.txt

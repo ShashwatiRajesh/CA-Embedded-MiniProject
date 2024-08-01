@@ -1,0 +1,9 @@
+{
+  "package_name": "trajectory_msgs",
+  "non_idl_tuples": [
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/trajectory_msgs:msg/JointTrajectory.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/trajectory_msgs:msg/JointTrajectoryPoint.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/trajectory_msgs:msg/MultiDOFJointTrajectory.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/trajectory_msgs:msg/MultiDOFJointTrajectoryPoint.msg"
+  ]
+}

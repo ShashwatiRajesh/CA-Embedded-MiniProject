@@ -1,0 +1,4 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/trajectory_msgs/rosidl_adapter/trajectory_msgs:msg/JointTrajectory.idl
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/trajectory_msgs/rosidl_adapter/trajectory_msgs:msg/JointTrajectoryPoint.idl
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/trajectory_msgs/rosidl_adapter/trajectory_msgs:msg/MultiDOFJointTrajectory.idl
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/trajectory_msgs/rosidl_adapter/trajectory_msgs:msg/MultiDOFJointTrajectoryPoint.idl

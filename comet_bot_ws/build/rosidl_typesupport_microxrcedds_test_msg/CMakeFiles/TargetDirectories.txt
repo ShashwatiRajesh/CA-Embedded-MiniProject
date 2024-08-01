@@ -1,0 +1,9 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/rosidl_typesupport_microxrcedds_test_msg_uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/test.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/edit_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/rebuild_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/list_install_components.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/install.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/install/local.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/rosidl_typesupport_microxrcedds_test_msg/CMakeFiles/install/strip.dir

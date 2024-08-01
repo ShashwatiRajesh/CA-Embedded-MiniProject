@@ -1,0 +1,33 @@
+{
+  "package_name": "sensor_msgs",
+  "non_idl_tuples": [
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/BatteryState.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/CameraInfo.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/ChannelFloat32.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/CompressedImage.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/FluidPressure.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Illuminance.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Image.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Imu.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/JointState.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Joy.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/JoyFeedback.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/JoyFeedbackArray.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/LaserEcho.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/LaserScan.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/MagneticField.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/MultiDOFJointState.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/MultiEchoLaserScan.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/NavSatFix.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/NavSatStatus.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointCloud.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointCloud2.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointField.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Range.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/RegionOfInterest.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/RelativeHumidity.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/Temperature.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:msg/TimeReference.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/sensor_msgs:srv/SetCameraInfo.srv"
+  ]
+}

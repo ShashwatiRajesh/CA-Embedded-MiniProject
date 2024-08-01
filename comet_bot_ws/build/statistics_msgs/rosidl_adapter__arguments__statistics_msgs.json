@@ -1,0 +1,8 @@
+{
+  "package_name": "statistics_msgs",
+  "non_idl_tuples": [
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/statistics_msgs:msg/MetricsMessage.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/statistics_msgs:msg/StatisticDataPoint.msg",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/statistics_msgs:msg/StatisticDataType.msg"
+  ]
+}

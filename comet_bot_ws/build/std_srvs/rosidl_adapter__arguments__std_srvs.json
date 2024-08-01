@@ -1,0 +1,8 @@
+{
+  "package_name": "std_srvs",
+  "non_idl_tuples": [
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/std_srvs:srv/Empty.srv",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/std_srvs:srv/SetBool.srv",
+    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/common_interfaces/std_srvs:srv/Trigger.srv"
+  ]
+}
