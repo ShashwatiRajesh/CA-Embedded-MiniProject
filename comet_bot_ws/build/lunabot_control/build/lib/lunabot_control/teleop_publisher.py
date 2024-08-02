@@ -3,18 +3,23 @@ import math
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
+from rcl_interfaces.msg import ParameterDescriptor, FloatingPointRange, IntegerRange
 
 class TeleopPublisher(Node):
     def __init__(self):
         super().__init__('teleop_publisher')  # Initialize the node with the name 'teleop_publisher'
 
-        from rcl_interfaces.msg import ParameterDescriptor, FloatingPointRange, IntegerRange
-
         # Declare parameters with default values
         self.declare_parameter(
             'cmd_vel_pub_frequency', 
             50.0, 
-            ParameterDescriptor(description='Frequency to publish cmd_vel messages in Hz'))
+            ParameterDescriptor(
+                description='Frequency to publish cmd_vel messages in Hz',
+                floating_point_range=[
+                    FloatingPointRange(from_value=0.0, to_value=100.0)
+                ]
+            )
+        )
 
         self.declare_parameter(
             'deadzone',
@@ -30,7 +35,13 @@ class TeleopPublisher(Node):
         self.declare_parameter(
             'joystick_power', 
             3, 
-            ParameterDescriptor(description='Exponent for scaling joystick input'))  # Exponent for scaling joystick input
+            ParameterDescriptor(
+                description='Exponent for scaling joystick input', 
+                integer_range=[
+                    IntegerRange(from_value = 1, to_value = 9, step = 2)
+                ]
+            )
+        )
 
         # Create a subscription to the 'joy' topic
         self.subscription = self.create_subscription(
@@ -52,8 +63,10 @@ class TeleopPublisher(Node):
         
         # Prevent unused variable warning
         self.subscription
+        self.get_logger().info('Initialized')
 
     def listener_callback(self, msg: Joy):
+        
         # Map joystick axes to linear and angular velocities
         self.twist_msg.linear.x = msg.axes[1]  # Forward/backward movement
         self.twist_msg.angular.z = msg.axes[0]  # Left/right rotation
@@ -62,6 +75,7 @@ class TeleopPublisher(Node):
         self.get_logger().info(f'Updated Twist: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
 
     def timer_callback(self):
+        
         x = self.twist_msg.linear.x
         y = self.twist_msg.angular.z
         deadzone = self.get_parameter('deadzone').get_parameter_value().double_value
@@ -82,18 +96,22 @@ class TeleopPublisher(Node):
         self.get_logger().info(f'Publishing: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
 
 def main(args=None):
-    # Initialize the ROS 2 Python client library
-    rclpy.init(args=args)
+    try:
+        # Initialize the ROS 2 Python client library
+        rclpy.init(args=args)
 
-    # Create an instance of the TeleopPublisher node
-    teleop_publisher = TeleopPublisher()
+        # Create an instance of the TeleopPublisher node
+        teleop_publisher = TeleopPublisher()
 
-    # Spin the node to process callbacks
-    rclpy.spin(teleop_publisher)
+        # Spin the node to process callbacks
+        rclpy.spin(teleop_publisher)
 
-    # Cleanup and shutdown
-    teleop_publisher.destroy_node()
-    rclpy.shutdown()
+    except KeyboardInterrupt:
+        print('KeyboardInterrupt Error (Unknown Cause)')
+    finally:
+        # Cleanup and shutdown
+        teleop_publisher.destroy_node()
+        rclpy.shutdown()
 
 # Entry point for the script
 if __name__ == '__main__':

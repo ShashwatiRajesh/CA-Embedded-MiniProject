@@ -1,0 +1,9 @@
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/test_uninstall.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/test.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/edit_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/rebuild_cache.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/list_install_components.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/install.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/install/local.dir
+/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/test/CMakeFiles/install/strip.dir

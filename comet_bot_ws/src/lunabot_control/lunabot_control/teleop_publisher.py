@@ -3,12 +3,11 @@ import math
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
+from rcl_interfaces.msg import ParameterDescriptor, FloatingPointRange, IntegerRange
 
 class TeleopPublisher(Node):
     def __init__(self):
         super().__init__('teleop_publisher')  # Initialize the node with the name 'teleop_publisher'
-
-        from rcl_interfaces.msg import ParameterDescriptor, FloatingPointRange, IntegerRange
 
         # Declare parameters with default values
         self.declare_parameter(
@@ -64,8 +63,10 @@ class TeleopPublisher(Node):
         
         # Prevent unused variable warning
         self.subscription
+        self.get_logger().info('Initialized')
 
     def listener_callback(self, msg: Joy):
+        
         # Map joystick axes to linear and angular velocities
         self.twist_msg.linear.x = msg.axes[1]  # Forward/backward movement
         self.twist_msg.angular.z = msg.axes[0]  # Left/right rotation
@@ -74,6 +75,7 @@ class TeleopPublisher(Node):
         self.get_logger().info(f'Updated Twist: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
 
     def timer_callback(self):
+        
         x = self.twist_msg.linear.x
         y = self.twist_msg.angular.z
         deadzone = self.get_parameter('deadzone').get_parameter_value().double_value
