@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "${action_msgs_DIR}/../../../include/action_msgs;${action_msgs_DIR}/../../../include")
+set(_exported_include_dirs "${action_msgs_DIR}/../../../include/action_msgs")
 
 # append include directories to action_msgs_INCLUDE_DIRS
 # warn about not existing paths

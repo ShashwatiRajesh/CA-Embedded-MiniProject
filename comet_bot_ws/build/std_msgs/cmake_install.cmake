@@ -140,33 +140,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/std_msgs" TYPE DIRECTORY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/rosidl_typesupport_microxrcedds_c/std_msgs/" REGEX "/[^/]*\\.c$" EXCLUDE)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/libstd_msgs__rosidl_typesupport_microxrcedds_c.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so"
-         OLD_RPATH "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/opt/ros/humble/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_c.so")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/std_msgs/std_msgs" TYPE DIRECTORY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/rosidl_typesupport_introspection_c/std_msgs/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -209,33 +182,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_c.so")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/std_msgs" TYPE DIRECTORY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/rosidl_typesupport_microxrcedds_cpp/std_msgs/" REGEX "/[^/]*\\.c$" EXCLUDE)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so"
-         OLD_RPATH "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/opt/ros/humble/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libstd_msgs__rosidl_typesupport_microxrcedds_cpp.so")
     endif()
   endif()
 endif()
@@ -315,29 +261,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
         "/usr/bin/python3" "-m" "compileall"
         "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/std_msgs/local/lib/python3.10/dist-packages/std_msgs"
       )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs" TYPE SHARED_LIBRARY FILES "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/rosidl_generator_py/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/rosidl_generator_py/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib:/opt/ros/humble/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/microcdr/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/std_msgs/std_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

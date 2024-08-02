@@ -66,7 +66,6 @@ include builtin_interfaces__py/CMakeFiles/builtin_interfaces__py.dir/compiler_de
 # Include the progress variables for this target.
 include builtin_interfaces__py/CMakeFiles/builtin_interfaces__py.dir/progress.make
 
-builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
 builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c
@@ -76,53 +75,49 @@ builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/bu
 builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/msg/_duration_s.c
 builtin_interfaces__py/CMakeFiles/builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/msg/_time_s.c
 
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_action_pkg_typesupport_entry_point.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_action.py.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl_pkg_typesupport_entry_point.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl_support.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl.py.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg_pkg_typesupport_entry_point.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg_support.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: rosidl_adapter/builtin_interfaces/msg/Duration.idl
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c: rosidl_adapter/builtin_interfaces/msg/Time.idl
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_action_pkg_typesupport_entry_point.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_action.py.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl_pkg_typesupport_entry_point.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl_support.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_idl.py.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg_pkg_typesupport_entry_point.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg_support.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/builtin_interfaces/msg/Duration.idl
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces/builtin_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	cd /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces/builtin_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 
-rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/builtin_interfaces/msg/_duration.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/msg/_duration.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/msg/_duration.py
 
-rosidl_generator_py/builtin_interfaces/msg/_time.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/msg/_time.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/msg/_time.py
 
-rosidl_generator_py/builtin_interfaces/msg/__init__.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/msg/__init__.py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/msg/__init__.py
 
-rosidl_generator_py/builtin_interfaces/msg/_duration_s.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/msg/_duration_s.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/msg/_duration_s.c
 
-rosidl_generator_py/builtin_interfaces/msg/_time_s.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+rosidl_generator_py/builtin_interfaces/msg/_time_s.c: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/builtin_interfaces/msg/_time_s.c
 
 builtin_interfaces__py: builtin_interfaces__py/CMakeFiles/builtin_interfaces__py
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c
-builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/msg/__init__.py
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/msg/_duration.py
 builtin_interfaces__py: rosidl_generator_py/builtin_interfaces/msg/_duration_s.c

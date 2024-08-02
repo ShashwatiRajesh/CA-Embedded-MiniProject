@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "${micro_ros_msgs_DIR}/../../../include/micro_ros_msgs;${micro_ros_msgs_DIR}/../../../include")
+set(_exported_include_dirs "${micro_ros_msgs_DIR}/../../../include/micro_ros_msgs")
 
 # append include directories to micro_ros_msgs_INCLUDE_DIRS
 # warn about not existing paths

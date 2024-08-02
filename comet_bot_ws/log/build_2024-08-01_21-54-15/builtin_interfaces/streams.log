@@ -1,0 +1,238 @@
+[0.108s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/builtin_interfaces -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces
+[0.216s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.459s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.466s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.483s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.619s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.125s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.354s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.763s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.793s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.820s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.820s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.821s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.902s] -- Configuring done
+[2.122s] -- Generating done
+[2.131s] -- Build files have been written to: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces
+[2.142s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/ros2/rcl_interfaces/builtin_interfaces -DCMAKE_INSTALL_PREFIX=/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces
+[2.143s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces -- -j4 -l4
+[2.297s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_generator_c[0m
+[2.359s] [  2%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_generator_c.dir/rosidl_generator_c/builtin_interfaces/msg/detail/duration__functions.c.o[0m
+[2.386s] [  5%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_generator_c.dir/rosidl_generator_c/builtin_interfaces/msg/detail/time__functions.c.o[0m
+[2.395s] [  5%] Built target ament_cmake_python_copy_builtin_interfaces
+[2.437s] [  7%] Built target builtin_interfaces__cpp
+[2.454s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.621s] [ 12%] [32m[1mLinking C shared library libbuiltin_interfaces__rosidl_generator_c.so[0m
+[2.784s] [ 15%] Built target builtin_interfaces__rosidl_generator_c
+[2.798s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.868s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.924s] [ 17%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/builtin_interfaces/msg/detail/dds_fastrtps/duration__type_support.cpp.o[0m
+[3.015s] [ 20%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/builtin_interfaces/msg/detail/duration__type_support.cpp.o[0m
+[3.320s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_cpp[0m
+[3.489s] [ 23%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/builtin_interfaces/msg/duration__type_support.cpp.o[0m
+[3.622s] running egg_info
+[3.623s] writing builtin_interfaces.egg-info/PKG-INFO
+[3.624s] writing dependency_links to builtin_interfaces.egg-info/dependency_links.txt
+[3.624s] writing top-level names to builtin_interfaces.egg-info/top_level.txt
+[3.639s] reading manifest file 'builtin_interfaces.egg-info/SOURCES.txt'
+[3.640s] writing manifest file 'builtin_interfaces.egg-info/SOURCES.txt'
+[3.708s] [ 23%] Built target ament_cmake_python_build_builtin_interfaces_egg
+[3.804s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_fastrtps_c[0m
+[4.021s] [ 25%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/builtin_interfaces/msg/detail/duration__type_support_c.cpp.o[0m
+[5.533s] [ 28%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/builtin_interfaces/msg/detail/time__type_support_c.cpp.o[0m
+[5.662s] [ 30%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/builtin_interfaces/msg/time__type_support.cpp.o[0m
+[5.663s] [ 33%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/builtin_interfaces/msg/detail/dds_fastrtps/time__type_support.cpp.o[0m
+[5.812s] [ 35%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/builtin_interfaces/msg/detail/time__type_support.cpp.o[0m
+[6.159s] [ 38%] [32m[1mLinking CXX shared library libbuiltin_interfaces__rosidl_typesupport_cpp.so[0m
+[6.212s] [ 41%] [32m[1mLinking CXX shared library libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.491s] [ 41%] Built target builtin_interfaces__rosidl_typesupport_cpp
+[6.618s] [ 43%] Built target builtin_interfaces__rosidl_typesupport_fastrtps_c
+[7.064s] [ 46%] [32m[1mLinking CXX shared library libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.161s] [ 48%] [32m[1mLinking CXX shared library libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[7.253s] [ 51%] Built target builtin_interfaces__rosidl_typesupport_fastrtps_cpp
+[7.270s] [ 53%] Built target builtin_interfaces__rosidl_typesupport_introspection_cpp
+[7.291s] [ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.827s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_c[0m
+[7.889s] [ 58%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/builtin_interfaces/msg/duration__type_support.cpp.o[0m
+[8.009s] [ 61%] [32mBuilding CXX object CMakeFiles/builtin_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/builtin_interfaces/msg/time__type_support.cpp.o[0m
+[8.074s] [ 64%] [32m[1mLinking CXX shared library libbuiltin_interfaces__rosidl_typesupport_c.so[0m
+[8.123s] [ 64%] Built target builtin_interfaces__rosidl_typesupport_c
+[8.142s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_introspection_c[0m
+[8.220s] [ 66%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/builtin_interfaces/msg/detail/duration__type_support.c.o[0m
+[8.383s] [ 69%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/builtin_interfaces/msg/detail/time__type_support.c.o[0m
+[8.445s] [ 71%] [32m[1mLinking C shared library libbuiltin_interfaces__rosidl_typesupport_introspection_c.so[0m
+[8.545s] [ 74%] Built target builtin_interfaces__rosidl_typesupport_introspection_c
+[8.585s] [ 74%] Built target builtin_interfaces
+[8.652s] [ 76%] Built target builtin_interfaces__py
+[8.676s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_generator_py[0m
+[8.716s] [ 79%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_generator_py.dir/rosidl_generator_py/builtin_interfaces/msg/_duration_s.c.o[0m
+[8.849s] [ 82%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_generator_py.dir/rosidl_generator_py/builtin_interfaces/msg/_time_s.c.o[0m
+[9.034s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/builtin_interfaces/libbuiltin_interfaces__rosidl_generator_py.so[0m
+[9.143s] [ 84%] Built target builtin_interfaces__rosidl_generator_py
+[9.167s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[9.197s] [ 87%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.337s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.409s] [ 89%] Built target builtin_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[9.435s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_c__pyext[0m
+[9.451s] [ 92%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[9.593s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.657s] [ 94%] Built target builtin_interfaces__rosidl_typesupport_c__pyext
+[9.673s] [35m[1mConsolidate compiler generated dependencies of target builtin_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[9.690s] [ 97%] [32mBuilding C object CMakeFiles/builtin_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.810s] [100%] [32m[1mLinking C shared library rosidl_generator_py/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.895s] [100%] Built target builtin_interfaces__rosidl_typesupport_introspection_c__pyext
+[9.919s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces -- -j4 -l4
+[10.278s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces
+[10.284s] -- Install configuration: ""
+[10.284s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/ament_index/resource_index/rosidl_interfaces/builtin_interfaces
+[10.284s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.285s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.285s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/time.h
+[10.300s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h
+[10.300s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/duration.h
+[10.307s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.307s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h
+[10.308s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.h
+[10.309s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h
+[10.309s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.c
+[10.309s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__functions.h
+[10.309s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__functions.c
+[10.311s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.h
+[10.311s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.h
+[10.311s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/library_path.sh
+[10.311s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/library_path.dsv
+[10.315s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_c.so
+[10.315s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_c.so" to ""
+[10.315s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.315s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.316s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.316s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__rosidl_typesupport_fastrtps_c.h
+[10.316s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_fastrtps_c.h
+[10.316s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+[10.329s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[10.329s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.329s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.329s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.c
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__rosidl_typesupport_introspection_c.h
+[10.329s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.c
+[10.344s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+[10.344s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[10.346s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+[10.346s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_c.so" to ""
+[10.346s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.346s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.346s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
+[10.347s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.347s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp
+[10.348s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp
+[10.349s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
+[10.349s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
+[10.352s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp
+[10.353s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp
+[10.354s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
+[10.354s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.354s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.354s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.355s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_fastrtps_cpp.hpp
+[10.355s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__rosidl_typesupport_fastrtps_cpp.hpp
+[10.355s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/dds_fastrtps
+[10.355s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.357s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[10.357s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.358s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces
+[10.358s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg
+[10.358s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail
+[10.358s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__rosidl_typesupport_introspection_cpp.hpp
+[10.359s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.cpp
+[10.359s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.cpp
+[10.359s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_cpp.hpp
+[10.362s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+[10.362s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[10.363s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+[10.364s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so" to ""
+[10.364s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/pythonpath.sh
+[10.364s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/pythonpath.dsv
+[10.364s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces-1.2.1-py3.10.egg-info
+[10.365s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces-1.2.1-py3.10.egg-info/PKG-INFO
+[10.365s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces-1.2.1-py3.10.egg-info/dependency_links.txt
+[10.365s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces-1.2.1-py3.10.egg-info/top_level.txt
+[10.365s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces-1.2.1-py3.10.egg-info/SOURCES.txt
+[10.366s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces
+[10.366s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_c.c
+[10.366s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.366s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+[10.367s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/__init__.py
+[10.367s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.367s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.367s] -- Up-to-date: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg
+[10.367s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_duration_s.c
+[10.367s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_duration.py
+[10.368s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/__init__.py
+[10.368s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_time.py
+[10.368s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_time_s.c
+[10.368s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[10.369s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/libbuiltin_interfaces__rosidl_generator_py.so
+[10.369s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/_builtin_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[10.374s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.427s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces'...
+[10.427s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/__init__.py'...
+[10.427s] Listing '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg'...
+[10.427s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/__init__.py'...
+[10.427s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_duration.py'...
+[10.427s] Compiling '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/msg/_time.py'...
+[10.427s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.428s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.428s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.429s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.429s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.429s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages/builtin_interfaces/builtin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.431s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_py.so
+[10.432s] -- Set runtime path of "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/lib/libbuiltin_interfaces__rosidl_generator_py.so" to ""
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.msg
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/msg/Time.msg
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/ament_index/resource_index/package_run_dependencies/builtin_interfaces
+[10.432s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/ament_index/resource_index/parent_prefix_path/builtin_interfaces
+[10.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/ament_prefix_path.sh
+[10.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/ament_prefix_path.dsv
+[10.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/path.sh
+[10.433s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/environment/path.dsv
+[10.434s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/local_setup.bash
+[10.434s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/local_setup.sh
+[10.434s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/local_setup.zsh
+[10.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/local_setup.dsv
+[10.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/package.dsv
+[10.435s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/ament_index/resource_index/packages/builtin_interfaces
+[10.436s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_generator_cExport.cmake
+[10.436s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_generator_cExport-noconfig.cmake
+[10.437s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[10.437s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[10.438s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.439s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_cExport.cmake
+[10.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[10.440s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_generator_cppExport.cmake
+[10.441s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.442s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.442s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[10.443s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.444s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_cppExport.cmake
+[10.444s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[10.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_generator_pyExport.cmake
+[10.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/export_builtin_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[10.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/rosidl_cmake-extras.cmake
+[10.445s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[10.446s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[10.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.447s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake
+[10.448s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/cmake/builtin_interfacesConfig-version.cmake
+[10.448s] -- Installing: /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/install/builtin_interfaces/share/builtin_interfaces/package.xml
+[10.458s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/builtin_interfaces

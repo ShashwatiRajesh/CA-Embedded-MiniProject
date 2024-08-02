@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/std_msgs/_std_msgs_s.ep.rosidl_typesupport_c.c"
   "../rosidl_generator_py/std_msgs/_std_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/std_msgs/_std_msgs_s.ep.rosidl_typesupport_introspection_c.c"
-  "../rosidl_generator_py/std_msgs/_std_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c"
   "../rosidl_generator_py/std_msgs/msg/__init__.py"
   "../rosidl_generator_py/std_msgs/msg/_bool.py"
   "../rosidl_generator_py/std_msgs/msg/_bool_s.c"

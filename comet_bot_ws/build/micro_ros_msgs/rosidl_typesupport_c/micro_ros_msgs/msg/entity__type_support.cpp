@@ -23,20 +23,19 @@ namespace rosidl_typesupport_c
 
 typedef struct _Entity_type_support_ids_t
 {
-  const char * typesupport_identifier[3];
+  const char * typesupport_identifier[2];
 } _Entity_type_support_ids_t;
 
 static const _Entity_type_support_ids_t _Entity_message_typesupport_ids = {
   {
     "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
     "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
-    "rosidl_typesupport_microxrcedds_c",  // ::rosidl_typesupport_microxrcedds_c::typesupport_identifier,
   }
 };
 
 typedef struct _Entity_type_support_symbol_names_t
 {
-  const char * symbol_name[3];
+  const char * symbol_name[2];
 } _Entity_type_support_symbol_names_t;
 
 #define STRINGIFY_(s) #s
@@ -46,25 +45,23 @@ static const _Entity_type_support_symbol_names_t _Entity_message_typesupport_sym
   {
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, micro_ros_msgs, msg, Entity)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, micro_ros_msgs, msg, Entity)),
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_microxrcedds_c, micro_ros_msgs, msg, Entity)),
   }
 };
 
 typedef struct _Entity_type_support_data_t
 {
-  void * data[3];
+  void * data[2];
 } _Entity_type_support_data_t;
 
 static _Entity_type_support_data_t _Entity_message_typesupport_data = {
   {
     0,  // will store the shared library later
     0,  // will store the shared library later
-    0,  // will store the shared library later
   }
 };
 
 static const type_support_map_t _Entity_message_typesupport_map = {
-  3,
+  2,
   "micro_ros_msgs",
   &_Entity_message_typesupport_ids.typesupport_identifier[0],
   &_Entity_message_typesupport_symbol_names.symbol_name[0],

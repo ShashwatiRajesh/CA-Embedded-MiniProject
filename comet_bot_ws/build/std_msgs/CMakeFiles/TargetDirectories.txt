@@ -5,16 +5,13 @@
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_fastrtps_c.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__cpp.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_fastrtps_cpp.dir
-/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_microxrcedds_c.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_introspection_c.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_c.dir
-/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_microxrcedds_cpp.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_introspection_cpp.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_cpp.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/ament_cmake_python_copy_std_msgs.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/ament_cmake_python_build_std_msgs_egg.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_generator_py.dir
-/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_fastrtps_c__pyext.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_introspection_c__pyext.dir
 /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/std_msgs/CMakeFiles/std_msgs__rosidl_typesupport_c__pyext.dir

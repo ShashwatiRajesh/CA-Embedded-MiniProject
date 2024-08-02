@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/rcl_interfaces/_rcl_interfaces_s.ep.rosidl_typesupport_c.c"
   "../rosidl_generator_py/rcl_interfaces/_rcl_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/rcl_interfaces/_rcl_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
-  "../rosidl_generator_py/rcl_interfaces/_rcl_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c"
   "../rosidl_generator_py/rcl_interfaces/msg/__init__.py"
   "../rosidl_generator_py/rcl_interfaces/msg/_floating_point_range.py"
   "../rosidl_generator_py/rcl_interfaces/msg/_floating_point_range_s.c"
