@@ -1,9 +1,0 @@
-source;share/test_setup/hook/cmake_prefix_path.ps1
-source;share/test_setup/hook/cmake_prefix_path.dsv
-source;share/test_setup/hook/cmake_prefix_path.sh
-source;share/test_setup/hook/pythonpath.ps1
-source;share/test_setup/hook/pythonpath.dsv
-source;share/test_setup/hook/pythonpath.sh
-source;share/test_setup/hook/ament_prefix_path.ps1
-source;share/test_setup/hook/ament_prefix_path.dsv
-source;share/test_setup/hook/ament_prefix_path.sh

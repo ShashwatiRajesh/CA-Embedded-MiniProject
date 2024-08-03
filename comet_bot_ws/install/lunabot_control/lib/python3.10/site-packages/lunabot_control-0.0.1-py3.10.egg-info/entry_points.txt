@@ -1,3 +1,0 @@
-[console_scripts]
-teleop_publisher = lunabot_control.teleop_publisher:main
-

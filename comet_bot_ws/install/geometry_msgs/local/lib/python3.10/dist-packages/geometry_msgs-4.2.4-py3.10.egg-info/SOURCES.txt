@@ -1,6 +1,0 @@
-setup.py
-geometry_msgs/__init__.py
-geometry_msgs.egg-info/PKG-INFO
-geometry_msgs.egg-info/SOURCES.txt
-geometry_msgs.egg-info/dependency_links.txt
-geometry_msgs.egg-info/top_level.txt

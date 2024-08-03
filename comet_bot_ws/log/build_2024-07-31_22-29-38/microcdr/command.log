@@ -1,4 +1,0 @@
-Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr': /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr -- -j4 -l4
-Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr' returned '0': /usr/bin/cmake --build /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr -- -j4 -l4
-Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr': /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr
-Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr' returned '0': /usr/bin/cmake --install /home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/build/microcdr

@@ -1,6 +1,0 @@
-setup.py
-visualization_msgs/__init__.py
-visualization_msgs.egg-info/PKG-INFO
-visualization_msgs.egg-info/SOURCES.txt
-visualization_msgs.egg-info/dependency_links.txt
-visualization_msgs.egg-info/top_level.txt

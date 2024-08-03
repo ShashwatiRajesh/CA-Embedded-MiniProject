@@ -1,6 +1,0 @@
-setup.py
-shape_msgs/__init__.py
-shape_msgs.egg-info/PKG-INFO
-shape_msgs.egg-info/SOURCES.txt
-shape_msgs.egg-info/dependency_links.txt
-shape_msgs.egg-info/top_level.txt
