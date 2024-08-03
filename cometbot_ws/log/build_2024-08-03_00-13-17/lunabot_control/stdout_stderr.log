@@ -1,0 +1,15 @@
+running egg_info
+writing ../../build/lunabot_control/lunabot_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/lunabot_control/lunabot_control.egg-info/dependency_links.txt
+writing entry points to ../../build/lunabot_control/lunabot_control.egg-info/entry_points.txt
+writing requirements to ../../build/lunabot_control/lunabot_control.egg-info/requires.txt
+writing top-level names to ../../build/lunabot_control/lunabot_control.egg-info/top_level.txt
+reading manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+error: can't copy 'resource/lunabot_control': doesn't exist or not a regular file
+running install_data

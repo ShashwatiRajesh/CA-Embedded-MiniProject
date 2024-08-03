@@ -1,0 +1,24 @@
+running egg_info
+writing ../build/cometbot_control/cometbot_control.egg-info/PKG-INFO
+writing dependency_links to ../build/cometbot_control/cometbot_control.egg-info/dependency_links.txt
+writing entry points to ../build/cometbot_control/cometbot_control.egg-info/entry_points.txt
+writing requirements to ../build/cometbot_control/cometbot_control.egg-info/requires.txt
+writing top-level names to ../build/cometbot_control/cometbot_control.egg-info/top_level.txt
+reading manifest file '../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/build/cometbot_control/build/lib/cometbot_control
+running install
+running install_lib
+copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/build/cometbot_control/build/lib/cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/install/cometbot_control/lib/python3.10/site-packages/cometbot_control/teleop_publisher.py to teleop_publisher.cpython-310.pyc
+running install_data
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (teleop_publisher.py, line 101)
+running install_egg_info
+removing '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/install/cometbot_control/lib/python3.10/site-packages/cometbot_control-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../build/cometbot_control/cometbot_control.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/install/cometbot_control/lib/python3.10/site-packages/cometbot_control-0.0.1-py3.10.egg-info
+running install_scripts
+Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/install/cometbot_control/lib/cometbot_control
+writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/build/cometbot_control/install.log'

@@ -1,0 +1,16 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/cometbot_control/cometbot_control.egg-info/PKG-INFO
+../../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt
+../../build/cometbot_control/cometbot_control.egg-info/dependency_links.txt
+../../build/cometbot_control/cometbot_control.egg-info/entry_points.txt
+../../build/cometbot_control/cometbot_control.egg-info/requires.txt
+../../build/cometbot_control/cometbot_control.egg-info/top_level.txt
+../../build/cometbot_control/cometbot_control.egg-info/zip-safe
+cometbot_control/__init__.py
+resource/cometbot_control
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

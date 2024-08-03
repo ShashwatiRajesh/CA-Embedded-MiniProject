@@ -1,0 +1,3 @@
+warning: install_data: setup script did not provide a directory for 'share/ament_index/resource_index/packages/cometbot_control' -- installing right in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control'
+
+error: can't copy 'share/ament_index/resource_index/packages/cometbot_control': doesn't exist or not a regular file

@@ -1,0 +1,19 @@
+[0.496s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/cometbot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lunabot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/install.log --single-version-externally-managed install_data
+[0.700s] running egg_info
+[0.700s] writing ../../build/lunabot_control/cometbot_control.egg-info/PKG-INFO
+[0.701s] writing dependency_links to ../../build/lunabot_control/cometbot_control.egg-info/dependency_links.txt
+[0.701s] writing entry points to ../../build/lunabot_control/cometbot_control.egg-info/entry_points.txt
+[0.702s] writing requirements to ../../build/lunabot_control/cometbot_control.egg-info/requires.txt
+[0.702s] writing top-level names to ../../build/lunabot_control/cometbot_control.egg-info/top_level.txt
+[0.703s] reading manifest file '../../build/lunabot_control/cometbot_control.egg-info/SOURCES.txt'
+[0.704s] adding license file 'LICENSE'
+[0.705s] writing manifest file '../../build/lunabot_control/cometbot_control.egg-info/SOURCES.txt'
+[0.705s] running build
+[0.705s] running build_py
+[0.706s] running install
+[0.706s] running install_lib
+[0.707s] warning: install_data: setup script did not provide a directory for 'share/ament_index/resource_index/packages/cometbot_control' -- installing right in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control'
+[0.707s] 
+[0.707s] error: can't copy 'share/ament_index/resource_index/packages/cometbot_control': doesn't exist or not a regular file
+[0.707s] running install_data
+[0.725s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/cometbot_control' returned '1': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lunabot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/install.log --single-version-externally-managed install_data

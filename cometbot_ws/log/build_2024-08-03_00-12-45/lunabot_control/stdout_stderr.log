@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/lunabot_control/lunabot_control.egg-info
+writing ../../build/lunabot_control/lunabot_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/lunabot_control/lunabot_control.egg-info/dependency_links.txt
+writing entry points to ../../build/lunabot_control/lunabot_control.egg-info/entry_points.txt
+writing requirements to ../../build/lunabot_control/lunabot_control.egg-info/requires.txt
+writing top-level names to ../../build/lunabot_control/lunabot_control.egg-info/top_level.txt
+writing manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/lunabot_control/lunabot_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib/cometbot_control
+copying cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib/cometbot_control
+copying cometbot_control/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib/cometbot_control
+running install
+running install_lib
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages/cometbot_control
+copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib/cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages/cometbot_control
+copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/lunabot_control/build/lib/cometbot_control/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages/cometbot_control
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages/cometbot_control/teleop_publisher.py to teleop_publisher.cpython-310.pyc
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/lib/python3.10/site-packages/cometbot_control/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/share/ament_index
+error: can't copy 'resource/lunabot_control': doesn't exist or not a regular file
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/share/ament_index/resource_index
+creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/lunabot_control/share/ament_index/resource_index/packages
