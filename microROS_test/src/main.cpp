@@ -12,13 +12,20 @@
 #include <mcp_can.h>
 
 // Micro ROS
+//Publishers
 rcl_publisher_t sensor_data_publisher;
+std_msgs__msg__Bool sensor_data;
 rcl_publisher_t heartbeat_publisher;
 rcl_publisher_t logging_publisher;  // Publisher for logging topic
 std_msgs__msg__String logger;
-std_msgs__msg__Bool sensor_data;
+
+
+// Subscribers
 rcl_subscription_t cmd_vel_subscriber;
 geometry_msgs__msg__Twist cmd_vel;
+rcl_subscription_t enabled_subscriber;
+std_msgs__msg__Bool enabled;
+
 rclc_executor_t executor;
 rclc_support_t support;
 rcl_allocator_t allocator;
@@ -109,7 +116,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time)
 }
 
 // Subscription callback function to be called on cmd_vel_relay received
-void subscription_callback(const void * msgin)
+void cmd_vel_callback(const void * msgin)
 {
   // Cast received message to Twist
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
@@ -118,6 +125,16 @@ void subscription_callback(const void * msgin)
     // Process Twist
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
+  }
+}
+
+void enabled_callback(const void * msgin){
+  // Cast received message to bool
+  const std_msgs__msg__Bool * msg = (const std_msgs__msg__Bool *)msgin;
+
+  if (msg != NULL){
+    // Process Twist
+    enabled.data = msg->data;
   }
 }
 
@@ -188,17 +205,26 @@ void setup() {
     ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
     "cmd_vel_relay"));
 
+  // Create a subscriber for the "enabled" topic
+  RCCHECK(rclc_subscription_init_default(
+    &enabled_subscriber,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Bool),
+    "enabled"));
+
   // Create an executor, set number of handles, and add handles
   // Order added defines execution hierarchy (FIFO)
-  RCCHECK(rclc_executor_init(&executor, &support.context, 3, &allocator));
+  RCCHECK(rclc_executor_init(&executor, &support.context, 4, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &heartbeat_timer));
-  RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, subscription_callback, ON_NEW_DATA)); // or ALWAYS
+  RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
+  RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ON_NEW_DATA)); // or ALWAYS
 
   sensor_data.data = false;
   cmd_vel.linear.x = 0;
   cmd_vel.angular.z = 0;
   logger.data.size = 100;
+  enabled.data = true; // Change to false by defauly once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
 
