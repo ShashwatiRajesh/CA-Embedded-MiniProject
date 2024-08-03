@@ -1,8 +1,0 @@
-{
-  "package_name": "micro_ros_msgs",
-  "non_idl_tuples": [
-    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/uros/micro_ros_msgs:msg/Graph.msg",
-    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/uros/micro_ros_msgs:msg/Node.msg",
-    "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/src/uros/micro_ros_msgs:msg/Entity.msg"
-  ]
-}
