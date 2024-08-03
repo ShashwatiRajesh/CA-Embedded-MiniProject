@@ -1,3 +1,0 @@
-[0mCMake Error: The source directory "/home/amadorjosephg/CA-Embedded-MiniProject/comet_bot_ws/test" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.[0m
-gmake: *** [Makefile:226: cmake_check_build_system] Error 1
