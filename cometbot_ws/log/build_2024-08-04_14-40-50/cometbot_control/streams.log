@@ -1,0 +1,24 @@
+[0.525s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build --no-deps symlink_data
+[0.740s] running develop
+[0.867s] running egg_info
+[0.867s] creating cometbot_control.egg-info
+[0.867s] writing cometbot_control.egg-info/PKG-INFO
+[0.867s] writing dependency_links to cometbot_control.egg-info/dependency_links.txt
+[0.867s] writing entry points to cometbot_control.egg-info/entry_points.txt
+[0.867s] writing requirements to cometbot_control.egg-info/requires.txt
+[0.868s] writing top-level names to cometbot_control.egg-info/top_level.txt
+[0.868s] writing manifest file 'cometbot_control.egg-info/SOURCES.txt'
+[0.869s] reading manifest file 'cometbot_control.egg-info/SOURCES.txt'
+[0.869s] writing manifest file 'cometbot_control.egg-info/SOURCES.txt'
+[0.870s] running build_ext
+[0.871s] Creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot-control.egg-link (link to .)
+[0.871s] Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/cometbot_control
+[0.871s] 
+[0.871s] Installed /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control
+[0.872s] running symlink_data
+[0.872s] creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index
+[0.872s] creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index
+[0.872s] creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index/packages
+[0.872s] symbolically linking /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/resource/cometbot_control -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index/packages
+[0.872s] symbolically linking /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/package.xml -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/cometbot_control
+[0.896s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control' returned '0': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build --no-deps symlink_data

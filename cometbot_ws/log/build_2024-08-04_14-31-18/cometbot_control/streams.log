@@ -1,0 +1,33 @@
+[0.555s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build
+[0.771s] running develop
+[0.902s] Removing /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot-control.egg-link (link to .)
+[0.921s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control' returned '0': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build
+[0.923s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/cometbot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cometbot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/install.log --single-version-externally-managed install_data --force
+[1.122s] running egg_info
+[1.122s] writing ../../build/cometbot_control/cometbot_control.egg-info/PKG-INFO
+[1.123s] writing dependency_links to ../../build/cometbot_control/cometbot_control.egg-info/dependency_links.txt
+[1.123s] writing entry points to ../../build/cometbot_control/cometbot_control.egg-info/entry_points.txt
+[1.123s] writing requirements to ../../build/cometbot_control/cometbot_control.egg-info/requires.txt
+[1.123s] writing top-level names to ../../build/cometbot_control/cometbot_control.egg-info/top_level.txt
+[1.124s] reading manifest file '../../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+[1.125s] adding license file 'LICENSE'
+[1.126s] writing manifest file '../../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+[1.126s] running build
+[1.126s] running build_py
+[1.126s] copying cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control
+[1.126s] running install
+[1.127s] running install_lib
+[1.127s] creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+[1.127s] copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+[1.127s] copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+[1.128s] byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control/teleop_publisher.py to teleop_publisher.cpython-310.pyc
+[1.128s] byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control/__init__.py to __init__.cpython-310.pyc
+[1.128s] running install_data
+[1.129s] copying resource/cometbot_control -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index/packages
+[1.129s] copying package.xml -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/cometbot_control
+[1.129s] running install_egg_info
+[1.131s] Copying ../../build/cometbot_control/cometbot_control.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control-0.0.1-py3.10.egg-info
+[1.131s] running install_scripts
+[1.147s] Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/cometbot_control
+[1.147s] writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/install.log'
+[1.166s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/src/cometbot_control' returned '0': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cometbot_control build --build-base /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build install --record /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/install.log --single-version-externally-managed install_data --force

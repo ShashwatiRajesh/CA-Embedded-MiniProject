@@ -64,6 +64,7 @@ unsigned char len = 0;
 unsigned char rxBuf[8];
 byte heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
 byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+bool was_enabled = false;
 
 /*
  * Other
@@ -117,6 +118,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
     if (enabled.data){
+      was_enabled = true;
       if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
       log_logging("Message Sent Successfully!");
     } else {
@@ -124,11 +126,14 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
     }
     }
     else{
-      if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
+      if (was_enabled){
+        was_enabled = false;
+        if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
       log_logging("Message Sent Successfully!");
     } else {
       log_logging("Error Sending Message...");
     }
+      }
     }
   }
 }
@@ -217,7 +222,7 @@ void setup() {
   RCCHECK(rclc_executor_add_timer(&executor, &heartbeat_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
-  RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ON_NEW_DATA)); // or ALWAYS
+  RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 
   sensor_data.data = false;
   cmd_vel.linear.x = 0;
@@ -276,7 +281,7 @@ void setup_publishers(){
     &logging_publisher,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
-    "logging"));
+    "micro_ROS_logging"));
 }
 
 /*
@@ -288,7 +293,7 @@ void setup_subscribers(){
     &cmd_vel_subscriber,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
-    "cmd_vel_relay"));
+    "cmd_vel"));
 
   // Create a subscriber for the "enabled" topic
   RCCHECK(rclc_subscription_init_default(
