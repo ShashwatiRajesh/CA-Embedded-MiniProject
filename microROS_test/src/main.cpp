@@ -120,19 +120,19 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
     if (enabled.data){
       was_enabled = true;
       if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
-      log_logging("Message Sent Successfully!");
+        log_logging("Message Sent Successfully!");
     } else {
-      log_logging("Error Sending Message...");
+        log_logging("Error Sending Message...");
     }
     }
     else{
       if (was_enabled){
         was_enabled = false;
         if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
-      log_logging("Message Sent Successfully!");
-    } else {
-      log_logging("Error Sending Message...");
-    }
+          log_logging("Message Sent Successfully!");
+        } else {
+          log_logging("Error Sending Message...");
+        }
       }
     }
   }
@@ -171,6 +171,10 @@ void cmd_vel_callback(const void * msgin) {
     // Process Twist
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
+
+    // Test motor commands
+    //CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
+    //CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
   }
 }
 

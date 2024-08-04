@@ -1,4 +1,5 @@
 #include "Comet_CAN_Helper.h"
+#include <mcp_can.h>
 
 /*********************************************************************************************************
 ** Function name:           data_to_float
@@ -48,3 +49,50 @@ void Comet_CAN_Helper::parse_status_frame_2(uint8_t * data, uint8_t size){
   Serial.print("Position : ");
   Serial.println(data_to_float(data, size)); // Rotations
 }
+
+/*********************************************************************************************************
+** Function name:           create_data
+** Descriptions:            Copy data to frame_data (little-Endian)
+*********************************************************************************************************/
+void Comet_CAN_Helper::create_data(const void *data, byte *frame_data, const uint8_t write_size, const uint8_t dlc){
+  const byte *data_arr = static_cast<const byte *>(data);
+  for (int i = 0; i < write_size; i++) {
+    frame_data[i] = data_arr[i];
+  }
+
+  // Fill remaining space with zeros
+  for (int i = write_size; i < dlc; i++) {
+    frame_data[i] = 0;
+  }
+}
+
+/*********************************************************************************************************
+** Function name:           send_control_frame
+** Descriptions:            Function to command SPARK MAX ouput
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::send_control_frame(MCP_CAN CAN0, const uint32_t device_id, const control_mode mode, const float setpoint){
+  uint8_t frame_data[8];
+  create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
+  if(CAN0.sendMsgBuf(device_id + mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
+    return CAN_OK;
+  } 
+  else {
+    return CAN_FAIL;
+  }
+}
+
+/*********************************************************************************************************
+** Function name:           set_status_frame_period
+** Descriptions:            Function to set period for SPARK MAX status frames
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::set_status_frame_period(MCP_CAN CAN0, const uint32_t device_id, const status_frame_id frame, const uint16_t period){
+  uint8_t frame_data[8];
+  create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
+  if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){
+    return CAN_OK;
+  } 
+  else {
+    return CAN_FAIL;
+  }
+}
+
