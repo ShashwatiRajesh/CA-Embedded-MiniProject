@@ -4,3 +4,6 @@ source;share/cometbot_control/hook/pythonpath.sh
 source;share/cometbot_control/hook/ament_prefix_path.ps1
 source;share/cometbot_control/hook/ament_prefix_path.dsv
 source;share/cometbot_control/hook/ament_prefix_path.sh
+source;../../build/cometbot_control/share/cometbot_control/hook/pythonpath_develop.ps1
+source;../../build/cometbot_control/share/cometbot_control/hook/pythonpath_develop.dsv
+source;../../build/cometbot_control/share/cometbot_control/hook/pythonpath_develop.sh

@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/cometbot_control/cometbot_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/cometbot_control/cometbot_control.egg-info/dependency_links.txt
+writing entry points to ../../build/cometbot_control/cometbot_control.egg-info/entry_points.txt
+writing requirements to ../../build/cometbot_control/cometbot_control.egg-info/requires.txt
+writing top-level names to ../../build/cometbot_control/cometbot_control.egg-info/top_level.txt
+reading manifest file '../../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/cometbot_control/cometbot_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control
+copying cometbot_control/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control
+running install
+running install_lib
+copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control/teleop_publisher.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+copying /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build/lib/cometbot_control/__init__.py -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control/teleop_publisher.py to teleop_publisher.cpython-310.pyc
+byte-compiling /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/cometbot_control -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/cometbot_control
+running install_egg_info
+Copying ../../build/cometbot_control/cometbot_control.egg-info to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot_control-0.0.1-py3.10.egg-info
+running install_scripts
+Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/cometbot_control
+writing list of installed files to '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/install.log'

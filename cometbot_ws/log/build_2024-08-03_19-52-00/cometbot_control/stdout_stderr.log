@@ -1,0 +1,19 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing cometbot_control.egg-info/PKG-INFO
+writing dependency_links to cometbot_control.egg-info/dependency_links.txt
+writing entry points to cometbot_control.egg-info/entry_points.txt
+writing requirements to cometbot_control.egg-info/requires.txt
+writing top-level names to cometbot_control.egg-info/top_level.txt
+reading manifest file 'cometbot_control.egg-info/SOURCES.txt'
+writing manifest file 'cometbot_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot-control.egg-link (link to .)
+Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/cometbot_control
+
+Installed /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control
+running symlink_data
+symbolically linking /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/resource/cometbot_control -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/ament_index/resource_index/packages
+symbolically linking /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/package.xml -> /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/share/cometbot_control
