@@ -26,7 +26,7 @@ void setup_subscribers();
  */
 rcl_publisher_t sensor_data_publisher;
 std_msgs__msg__Bool sensor_data;
-rcl_publisher_t logging_publisher;  // Publisher for logging topic
+rcl_publisher_t logging_publisher;
 std_msgs__msg__String logger;
 
 /*
@@ -59,10 +59,11 @@ rcl_timer_t read_timer;
 #define CAN0_INT 4
 MCP_CAN CAN0(12);
 Comet_CAN_Helper CAN_Helper;
-long unsigned int rxId;                                                     // Input storage
-unsigned char len = 0;                                                      // Input storage
-unsigned char rxBuf[8];                                                     // Input storage
-byte heartbeat_data[8] = {255, 255, 255, 255, 255, 255, 255, 255};          // hearbeat data
+long unsigned int rxId;
+unsigned char len = 0;
+unsigned char rxBuf[8];
+byte heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
 /*
  * Other
@@ -75,7 +76,9 @@ byte heartbeat_data[8] = {255, 255, 255, 255, 255, 255, 255, 255};          // h
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){} } // Allows program to keep running after error
 
-// Error loop to blink onboard LED if an error occurs
+/*
+ * Error loop to blink onboard LED if an error occurs
+ */
 void error_loop(){
   int delay_times = 50;
   while(delay_times){
@@ -86,7 +89,9 @@ void error_loop(){
   ESP.restart();
 }
 
-// Function to log messages to the logging topic
+/*
+ * Function to log messages to the logging topic
+ */
 void log_logging(const char *msg) {
   logger.data.data = (char*)msg;
   logger.data.size = strlen(msg);
@@ -94,7 +99,9 @@ void log_logging(const char *msg) {
   RCSOFTCHECK(rcl_publish(&logging_publisher, &logger, NULL));
 }
 
-// Timer callback function to be called periodically
+/*
+ * Timer callback function to be called periodically
+ */
 void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
@@ -103,24 +110,37 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   }
 }
 
-// Timer callback function to be called periodically
+/*
+ * Timer callback function to be called periodically
+ */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
-    if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data) == CAN_OK){
+    if (enabled.data){
+      if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
       log_logging("Message Sent Successfully!");
     } else {
       log_logging("Error Sending Message...");
     }
+    }
+    else{
+      if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
+      log_logging("Message Sent Successfully!");
+    } else {
+      log_logging("Error Sending Message...");
+    }
+    }
   }
 }
 
-// Timer callback function for reading from the CAN buffer
+/*
+ * Timer callback function for reading from the CAN buffer
+ */
 void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
     if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
-      CAN0.readMsgBuf(&rxId, &len, rxBuf); // Read data: len = data length, buf = data byte(s)
+      CAN0.readMsgBuf(&rxId, &len, rxBuf);
       
       // Handle data parsing for specific frames
       if ((rxId & DEVICE_ID_MASK) == PERIODIC_STATUS_0_FILTER) {
@@ -135,7 +155,9 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   }
 }
 
-// Subscription callback function to be called on cmd_vel_relay received
+/*
+ * Subscription callback function to be called on cmd_vel_relay received
+ */
 void cmd_vel_callback(const void * msgin) {
   // Cast received message to Twist
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
@@ -147,17 +169,22 @@ void cmd_vel_callback(const void * msgin) {
   }
 }
 
-// Subscription callback function for enabled messages
+/*
+ * Subscription callback function for enabled messages
+ */
 void enabled_callback(const void * msgin){
   // Cast received message to bool
   const std_msgs__msg__Bool * msg = (const std_msgs__msg__Bool *)msgin;
 
   if (msg != NULL){
-    // Process Twist
+    // Process Enabled
     enabled.data = msg->data;
   }
 }
 
+/*
+ * Setup function to initialize components
+ */
 void setup() {
   // Configure serial transport
   Serial.begin(115200);
@@ -200,11 +227,16 @@ void setup() {
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
 
+/*
+ * Loop function that runs repeatedly
+ */
 void loop() {
   RCSOFTCHECK(rclc_executor_spin(&executor));
 }
 
-
+/*
+ * Setup timers for various tasks
+ */
 void setup_timers(){
   // Timer to control publisher for the "sensor_data" topic
   RCCHECK(rclc_timer_init_default(
@@ -228,6 +260,9 @@ void setup_timers(){
     read_callback));
 }
 
+/*
+ * Setup publishers for various topics
+ */
 void setup_publishers(){
   // Create a publisher for the "sensor_data" topic
   RCCHECK(rclc_publisher_init_default(
@@ -244,6 +279,9 @@ void setup_publishers(){
     "logging"));
 }
 
+/*
+ * Setup subscribers for various topics
+ */
 void setup_subscribers(){
   // Create a subscriber for the "cmd_vel_relay" topic
   RCCHECK(rclc_subscription_init_default(
