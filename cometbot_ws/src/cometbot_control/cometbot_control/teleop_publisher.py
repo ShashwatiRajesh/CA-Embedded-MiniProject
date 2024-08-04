@@ -52,7 +52,7 @@ class TeleopPublisher(Node):
         )
 
         # Create a publisher for the 'cmd_vel' topic
-        self.publisher = self.create_publisher(Twist, 'testingcolconbuildcmd_vel', 10)
+        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
         # Set up a timer to publish Twist messages at the specified frequency
         timer_frequency = self.get_parameter('cmd_vel_pub_frequency').get_parameter_value().double_value
