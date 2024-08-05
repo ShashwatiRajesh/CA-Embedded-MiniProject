@@ -132,6 +132,21 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
+
+  // Test motor commands
+    if(drive_base_left.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+        log_logging("send_control_frame Sent Successfully");
+      } else {
+        log_logging("Error Sending send_control_frame...!!!...");
+      }
+  // Test motor commands
+    if(drive_base_right.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+        log_logging("send_control_frame Sent Successfully");
+      } else {
+        log_logging("Error Sending send_control_frame...!!!...");
+      }
+
+  /*
   // Commented out logging to prevent delays
   if (timer != NULL) {
     if (enabled.data){
@@ -153,7 +168,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
       }
     }
   }
-  
+  */
 }
 
 /*
@@ -190,6 +205,7 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
+    /*
     // pre-heartbeat
     if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
         log_logging("Heartbeat Sent Successfully");
@@ -229,6 +245,8 @@ void cmd_vel_callback(const void * msgin) {
       } else {
         log_logging("Error Sending Heartbeat...!!!...");
       }
+
+    */
 
     /*
     ::::Isues::::

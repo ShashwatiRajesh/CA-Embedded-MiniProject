@@ -19,7 +19,6 @@ void setup() {
   else
     Serial.println("Error Initializing MCP2515...");
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
-  CAN0.enOneShotTX();
 }
 
 void loop() {
