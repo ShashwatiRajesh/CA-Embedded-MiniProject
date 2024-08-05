@@ -1,5 +1,7 @@
 /*
 ::::To Do::::
+++++ DONE
+---- TODO
 
 */
 
@@ -67,8 +69,6 @@ Comet_CAN_Helper CAN_Helper;
 long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
-byte heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
-byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 bool was_enabled = false;
 
 /*
@@ -131,7 +131,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
-      if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
+      if(CAN_Helper.send_enabled_heartbeat(CAN0) == CAN_OK){
         //log_logging("Heartbeat Sent Successfully");
       } else {
         log_logging("Error Sending Heartbeat...!!!...");
@@ -140,7 +140,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
     else{
       if (was_enabled){
         was_enabled = false;
-        if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
+        if(CAN_Helper.send_disabled_heartbeat(CAN0) == CAN_OK){
           //log_logging("Message Sent Successfully!");
         } else {
           //log_logging("Error Sending Message...");

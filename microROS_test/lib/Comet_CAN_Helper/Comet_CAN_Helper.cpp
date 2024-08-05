@@ -5,7 +5,7 @@
 ** Function name:           data_to_float
 ** Descriptions:            Converts four bytes (little-endian) to a IEEE floating point number
 *********************************************************************************************************/
-float data_to_float(uint8_t * data, uint8_t size){
+float Comet_CAN_Helper::data_to_float(uint8_t * data, uint8_t size){
   if (size >= 4 && data != nullptr){
     uint32_t intValue = ((uint32_t)data[3] << 24) |
                         ((uint32_t)data[2] << 16) |
@@ -51,6 +51,32 @@ void Comet_CAN_Helper::parse_status_frame_2(uint8_t * data, uint8_t size){
 }
 
 /*********************************************************************************************************
+** Function name:           send_enabled_heartbeat
+** Descriptions:            Send heartbeat to enable all devices
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::send_enabled_heartbeat(MCP_CAN CAN0){
+  if(CAN0.sendMsgBuf(HEARTBEAT_ID, CAN_EXTID, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
+      return CAN_OK;
+    } 
+    else {
+      return CAN_FAIL;
+    }
+}
+
+/*********************************************************************************************************
+** Function name:           send_disabled_heartbeat
+** Descriptions:            Send heartbeat to disable all devices
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::send_disabled_heartbeat(MCP_CAN CAN0){
+  if(CAN0.sendMsgBuf(HEARTBEAT_ID, CAN_EXTID, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
+      return CAN_OK;
+    } 
+    else {
+      return CAN_FAIL;
+    }
+}
+
+/*********************************************************************************************************
 ** Function name:           create_data
 ** Descriptions:            Copy data to frame_data (little-Endian)
 *********************************************************************************************************/
@@ -73,12 +99,25 @@ void SPARK_MAX::create_data(const void *data, byte *frame_data, const uint8_t wr
 uint8_t SPARK_MAX::send_control_frame(MCP_CAN CAN0, const uint32_t device_id, const control_mode mode, const float setpoint){
   uint8_t frame_data[8];
   create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
-  if(CAN0.sendMsgBuf(device_id + mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
-    return CAN_OK;
-  } 
-  else {
-    return CAN_FAIL;
+
+  if (current_mode != mode){
+    current_mode = mode;
+    if(CAN0.sendMsgBuf(device_id + mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
+      return CAN_OK;
+    } 
+    else {
+      return CAN_FAIL;
+    }
   }
+  else{
+    if(CAN0.sendMsgBuf(device_id + control_mode::Use_Current_Mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
+      return CAN_OK;
+    } 
+    else {
+      return CAN_FAIL;
+    }
+  }
+
 }
 
 /*********************************************************************************************************

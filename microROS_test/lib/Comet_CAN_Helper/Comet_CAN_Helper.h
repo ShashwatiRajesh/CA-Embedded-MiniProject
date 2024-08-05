@@ -1,7 +1,10 @@
 /*
 ::::To Do::::
+++++ DONE
+---- TODO
+
 SPARK MAX Class
----- update send_control_frame to check and set current_mode. Either use commanded mode or current mode depending on current mode status
+++++ update send_control_frame to check and set current_mode. Either use commanded mode or current mode depending on current mode status
 ---- check set_status_frame_period function implementation
 */
 
@@ -14,11 +17,7 @@ SPARK MAX Class
 /*********************************************************************************************************
 ** Constants
 *********************************************************************************************************/
-/*
-* Heartbeat frame
-*/
-const uint32_t HEARTBEAT_ID = 0x2052C80;
-const uint8_t HEARTBEAT_DLC = 8;
+
 
 /*
 * Control Frame
@@ -31,7 +30,6 @@ const uint8_t CONTROL_WRITE_SIZE = 4; // Size (bytes) of actual data written int
 */
 const uint8_t STATUS_DLC = 2;
 const uint8_t STATUS_WRITE_SIZE = 2; // Size (bytes) of actual data written into the Data Window
-float data_to_float(uint8_t * data, uint8_t size);                      // Converts four bytes (little-endian) to a IEEE floating point number
 enum status_frame_id {
     status_0 = 0x2051800,
     status_1 = 0x2051840,
@@ -75,13 +73,26 @@ public:
   void parse_status_frame_0(uint8_t * data);                              // Parse SPARK MAX Periodic Status Frame 0
   void parse_status_frame_1(uint8_t * data, uint8_t size);                // Parse SPARK MAX Periodic Status Frame 1
   void parse_status_frame_2(uint8_t * data, uint8_t size);                // Parse SPARK MAX Periodic Status Frame 2
+  uint8_t send_enabled_heartbeat(MCP_CAN CAN0);
+  uint8_t send_disabled_heartbeat(MCP_CAN CAN0);
 
 private:
   /*
-  * CAN frame queue
+  * Constants/variables
   */
-  can_frame can_frame_queue[10];  
+  can_frame can_frame_queue[10];
+  /*
+  * Heartbeat frame
+  */
+  const uint32_t HEARTBEAT_ID = 0x2052C80;
+  const uint8_t HEARTBEAT_DLC = 8;
+  byte heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+  byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};  
 
+  /*
+  * Functions
+  */
+  float data_to_float(uint8_t * data, uint8_t size);                      // Converts four bytes (little-endian) to a IEEE floating point number
 };
 
 /*********************************************************************************************************
@@ -129,6 +140,9 @@ public:
                                 const uint16_t period);
 
 private:
+  /*
+  * Constants/variables
+  */
   uint8_t device_id;
   control_mode current_mode;
 
