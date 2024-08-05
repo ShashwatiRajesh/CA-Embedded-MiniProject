@@ -116,22 +116,23 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
+  // Commented out logging to prevent delays
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
       if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
-        log_logging("Message Sent Successfully!");
+        //log_logging("Message Sent Successfully!");
     } else {
-        log_logging("Error Sending Message...");
+        //log_logging("Error Sending Message...");
     }
     }
     else{
       if (was_enabled){
         was_enabled = false;
         if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
-          log_logging("Message Sent Successfully!");
+          //log_logging("Message Sent Successfully!");
         } else {
-          log_logging("Error Sending Message...");
+          //log_logging("Error Sending Message...");
         }
       }
     }
@@ -159,7 +160,7 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
     }
   }
 }
-
+ 
 /*
  * Subscription callback function to be called on cmd_vel_relay received
  */
@@ -173,8 +174,8 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.angular.z = msg->angular.z;
 
     // Test motor commands
-    //CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
-    //CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
+    // CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
+    // CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
   }
 }
 
@@ -222,8 +223,8 @@ void setup() {
   // Create an executor, set number of handles, and add handles
   // Order added defines execution hierarchy (FIFO)
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
-  RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &heartbeat_timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
   RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS

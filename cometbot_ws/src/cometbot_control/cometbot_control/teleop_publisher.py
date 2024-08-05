@@ -12,9 +12,9 @@ class TeleopPublisher(Node):
         # Declare parameters with default values
         self.declare_parameter(
             'cmd_vel_pub_frequency', 
-            1.0, 
+            20.0, 
             ParameterDescriptor(
-                description='Frequency to publish cmd_vel messages in Hz',
+                description='Frequency to publish cmd_vel messages in Hz. \nMAKE SURE JOY_NODE IS ALSO RUNNING AT SAME OR HIGHER FREQUENCY',
                 floating_point_range=[
                     FloatingPointRange(from_value=0.0, to_value=100.0)
                 ]
