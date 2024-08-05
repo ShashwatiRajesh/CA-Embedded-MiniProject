@@ -75,7 +75,8 @@ long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
-uint8_t control_data_testing[8] = {0,0,0,0,0,0,0,0};
+uint8_t control_data_testing_arr[8] = {0,0,0,0,0,0,0,0};
+float control_setpoint_testing = 0.0;
 
 /*
 * SPARK MAXs
@@ -134,20 +135,22 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
 
+  //control_setpoint_testing = control_setpoint_testing + 0.1;
+  //drive_base_left.create_data(&control_setpoint_testing, control_data_testing_arr, 4, 8);
   // Testing to see if a control message by itself will fail
-  if(CAN0.sendMsgBuf(0x205008a, CAN_EXTID, 8, control_data_testing) == CAN_OK){
+  if(CAN0.sendMsgBuf(0x205008a, CAN_EXTID, 8, control_data_testing_arr) == CAN_OK){
         log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
 
-  /*
+  
   // Commented out logging to prevent delays
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        //log_logging("Heartbeat Sent Successfully");
+        log_logging("Heartbeat Sent Successfully");
       } else {
         log_logging("Error Sending Heartbeat...!!!...");
       }
@@ -156,14 +159,14 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
       if (was_enabled){
         was_enabled = false;
         if(CAN_Helper.send_disabled_heartbeat() == CAN_OK){
-          //log_logging("Message Sent Successfully!");
+          log_logging("Message Sent Successfully!");
         } else {
-          //log_logging("Error Sending Message...");
+          log_logging("Error Sending Message...");
         }
       }
     }
   }
-  */
+  
 }
 
 /*
@@ -232,8 +235,21 @@ void cmd_vel_callback(const void * msgin) {
     ONLY THE CONTROL FRAMES AND DISABLE FRAMES ARE ERRORING. THE HEARTBEAT DOES NOT FAIL NEARLY AS MUCH
     MAYBE ONCE EVERY MINUTE OR TWO.
     THE OTHERS FAIL EVERY COUPLE OF SECONDS
-    sending one message testing
-      
+    sending one message testing  NOTE ALL CAN FRAMES ARE ADDED TO THE TRANSMIT BUFFER FROM THE SAME METHOD DURING TESTING (TESTING USING HEARTBEAT TIMER_CALLBACK)
+      @ 250ms w/ constant message 1/7 messages fails to send
+      @ 50ms w/ constant message 1/15 messages fails to send
+      @ 100ms w/ variable message still failing
+          w/ oneshot logging reports success, and no noticeable ligth error codes
+      @ 100ms w/ constant message
+          w/ oneshot ==== logging reports success, and no noticeable ligth error codes
+          w/ heartbeat and oneshot and full logging ==== logging reports success, and no noticeable ligth error codes. Just dropping the enabled so purple flashing
+          @ 50ms ran for 30s and checked with RHC no txrx errors
+          @ 25ms WORKS PERFECTLY (oneshot mode worries me a little with the heartbeat but ran for 1 minute without dropping heartbeat)
+
+      POSSIBLE SOURCES OF ISSUES:
+        1. adding to the tx buffer from multiple different functions at once (may be interrupting each other)
+        2. passing CAN0 by value instead of reference to the SPARK MAX and CAN Helper Classes
+        3. not having oneshot enabled meant that if a contorl packet didn't send it would resend and holdup the next heartbeat
 
     ::::Ideas::::
 
@@ -301,6 +317,8 @@ void setup() {
     log_logging("Error Initializing MCP2515...");
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
 
+  CAN0.enOneShotTX();
+
   pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
   pinMode(LED, OUTPUT);  // Set LED_PIN as output
   digitalWrite(LED, HIGH);  // Turn on the LED
@@ -352,7 +370,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &heartbeat_timer,
     &support,
-    RCL_MS_TO_NS(10),               // Was 25ms
+    RCL_MS_TO_NS(25),               // Was 25ms
     heartbeat_timer_callback));
 
   // Timer for reading from CAN buffer

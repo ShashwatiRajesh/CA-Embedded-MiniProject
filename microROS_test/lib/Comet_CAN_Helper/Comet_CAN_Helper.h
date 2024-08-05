@@ -147,6 +147,10 @@ public:
                                const float setpoint);
     uint8_t set_status_frame_period(const status_frame_id frame, // Set period for SPARK MAX status frames
                                     const uint16_t period);
+    void create_data(const void *data,                 // Copy data to frame_data (little-Endian)
+                     byte *frame_data, 
+                     const uint8_t write_size, 
+                     const uint8_t dlc);
 
 private:
     /*
@@ -172,10 +176,7 @@ private:
     /*
     * Functions
     */
-    void create_data(const void *data,                 // Copy data to frame_data (little-Endian)
-                     byte *frame_data, 
-                     const uint8_t write_size, 
-                     const uint8_t dlc);
+    
 };
 
 #endif
