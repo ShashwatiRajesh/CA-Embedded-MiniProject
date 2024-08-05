@@ -280,6 +280,9 @@ void cmd_vel_callback(const void * msgin) {
             clear sticky and test again
               no sticky errors (errors above possibly caused by something else)
 
+        Double ESP: non-heartbeat frames with one-shot
+                  : heartbeat with normal mode
+
 
     ::::Ideas::::
 
