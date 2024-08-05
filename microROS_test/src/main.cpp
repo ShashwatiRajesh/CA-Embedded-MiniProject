@@ -250,6 +250,9 @@ void cmd_vel_callback(const void * msgin) {
         1. adding to the tx buffer from multiple different functions at once (may be interrupting each other)
         2. passing CAN0 by value instead of reference to the SPARK MAX and CAN Helper Classes
         3. not having oneshot enabled meant that if a contorl packet didn't send it would resend and holdup the next heartbeat
+      NEXT STEPS:
+        start rolling back testing code and returning to normal code and look for issueus
+        finish implementing a manual can buffer to centralize the adding of frames to the tx buffer
 
     ::::Ideas::::
 
