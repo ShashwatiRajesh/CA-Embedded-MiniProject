@@ -75,8 +75,6 @@ long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
-uint8_t control_data_testing_arr[8] = {0,0,0,0,0,0,0,0};
-float control_setpoint_testing = 0.0;
 
 /*
 * SPARK MAXs
@@ -134,17 +132,6 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
-
-  //control_setpoint_testing = control_setpoint_testing + 0.1;
-  //drive_base_left.create_data(&control_setpoint_testing, control_data_testing_arr, 4, 8);
-  // Testing to see if a control message by itself will fail
-  if(CAN0.sendMsgBuf(0x205008a, CAN_EXTID, 8, control_data_testing_arr) == CAN_OK){
-        log_logging("send_control_frame Sent Successfully");
-      } else {
-        log_logging("Error Sending send_control_frame...!!!...");
-      }
-
-  
   // Commented out logging to prevent delays
   if (timer != NULL) {
     if (enabled.data){
@@ -203,22 +190,45 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
-    /*
-    uint8_t control_data_testing[8] = {0,0,0,0,0,0,0,0};
+    // pre-heartbeat
+    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
+        log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
+
     // Test motor commands
-    if(CAN0.sendMsgBuf(0x205004a, CAN_EXTID, 8, control_data_testing) == CAN_OK){
-        //log_logging("send_control_frame Sent Successfully");
+    if(drive_base_left.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+        log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
-    // Send heartbeat inbetween commands to prevent from dropping it
-    // CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled);
-    if(CAN0.sendMsgBuf(0x205004b, CAN_EXTID, 8, control_data_testing) == CAN_OK){
-        //log_logging("send_control_frame Sent Successfully");
+    // post-heartbeat
+    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
+        log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
+
+    // pre-heartbeat
+    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
+        log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
+
+    // Test motor commands
+    if(drive_base_right.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+        log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
-    */
+    // post-heartbeat
+    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
+        log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
 
     /*
     ::::Isues::::
@@ -251,8 +261,25 @@ void cmd_vel_callback(const void * msgin) {
         2. passing CAN0 by value instead of reference to the SPARK MAX and CAN Helper Classes
         3. not having oneshot enabled meant that if a contorl packet didn't send it would resend and holdup the next heartbeat
       NEXT STEPS:
-        start rolling back testing code and returning to normal code and look for issueus
-        finish implementing a manual can buffer to centralize the adding of frames to the tx buffer
+        1. start rolling back testing code and returning to normal code and look for issueus
+        2. finish implementing a manual can buffer to centralize the adding of frames to the tx buffer
+        3. look into library/MCP behavior when trying to write to tx buffer when all buffers full
+        4. look into oneshot mode and how it works. Can it be set for specific messages? Or is it applied to all messages in tx buffers?
+
+        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 2x]
+            momentary heartbeat loss, no txrx errors
+        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 1x]
+          momentary heartbeat loss (less frequent than 2x)
+            looks like the manual queue is necessary to ensure heartbeat insertion bewteen other commands
+        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 1x w heartbeat before and after]
+            WORKS PERFECTLY (oneshot mode worries me a little with the heartbeat but ran for 1 minute without dropping heartbeat)
+        From timer and subscriber with both control & heartbeat functions only[contorl command 1x w heartbeat before and after]
+            no txrx errors. Only one momentary loss of heartbeat
+        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after]
+            very infrequent (~20-40s) heartbeat loss. watchdog reset and has reset errors on one motor 
+            clear sticky and test again
+              no sticky errors (errors above possibly caused by something else)
+
 
     ::::Ideas::::
 
