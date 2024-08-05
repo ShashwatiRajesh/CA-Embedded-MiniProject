@@ -54,7 +54,7 @@ void Comet_CAN_Helper::parse_status_frame_2(uint8_t * data, uint8_t size){
 ** Function name:           send_enabled_heartbeat
 ** Descriptions:            Send heartbeat to enable all devices
 *********************************************************************************************************/
-uint8_t Comet_CAN_Helper::send_enabled_heartbeat(MCP_CAN CAN0){
+uint8_t Comet_CAN_Helper::send_enabled_heartbeat(){
   if(CAN0.sendMsgBuf(HEARTBEAT_ID, CAN_EXTID, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
       return CAN_OK;
     } 
@@ -67,13 +67,49 @@ uint8_t Comet_CAN_Helper::send_enabled_heartbeat(MCP_CAN CAN0){
 ** Function name:           send_disabled_heartbeat
 ** Descriptions:            Send heartbeat to disable all devices
 *********************************************************************************************************/
-uint8_t Comet_CAN_Helper::send_disabled_heartbeat(MCP_CAN CAN0){
+uint8_t Comet_CAN_Helper::send_disabled_heartbeat(){
   if(CAN0.sendMsgBuf(HEARTBEAT_ID, CAN_EXTID, HEARTBEAT_DLC, heartbeat_data_disabled) == CAN_OK){
       return CAN_OK;
     } 
     else {
       return CAN_FAIL;
     }
+}
+
+/*********************************************************************************************************
+** Function name:           send_disabled_heartbeat
+** Descriptions:            Send heartbeat to disable all devices
+*********************************************************************************************************/
+bool Comet_CAN_Helper::add_frame_to_queue(const can_frame &frame) {
+    if (queue_count == QUEUE_SIZE) {
+        return false; // Queue is full
+    }
+    can_frame_queue[queue_rear] = frame;
+    queue_rear = (queue_rear + 1) % QUEUE_SIZE;
+    ++queue_count;
+    return true;
+}
+
+/*********************************************************************************************************
+** Function name:           send_disabled_heartbeat
+** Descriptions:            Send heartbeat to disable all devices
+*********************************************************************************************************/
+bool Comet_CAN_Helper::remove_frame_from_queue(can_frame &frame) {
+    if (is_queue_empty()) {
+        return false; // Queue is empty
+    }
+    frame = can_frame_queue[queue_front];
+    queue_front = (queue_front + 1) % QUEUE_SIZE;
+    --queue_count;
+    return true;
+}
+
+/*********************************************************************************************************
+** Function name:           is_queue_empty
+** Descriptions:            Returns if the CAN frame queue is empty
+*********************************************************************************************************/
+bool Comet_CAN_Helper::is_queue_empty() const {
+    return queue_count == 0;
 }
 
 /*********************************************************************************************************
@@ -96,7 +132,7 @@ void SPARK_MAX::create_data(const void *data, byte *frame_data, const uint8_t wr
 ** Function name:           send_control_frame
 ** Descriptions:            Function to command SPARK MAX ouput
 *********************************************************************************************************/
-uint8_t SPARK_MAX::send_control_frame(MCP_CAN CAN0, const uint32_t device_id, const control_mode mode, const float setpoint){
+uint8_t SPARK_MAX::send_control_frame(const control_mode mode, const float setpoint){
   if (mode != control_mode::NONE){
     uint8_t frame_data[8];
     create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
@@ -127,7 +163,7 @@ uint8_t SPARK_MAX::send_control_frame(MCP_CAN CAN0, const uint32_t device_id, co
 ** Function name:           set_status_frame_period
 ** Descriptions:            Function to set period for SPARK MAX status frames
 *********************************************************************************************************/
-uint8_t SPARK_MAX::set_status_frame_period(MCP_CAN CAN0, const uint32_t device_id, const status_frame_id frame, const uint16_t period){
+uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const uint16_t period){
   uint8_t frame_data[8];
   create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
   if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){

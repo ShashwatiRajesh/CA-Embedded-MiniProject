@@ -5,7 +5,11 @@
 
 SPARK MAX Class
 ++++ update send_control_frame to check and set current_mode. Either use commanded mode or current mode depending on current mode status
----- check set_status_frame_period function implementation
+++++ check set_status_frame_period function implementation
+---- Built in ROS publisher for motor data????
+      should be handled individually
+
+---- Implement can_frame_queue
 */
 
 #ifndef COMET_CAN_HELPER_H
@@ -14,9 +18,9 @@ SPARK MAX Class
 #include <Arduino.h>
 #include <mcp_can.h>
 
-/*********************************************************************************************************
-** Constants
-*********************************************************************************************************/
+/*
+* Status Frame ID enumeration
+*/
 enum status_frame_id {
     status_0 = 0x2051800,
     status_1 = 0x2051840,
@@ -31,6 +35,13 @@ enum status_frame_id {
 *********************************************************************************************************/
 class Comet_CAN_Helper {
 public:
+    /*
+    * Constructor
+    */
+    Comet_CAN_Helper(MCP_CAN &CAN0) : CAN0(CAN0) {
+        // Additional initialization if needed
+    }
+
     /*
     * Constants/variables
     */
@@ -52,22 +63,32 @@ public:
     void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
     void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
     void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
-    uint8_t send_enabled_heartbeat(MCP_CAN CAN0);             // Send enabled heartbeat
-    uint8_t send_disabled_heartbeat(MCP_CAN CAN0);            // Send disabled heartbeat
+    uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
+    uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
+
+    // FIFO Queue Functions
+    bool add_frame_to_queue(const can_frame &frame);
+    bool remove_frame_from_queue(can_frame &frame);
+    bool is_queue_empty() const;
 
 private:
     /*
     * Constants/variables
     */
-    can_frame can_frame_queue[10];
+    static const int QUEUE_SIZE = 10;
+    can_frame can_frame_queue[QUEUE_SIZE];
+    int queue_front = 0;
+    int queue_rear = 0;
+    int queue_count = 0;
+    MCP_CAN &CAN0;
 
     /*
     * Heartbeat frame
     */
     const uint32_t HEARTBEAT_ID = 0x2052C80;
     const uint8_t HEARTBEAT_DLC = 8;
-    byte heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
-    byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+    uint8_t heartbeat_data_enabled[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+    uint8_t heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
     /*
     * MCP2515 Masks
@@ -97,10 +118,11 @@ public:
     /*
     * Constructor
     */
-    SPARK_MAX(uint8_t device_id) {
+    SPARK_MAX(uint8_t device_id, Comet_CAN_Helper *helper, MCP_CAN &CAN0) : CAN0(CAN0) {
         this->device_id = device_id;
         current_mode = control_mode::NONE;
-    };
+        comet_can_helper = helper;
+    }
 
     /*
     * SPARK MAX control modes
@@ -120,13 +142,10 @@ public:
     /*
     * Functions
     */
-    uint8_t send_control_frame(MCP_CAN CAN0,            // Command SPARK MAX output
-                               const uint32_t device_id,
-                               const control_mode mode, 
+    
+    uint8_t send_control_frame(const control_mode mode, // Command SPARK MAX output
                                const float setpoint);
-    uint8_t set_status_frame_period(MCP_CAN CAN0,       // Set period for SPARK MAX status frames
-                                    const uint32_t device_id,
-                                    const status_frame_id frame, 
+    uint8_t set_status_frame_period(const status_frame_id frame, // Set period for SPARK MAX status frames
                                     const uint16_t period);
 
 private:
@@ -135,6 +154,8 @@ private:
     */
     uint8_t device_id;
     control_mode current_mode;
+    Comet_CAN_Helper *comet_can_helper;
+    MCP_CAN &CAN0;
 
     /*
     * Control Frame

@@ -3,6 +3,9 @@
 ++++ DONE
 ---- TODO
 
+---- Convert Twist into motor output
+---- Built in ROS publisher for motor data????
+      should be handled individuallly
 */
 
 #include <Arduino.h>
@@ -65,17 +68,18 @@ rcl_timer_t read_timer;
  */
 #define CAN0_INT 4
 MCP_CAN CAN0(12);
-Comet_CAN_Helper CAN_Helper;
+Comet_CAN_Helper CAN_Helper(CAN0);
 long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
+uint8_t control_data_testing[8] = {255,255,255,255,255,255,255,255};
 
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(11);
-SPARK_MAX drive_base_right = SPARK_MAX(10);
+SPARK_MAX drive_base_left = SPARK_MAX(11, &CAN_Helper, CAN0);
+SPARK_MAX drive_base_right = SPARK_MAX(10, &CAN_Helper, CAN0);
 
 /*
  * Other
@@ -127,11 +131,20 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
+
+  // Testing to see if a control message by itself will fail
+  if(CAN0.sendMsgBuf(0x2052C80, CAN_EXTID, 8, control_data_testing) == CAN_OK){
+        //log_logging("send_control_frame Sent Successfully");
+      } else {
+        log_logging("Error Sending send_control_frame...!!!...");
+      }
+
+  /*
   // Commented out logging to prevent delays
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
-      if(CAN_Helper.send_enabled_heartbeat(CAN0) == CAN_OK){
+      if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
         //log_logging("Heartbeat Sent Successfully");
       } else {
         log_logging("Error Sending Heartbeat...!!!...");
@@ -140,7 +153,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
     else{
       if (was_enabled){
         was_enabled = false;
-        if(CAN_Helper.send_disabled_heartbeat(CAN0) == CAN_OK){
+        if(CAN_Helper.send_disabled_heartbeat() == CAN_OK){
           //log_logging("Message Sent Successfully!");
         } else {
           //log_logging("Error Sending Message...");
@@ -148,6 +161,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
       }
     }
   }
+  */
 }
 
 /*
@@ -185,20 +199,21 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.angular.z = msg->angular.z;
 
     /*
+    uint8_t control_data_testing[8] = {0,0,0,0,0,0,0,0};
     // Test motor commands
-    if(CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05) == CAN_OK){
+    if(CAN0.sendMsgBuf(0x205004a, CAN_EXTID, 8, control_data_testing) == CAN_OK){
         //log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
     // Send heartbeat inbetween commands to prevent from dropping it
     // CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled);
-    if(CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, -.05) == CAN_OK){
+    if(CAN0.sendMsgBuf(0x205004b, CAN_EXTID, 8, control_data_testing) == CAN_OK){
         //log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
-      */
+    */
 
     /*
     ::::Isues::::
@@ -211,6 +226,10 @@ void cmd_vel_callback(const void * msgin) {
     Only control_frames are failing to send???
     
     REV Hardware client still magically fixes all issues
+
+    ONLY THE CONTROL FRAMES AND DISABLE FRAMES ARE ERRORING. THE HEARTBEAT DOES NOT FAIL NEARLY AS MUCH
+    MAYBE ONCE EVERY MINUTE OR TWO.
+    THE OTHERS FAIL EVERY COUPLE OF SECONDS
 
     ::::Ideas::::
 
@@ -243,6 +262,8 @@ void cmd_vel_callback(const void * msgin) {
     Different CAN module (Would need different library)
 
     Try ESP internal reciever and external transceiver again (idk how to get to work)
+
+    Edit MCP Library and reserve a transmit buffer for heartbeat and set the priority to level 4 (highest)
     */
   }
 }
