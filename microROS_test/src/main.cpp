@@ -1,3 +1,8 @@
+/*
+::::To Do::::
+
+*/
+
 #include <Arduino.h>
 #include <micro_ros_platformio.h>
 #include <stdio.h>
@@ -67,6 +72,12 @@ byte heartbeat_data_disabled[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 bool was_enabled = false;
 
 /*
+* SPARK MAXs
+*/
+SPARK_MAX drive_base_left = SPARK_MAX(11);
+SPARK_MAX drive_base_right = SPARK_MAX(10);
+
+/*
  * Other
  */
 #define LED 2  // Onboard LED
@@ -121,10 +132,10 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
     if (enabled.data){
       was_enabled = true;
       if(CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
-        //log_logging("Message Sent Successfully!");
-    } else {
-        //log_logging("Error Sending Message...");
-    }
+        //log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
     }
     else{
       if (was_enabled){
@@ -173,38 +184,65 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
+    /*
     // Test motor commands
-    
-    CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
+    if(CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05) == CAN_OK){
+        //log_logging("send_control_frame Sent Successfully");
+      } else {
+        log_logging("Error Sending send_control_frame...!!!...");
+      }
     // Send heartbeat inbetween commands to prevent from dropping it
-    CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled);
-    CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
-
+    // CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled);
+    if(CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, -.05) == CAN_OK){
+        //log_logging("send_control_frame Sent Successfully");
+      } else {
+        log_logging("Error Sending send_control_frame...!!!...");
+      }
+      */
 
     /*
     ::::Isues::::
-    Only one controller (MCP2515) at a time seems to work
+    Only one controller (MCP2515) at a time seems to work. Not sure why it's not possible
       Can't split duties and have one do heartbeat while the other does control
 
     Sending commands besides the heartbeat seems to cause it to not send fast enough and
       momentarily disable the motors
 
+    Only control_frames are failing to send???
+    
+    REV Hardware client still magically fixes all issues
+
     ::::Ideas::::
 
+    PROBABLY GOOD PRACTICE
     Manually make a queue to send to the MCP and add a heartbeat between every command
 
     Try to send as few other CAN messages (besides heartbeat) as possible
 
+    clear msg buffer before sending heartbeat frame
+      ---- Aborttx() works (deletes stuff) but doesn't seems to be deleting everythin, even the heartbeat
+        Means the heartbeat command is queued before the previous one is sent?
+
+    try oneshot mode
+      ---- Helped, flashing was less frequent, but still present (once every few seconds)
+        Don't want oneshot mode enabled to heartbeat frames since it's important that those get transmitted
+      try oneshot mode only with control commands
+      ---- Worse than just leaving oneshot mode enabled
+
+    Control just one spark max and take the other off the CAN loop
+      ---- No change
+
+    Increase timer callback frequency for the heartbeat timer
+      ---- Didn't seem to help. Looked like it made it worse.
+        Could be clogging up the buffer?
+        heartbeat timer callback is interrupting or running at the same time and causing issues?
+
     16MHz crystal oscillator
+      ---- Tuesday
 
     Different CAN module (Would need different library)
 
     Try ESP internal reciever and external transceiver again (idk how to get to work)
-
-    ::::To Do::::
-    Make a SPARK MAX class instead of a general CAN Helper
-      Could still use both, just need one for SPARK MAXs so there's an organized way to keep
-      track of SPARK MAX info.
     */
   }
 }
@@ -289,7 +327,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &heartbeat_timer,
     &support,
-    RCL_MS_TO_NS(10),               // Was 25ms
+    RCL_MS_TO_NS(25),               // Was 25ms
     heartbeat_timer_callback));
 
   // Timer for reading from CAN buffer
