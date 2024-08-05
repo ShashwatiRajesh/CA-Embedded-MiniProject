@@ -174,8 +174,38 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.angular.z = msg->angular.z;
 
     // Test motor commands
-    // CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
-    // CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
+    
+    CAN_Helper.send_control_frame(CAN0, 11, CAN_Helper.Duty_Cycle_Set, .05);
+    // Send heartbeat inbetween commands to prevent from dropping it
+    CAN0.sendMsgBuf(HEARTBEAT_ID, 1, HEARTBEAT_DLC, heartbeat_data_enabled);
+    CAN_Helper.send_control_frame(CAN0, 10, CAN_Helper.Duty_Cycle_Set, .05);
+
+
+    /*
+    ::::Isues::::
+    Only one controller (MCP2515) at a time seems to work
+      Can't split duties and have one do heartbeat while the other does control
+
+    Sending commands besides the heartbeat seems to cause it to not send fast enough and
+      momentarily disable the motors
+
+    ::::Ideas::::
+
+    Manually make a queue to send to the MCP and add a heartbeat between every command
+
+    Try to send as few other CAN messages (besides heartbeat) as possible
+
+    16MHz crystal oscillator
+
+    Different CAN module (Would need different library)
+
+    Try ESP internal reciever and external transceiver again (idk how to get to work)
+
+    ::::To Do::::
+    Make a SPARK MAX class instead of a general CAN Helper
+      Could still use both, just need one for SPARK MAXs so there's an organized way to keep
+      track of SPARK MAX info.
+    */
   }
 }
 
@@ -259,7 +289,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &heartbeat_timer,
     &support,
-    RCL_MS_TO_NS(25),
+    RCL_MS_TO_NS(10),               // Was 25ms
     heartbeat_timer_callback));
 
   // Timer for reading from CAN buffer

@@ -14,7 +14,7 @@ public:
 * SPARK MAX control modes
 */
 enum control_mode {
-  Duty_Cycle_Set = 0x2050040, // 0x2050080
+  Duty_Cycle_Set = 0x2050080, // 0x2050040
   Speed_Set = 0x2050480,
   Smart_Velocity_Set = 0x20504C0,
   Position_Set = 0x2050C80,
