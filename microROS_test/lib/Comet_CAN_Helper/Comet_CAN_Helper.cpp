@@ -97,27 +97,30 @@ void SPARK_MAX::create_data(const void *data, byte *frame_data, const uint8_t wr
 ** Descriptions:            Function to command SPARK MAX ouput
 *********************************************************************************************************/
 uint8_t SPARK_MAX::send_control_frame(MCP_CAN CAN0, const uint32_t device_id, const control_mode mode, const float setpoint){
-  uint8_t frame_data[8];
-  create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
+  if (mode != control_mode::NONE){
+    uint8_t frame_data[8];
+    create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
 
-  if (current_mode != mode){
-    current_mode = mode;
-    if(CAN0.sendMsgBuf(device_id + mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
-      return CAN_OK;
-    } 
-    else {
-      return CAN_FAIL;
+    if (current_mode != mode){
+      current_mode = mode;
+      if(CAN0.sendMsgBuf(device_id + mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
+        return CAN_OK;
+      } 
+      else {
+        return CAN_FAIL;
+      }
+    }
+    else{
+      if(CAN0.sendMsgBuf(device_id + control_mode::Use_Current_Mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
+        return CAN_OK;
+      } 
+      else {
+        return CAN_FAIL;
+      }
     }
   }
-  else{
-    if(CAN0.sendMsgBuf(device_id + control_mode::Use_Current_Mode, CAN_EXTID, CONTROL_DLC, frame_data) == CAN_OK){
-      return CAN_OK;
-    } 
-    else {
-      return CAN_FAIL;
-    }
-  }
 
+  return -1;
 }
 
 /*********************************************************************************************************

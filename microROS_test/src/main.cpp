@@ -160,11 +160,11 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
       CAN0.readMsgBuf(&rxId, &len, rxBuf);
       
       // Handle data parsing for specific frames
-      if ((rxId & DEVICE_ID_MASK) == PERIODIC_STATUS_0_FILTER) {
+      if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_0) {
         CAN_Helper.parse_status_frame_0(rxBuf);
-      } else if ((rxId & DEVICE_ID_MASK) == PERIODIC_STATUS_1_FILTER) {
+      } else if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_1) {
         CAN_Helper.parse_status_frame_1(rxBuf, len);
-      } else if ((rxId & DEVICE_ID_MASK) == PERIODIC_STATUS_2_FILTER) {
+      } else if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_2) {
         CAN_Helper.parse_status_frame_2(rxBuf, len);
       }
       // Add more cases if necessary
