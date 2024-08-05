@@ -6,6 +6,8 @@
 ---- Convert Twist into motor output
 ---- Built in ROS publisher for motor data????
       should be handled individuallly
+---- redo single message testing
+  both how often and if it needs different data
 */
 
 #include <Arduino.h>
@@ -73,7 +75,7 @@ long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
-uint8_t control_data_testing[8] = {255,255,255,255,255,255,255,255};
+uint8_t control_data_testing[8] = {0,0,0,0,0,0,0,0};
 
 /*
 * SPARK MAXs
@@ -133,8 +135,8 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
 
   // Testing to see if a control message by itself will fail
-  if(CAN0.sendMsgBuf(0x2052C80, CAN_EXTID, 8, control_data_testing) == CAN_OK){
-        //log_logging("send_control_frame Sent Successfully");
+  if(CAN0.sendMsgBuf(0x205008a, CAN_EXTID, 8, control_data_testing) == CAN_OK){
+        log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
       }
@@ -230,6 +232,8 @@ void cmd_vel_callback(const void * msgin) {
     ONLY THE CONTROL FRAMES AND DISABLE FRAMES ARE ERRORING. THE HEARTBEAT DOES NOT FAIL NEARLY AS MUCH
     MAYBE ONCE EVERY MINUTE OR TWO.
     THE OTHERS FAIL EVERY COUPLE OF SECONDS
+    sending one message testing
+      
 
     ::::Ideas::::
 
@@ -348,7 +352,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &heartbeat_timer,
     &support,
-    RCL_MS_TO_NS(25),               // Was 25ms
+    RCL_MS_TO_NS(10),               // Was 25ms
     heartbeat_timer_callback));
 
   // Timer for reading from CAN buffer
