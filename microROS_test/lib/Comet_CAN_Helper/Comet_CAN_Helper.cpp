@@ -167,9 +167,11 @@ uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const ui
   uint8_t frame_data[8];
   create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
   if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){
+    delay(50);
     return CAN_OK;
   } 
   else {
+    delay(50);
     return CAN_FAIL;
   }
 }

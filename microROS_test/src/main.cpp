@@ -288,6 +288,8 @@ void cmd_vel_callback(const void * msgin) {
         From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after]
             w/ periodic status's set to 100ms
 
+        Changing status frame period did not help, instead led to txrx errors
+
 
     ::::Ideas::::
 
@@ -348,6 +350,10 @@ void setup() {
   set_microros_serial_transports(Serial);
   delay(2000);
 
+  pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
+  pinMode(LED, OUTPUT);  // Set LED_PIN as output
+  digitalWrite(LED, HIGH);  // Turn on the LED
+
   // Initialize MCP2515 running at 8MHz with a baudrate of 1000kb/s and the masks and filters disabled.
   if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_8MHZ) == CAN_OK)
     log_logging("MCP2515 Initialized Successfully!");
@@ -355,11 +361,25 @@ void setup() {
     log_logging("Error Initializing MCP2515...");
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
 
-  CAN0.enOneShotTX();
+  CAN0.disOneShotTX();
+  // Trying to reduce CAN utilization:::: DID NOT WORK, caused txrx errors. Tried with and without oneshot
+  delay(50);
+  drive_base_left.set_status_frame_period(status_0, 100);
+  drive_base_left.set_status_frame_period(status_1, 500);
+  drive_base_left.set_status_frame_period(status_2, 500);
+  //drive_base_left.set_status_frame_period(status_3, 100);
+  //drive_base_left.set_status_frame_period(status_4, 100);
 
-  pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
-  pinMode(LED, OUTPUT);  // Set LED_PIN as output
-  digitalWrite(LED, HIGH);  // Turn on the LED
+  drive_base_right.set_status_frame_period(status_0, 100);
+  drive_base_right.set_status_frame_period(status_1, 500);
+  drive_base_right.set_status_frame_period(status_2, 500);
+  //drive_base_right.set_status_frame_period(status_3, 100);
+  //drive_base_right.set_status_frame_period(status_4, 100);
+
+  CAN0.enOneShotTX();
+  
+
+  
 
   allocator = rcl_get_default_allocator();
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
