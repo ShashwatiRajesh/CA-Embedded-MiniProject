@@ -244,6 +244,7 @@ void cmd_vel_callback(const void * msgin) {
     
     REV Hardware client still magically fixes all issues
 
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!! @ 8MHz !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     ONLY THE CONTROL FRAMES AND DISABLE FRAMES ARE ERRORING. THE HEARTBEAT DOES NOT FAIL NEARLY AS MUCH
     MAYBE ONCE EVERY MINUTE OR TWO.
     THE OTHERS FAIL EVERY COUPLE OF SECONDS
@@ -289,7 +290,14 @@ void cmd_vel_callback(const void * msgin) {
             w/ periodic status's set to 100ms
 
         Changing status frame period did not help, instead led to txrx errors
+          
 
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!! @ 16MHz !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after, one-shot]
+          worked perfectly for two minutes
+        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after, NO one-shot]
+          worked perfectly for two minutes
+        ^ with set period commands
 
     ::::Ideas::::
 
@@ -361,9 +369,9 @@ void setup() {
     log_logging("Error Initializing MCP2515...");
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
   // Does not work with one shot disabled
-  CAN0.enOneShotTX();
-  /*
-  delay(50);
+  CAN0.disOneShotTX();
+  
+  delay(250);
   drive_base_left.set_status_frame_period(status_0, 100);
   drive_base_left.set_status_frame_period(status_1, 500);
   drive_base_left.set_status_frame_period(status_2, 500);
@@ -374,7 +382,7 @@ void setup() {
   drive_base_right.set_status_frame_period(status_1, 500);
   drive_base_right.set_status_frame_period(status_2, 500);
   //drive_base_right.set_status_frame_period(status_3, 100);
-  //drive_base_right.set_status_frame_period(status_4, 100);*/
+  //drive_base_right.set_status_frame_period(status_4, 100);
 
   
   
