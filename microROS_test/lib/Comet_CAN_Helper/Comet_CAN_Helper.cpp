@@ -76,41 +76,28 @@ uint8_t Comet_CAN_Helper::send_disabled_heartbeat(){
     }
 }
 
-/*********************************************************************************************************
-** Function name:           send_disabled_heartbeat
-** Descriptions:            Send heartbeat to disable all devices
-*********************************************************************************************************/
-bool Comet_CAN_Helper::add_frame_to_queue(const can_frame &frame) {
-    if (queue_count == QUEUE_SIZE) {
-        return false; // Queue is full
+int Comet_CAN_Helper::add_to_Spark_Max_arr(SPARK_MAX *Spark_Max){
+  uint8_t device_id = Spark_Max->get_device_id();
+
+  // Check to Ensure Unique Device ID
+  for (int i = 0; i < MAX_CAN_DEVICES; i++){
+    if (Spark_Max_arr[i] != nullptr){
+      if (Spark_Max_arr[i]->get_device_id() == device_id){
+        return -1; // ID in Use
+      }
     }
-    can_frame_queue[queue_rear] = frame;
-    queue_rear = (queue_rear + 1) % QUEUE_SIZE;
-    ++queue_count;
-    return true;
+  }
+
+  // Add the SPARK_MAX object to the array
+    if (num_Spark_Maxs < MAX_CAN_DEVICES){
+        Spark_Max_arr[num_Spark_Maxs] = Spark_Max;
+        num_Spark_Maxs++;
+        return 0; // Success
+    } else {
+        return -2; // Array is full
+    }
 }
 
-/*********************************************************************************************************
-** Function name:           send_disabled_heartbeat
-** Descriptions:            Send heartbeat to disable all devices
-*********************************************************************************************************/
-bool Comet_CAN_Helper::remove_frame_from_queue(can_frame &frame) {
-    if (is_queue_empty()) {
-        return false; // Queue is empty
-    }
-    frame = can_frame_queue[queue_front];
-    queue_front = (queue_front + 1) % QUEUE_SIZE;
-    --queue_count;
-    return true;
-}
-
-/*********************************************************************************************************
-** Function name:           is_queue_empty
-** Descriptions:            Returns if the CAN frame queue is empty
-*********************************************************************************************************/
-bool Comet_CAN_Helper::is_queue_empty() const {
-    return queue_count == 0;
-}
 
 /*********************************************************************************************************
 ** Function name:           create_data
@@ -164,6 +151,8 @@ uint8_t SPARK_MAX::send_control_frame(const control_mode mode, const float setpo
 ** Descriptions:            Function to set period for SPARK MAX status frames
 *********************************************************************************************************/
 uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const uint16_t period){
+  // Delay to ensure there is an available transmit buffer
+  delay(50);
   uint8_t frame_data[STATUS_DLC];
   create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
   if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){
@@ -172,5 +161,13 @@ uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const ui
   else {
     return CAN_FAIL;
   }
+}
+
+uint8_t SPARK_MAX::get_device_id(){
+  return device_id;
+}
+
+void SPARK_MAX::add_to_Spark_Max_arr(){
+  CAN_Helper.add_to_Spark_Max_arr(this);
 }
 

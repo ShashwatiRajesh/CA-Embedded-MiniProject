@@ -79,8 +79,8 @@ bool was_enabled = false;
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(11, &CAN_Helper, CAN0);
-SPARK_MAX drive_base_right = SPARK_MAX(10, &CAN_Helper, CAN0);
+SPARK_MAX drive_base_left = SPARK_MAX(11, CAN_Helper, CAN0);
+SPARK_MAX drive_base_right = SPARK_MAX(10, CAN_Helper, CAN0);
 
 /*
  * Other

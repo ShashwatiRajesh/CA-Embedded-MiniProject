@@ -19,9 +19,12 @@ SPARK MAX Class
 
 #ifndef COMET_CAN_HELPER_H
 #define COMET_CAN_HELPER_H
+#define MAX_CAN_DEVICES 64 // FRC protocol limits number of devices to 64 so it's safe to use
 
 #include <Arduino.h>
 #include <mcp_can.h>
+
+class SPARK_MAX; // Forward declaration to break circular dependency
 
 /*
 * Status Frame ID enumeration
@@ -44,13 +47,18 @@ public:
     * Constructor
     */
     Comet_CAN_Helper(MCP_CAN &CAN0) : CAN0(CAN0) {
-        // Additional initialization if needed
+        // Initialize the array of pointers to nullptr
+        for (int i = 0; i < MAX_CAN_DEVICES; ++i) {
+            Spark_Max_arr[i] = nullptr;
+        }
     }
 
     /*
     * Constants/variables
     */
     const uint32_t DEVICE_ID_MASK = 0xFFFFFFC0; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
+    SPARK_MAX* Spark_Max_arr[MAX_CAN_DEVICES]; // Array of pointers to SPARK_MAX objects
+    uint8_t num_Spark_Maxs = 0;
 
     /*
     * CAN Frame structure
@@ -70,22 +78,14 @@ public:
     void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
-
-    // FIFO Queue Functions
-    bool add_frame_to_queue(const can_frame &frame);
-    bool remove_frame_from_queue(can_frame &frame);
-    bool is_queue_empty() const;
+    int add_to_Spark_Max_arr(SPARK_MAX *Spark_Max);        // Adds the Spark Max object to the list of Spark Maxs
 
 private:
     /*
     * Constants/variables
     */
-    static const int QUEUE_SIZE = 10;
-    can_frame can_frame_queue[QUEUE_SIZE];
-    int queue_front = 0;
-    int queue_rear = 0;
-    int queue_count = 0;
     MCP_CAN &CAN0;
+
 
     /*
     * Heartbeat frame
@@ -123,10 +123,9 @@ public:
     /*
     * Constructor
     */
-    SPARK_MAX(uint8_t device_id, Comet_CAN_Helper *helper, MCP_CAN &CAN0) : CAN0(CAN0) {
+    SPARK_MAX(uint8_t device_id,Comet_CAN_Helper &helper, MCP_CAN &CAN0) : CAN0(CAN0), CAN_Helper(helper) {
         this->device_id = device_id;
         current_mode = control_mode::NONE;
-        comet_can_helper = helper;
     }
 
     /*
@@ -156,6 +155,8 @@ public:
                      byte *frame_data, 
                      const uint8_t write_size, 
                      const uint8_t dlc);
+    uint8_t get_device_id();
+    
 
 private:
     /*
@@ -163,8 +164,9 @@ private:
     */
     uint8_t device_id;
     control_mode current_mode;
-    Comet_CAN_Helper *comet_can_helper;
+    Comet_CAN_Helper &CAN_Helper;
     MCP_CAN &CAN0;
+
 
     /*
     * Control Frame
@@ -181,7 +183,7 @@ private:
     /*
     * Functions
     */
-    
+    void add_to_Spark_Max_arr();        // Adds the Spark Max object to the list of Spark Maxs
 };
 
 #endif
