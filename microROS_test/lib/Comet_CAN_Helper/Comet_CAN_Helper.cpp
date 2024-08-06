@@ -134,7 +134,7 @@ void SPARK_MAX::create_data(const void *data, byte *frame_data, const uint8_t wr
 *********************************************************************************************************/
 uint8_t SPARK_MAX::send_control_frame(const control_mode mode, const float setpoint){
   if (mode != control_mode::NONE){
-    uint8_t frame_data[8];
+    uint8_t frame_data[CONTROL_DLC];
     create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
 
     if (current_mode != mode){
@@ -164,14 +164,12 @@ uint8_t SPARK_MAX::send_control_frame(const control_mode mode, const float setpo
 ** Descriptions:            Function to set period for SPARK MAX status frames
 *********************************************************************************************************/
 uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const uint16_t period){
-  uint8_t frame_data[8];
+  uint8_t frame_data[STATUS_DLC];
   create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
   if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){
-    delay(50);
     return CAN_OK;
   } 
   else {
-    delay(50);
     return CAN_FAIL;
   }
 }

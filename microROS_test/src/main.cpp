@@ -360,9 +360,9 @@ void setup() {
   else
     log_logging("Error Initializing MCP2515...");
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
-
-  CAN0.disOneShotTX();
-  // Trying to reduce CAN utilization:::: DID NOT WORK, caused txrx errors. Tried with and without oneshot
+  // Does not work with one shot disabled
+  CAN0.enOneShotTX();
+  /*
   delay(50);
   drive_base_left.set_status_frame_period(status_0, 100);
   drive_base_left.set_status_frame_period(status_1, 500);
@@ -374,9 +374,9 @@ void setup() {
   drive_base_right.set_status_frame_period(status_1, 500);
   drive_base_right.set_status_frame_period(status_2, 500);
   //drive_base_right.set_status_frame_period(status_3, 100);
-  //drive_base_right.set_status_frame_period(status_4, 100);
+  //drive_base_right.set_status_frame_period(status_4, 100);*/
 
-  CAN0.enOneShotTX();
+  
   
 
   
