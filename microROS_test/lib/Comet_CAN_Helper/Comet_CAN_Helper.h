@@ -19,11 +19,12 @@ SPARK MAX Class
 
 #ifndef COMET_CAN_HELPER_H
 #define COMET_CAN_HELPER_H
-#define MAX_CAN_DEVICES 64 // FRC protocol limits number of devices to 64 so it's safe to use
+
 
 #include <Arduino.h>
 #include <mcp_can.h>
 #include "Comet_CAN_Common.h"
+#include "CAN_Device_Interface.h"
 
 
 
@@ -39,18 +40,9 @@ public:
     Comet_CAN_Helper(MCP_CAN &CAN0) : CAN0(CAN0) {
         // Initialize the array of pointers to nullptr
         for (int i = 0; i < MAX_CAN_DEVICES; ++i) {
-            Spark_Max_arr[i] = nullptr;
+            can_devices[i] = nullptr;
         }
     }
-
-    /*
-    * Constants/variables
-    */
-    const uint32_t DEVICE_ID_MASK = 0xFFFFFFC0; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
-    SPARK_MAX* Spark_Max_arr[MAX_CAN_DEVICES]; // Array of pointers to SPARK_MAX objects
-    uint8_t num_Spark_Maxs = 0;
-
-    
 
     /*
     * Functions
@@ -60,13 +52,16 @@ public:
     void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
-    int add_to_Spark_Max_arr(SPARK_MAX *Spark_Max);        // Adds the Spark Max object to the list of Spark Maxs
+    int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
 
 private:
     /*
     * Constants/variables
     */
     MCP_CAN &CAN0;
+    ICAN_Device* can_devices[MAX_CAN_DEVICES]; // Array of pointers to CAN devices
+    uint8_t num_CAN_devs = 0;
+    const uint32_t DEVICE_ID_MASK = FRC_dev_id_mask; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
 
 
     /*

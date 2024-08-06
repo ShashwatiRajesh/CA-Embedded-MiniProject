@@ -82,8 +82,8 @@ bool was_enabled = false;
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(11, CAN0);
-SPARK_MAX drive_base_right = SPARK_MAX(10, CAN0);
+SPARK_MAX drive_base_left = SPARK_MAX(11, CAN0, CAN_Helper);
+SPARK_MAX drive_base_right = SPARK_MAX(10, CAN0, CAN_Helper);
 
 /*
  * Other
@@ -168,11 +168,11 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
       CAN0.readMsgBuf(&rxId, &len, rxBuf);
       
       // Handle data parsing for specific frames
-      if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_0) {
+      if ((rxId & FRC_dev_id_mask) == status_0) {
         CAN_Helper.parse_status_frame_0(rxBuf);
-      } else if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_1) {
+      } else if ((rxId & FRC_dev_id_mask) == status_1) {
         CAN_Helper.parse_status_frame_1(rxBuf, len);
-      } else if ((rxId & CAN_Helper.DEVICE_ID_MASK) == status_2) {
+      } else if ((rxId & FRC_dev_id_mask) == status_2) {
         CAN_Helper.parse_status_frame_2(rxBuf, len);
       }
       // Add more cases if necessary
@@ -201,7 +201,7 @@ void cmd_vel_callback(const void * msgin) {
       }
 
     // Test motor commands
-    if(drive_base_left.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+    if(drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05) == CAN_OK){
         log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");
@@ -221,7 +221,7 @@ void cmd_vel_callback(const void * msgin) {
       }
 
     // Test motor commands
-    if(drive_base_right.send_control_frame(SPARK_MAX::Duty_Cycle_Set, 0.05) == CAN_OK){
+    if(drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05) == CAN_OK){
         log_logging("send_control_frame Sent Successfully");
       } else {
         log_logging("Error Sending send_control_frame...!!!...");

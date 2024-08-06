@@ -76,22 +76,28 @@ uint8_t Comet_CAN_Helper::send_disabled_heartbeat(){
     }
 }
 
-int Comet_CAN_Helper::add_to_Spark_Max_arr(SPARK_MAX *Spark_Max){
-  uint8_t device_id = Spark_Max->get_device_id();
+/*********************************************************************************************************
+** Function name:           add_to_CAN_dev_arr
+** Descriptions:            Adds a device to the CAN device list
+*********************************************************************************************************/
+int Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
+  if (CAN_dev->is_FRC()){
+    uint8_t device_id = CAN_dev->get_device_id();
 
-  // Check to Ensure Unique Device ID
-  for (int i = 0; i < MAX_CAN_DEVICES; i++){
-    if (Spark_Max_arr[i] != nullptr){
-      if (Spark_Max_arr[i]->get_device_id() == device_id){
-        return -1; // ID in Use
+    // Check to Ensure Unique Device ID for FRC devices
+    for (int i = 0; i < MAX_CAN_DEVICES; i++){
+      if (can_devices[i] != nullptr){
+        if (can_devices[i]->get_device_id() == device_id){
+          return -1; // ID in Use
+        }
       }
     }
   }
 
-  // Add the SPARK_MAX object to the array
-    if (num_Spark_Maxs < MAX_CAN_DEVICES){
-        Spark_Max_arr[num_Spark_Maxs] = Spark_Max;
-        num_Spark_Maxs++;
+  // Add the CAN_dev object to the array
+    if (num_CAN_devs < MAX_CAN_DEVICES){
+        can_devices[num_CAN_devs] = CAN_dev;
+        num_CAN_devs++;
         return 0; // Success
     } else {
         return -2; // Array is full

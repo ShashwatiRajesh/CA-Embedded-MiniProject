@@ -5,6 +5,10 @@
 
 #include <Arduino.h>
 
+#define MAX_CAN_DEVICES 64 // FRC protocol limits number of devices to 64 so it's safe to use
+
+const uint32_t FRC_dev_id_mask = 0xFFFFFFC0; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
+
 /*
 * CAN Frame structure
 */
@@ -45,7 +49,7 @@ NONE = 0x00000000
 ** Function name:           create_data
 ** Descriptions:            Copy data to frame_data (little-Endian)
 *********************************************************************************************************/
-void create_data(const void *data, byte *frame_data, const uint8_t write_size, const uint8_t dlc){
+static void create_data(const void *data, byte *frame_data, const uint8_t write_size, const uint8_t dlc){
   const byte *data_arr = static_cast<const byte *>(data);
   for (int i = 0; i < write_size; i++) {
     frame_data[i] = data_arr[i];
