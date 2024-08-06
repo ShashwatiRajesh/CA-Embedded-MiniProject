@@ -355,7 +355,7 @@ void setup() {
   digitalWrite(LED, HIGH);  // Turn on the LED
 
   // Initialize MCP2515 running at 8MHz with a baudrate of 1000kb/s and the masks and filters disabled.
-  if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_8MHZ) == CAN_OK)
+  if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_16MHZ) == CAN_OK)
     log_logging("MCP2515 Initialized Successfully!");
   else
     log_logging("Error Initializing MCP2515...");
