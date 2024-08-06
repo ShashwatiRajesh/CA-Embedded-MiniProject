@@ -2,14 +2,19 @@
 ::::To Do::::
 ++++ DONE
 ---- TODO
+~~~~ IDEA
 
 SPARK MAX Class
 ++++ update send_control_frame to check and set current_mode. Either use commanded mode or current mode depending on current mode status
 ++++ check set_status_frame_period function implementation
 ---- Built in ROS publisher for motor data????
       should be handled individually
-
 ---- Implement can_frame_queue
+    ~~~~ Could implement the can_frame_queue in two ways. 
+        1. Use a stack and add/remove frames to it from functions
+            commander sends first frame sandwhiched bewtween hearbeats
+        2. Use an array of CAN_devices. where each can_device updates it's desired command
+            commander cycles through devices and send desired command sandwhiched between heartbeats
 */
 
 #ifndef COMET_CAN_HELPER_H
