@@ -14,6 +14,8 @@ public:
 
     virtual can_frame get_current_frame() const = 0;
 
+    virtual void clear_current_frame() = 0; // can't be constant since it modifies a member variable
+
     // Virtual destructor for proper cleanup of derived classes
     // Is this necessary?
     virtual ~ICAN_Device() {}

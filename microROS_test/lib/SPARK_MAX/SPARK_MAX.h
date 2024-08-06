@@ -42,7 +42,13 @@ public:
     }
 
     can_frame get_current_frame() const override {
-        return current_control_frame;
+        return current_control_frame; 
+    }
+
+    void clear_current_frame() override {
+        current_control_frame = empty_frame;
+        current_control_frame.dlc = CONTROL_DLC;
+        current_control_frame.ext = 1;
     }
 
     uint8_t send_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
@@ -57,8 +63,8 @@ private:
     */
     uint8_t device_id;
     control_mode current_mode;
-    can_frame current_control_frame; // Used to store the most recent control frame
-    MCP_CAN &CAN0;
+    can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
+    MCP_CAN &CAN0; // Change to set all the periodic status's at the constructor so it doesn't need to be stored
 
     /*
     * Control Frame

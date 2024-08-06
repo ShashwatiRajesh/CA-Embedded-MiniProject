@@ -4,10 +4,7 @@
 ---- TODO
 
 ---- Convert Twist into motor output
----- Built in ROS publisher for motor data????
-      should be handled individuallly
----- redo single message testing
-  both how often and if it needs different data
+---- Change to set all the periodic status's at the constructor so it doesn't need to be stored
 */
 
 #include <Arduino.h>
@@ -138,6 +135,15 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
+
+      if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
+        log_logging("Heartbeat Sent Successfully");
+      } else {
+        log_logging("Error Sending Heartbeat...!!!...");
+      }
+
+      CAN_Helper.send_message();
+
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
         log_logging("Heartbeat Sent Successfully");
       } else {
@@ -191,151 +197,6 @@ void cmd_vel_callback(const void * msgin) {
     // Process Twist
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
-
-    
-    // pre-heartbeat
-    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
-      } else {
-        log_logging("Error Sending Heartbeat...!!!...");
-      }
-
-    // Test motor commands
-    if(drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05) == CAN_OK){
-        log_logging("send_control_frame Sent Successfully");
-      } else {
-        log_logging("Error Sending send_control_frame...!!!...");
-      }
-    // post-heartbeat
-    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
-      } else {
-        log_logging("Error Sending Heartbeat...!!!...");
-      }
-
-    // pre-heartbeat
-    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
-      } else {
-        log_logging("Error Sending Heartbeat...!!!...");
-      }
-
-    // Test motor commands
-    if(drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05) == CAN_OK){
-        log_logging("send_control_frame Sent Successfully");
-      } else {
-        log_logging("Error Sending send_control_frame...!!!...");
-      }
-    // post-heartbeat
-    if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
-      } else {
-        log_logging("Error Sending Heartbeat...!!!...");
-      }
-
-    
-
-    /*
-    ::::Isues::::
-    Only one controller (MCP2515) at a time seems to work. Not sure why it's not possible
-      Can't split duties and have one do heartbeat while the other does control
-
-    Sending commands besides the heartbeat seems to cause it to not send fast enough and
-      momentarily disable the motors
-
-    Only control_frames are failing to send???
-    
-    REV Hardware client still magically fixes all issues
-
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!! @ 8MHz !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    ONLY THE CONTROL FRAMES AND DISABLE FRAMES ARE ERRORING. THE HEARTBEAT DOES NOT FAIL NEARLY AS MUCH
-    MAYBE ONCE EVERY MINUTE OR TWO.
-    THE OTHERS FAIL EVERY COUPLE OF SECONDS
-    sending one message testing  NOTE ALL CAN FRAMES ARE ADDED TO THE TRANSMIT BUFFER FROM THE SAME METHOD DURING TESTING (TESTING USING HEARTBEAT TIMER_CALLBACK)
-      @ 250ms w/ constant message 1/7 messages fails to send
-      @ 50ms w/ constant message 1/15 messages fails to send
-      @ 100ms w/ variable message still failing
-          w/ oneshot logging reports success, and no noticeable ligth error codes
-      @ 100ms w/ constant message
-          w/ oneshot ==== logging reports success, and no noticeable ligth error codes
-          w/ heartbeat and oneshot and full logging ==== logging reports success, and no noticeable ligth error codes. Just dropping the enabled so purple flashing
-          @ 50ms ran for 30s and checked with RHC no txrx errors
-          @ 25ms WORKS PERFECTLY (oneshot mode worries me a little with the heartbeat but ran for 1 minute without dropping heartbeat)
-
-      POSSIBLE SOURCES OF ISSUES:
-        1. adding to the tx buffer from multiple different functions at once (may be interrupting each other)
-        2. passing CAN0 by value instead of reference to the SPARK MAX and CAN Helper Classes
-        3. not having oneshot enabled meant that if a contorl packet didn't send it would resend and holdup the next heartbeat
-      NEXT STEPS:
-        1. start rolling back testing code and returning to normal code and look for issueus
-        2. finish implementing a manual can buffer to centralize the adding of frames to the tx buffer
-        3. look into library/MCP behavior when trying to write to tx buffer when all buffers full
-        4. look into oneshot mode and how it works. Can it be set for specific messages? Or is it applied to all messages in tx buffers?
-
-        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 2x]
-            momentary heartbeat loss, no txrx errors
-        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 1x]
-          momentary heartbeat loss (less frequent than 2x)
-            looks like the manual queue is necessary to ensure heartbeat insertion bewteen other commands
-        From timer and subscriber with heartbeat functions only (manually sending control frames) [0x2050080 command 1x w heartbeat before and after]
-            WORKS PERFECTLY (oneshot mode worries me a little with the heartbeat but ran for 1 minute without dropping heartbeat)
-        From timer and subscriber with both control & heartbeat functions only[contorl command 1x w heartbeat before and after]
-            no txrx errors. Only one momentary loss of heartbeat
-        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after]
-            very infrequent (~20-40s) heartbeat loss. watchdog reset and has reset errors on one motor 
-            clear sticky and test again
-              no sticky errors (errors above possibly caused by something else)
-
-        Double ESP: non-heartbeat frames with one-shot
-                  : heartbeat with normal mode
-
-        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after]
-            w/ periodic status's set to 100ms
-
-        Changing status frame period did not help, instead led to txrx errors
-          
-
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!! @ 16MHz !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after, one-shot]
-          worked perfectly for two minutes
-        From timer and subscriber with both control & heartbeat functions only[contorl command 2x w heartbeat before and after, NO one-shot]
-          worked perfectly for two minutes
-        ^ with set period commands
-
-    ::::Ideas::::
-
-    PROBABLY GOOD PRACTICE
-    Manually make a queue to send to the MCP and add a heartbeat between every command
-
-    Try to send as few other CAN messages (besides heartbeat) as possible
-
-    clear msg buffer before sending heartbeat frame
-      ---- Aborttx() works (deletes stuff) but doesn't seems to be deleting everythin, even the heartbeat
-        Means the heartbeat command is queued before the previous one is sent?
-
-    try oneshot mode
-      ---- Helped, flashing was less frequent, but still present (once every few seconds)
-        Don't want oneshot mode enabled to heartbeat frames since it's important that those get transmitted
-      try oneshot mode only with control commands
-      ---- Worse than just leaving oneshot mode enabled
-
-    Control just one spark max and take the other off the CAN loop
-      ---- No change
-
-    Increase timer callback frequency for the heartbeat timer
-      ---- Didn't seem to help. Looked like it made it worse.
-        Could be clogging up the buffer?
-        heartbeat timer callback is interrupting or running at the same time and causing issues?
-
-    16MHz crystal oscillator
-      ---- Tuesday
-
-    Different CAN module (Would need different library)
-
-    Try ESP internal reciever and external transceiver again (idk how to get to work)
-
-    Edit MCP Library and reserve a transmit buffer for heartbeat and set the priority to level 4 (highest)
-    */
   }
 }
 

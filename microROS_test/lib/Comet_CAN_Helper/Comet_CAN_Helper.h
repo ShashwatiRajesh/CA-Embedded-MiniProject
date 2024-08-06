@@ -53,6 +53,7 @@ public:
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
     int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
+    void send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
 
 private:
     /*
@@ -61,6 +62,7 @@ private:
     MCP_CAN &CAN0;
     ICAN_Device* can_devices[MAX_CAN_DEVICES]; // Array of pointers to CAN devices
     uint8_t num_CAN_devs = 0;
+    uint32_t selected_CAN_dev = 0;
     const uint32_t DEVICE_ID_MASK = FRC_dev_id_mask; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
 
 

@@ -103,3 +103,25 @@ int Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
         return -2; // Array is full
     }
 }
+
+/*********************************************************************************************************
+** Function name:           send_message
+** Descriptions:            Returns the queued CAN frame of the selected CAN dev and then moves to the next dev
+*********************************************************************************************************/
+void Comet_CAN_Helper::send_message(){
+  if (num_CAN_devs == 0){
+    return;
+  }
+
+  if (selected_CAN_dev == num_CAN_devs){
+    selected_CAN_dev = 0;
+  }
+
+  can_frame frame = can_devices[selected_CAN_dev]->get_current_frame();
+
+  CAN0.sendMsgBuf(frame.can_id, frame.ext, frame.dlc, frame.buf);
+
+  can_devices[selected_CAN_dev]->clear_current_frame();
+  selected_CAN_dev++;
+
+}
