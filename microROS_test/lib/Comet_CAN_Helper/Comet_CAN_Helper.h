@@ -23,19 +23,9 @@ SPARK MAX Class
 
 #include <Arduino.h>
 #include <mcp_can.h>
+#include "Comet_CAN_Common.h"
 
-class SPARK_MAX; // Forward declaration to break circular dependency
 
-/*
-* Status Frame ID enumeration
-*/
-enum status_frame_id {
-    status_0 = 0x2051800,
-    status_1 = 0x2051840,
-    status_2 = 0x2051880,
-    status_3 = 0x20518C0,
-    status_4 = 0x2051900
-};
 
 /*********************************************************************************************************
 ** Comet_CAN_Helper class
@@ -60,15 +50,7 @@ public:
     SPARK_MAX* Spark_Max_arr[MAX_CAN_DEVICES]; // Array of pointers to SPARK_MAX objects
     uint8_t num_Spark_Maxs = 0;
 
-    /*
-    * CAN Frame structure
-    */
-    struct can_frame {
-        uint32_t can_id; // CAN identifier
-        uint8_t ext;     // Extended frame flag
-        uint8_t dlc;     // Data length code
-        uint8_t buf[8];  // Data buffer
-    };
+    
 
     /*
     * Functions
@@ -112,78 +94,6 @@ private:
     * Functions
     */
     float data_to_float(uint8_t *data, uint8_t size); // Converts four bytes (little-endian) to a IEEE floating point number
-};
-
-/*********************************************************************************************************
-** SPARK_MAX class
-** For configuring and controlling SPARK MAXs
-*********************************************************************************************************/
-class SPARK_MAX {
-public:
-    /*
-    * Constructor
-    */
-    SPARK_MAX(uint8_t device_id,Comet_CAN_Helper &helper, MCP_CAN &CAN0) : CAN0(CAN0), CAN_Helper(helper) {
-        this->device_id = device_id;
-        current_mode = control_mode::NONE;
-    }
-
-    /*
-    * SPARK MAX control modes
-    */
-    enum control_mode {
-        Use_Current_Mode = 0x2050040,
-        Duty_Cycle_Set = 0x2050080,
-        Speed_Set = 0x2050480,
-        Smart_Velocity_Set = 0x20504C0,
-        Position_Set = 0x2050C80,
-        Voltage_Set = 0x2051080,
-        Current_Set = 0x20510C0,
-        Smart_Motion_Set = 0x2051480,
-        NONE = 0x00000000
-    };
-
-    /*
-    * Functions
-    */
-    
-    uint8_t send_control_frame(const control_mode mode, // Command SPARK MAX output
-                               const float setpoint);
-    uint8_t set_status_frame_period(const status_frame_id frame, // Set period for SPARK MAX status frames
-                                    const uint16_t period);
-    void create_data(const void *data,                 // Copy data to frame_data (little-Endian)
-                     byte *frame_data, 
-                     const uint8_t write_size, 
-                     const uint8_t dlc);
-    uint8_t get_device_id();
-    
-
-private:
-    /*
-    * Constants/variables
-    */
-    uint8_t device_id;
-    control_mode current_mode;
-    Comet_CAN_Helper &CAN_Helper;
-    MCP_CAN &CAN0;
-
-
-    /*
-    * Control Frame
-    */
-    const uint8_t CONTROL_DLC = 8;
-    const uint8_t CONTROL_WRITE_SIZE = 4; // Size (bytes) of actual data written into the Data Window
-
-    /*
-    * Status Frame
-    */
-    const uint8_t STATUS_DLC = 2;
-    const uint8_t STATUS_WRITE_SIZE = 2; // Size (bytes) of actual data written into the Data Window
-
-    /*
-    * Functions
-    */
-    void add_to_Spark_Max_arr();        // Adds the Spark Max object to the list of Spark Maxs
 };
 
 #endif

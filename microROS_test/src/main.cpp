@@ -22,7 +22,10 @@
 #include <geometry_msgs/msg/twist.h>
 #include <SPI.h>
 #include <mcp_can.h>
-#include <Comet_CAN_Helper.h>
+
+#include "Comet_CAN_Helper.h"
+#include "SPARK_MAX.h"
+#include "Comet_CAN_Common.h"
 
 /*
  * Function Prototypes
@@ -79,8 +82,8 @@ bool was_enabled = false;
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(11, CAN_Helper, CAN0);
-SPARK_MAX drive_base_right = SPARK_MAX(10, CAN_Helper, CAN0);
+SPARK_MAX drive_base_left = SPARK_MAX(11, CAN0);
+SPARK_MAX drive_base_right = SPARK_MAX(10, CAN0);
 
 /*
  * Other
