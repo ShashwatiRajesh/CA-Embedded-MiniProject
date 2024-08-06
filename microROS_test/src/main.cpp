@@ -2,9 +2,11 @@
 ::::To Do::::
 ++++ DONE
 ---- TODO
+**** TODO Important
 
 ---- Convert Twist into motor output
 ---- Change to set all the periodic status's at the constructor so it doesn't need to be stored
+**** make send_non_HB_message pbr (slowing down heartbeat too much)
 */
 
 #include <Arduino.h>
@@ -142,7 +144,7 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
         log_logging("Error Sending Heartbeat...!!!...");
       }
 
-      CAN_Helper.send_message();
+      // log_logging(CAN_Helper.send_message().c_str());
 
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
         log_logging("Heartbeat Sent Successfully");
@@ -197,6 +199,9 @@ void cmd_vel_callback(const void * msgin) {
     // Process Twist
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
+
+    drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+    drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
   }
 }
 

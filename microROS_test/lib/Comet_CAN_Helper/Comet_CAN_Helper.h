@@ -53,7 +53,7 @@ public:
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
     int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
-    void send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
+    String send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
 
 private:
     /*
