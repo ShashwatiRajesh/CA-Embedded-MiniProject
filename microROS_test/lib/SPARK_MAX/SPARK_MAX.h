@@ -17,13 +17,14 @@ public:
     /*
     * Constructor
     */
-    SPARK_MAX(uint8_t device_id, MCP_CAN &CAN0, Comet_CAN_Helper &CAN_Helper) : CAN0(CAN0) {
-        this->device_id = device_id;
+    SPARK_MAX(uint8_t device_id, MCP_CAN &CAN0, Comet_CAN_Helper &CAN_Helper) : CAN0(CAN0), device_id(device_id) {
         current_mode = control_mode::NONE;
 
         current_control_frame.dlc = CONTROL_DLC;
         current_control_frame.ext = 1;
         CAN_Helper.add_to_CAN_dev_arr(this);
+
+        mutex = xSemaphoreCreateMutex();
     }
 
     /*
@@ -42,29 +43,38 @@ public:
     }
 
     can_frame get_current_frame() const override {
-        return current_control_frame; 
+        xSemaphoreTake(mutex, portMAX_DELAY);
+        can_frame current_frame = current_control_frame;
+        xSemaphoreGive(mutex);
+        return current_frame; 
     }
 
     void clear_current_frame() override {
+        xSemaphoreTake(mutex, portMAX_DELAY);
         current_control_frame = empty_frame;
-        current_control_frame.dlc = CONTROL_DLC;
-        current_control_frame.ext = 1;
+        xSemaphoreGive(mutex);
     }
 
     uint8_t send_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
     uint8_t set_status_frame_period(const status_frame_id frame, const uint16_t period); // Set period for SPARK MAX status frames
 
     // Default destructor
-    ~SPARK_MAX() override = default;
+    ~SPARK_MAX(){
+        // Delete the mutexes
+        if (mutex != NULL) {
+            vSemaphoreDelete(mutex);
+        }
+    }
 
 private:
     /*
     * Constants/variables
     */
-    uint8_t device_id;
+    const uint8_t device_id;
     control_mode current_mode;
     can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
     MCP_CAN &CAN0; // Change to set all the periodic status's at the constructor so it doesn't need to be stored
+    SemaphoreHandle_t mutex;
 
     /*
     * Control Frame

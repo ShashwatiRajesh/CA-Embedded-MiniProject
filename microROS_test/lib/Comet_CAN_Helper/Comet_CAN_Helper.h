@@ -15,6 +15,7 @@ SPARK MAX Class
             commander sends first frame sandwhiched bewtween hearbeats
         2. Use an array of CAN_devices. where each can_device updates it's desired command
             commander cycles through devices and send desired command sandwhiched between heartbeats
+---- Define explicit error codes for adding devices to arr and other functions
 */
 
 #ifndef COMET_CAN_HELPER_H

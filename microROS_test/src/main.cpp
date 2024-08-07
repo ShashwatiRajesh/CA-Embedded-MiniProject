@@ -7,6 +7,14 @@
 ---- Convert Twist into motor output
 ---- Change to set all the periodic status's at the constructor so it doesn't need to be stored
 **** make send_non_HB_message pbr (slowing down heartbeat too much)
+**** thread safety
+    for logging (also needs a buffer because takes ~10ms)
+    for Spark Max:
+      1. Should not be
+    CAN_Helper:
+      1. 
+    Other:
+      1. Logging
 */
 
 #include <Arduino.h>
@@ -78,6 +86,10 @@ unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
 
+//Testing heartbeat_callback timing
+char hearbeat_start_string[64];  // Adjust size as needed
+unsigned long int start_time;
+
 /*
 * SPARK MAXs
 */
@@ -112,8 +124,10 @@ void error_loop(){
  * Function to log messages to the logging topic
  */
 void log_logging(const char *msg) {
-  logger.data.data = (char*)msg;
-  logger.data.size = strlen(msg);
+  char log_message[256];  // Adjust size as needed
+  snprintf(log_message, sizeof(log_message), "[%lu ms] %s", millis(), msg);
+  logger.data.size = strlen(log_message);
+  logger.data.data = (char*)log_message;
   logger.data.capacity = logger.data.size + 1;
   RCSOFTCHECK(rcl_publish(&logging_publisher, &logger, NULL));
 }
@@ -133,37 +147,43 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  * Timer callback function to be called periodically
  */
 void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
+  // the current method of logging takes 10ms
+  start_time = millis();
+
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
+  
   if (timer != NULL) {
     if (enabled.data){
       was_enabled = true;
 
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
+        //log_logging("Heartbeat Sent Successfully");
       } else {
-        log_logging("Error Sending Heartbeat...!!!...");
+        //log_logging("Error Sending Heartbeat...!!!...");
       }
 
-      // log_logging(CAN_Helper.send_message().c_str());
+      //log_logging(CAN_Helper.send_message().c_str());
+      CAN_Helper.send_message();
 
-      if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
-      } else {
-        log_logging("Error Sending Heartbeat...!!!...");
-      }
+      //log_logging(CAN_Helper.send_message().c_str());
+      CAN_Helper.send_message();
     }
     else{
       if (was_enabled){
         was_enabled = false;
         if(CAN_Helper.send_disabled_heartbeat() == CAN_OK){
-          log_logging("Message Sent Successfully!");
+          //log_logging("Message Sent Successfully!");
         } else {
-          log_logging("Error Sending Message...");
+          //log_logging("Error Sending Message...");
         }
       }
     }
   }
-  
+  drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+  drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+
+  snprintf(hearbeat_start_string, sizeof(hearbeat_start_string), ": end |||| start: [%lu ms]", start_time);
+  log_logging(hearbeat_start_string);
 }
 
 /*
@@ -200,8 +220,8 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
-    drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
-    drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+    //drive_base_left.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+    //drive_base_right.send_control_frame(control_mode::Duty_Cycle_Set, 0.05);
   }
 }
 
@@ -271,7 +291,7 @@ void setup() {
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &heartbeat_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
-  RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
+  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 
@@ -308,12 +328,13 @@ void setup_timers(){
     RCL_MS_TO_NS(25),               // Was 25ms
     heartbeat_timer_callback));
 
+  /*
   // Timer for reading from CAN buffer
   RCCHECK(rclc_timer_init_default(
     &read_timer,
     &support,
     RCL_MS_TO_NS(25),
-    read_callback));
+    read_callback));*/
 }
 
 /*

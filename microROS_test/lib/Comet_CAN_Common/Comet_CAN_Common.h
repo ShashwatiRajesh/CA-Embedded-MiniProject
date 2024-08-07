@@ -17,7 +17,7 @@ struct can_frame {
     uint8_t buf[8];  // Data buffer
 };
 
-static can_frame empty_frame = {0, 0, 0, {0}}; // Initialize all members properly
+static can_frame empty_frame = {0, 0, 0, {0}}; // Set all members to 0
 
 /*
 * Status Frame ID enumeration
