@@ -75,7 +75,7 @@ class TeleopPublisher(Node):
         with self.lock:
             # Map joystick axes to linear and angular velocities
             self.input.linear.x = msg.axes[1]  # Forward/backward movement
-            self.input.angular.z = msg.axes[0]  # Left/right rotation
+            self.input.angular.z = msg.axes[3]  # Left/right rotation
 
             # Log the updated Twist message data
             self.get_logger().info(f'Subscribing: Linear x: {self.input.linear.x}, Angular z: {self.input.angular.z}')
