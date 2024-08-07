@@ -48,8 +48,15 @@ void setup_subscribers();
  */
 rcl_publisher_t sensor_data_publisher;
 std_msgs__msg__Bool sensor_data;
+// Logger
 rcl_publisher_t logging_publisher;
 std_msgs__msg__String logger;
+SemaphoreHandle_t logger_mutex;
+char log_message[256];  // Adjust size as needed\
+// Debugging
+char hearbeat_start_string[64];  // Adjust size as needed
+unsigned long int start_time;
+char cmd_vel_string[64];  // Adjust size as needed
 
 /*
  * Subscribers
@@ -72,7 +79,7 @@ const char * microros_ns = "";
  * Timers
  */
 rcl_timer_t sensor_timer;
-rcl_timer_t heartbeat_timer;
+rcl_timer_t CAN_core_timer;
 rcl_timer_t read_timer;
 
 /*
@@ -86,15 +93,11 @@ unsigned char len = 0;
 unsigned char rxBuf[8];
 bool was_enabled = false;
 
-//Testing heartbeat_callback timing
-char hearbeat_start_string[64];  // Adjust size as needed
-unsigned long int start_time;
-
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(11, CAN0, CAN_Helper);
-SPARK_MAX drive_base_right = SPARK_MAX(10, CAN0, CAN_Helper);
+SPARK_MAX drive_base_left = SPARK_MAX(10);
+SPARK_MAX drive_base_right = SPARK_MAX(11);
 
 /*
  * Other
@@ -124,12 +127,13 @@ void error_loop(){
  * Function to log messages to the logging topic
  */
 void log_logging(const char *msg) {
-  char log_message[256];  // Adjust size as needed
+  xSemaphoreTake(logger_mutex, portMAX_DELAY);
   snprintf(log_message, sizeof(log_message), "[%lu ms] %s", millis(), msg);
   logger.data.size = strlen(log_message);
   logger.data.data = (char*)log_message;
   logger.data.capacity = logger.data.size + 1;
   RCSOFTCHECK(rcl_publish(&logging_publisher, &logger, NULL));
+  xSemaphoreGive(logger_mutex);
 }
 
 /*
@@ -146,7 +150,7 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
 /*
  * Timer callback function to be called periodically
  */
-void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
+void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   // the current method of logging takes 10ms
   start_time = millis();
 
@@ -217,10 +221,19 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
+    // Normalize
+    double sum = abs(cmd_vel.linear.x) + abs(cmd_vel.angular.z);
+    if (sum > 1){
+      cmd_vel.linear.x = cmd_vel.linear.x / sum;
+      cmd_vel.angular.z = cmd_vel.angular.z / sum;
+    }
 
-    // Testing thread safety
-    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
-    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+    // Apply Output
+    float output = cmd_vel.linear.x + cmd_vel.angular.z; //  This needs to change (Later)
+    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.1);
+    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, -0.1);
+    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "Output: [%f ms]", output);
+    log_logging(cmd_vel_string);
   }
 }
 
@@ -246,6 +259,8 @@ void setup() {
   set_microros_serial_transports(Serial);
   delay(2000);
 
+  logger_mutex = xSemaphoreCreateMutex();
+
   pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
   pinMode(LED, OUTPUT);  // Set LED_PIN as output
   digitalWrite(LED, HIGH);  // Turn on the LED
@@ -260,23 +275,9 @@ void setup() {
   CAN0.disOneShotTX();
   
   delay(250);
-  drive_base_left.set_status_frame_period(status_0, 100);
-  drive_base_left.set_status_frame_period(status_1, 500);
-  drive_base_left.set_status_frame_period(status_2, 500);
-  //drive_base_left.set_status_frame_period(status_3, 100);
-  //drive_base_left.set_status_frame_period(status_4, 100);
-
-  drive_base_right.set_status_frame_period(status_0, 100);
-  drive_base_right.set_status_frame_period(status_1, 500);
-  drive_base_right.set_status_frame_period(status_2, 500);
-  //drive_base_right.set_status_frame_period(status_3, 100);
-  //drive_base_right.set_status_frame_period(status_4, 100);
-
+  drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0);
+  drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0);
   
-  
-
-  
-
   allocator = rcl_get_default_allocator();
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
   RCCHECK(rclc_node_init_default(&node, "micro_ros_node", microros_ns, &support));
@@ -288,7 +289,7 @@ void setup() {
   // Create an executor, set number of handles, and add handles
   // Order added defines execution hierarchy (FIFO)
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
-  RCCHECK(rclc_executor_add_timer(&executor, &heartbeat_timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
   //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
@@ -320,12 +321,12 @@ void setup_timers(){
     RCL_MS_TO_NS(250),
     sensor_timer_callback));
 
-  // Timer for heartbeat
+  // Timer for CAN_core
   RCCHECK(rclc_timer_init_default(
-    &heartbeat_timer,
+    &CAN_core_timer,
     &support,
     RCL_MS_TO_NS(25),               // Was 25ms
-    heartbeat_timer_callback));
+    CAN_core_callback));
 
   /*
   // Timer for reading from CAN buffer

@@ -37,7 +37,7 @@ uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoi
 ** Function name:           set_status_frame_period
 ** Descriptions:            Function to set period for SPARK MAX status frames
 *********************************************************************************************************/
-uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const uint16_t period){
+uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const uint16_t period, MCP_CAN &CAN0){
   // Delay to ensure there is an available transmit buffer
   delay(50);
   uint8_t frame_data[STATUS_DLC];
@@ -48,5 +48,17 @@ uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const ui
   else {
     return CAN_FAIL;
   }
+}
+
+/*********************************************************************************************************
+** Function name:           set_all_status_frame_periods
+** Descriptions:            Function to set all periods for SPARK MAX status frames 0->4
+*********************************************************************************************************/
+void SPARK_MAX::set_all_status_frame_periods(MCP_CAN &CAN0, u_int16_t period0, u_int16_t period1, u_int16_t period2, u_int16_t period3, u_int16_t period4){
+  set_status_frame_period(status_0, period0, CAN0);
+  set_status_frame_period(status_1, period1, CAN0);
+  set_status_frame_period(status_2, period2, CAN0);
+  set_status_frame_period(status_3, period3, CAN0);
+  set_status_frame_period(status_4, period4, CAN0);
 }
 

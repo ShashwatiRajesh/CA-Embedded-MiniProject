@@ -15,16 +15,29 @@
 class SPARK_MAX : public ICAN_Device {
 public:
     /*
-    * Constructor
+    * Constructor. MUST BE CALLED AFTER THE CAN MODULE HAS BEEN SETUP
     */
-    SPARK_MAX(uint8_t device_id, MCP_CAN &CAN0, Comet_CAN_Helper &CAN_Helper) : CAN0(CAN0), device_id(device_id) {
+    SPARK_MAX(uint8_t device_id) : device_id(device_id){
+        mutex = xSemaphoreCreateMutex();
+    }
+
+    void initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 100, const uint16_t period1 = 100, 
+                const uint16_t period2 = 100, const uint16_t period3 = 1000, const uint16_t period4 = 1000 ){
+
+        this->period0 = period0;
+        this->period1 = period1;
+        this->period2 = period2;
+        this->period3 = period3;
+        this->period4 = period4;
+
         current_mode = control_mode::NONE;
 
         current_control_frame.dlc = CONTROL_DLC;
         current_control_frame.ext = 1;
+
         CAN_Helper.add_to_CAN_dev_arr(this);
 
-        mutex = xSemaphoreCreateMutex();
+        set_all_status_frame_periods(CAN0, period0, period1, period2, period3, period4);
     }
 
     /*
@@ -56,7 +69,6 @@ public:
     }
 
     uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
-    uint8_t set_status_frame_period(const status_frame_id frame, const uint16_t period); // Set period for SPARK MAX status frames
 
     // Default destructor
     ~SPARK_MAX(){
@@ -73,8 +85,9 @@ private:
     const uint8_t device_id;
     control_mode current_mode;
     can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
-    MCP_CAN &CAN0; // Change to set all the periodic status's at the constructor so it doesn't need to be stored
     SemaphoreHandle_t mutex;
+
+    u_int16_t period0, period1, period2, period3, period4;
 
     /*
     * Control Frame
@@ -87,6 +100,10 @@ private:
     */
     static constexpr uint8_t STATUS_DLC = 2;
     static constexpr uint8_t STATUS_WRITE_SIZE = 2; // Size (bytes) of actual data written into the Data Window
+
+    uint8_t set_status_frame_period(const status_frame_id frame, const uint16_t period, MCP_CAN &CAN0); // Set period for SPARK MAX status frames
+
+    void set_all_status_frame_periods(MCP_CAN &CAN0, u_int16_t period0, u_int16_t period1, u_int16_t period2, u_int16_t period3, u_int16_t period4);
 };
 
 #endif
