@@ -4,10 +4,10 @@
 
 
 /*********************************************************************************************************
-** Function name:           send_control_frame
+** Function name:           set_control_frame
 ** Descriptions:            Function to command SPARK MAX ouput
 *********************************************************************************************************/
-uint8_t SPARK_MAX::send_control_frame(const control_mode mode, const float setpoint){
+uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoint){
   if (mode != control_mode::NONE){
     xSemaphoreTake(mutex, portMAX_DELAY);
     // Double check to make sure DLC and ext are set

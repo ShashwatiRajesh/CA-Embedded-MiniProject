@@ -55,7 +55,7 @@ public:
         xSemaphoreGive(mutex);
     }
 
-    uint8_t send_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
+    uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
     uint8_t set_status_frame_period(const status_frame_id frame, const uint16_t period); // Set period for SPARK MAX status frames
 
     // Default destructor
