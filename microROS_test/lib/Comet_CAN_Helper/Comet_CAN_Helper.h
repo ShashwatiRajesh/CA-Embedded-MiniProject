@@ -4,17 +4,6 @@
 ---- TODO
 ~~~~ IDEA
 
-SPARK MAX Class
-++++ update set_control_frame to check and set current_mode. Either use commanded mode or current mode depending on current mode status
-++++ check set_status_frame_period function implementation
----- Built in ROS publisher for motor data????
-      should be handled individually
----- Implement can_frame_queue
-    ~~~~ Could implement the can_frame_queue in two ways. 
-        1. Use a stack and add/remove frames to it from functions
-            commander sends first frame sandwhiched bewtween hearbeats
-        2. Use an array of CAN_devices. where each can_device updates it's desired command
-            commander cycles through devices and send desired command sandwhiched between heartbeats
 ---- Define explicit error codes for adding devices to arr and other functions
 */
 
@@ -26,8 +15,6 @@ SPARK MAX Class
 #include <mcp_can.h>
 #include "Comet_CAN_Common.h"
 #include "CAN_Device_Interface.h"
-
-
 
 /*********************************************************************************************************
 ** Comet_CAN_Helper class
@@ -59,7 +46,7 @@ public:
     String send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
 
     // SHOULD ONLY BE CALLED IN SETUP()
-    int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
+    byte add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
     
 
 private:

@@ -20,7 +20,7 @@ struct can_frame {
 static can_frame empty_frame = {0, 0, 0, {0}}; // Set all members to 0
 
 /*
-* Status Frame ID enumeration
+* SPARK MAX periodic status frames
 */
 enum status_frame_id {
     status_0 = 0x2051800,
@@ -48,8 +48,9 @@ enum control_mode {
 /*********************************************************************************************************
 ** Function name:           create_data
 ** Descriptions:            Copy data to frame_data (little-Endian)
+                                Meant for packing bytes into CAN frame
 *********************************************************************************************************/
-inline void create_data(const void *data, byte *frame_data, const uint8_t write_size, const uint8_t dlc) {
+inline void create_data(byte *frame_data, const void *data,  const uint8_t write_size, const uint8_t dlc) {
     const byte *data_arr = static_cast<const byte *>(data);
     for (uint8_t i = 0; i < write_size; ++i) {
         frame_data[i] = data_arr[i];

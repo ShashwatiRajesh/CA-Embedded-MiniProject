@@ -1,3 +1,12 @@
+/*
+::::To Do::::
+++++ DONE
+---- TODO
+~~~~ IDEA
+
+---- Define explicit error codes for adding devices to arr and other functions
+*/
+
 #ifndef SPARK_MAX_H
 #define SPARK_MAX_H
 
@@ -21,7 +30,7 @@ public:
         mutex = xSemaphoreCreateMutex();
     }
 
-    void initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 100, const uint16_t period1 = 100, 
+    byte initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 100, const uint16_t period1 = 100, 
                 const uint16_t period2 = 100, const uint16_t period3 = 1000, const uint16_t period4 = 1000 ){
 
         this->period0 = period0;
@@ -35,9 +44,14 @@ public:
         current_control_frame.dlc = CONTROL_DLC;
         current_control_frame.ext = 1;
 
-        CAN_Helper.add_to_CAN_dev_arr(this);
+        if (CAN_Helper.add_to_CAN_dev_arr(this) == CAN_OK){
+            set_all_status_frame_periods(CAN0, period0, period1, period2, period3, period4);
+            return CAN_OK;
+        }
+        else{
+            return CAN_FAIL;
+        }
 
-        set_all_status_frame_periods(CAN0, period0, period1, period2, period3, period4);
     }
 
     /*

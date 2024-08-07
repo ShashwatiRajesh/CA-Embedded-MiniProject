@@ -8,16 +8,15 @@
 class ICAN_Device {
 public:
 
-    virtual bool is_FRC() const = 0;
+    virtual bool is_FRC() const = 0; // TRUE for FRC devices like SPARK MAX, FALSE for all others
 
-    virtual uint8_t get_device_id() const = 0;
+    virtual uint8_t get_device_id() const = 0; // Specific to FRC devices, returns FRC device_id
 
-    virtual can_frame get_current_frame() const = 0;
+    virtual can_frame get_current_frame() const = 0; // Returns current desired CAN frame/instruction
 
-    virtual void clear_current_frame() = 0; // can't be constant since it modifies a member variable
+    virtual void clear_current_frame() = 0; // Clean up after a frame has been sent to the MCP2515 buffer
 
-    // Virtual destructor for proper cleanup of derived classes
-    // Is this necessary?
+    // Destructor, probably not needed
     virtual ~ICAN_Device() {}
 };
 

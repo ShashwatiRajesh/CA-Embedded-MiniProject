@@ -4,17 +4,14 @@
 ---- TODO
 **** TODO Important
 
----- Convert Twist into motor output
----- Change to set all the periodic status's at the constructor so it doesn't need to be stored
-**** make send_non_HB_message pbr (slowing down heartbeat too much)
-**** thread safety
-    for logging (also needs a buffer because takes ~10ms)
-    for Spark Max:
-      1. Should not be
-    CAN_Helper:
-      1. 
-    Other:
-      1. Logging
+++++ Convert Twist into motor output
+++++ Change to set all the periodic status's at the constructor so it doesn't need to be stored
+++++ thread safety
+---- clean up code and comment
+---- Error handling (most of the time just restart program if errored)
+
+---- motor sensor publisher and CAN reader
+---- look into sending more then 3 message duing CAN Core loop
 */
 
 #include <Arduino.h>
@@ -88,10 +85,12 @@ rcl_timer_t read_timer;
 #define CAN0_INT 4
 MCP_CAN CAN0(12);
 Comet_CAN_Helper CAN_Helper(CAN0);
+// For reading input buffer
 long unsigned int rxId;
 unsigned char len = 0;
 unsigned char rxBuf[8];
-bool was_enabled = false;
+// To only send 1 disabled after an enable, because lack of heartbeat is also a disable.
+bool was_enabled = false; 
 
 /*
 * SPARK MAXs
@@ -105,13 +104,14 @@ SPARK_MAX drive_base_right = SPARK_MAX(10);
 #define LED 2  // Onboard LED
 
 /*
- * Macro to check the return value of RCL functions and enter error loop if needed
+ * Macros to check the return value of RCL functions and CAN setup.
  */
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}} //   Enters error loop and restarts
+#define CANCHECK(fn) {byte err = fn; if((err != CAN_OK)){error_loop();}} //   Enters error loop and restarts
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){} } // Allows program to keep running after error
 
 /*
- * Error loop to blink onboard LED if an error occurs
+ * Blink for 5 seconds then reboot
  */
 void error_loop(){
   int delay_times = 50;
@@ -125,6 +125,7 @@ void error_loop(){
 
 /*
  * Function to log messages to the logging topic
+ * !!!___ONLY USE FOR DEBUGGING___!!! TAKES ~10MS TO RUN
  */
 void log_logging(const char *msg) {
   xSemaphoreTake(logger_mutex, portMAX_DELAY);
@@ -152,7 +153,7 @@ void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  */
 void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   // the current method of logging takes 10ms
-  start_time = millis();
+  //start_time = millis();
 
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   
@@ -183,8 +184,8 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
       }
     }
   }
-  snprintf(hearbeat_start_string, sizeof(hearbeat_start_string), ": end |||| start: [%lu ms]", start_time);
-  log_logging(hearbeat_start_string);
+  //snprintf(hearbeat_start_string, sizeof(hearbeat_start_string), ": end |||| start: [%lu ms]", start_time);
+  //log_logging(hearbeat_start_string);
 }
 
 /*
@@ -255,8 +256,8 @@ void cmd_vel_callback(const void * msgin) {
 
     drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, left_output);
     drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, right_output);
-    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "left_output: [%f ], right_output: [%f ]", left_output, right_output);
-    log_logging(cmd_vel_string);
+    //snprintf(cmd_vel_string, sizeof(cmd_vel_string), "left_output: [%f ], right_output: [%f ]", left_output, right_output);
+    //log_logging(cmd_vel_string);
   }
   
 }
@@ -269,7 +270,6 @@ void enabled_callback(const void * msgin){
   const std_msgs__msg__Bool * msg = (const std_msgs__msg__Bool *)msgin;
 
   if (msg != NULL){
-    // Process Enabled
     enabled.data = msg->data;
   }
 }
@@ -283,25 +283,17 @@ void setup() {
   set_microros_serial_transports(Serial);
   delay(2000);
 
+  // Threading
   logger_mutex = xSemaphoreCreateMutex();
 
+  //Pins
   pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
   pinMode(LED, OUTPUT);  // Set LED_PIN as output
   digitalWrite(LED, HIGH);  // Turn on the LED
 
-  // Initialize MCP2515 running at 8MHz with a baudrate of 1000kb/s and the masks and filters disabled.
-  if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_16MHZ) == CAN_OK)
-    log_logging("MCP2515 Initialized Successfully!");
-  else
-    log_logging("Error Initializing MCP2515...");
-  CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
-  // Does not work with one shot disabled
-  CAN0.disOneShotTX();
+  setup_CAN();
   
-  delay(250);
-  drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0);
-  drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0);
-  
+  // Setup Node. Shouldn't need to change.
   allocator = rcl_get_default_allocator();
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
   RCCHECK(rclc_node_init_default(&node, "micro_ros_node", microros_ns, &support));
@@ -309,20 +301,9 @@ void setup() {
   setup_timers();
   setup_publishers();
   setup_subscribers();
-
-  // Create an executor, set number of handles, and add handles
-  // Order added defines execution hierarchy (FIFO)
-  RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
-  RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
-  RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
-  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
-  RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
-  RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
-
-  sensor_data.data = false;
-  logger.data.size = 100;
-  enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
-  // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
+  setup_executor();
+  
+  initialize_vars();
 }
 
 /*
@@ -395,4 +376,50 @@ void setup_subscribers(){
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Bool),
     "enabled"));
+}
+
+/*
+ * Setup executor with # of handles
+ */
+void setup_executor(){
+  // Create an executor, set number of handles, and add handles
+  // Order added defines execution hierarchy (FIFO)
+  RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
+  RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
+  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
+  RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
+  RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
+}
+
+/*
+ * Initialize MCP2515 and setup CAN devices
+ */
+void setup_CAN(){
+  // Initialize MCP2515 running at 8MHz with a baudrate of 1000kb/s and the masks and filters disabled.
+  if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_16MHZ) == CAN_OK)
+    log_logging("MCP2515 Initialized Successfully!");
+  else
+    log_logging("Error Initializing MCP2515...");
+  CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
+
+  // Explicitly disable One-Shot transmissions
+  CAN0.disOneShotTX();
+  
+
+  delay(250);
+
+  // CAN DEVICES
+  CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  CANCHECK(drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0));
+}
+
+/*
+ * initialize global vars
+ */
+void initialize_vars(){
+  sensor_data.data = false;
+  logger.data.size = 100;
+  enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
+  // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }

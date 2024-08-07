@@ -80,7 +80,7 @@ uint8_t Comet_CAN_Helper::send_disabled_heartbeat(){
 ** Function name:           add_to_CAN_dev_arr
 ** Descriptions:            Adds a device to the CAN device list
 *********************************************************************************************************/
-int Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
+byte Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
   if (CAN_dev->is_FRC()){
     uint8_t device_id = CAN_dev->get_device_id();
 
@@ -88,7 +88,7 @@ int Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
     for (int i = 0; i < MAX_CAN_DEVICES; i++){
       if (can_devices[i] != nullptr){
         if (can_devices[i]->get_device_id() == device_id){
-          return -1; // ID in Use
+          return CAN_FAIL; // ID in Use
         }
       }
     }
@@ -98,9 +98,9 @@ int Comet_CAN_Helper::add_to_CAN_dev_arr(ICAN_Device *CAN_dev){
     if (num_CAN_devs < MAX_CAN_DEVICES){
         can_devices[num_CAN_devs] = CAN_dev;
         num_CAN_devs++;
-        return 0; // Success
+        return CAN_OK; // Success
     } else {
-        return -2; // Array is full
+        return CAN_FAIL; // Array is full
     }
 }
 

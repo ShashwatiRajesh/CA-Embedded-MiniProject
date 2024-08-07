@@ -1,8 +1,6 @@
 #include "SPARK_MAX.h"
 #include <Comet_CAN_Helper.h>
 
-
-
 /*********************************************************************************************************
 ** Function name:           set_control_frame
 ** Descriptions:            Function to command SPARK MAX ouput
@@ -15,7 +13,7 @@ uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoi
     current_control_frame.ext = 1;
 
     uint8_t frame_data[CONTROL_DLC];
-    create_data(&setpoint, frame_data, CONTROL_WRITE_SIZE, CONTROL_DLC);
+    create_data(frame_data, &setpoint, CONTROL_WRITE_SIZE, CONTROL_DLC);
 
     // To avoid repeatedly sending control type frames
     if (current_mode != mode){
@@ -41,7 +39,7 @@ uint8_t SPARK_MAX::set_status_frame_period(const status_frame_id frame, const ui
   // Delay to ensure there is an available transmit buffer
   delay(50);
   uint8_t frame_data[STATUS_DLC];
-  create_data(&period, frame_data, STATUS_WRITE_SIZE, STATUS_DLC);
+  create_data(frame_data, &period, STATUS_WRITE_SIZE, STATUS_DLC);
   if(CAN0.sendMsgBuf(device_id + frame, CAN_EXTID, STATUS_DLC, frame_data) == CAN_OK){
     return CAN_OK;
   } 
