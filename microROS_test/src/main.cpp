@@ -8,7 +8,7 @@
 ++++ Change to set all the periodic status's at the constructor so it doesn't need to be stored
 ++++ thread safety
 ---- clean up code and comment
----- Error handling (most of the time just restart program if errored)
+++++ Error handling (Restart program if major errored)
 
 ---- motor sensor publisher and CAN reader
 ---- look into sending more then 3 message duing CAN Core loop
