@@ -179,9 +179,6 @@ void heartbeat_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
       }
     }
   }
-  drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
-  drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
-
   snprintf(hearbeat_start_string, sizeof(hearbeat_start_string), ": end |||| start: [%lu ms]", start_time);
   log_logging(hearbeat_start_string);
 }
@@ -220,8 +217,10 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
-    //drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
-    //drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+
+    // Testing thread safety
+    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
+    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, 0.05);
   }
 }
 
