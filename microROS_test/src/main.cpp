@@ -63,6 +63,7 @@ char cmd_vel_string[64];  // Adjust size as needed
  */
 rcl_subscription_t cmd_vel_subscriber;
 geometry_msgs__msg__Twist cmd_vel;
+float drive_base_output;
 rcl_subscription_t enabled_subscriber;
 std_msgs__msg__Bool enabled;
 
@@ -221,20 +222,26 @@ void cmd_vel_callback(const void * msgin) {
     cmd_vel.linear.x = msg->linear.x;
     cmd_vel.angular.z = msg->angular.z;
 
+    /*
     // Normalize
     double sum = abs(cmd_vel.linear.x) + abs(cmd_vel.angular.z);
     if (sum > 1){
       cmd_vel.linear.x = cmd_vel.linear.x / sum;
       cmd_vel.angular.z = cmd_vel.angular.z / sum;
-    }
+    }*/
+
+    
 
     // Apply Output
-    float output = cmd_vel.linear.x + cmd_vel.angular.z; //  This needs to change (Later)
-    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, 0.1);
-    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, -0.1);
-    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "Output: [%f ms]", output);
+    //drive_base_output = cmd_vel.linear.x + cmd_vel.angular.z; //  This needs to change (Later)
+    //drive_base_output = (float)cmd_vel.linear.x + (float)cmd_vel.angular.z; // Works when set to a constant value
+
+    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, (float)cmd_vel.linear.x);
+    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, (float)cmd_vel.linear.x);
+    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "Output: [%f ms]", (float)cmd_vel.linear.x);
     log_logging(cmd_vel_string);
   }
+  
 }
 
 /*
@@ -299,6 +306,7 @@ void setup() {
   cmd_vel.linear.x = 0;
   cmd_vel.angular.z = 0;
   logger.data.size = 100;
+  drive_base_output = 0;
   enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
