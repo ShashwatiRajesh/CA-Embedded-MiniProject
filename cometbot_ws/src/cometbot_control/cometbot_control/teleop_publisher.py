@@ -59,10 +59,13 @@ class TeleopPublisher(Node):
         timer_frequency = self.get_parameter('cmd_vel_pub_frequency').get_parameter_value().double_value
         self.timer = self.create_timer(1.0 / timer_frequency, self.timer_callback)
 
-        # Initialize a Twist message
-        self.twist_msg = Twist()
+        # Only edit in subscriber
+        self.input = Twist()
+        self.output = Twist()
 
         self.lock = threading.Lock()
+        self.deadzone = self.get_parameter('deadzone').get_parameter_value().double_value
+        self.power = self.get_parameter('joystick_power').get_parameter_value().integer_value
         
         # Prevent unused variable warning
         self.subscription
@@ -71,32 +74,32 @@ class TeleopPublisher(Node):
     def listener_callback(self, msg: Joy):
         with self.lock:
             # Map joystick axes to linear and angular velocities
-            self.twist_msg.linear.x = msg.axes[1]  # Forward/backward movement
-            self.twist_msg.angular.z = msg.axes[0]  # Left/right rotation
+            self.input.linear.x = msg.axes[1]  # Forward/backward movement
+            self.input.angular.z = msg.axes[0]  # Left/right rotation
 
             # Log the updated Twist message data
-            self.get_logger().info(f'Updated Twist: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
+            self.get_logger().info(f'Subscribing: Linear x: {self.input.linear.x}, Angular z: {self.input.angular.z}')
 
     def timer_callback(self):
         with self.lock:
-            x = self.twist_msg.linear.x
-            y = self.twist_msg.angular.z
-            deadzone = self.get_parameter('deadzone').get_parameter_value().double_value
+            self.output.linear.x = self.input.linear.x
+            self.output.angular.z = self.input.angular.z
+            
 
             # Apply deadzone filtering
-            if math.hypot(x, y) < deadzone:
-                self.twist_msg.linear.x = 0.0
-                self.twist_msg.angular.z = 0.0
+            if math.hypot(self.output.linear.x, self.output.angular.z) < self.deadzone:
+                self.output.linear.x = 0.0
+                self.output.angular.z = 0.0
             else:
                 # Apply scaling to joystick input
-                power = self.get_parameter('joystick_power').get_parameter_value().integer_value
-                self.twist_msg.linear.x = math.pow(x, power)
-                self.twist_msg.angular.z = math.pow(y, power)
                 
-            self.publisher.publish(self.twist_msg)  # Publish the Twist message
+                self.output.linear.x = math.pow(self.output.linear.x, self.power)
+                self.output.angular.z = math.pow(self.output.angular.z, self.power)
+                
+            self.publisher.publish(self.output)  # Publish the Twist message
 
             # Log the publishing event
-            self.get_logger().info(f'Publishing: Linear x: {self.twist_msg.linear.x}, Angular z: {self.twist_msg.angular.z}')
+            self.get_logger().info(f'Publishing: Linear x: {self.output.linear.x}, Angular z: {self.output.angular.z}')
 
 def main(args=None):
     try:

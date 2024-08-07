@@ -1,0 +1,17 @@
+[0.499s] Invoking command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build --no-deps symlink_data
+[0.716s] running develop
+[0.845s] running egg_info
+[0.845s] writing cometbot_control.egg-info/PKG-INFO
+[0.846s] writing dependency_links to cometbot_control.egg-info/dependency_links.txt
+[0.846s] writing entry points to cometbot_control.egg-info/entry_points.txt
+[0.846s] writing requirements to cometbot_control.egg-info/requires.txt
+[0.846s] writing top-level names to cometbot_control.egg-info/top_level.txt
+[0.847s] reading manifest file 'cometbot_control.egg-info/SOURCES.txt'
+[0.848s] writing manifest file 'cometbot_control.egg-info/SOURCES.txt'
+[0.849s] running build_ext
+[0.849s] Creating /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages/cometbot-control.egg-link (link to .)
+[0.850s] Installing teleop_publisher script to /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/cometbot_control
+[0.850s] 
+[0.850s] Installed /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control
+[0.850s] running symlink_data
+[0.873s] Invoked command in '/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control' returned '0': PYTHONPATH=/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/install/cometbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/amadorjosephg/CA-Embedded-MiniProject/cometbot_ws/build/cometbot_control/build --no-deps symlink_data
