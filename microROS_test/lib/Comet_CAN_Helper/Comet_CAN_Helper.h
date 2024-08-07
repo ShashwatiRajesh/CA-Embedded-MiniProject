@@ -32,6 +32,7 @@ SPARK MAX Class
 /*********************************************************************************************************
 ** Comet_CAN_Helper class
 ** For handling the MCP2515, both reading and writing
+** Assume the only function sending CAN messages is the CAN_Core callback function
 *********************************************************************************************************/
 class Comet_CAN_Helper {
 public:
@@ -51,10 +52,15 @@ public:
     void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
     void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
     void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
+
+    // CAN Core functions
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
-    int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
     String send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
+
+    // SHOULD ONLY BE CALLED IN SETUP()
+    int add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
+    
 
 private:
     /*
