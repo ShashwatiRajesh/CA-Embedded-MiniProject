@@ -63,7 +63,6 @@ char cmd_vel_string[64];  // Adjust size as needed
  */
 rcl_subscription_t cmd_vel_subscriber;
 geometry_msgs__msg__Twist cmd_vel;
-float drive_base_output;
 rcl_subscription_t enabled_subscriber;
 std_msgs__msg__Bool enabled;
 
@@ -97,8 +96,8 @@ bool was_enabled = false;
 /*
 * SPARK MAXs
 */
-SPARK_MAX drive_base_left = SPARK_MAX(10);
-SPARK_MAX drive_base_right = SPARK_MAX(11);
+SPARK_MAX drive_base_left = SPARK_MAX(11);
+SPARK_MAX drive_base_right = SPARK_MAX(10);
 
 /*
  * Other
@@ -219,26 +218,44 @@ void cmd_vel_callback(const void * msgin) {
 
   if (msg != NULL) {
     // Process Twist
-    cmd_vel.linear.x = msg->linear.x;
-    cmd_vel.angular.z = msg->angular.z;
+    geometry_msgs__msg__Twist input;
+    input.linear.x = msg->linear.x; // Up positive, down negative
+    input.angular.z = msg->angular.z; // left positive, right negative
 
-    /*
     // Normalize
-    double sum = abs(cmd_vel.linear.x) + abs(cmd_vel.angular.z);
+    double sum = abs(input.linear.x) + abs(input.angular.z);
     if (sum > 1){
-      cmd_vel.linear.x = cmd_vel.linear.x / sum;
-      cmd_vel.angular.z = cmd_vel.angular.z / sum;
-    }*/
-
-    
+      input.linear.x = input.linear.x / sum;
+      input.angular.z = input.angular.z / sum;
+    }
 
     // Apply Output
-    //drive_base_output = cmd_vel.linear.x + cmd_vel.angular.z; //  This needs to change (Later)
-    //drive_base_output = (float)cmd_vel.linear.x + (float)cmd_vel.angular.z; // Works when set to a constant value
+    float output1 = input.linear.x + input.angular.z;
+    float output2 = input.linear.x - input.angular.z;
 
-    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, (float)cmd_vel.linear.x);
-    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, (float)cmd_vel.linear.x);
-    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "Output: [%f ms]", (float)cmd_vel.linear.x);
+    float left_output = 0.0;
+    float right_output = 0.0;
+
+    // if x(+), and z(-)
+
+    if (input.linear.x > 0){
+      left_output = output2;
+      right_output = output1;
+    }
+    else if(input.linear.x < 0){
+      left_output = output1;
+      right_output = output2;
+    }
+    else{
+      left_output = output2;
+      right_output = output1;
+    }
+
+    right_output = -right_output;
+
+    drive_base_left.set_control_frame(control_mode::Duty_Cycle_Set, left_output);
+    drive_base_right.set_control_frame(control_mode::Duty_Cycle_Set, right_output);
+    snprintf(cmd_vel_string, sizeof(cmd_vel_string), "left_output: [%f ], right_output: [%f ]", left_output, right_output);
     log_logging(cmd_vel_string);
   }
   
@@ -303,10 +320,7 @@ void setup() {
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 
   sensor_data.data = false;
-  cmd_vel.linear.x = 0;
-  cmd_vel.angular.z = 0;
   logger.data.size = 100;
-  drive_base_output = 0;
   enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
