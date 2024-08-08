@@ -41,8 +41,7 @@ public:
 
         current_mode = control_mode::NONE;
 
-        current_control_frame.dlc = CONTROL_DLC;
-        current_control_frame.ext = 1;
+        current_control_frame = empty_frame;
 
         if (CAN_Helper.add_to_CAN_dev_arr(this) == CAN_OK){
             set_all_status_frame_periods(CAN0, period0, period1, period2, period3, period4);
