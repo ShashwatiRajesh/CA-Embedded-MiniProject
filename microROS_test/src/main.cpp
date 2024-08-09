@@ -37,6 +37,9 @@
 void setup_timers();
 void setup_publishers();
 void setup_subscribers();
+void setup_executor();
+void initialize_vars();
+void setup_CAN();
 
 // Micro ROS
 
