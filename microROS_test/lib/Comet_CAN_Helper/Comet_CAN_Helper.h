@@ -45,7 +45,7 @@ public:
     uint8_t send_disabled_heartbeat();            // Send disabled heartbeat
     String send_message();   // Sends the queued CAN frame of the selected CAN dev and then moves to the next dev
 
-    // SHOULD ONLY BE CALLED IN SETUP()
+    // SHOULD ONLY BE CALLED IN SETUP() OR DURING DEVICE INITIALIZATION
     byte add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
     
 

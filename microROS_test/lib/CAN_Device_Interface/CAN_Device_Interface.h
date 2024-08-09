@@ -16,6 +16,9 @@ public:
 
     virtual void clear_current_frame() = 0; // Clean up after a frame has been sent to the MCP2515 buffer
 
+    // Does not include a set_current_frame function since different CAN devices will required different parameters to generate a CAN frame.
+        // There may also be multiple possible CAN frames 
+
     // Destructor, probably not needed
     virtual ~ICAN_Device() {}
 };
