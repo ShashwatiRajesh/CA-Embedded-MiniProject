@@ -1,3 +1,13 @@
+"""
+::::To Do::::
+++++ DONE
+---- TODO
+**** TODO Important
+
+---- Remove locking. The node's callback are multually exclusive by default 
+
+"""
+
 import rclpy
 import math
 import threading
