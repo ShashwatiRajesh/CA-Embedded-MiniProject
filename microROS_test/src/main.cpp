@@ -12,6 +12,7 @@
 
 ---- motor sensor publisher and CAN reader
 ---- look into sending more then 3 message duing CAN Core loop
+---- Test without mutexs in Spark Max class. p sure the rclc executor is single threaded.
 */
 
 #include <Arduino.h>
