@@ -7,7 +7,6 @@
 *********************************************************************************************************/
 uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoint){
   if (mode != control_mode::NONE){
-    xSemaphoreTake(mutex, portMAX_DELAY);
     // Double check to make sure DLC and ext are set
     current_control_frame.dlc = CONTROL_DLC;
     current_control_frame.ext = 1;
@@ -25,7 +24,6 @@ uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoi
         current_control_frame.can_id = device_id + control_mode::Use_Current_Mode;
         memcpy(current_control_frame.buf, frame_data, CONTROL_DLC);
     }
-    xSemaphoreGive(mutex);
   }
 
   return -1;

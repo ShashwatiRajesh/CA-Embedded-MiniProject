@@ -52,7 +52,6 @@ std_msgs__msg__Bool sensor_data;
 // Logger
 rcl_publisher_t logging_publisher;
 std_msgs__msg__String logger;
-SemaphoreHandle_t logger_mutex;
 char log_message[256];  // Adjust size as needed\
 // Debugging
 char hearbeat_start_string[64];  // Adjust size as needed
@@ -132,13 +131,11 @@ void error_loop(){
  * !!!___ONLY USE FOR DEBUGGING___!!! TAKES ~10MS TO RUN
  */
 void log_logging(const char *msg) {
-  xSemaphoreTake(logger_mutex, portMAX_DELAY);
   snprintf(log_message, sizeof(log_message), "[%lu ms] %s", millis(), msg);
   logger.data.size = strlen(log_message);
   logger.data.data = (char*)log_message;
   logger.data.capacity = logger.data.size + 1;
   RCSOFTCHECK(rcl_publish(&logging_publisher, &logger, NULL));
-  xSemaphoreGive(logger_mutex);
 }
 
 /*
@@ -286,9 +283,6 @@ void setup() {
   Serial.begin(115200);
   set_microros_serial_transports(Serial);
   delay(2000);
-
-  // Threading
-  logger_mutex = xSemaphoreCreateMutex();
 
   //Pins
   pinMode(CAN0_INT, INPUT);  // Configuring pin for /INT input
