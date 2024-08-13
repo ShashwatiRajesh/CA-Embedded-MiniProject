@@ -13,6 +13,7 @@
 ---- motor sensor publisher and CAN reader
 ---- look into sending more then 3 message duing CAN Core loop
 ---- Test without mutexs in Spark Max class. p sure the rclc executor is single threaded.
+---- Change CAN device interface to include a get_is_enabled function so that if it is not being used the CAN core can skip it
 */
 
 #include <Arduino.h>
