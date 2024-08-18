@@ -30,6 +30,33 @@ uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoi
 }
 
 /*********************************************************************************************************
+** Function name:           update_status_0
+** Descriptions:            Updates the applied ouput
+*********************************************************************************************************/
+void SPARK_MAX::update_status_0(int applied_output){
+  status.applied_output = applied_output;
+}
+
+/*********************************************************************************************************
+** Function name:           update_status_1
+** Descriptions:            Updates the Velocity, Temperature, Voltage, and Current
+*********************************************************************************************************/
+void SPARK_MAX::update_status_1(float velocity, float temperature, float voltage, float current){
+  status.velocity = velocity;
+  status.temperature = temperature;
+  status.voltage = voltage;
+  status.current = current;
+}
+    
+/*********************************************************************************************************
+** Function name:           update_status_2
+** Descriptions:            Updates the Position
+*********************************************************************************************************/
+void SPARK_MAX::update_status_2(float position){
+  status.position = position;
+}
+
+/*********************************************************************************************************
 ** Function name:           set_status_frame_period
 ** Descriptions:            Function to set period for SPARK MAX status frames
 *********************************************************************************************************/

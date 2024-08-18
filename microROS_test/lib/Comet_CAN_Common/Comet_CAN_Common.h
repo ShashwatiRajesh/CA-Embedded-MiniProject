@@ -17,6 +17,9 @@ struct can_frame {
     uint8_t buf[8];  // Data buffer
 };
 
+/*
+* SPARK MAX status data structure
+*/
 struct SPARK_MAX_status{
     int applied_output;
     float velocity;
@@ -25,6 +28,8 @@ struct SPARK_MAX_status{
     float voltage;
     float current;
 };
+
+static SPARK_MAX_status empty_status = {0, 0.0, 0.0, 0, 0.0, 0.0};
 
 static can_frame empty_frame = {0, 0, 0, {0}}; // Set all members to 0
 
