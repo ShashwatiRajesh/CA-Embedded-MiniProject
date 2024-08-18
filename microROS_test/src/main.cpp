@@ -164,9 +164,9 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
       was_enabled = true;
 
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        log_logging("Heartbeat Sent Successfully");
+        //log_logging("Heartbeat Sent Successfully");
       } else {
-        log_logging("Error Sending Heartbeat...!!!...");
+        //log_logging("Error Sending Heartbeat...!!!...");
       }
 
       //log_logging(CAN_Helper.send_message().c_str());
