@@ -88,11 +88,7 @@ rcl_timer_t read_timer;
  */
 #define CAN0_INT 4
 MCP_CAN CAN0(12);
-Comet_CAN_Helper CAN_Helper(CAN0);
-// For reading input buffer
-long unsigned int rxId;
-unsigned char len = 0;
-unsigned char rxBuf[8];
+Comet_CAN_Helper CAN_Helper(CAN0, CAN0_INT);
 // To only send 1 disabled after an enable, because lack of heartbeat is also a disable.
 bool was_enabled = false; 
 
@@ -197,19 +193,7 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
 void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
-    if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
-      CAN0.readMsgBuf(&rxId, &len, rxBuf);
-      
-      // Handle data parsing for specific frames
-      if ((rxId & FRC_dev_id_mask) == status_0) {
-        CAN_Helper.parse_status_frame_0(rxBuf);
-      } else if ((rxId & FRC_dev_id_mask) == status_1) {
-        CAN_Helper.parse_status_frame_1(rxBuf, len);
-      } else if ((rxId & FRC_dev_id_mask) == status_2) {
-        CAN_Helper.parse_status_frame_2(rxBuf, len);
-      }
-      // Add more cases if necessary
-    }
+    CAN_Helper.parse_CAN_frame();
   }
 }
  

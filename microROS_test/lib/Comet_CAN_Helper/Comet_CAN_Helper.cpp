@@ -24,6 +24,26 @@ float Comet_CAN_Helper::data_to_float(uint8_t * data, uint8_t size){
 }
 
 /*********************************************************************************************************
+** Function name:           parse_CAN_frame
+** Descriptions:            Handles how to parse different CAN frames
+*********************************************************************************************************/
+void Comet_CAN_Helper::parse_CAN_frame(){
+  if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
+      CAN0.readMsgBuf(&rxId, &len, rxBuf);
+      
+      // Handle data parsing for specific frames
+      if ((rxId & FRC_dev_id_mask) == status_0) {
+        parse_status_frame_0(rxBuf);
+      } else if ((rxId & FRC_dev_id_mask) == status_1) {
+        parse_status_frame_1(rxBuf, len);
+      } else if ((rxId & FRC_dev_id_mask) == status_2) {
+        parse_status_frame_2(rxBuf, len);
+      }
+      // Add more cases if necessary
+    }
+}
+
+/*********************************************************************************************************
 ** Function name:           parse_status_frame_0
 ** Descriptions:            Function to parse SPARK MAX Periodic Status Frame 0
 *********************************************************************************************************/

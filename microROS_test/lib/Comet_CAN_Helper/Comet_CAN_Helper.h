@@ -27,7 +27,7 @@ public:
     /*
     * Constructor
     */
-    Comet_CAN_Helper(MCP_CAN &CAN0) : CAN0(CAN0) {
+    Comet_CAN_Helper(MCP_CAN &CAN0, int CAN0_INT) : CAN0(CAN0), CAN0_INT(CAN0_INT) {
         // Initialize the array of pointers to nullptr
         for (int i = 0; i < MAX_CAN_DEVICES; ++i) {
             can_devices[i] = nullptr;
@@ -37,6 +37,7 @@ public:
     /*
     * Functions
     */
+    void parse_CAN_frame();
     void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
     void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
     void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
@@ -56,11 +57,16 @@ private:
     * Constants/variables
     */
     MCP_CAN &CAN0;
+    const int CAN0_INT;
     ICAN_Device* can_devices[MAX_CAN_DEVICES]; // Array of pointers to CAN devices
     uint8_t num_CAN_devs = 0;
     uint32_t selected_CAN_dev = 0;
     const uint32_t DEVICE_ID_MASK = FRC_dev_id_mask; // Mask everything but device ID bits (last 6). Follows FRC CAN Protocol
 
+    // For reading input buffer
+    long unsigned int rxId;
+    unsigned char len = 0;
+    unsigned char rxBuf[8];
 
     /*
     * Heartbeat frame
