@@ -9,6 +9,7 @@
 
 #ifndef COMET_CAN_HELPER_H
 #define COMET_CAN_HELPER_H
+#define NO_ACTIVE_CAN_DEVICES -1
 
 
 #include <Arduino.h>
@@ -47,6 +48,7 @@ public:
 
     // SHOULD ONLY BE CALLED IN SETUP() OR DURING DEVICE INITIALIZATION
     byte add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
+    int16_t get_next_enabled_device();
     
 
 private:

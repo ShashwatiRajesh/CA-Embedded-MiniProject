@@ -118,21 +118,53 @@ String Comet_CAN_Helper::send_message(){
     selected_CAN_dev = 0;
   }
 
-  can_frame frame = can_devices[selected_CAN_dev]->get_current_frame();
 
-  // Check for empty frame since only empty frames should have a CAN ID (not FRC device ID, there's a difference) of 0
-  if (frame.can_id == 0){
-    return "Sent nothing";
+  if (can_devices[selected_CAN_dev]->is_active()){
+    can_frame frame = can_devices[selected_CAN_dev]->get_current_frame();
+
+    // Check for empty frame since only empty frames should have a CAN ID (not FRC device ID, there's a difference) of 0
+    if (frame.can_id == 0){
+      return "Sent nothing" + String(selected_CAN_dev++);
+    }
+
+
+    CAN0.sendMsgBuf(frame.can_id, frame.ext, frame.dlc, frame.buf);
+
+    // May want to either keep most recent command or dump it, not sure yet
+    can_devices[selected_CAN_dev]->clear_current_frame();
+
+    return "Sent something" + String(selected_CAN_dev ++);
+  }
+  else{
+    int16_t next_device = get_next_enabled_device();
+    
+    if (next_device != NO_ACTIVE_CAN_DEVICES){
+      selected_CAN_dev = next_device;
+      return send_message();
+    }
+    else{
+      return "Sent nothing everything DEACTIVATED";
+    }
   }
 
 
-  CAN0.sendMsgBuf(frame.can_id, frame.ext, frame.dlc, frame.buf);
-
-  // May want to either keep most recent command or dump it, not sure yet
-  can_devices[selected_CAN_dev]->clear_current_frame();
-
-  // Go to next CAN device
-  selected_CAN_dev++;
   
-  return "Sent something to: " + String(selected_CAN_dev);
 }
+
+/*********************************************************************************************************
+** Function name:           get_next_enabled_device
+** Descriptions:            returns -1 if no enabled devices, else returns next devices (increasing).
+*********************************************************************************************************/
+int16_t Comet_CAN_Helper::get_next_enabled_device(){
+  for (int i = selected_CAN_dev + 1; i < selected_CAN_dev + num_CAN_devs; i++){
+    if (can_devices[i % num_CAN_devs]->is_active()){
+      return i % num_CAN_devs;
+    }
+  }
+  return NO_ACTIVE_CAN_DEVICES;
+}
+
+
+
+
+

@@ -16,6 +16,10 @@ public:
 
     virtual void clear_current_frame() = 0; // Clean up after a frame has been sent to the MCP2515 buffer
 
+    virtual bool is_active()const = 0; // Returns the active state of a CAN device
+
+    virtual void set_active(bool input) = 0; // Set's the active state of a CAN device
+
     // Does not include a set_current_frame function since different CAN devices will required different parameters to generate a CAN frame.
         // There may also be multiple possible CAN frames 
 
