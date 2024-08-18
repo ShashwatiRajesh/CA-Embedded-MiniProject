@@ -87,6 +87,11 @@ public:
 
     uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
 
+    void update_status_0(int applied_output); // Updates the applied ouput
+    void update_status_1(float velocity, float temperature, float voltage, float current); // Updates the Velocity, Temperature, Voltage, and Current
+    void update_status_2(float position); // Updates the Position
+
+
     // Default destructor
     ~SPARK_MAX(){
     }
@@ -99,6 +104,7 @@ private:
     control_mode current_mode;
     can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
     bool active = false;
+    SPARK_MAX_status status = empty_status;
 
     u_int16_t period0, period1, period2, period3, period4;
 
