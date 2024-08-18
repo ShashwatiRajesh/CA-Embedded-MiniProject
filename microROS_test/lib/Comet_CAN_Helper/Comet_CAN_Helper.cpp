@@ -124,7 +124,7 @@ String Comet_CAN_Helper::send_message(){
 
     // Check for empty frame since only empty frames should have a CAN ID (not FRC device ID, there's a difference) of 0
     if (frame.can_id == 0){
-      return "Sent nothing" + String(selected_CAN_dev ++ );
+      return "Sent nothing" + String(selected_CAN_dev) + " is active: " + String(can_devices[selected_CAN_dev++]->is_active());
     }
 
 
@@ -143,7 +143,7 @@ String Comet_CAN_Helper::send_message(){
       return send_message();
     }
     else{
-      return "Sent nothing"  + String(selected_CAN_dev ++ );
+      return "Sent nothing everything DEACTIVATED: " + String(selected_CAN_dev) + ", next device: " + next_device;
     }
   }
 
@@ -157,8 +157,8 @@ String Comet_CAN_Helper::send_message(){
 *********************************************************************************************************/
 int16_t Comet_CAN_Helper::get_next_enabled_device(){
   for (int i = selected_CAN_dev + 1; i < selected_CAN_dev + num_CAN_devs; i++){
-    if (can_devices[selected_CAN_dev % num_CAN_devs]->is_active()){
-      return selected_CAN_dev % num_CAN_devs;
+    if (can_devices[i % num_CAN_devs]->is_active()){
+      return i % num_CAN_devs;
     }
   }
   return NO_ACTIVE_CAN_DEVICES;

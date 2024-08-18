@@ -166,9 +166,9 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
       was_enabled = true;
 
       if(CAN_Helper.send_enabled_heartbeat() == CAN_OK){
-        //log_logging("Heartbeat Sent Successfully");
+        log_logging("Heartbeat Sent Successfully");
       } else {
-        //log_logging("Error Sending Heartbeat...!!!...");
+        log_logging("Error Sending Heartbeat...!!!...");
       }
 
       log_logging(CAN_Helper.send_message().c_str());
@@ -176,6 +176,10 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
 
       log_logging(CAN_Helper.send_message().c_str());
       //CAN_Helper.send_message();
+
+      //log_logging(String("left drivebase is active: " + String(drive_base_left.is_active())).c_str());
+      //log_logging(String("right drivebase is active: " + String(drive_base_right.is_active())).c_str());
+      //log_logging(String("test1 is active: " + String(test1.is_active())).c_str());
     }
     else{
       if (was_enabled){
@@ -411,12 +415,13 @@ void setup_CAN(){
   delay(250);
 
   // CAN DEVICES
-  CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
   CANCHECK(test1.initialize_SPARK_MAX(CAN_Helper, CAN0));
-  //test1.set_active(false);
+  CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  test1.set_active(false);
   CANCHECK(drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0));
   CANCHECK(test2.initialize_SPARK_MAX(CAN_Helper, CAN0));
-  //test2.set_active(false);
+  test2.set_active(false);
+  
 }
 
 /*
