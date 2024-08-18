@@ -2,10 +2,10 @@
 #include <mcp_can.h>
 
 /*********************************************************************************************************
-** Function name:           data_to_float
+** Function name:           data_to_float_32_bit
 ** Descriptions:            Converts four bytes (little-endian) to a IEEE floating point number
 *********************************************************************************************************/
-float Comet_CAN_Helper::data_to_float(uint8_t * data, uint8_t size){
+float Comet_CAN_Helper::data_to_float_32_bit(uint8_t * data, uint8_t size){
   if (size >= 4 && data != nullptr){
     uint32_t intValue = ((uint32_t)data[3] << 24) |
                         ((uint32_t)data[2] << 16) |
@@ -21,6 +21,15 @@ float Comet_CAN_Helper::data_to_float(uint8_t * data, uint8_t size){
     Serial.println("FAILED TO CONVERT TO FLOAT");
     return NAN;
   }
+}
+
+/*********************************************************************************************************
+** Function name:           parse_volt_and_amp
+** Descriptions:            gets the float value for the voltage and currrent of the SPARK MAX
+*********************************************************************************************************/
+void Comet_CAN_Helper::parse_volt_and_amp(float * voltage, float * current, uint8_t *data){
+  uint16_t voltage = ((uint16_t)data[6] << 8 & 0b00001111) | data[5]; // need to graph to find constant for converting into a float
+  uint16_t current = ((uint16_t)data[7] << 4) | (data[6] & 0b11110000); // need to graph to find constant for converting into a float
 }
 
 /*********************************************************************************************************
@@ -48,8 +57,7 @@ void Comet_CAN_Helper::parse_CAN_frame(){
 ** Descriptions:            Function to parse SPARK MAX Periodic Status Frame 0
 *********************************************************************************************************/
 void Comet_CAN_Helper::parse_status_frame_0(uint8_t * data){
-  Serial.print("Applied output : ");
-  Serial.println(((static_cast<int>(data[1]) << 8) | data[0]) / 32764.0); // Range = [-1, 1]
+  float applied_output = ((static_cast<int>(data[1]) << 8) | data[0]) / 32764.0; // Range = [-1, 1]
 }
 
 /*********************************************************************************************************
@@ -57,8 +65,10 @@ void Comet_CAN_Helper::parse_status_frame_0(uint8_t * data){
 ** Descriptions:            Function to parse SPARK MAX Periodic Status Frame 1
 *********************************************************************************************************/
 void Comet_CAN_Helper::parse_status_frame_1(uint8_t * data, uint8_t size){
-  Serial.print("Velocity : ");
-  Serial.println(data_to_float(data, size)); // RPM
+  float velocity = data_to_float_32_bit(data, size); // RPM
+  uint8_t temperature = data[5]; // Celcius
+  float voltage = 0.0;
+  float current = 0.0;
 }
 
 /*********************************************************************************************************
@@ -66,8 +76,7 @@ void Comet_CAN_Helper::parse_status_frame_1(uint8_t * data, uint8_t size){
 ** Descriptions:            Function to parse SPARK MAX Periodic Status Frame 2
 *********************************************************************************************************/
 void Comet_CAN_Helper::parse_status_frame_2(uint8_t * data, uint8_t size){
-  Serial.print("Position : ");
-  Serial.println(data_to_float(data, size)); // Rotations
+  float position = data_to_float_32_bit(data, size); // Rotations
 }
 
 /*********************************************************************************************************
