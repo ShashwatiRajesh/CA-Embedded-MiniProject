@@ -133,6 +133,6 @@ String Comet_CAN_Helper::send_message(){
 
   // Go to next CAN device
   selected_CAN_dev++;
-
-  return "Sent something";
+  
+  return "Sent something to: " + String(selected_CAN_dev);
 }

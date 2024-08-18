@@ -27,7 +27,6 @@ public:
     * Constructor. MUST BE CALLED AFTER THE CAN MODULE HAS BEEN SETUP
     */
     SPARK_MAX(uint8_t device_id) : device_id(device_id){
-        mutex = xSemaphoreCreateMutex();
     }
 
     byte initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 100, const uint16_t period1 = 100, 
@@ -69,26 +68,17 @@ public:
     }
 
     can_frame get_current_frame() const override {
-        xSemaphoreTake(mutex, portMAX_DELAY);
-        can_frame current_frame = current_control_frame;
-        xSemaphoreGive(mutex);
-        return current_frame; 
+        return current_control_frame; 
     }
 
     void clear_current_frame() override {
-        xSemaphoreTake(mutex, portMAX_DELAY);
         current_control_frame = empty_frame;
-        xSemaphoreGive(mutex);
     }
 
     uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
 
     // Default destructor
     ~SPARK_MAX(){
-        // Delete the mutexes
-        if (mutex != NULL) {
-            vSemaphoreDelete(mutex);
-        }
     }
 
 private:
@@ -98,7 +88,6 @@ private:
     const uint8_t device_id;
     control_mode current_mode;
     can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
-    SemaphoreHandle_t mutex;
 
     u_int16_t period0, period1, period2, period3, period4;
 
