@@ -169,11 +169,11 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
         //log_logging("Error Sending Heartbeat...!!!...");
       }
 
-      //log_logging(CAN_Helper.send_message().c_str());
-      CAN_Helper.send_message();
+      log_logging(CAN_Helper.send_message().c_str());
+      //CAN_Helper.send_message();
 
-      //log_logging(CAN_Helper.send_message().c_str());
-      CAN_Helper.send_message();
+      log_logging(CAN_Helper.send_message().c_str());
+      //CAN_Helper.send_message();
     }
     else{
       if (was_enabled){
