@@ -42,6 +42,8 @@ public:
 
         current_control_frame = empty_frame;
 
+        active = true;
+
         if (CAN_Helper.add_to_CAN_dev_arr(this) == CAN_OK){
             set_all_status_frame_periods(CAN0, period0, period1, period2, period3, period4);
             return CAN_OK;
@@ -75,6 +77,14 @@ public:
         current_control_frame = empty_frame;
     }
 
+    bool is_active() const override{
+        return active;
+    }
+
+    void set_active(bool input) override{
+        active = input;
+    }
+
     uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
 
     // Default destructor
@@ -88,6 +98,7 @@ private:
     const uint8_t device_id;
     control_mode current_mode;
     can_frame current_control_frame = empty_frame; // Used to store the most recent control frame
+    bool active = false;
 
     u_int16_t period0, period1, period2, period3, period4;
 

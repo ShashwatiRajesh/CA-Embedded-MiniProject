@@ -174,6 +174,7 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
 
       //log_logging(CAN_Helper.send_message().c_str());
       CAN_Helper.send_message();
+
     }
     else{
       if (was_enabled){
@@ -395,11 +396,9 @@ void setup_executor(){
  * Initialize MCP2515 and setup CAN devices
  */
 void setup_CAN(){
-  // Initialize MCP2515 running at 8MHz with a baudrate of 1000kb/s and the masks and filters disabled.
-  if(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_16MHZ) == CAN_OK)
-    log_logging("MCP2515 Initialized Successfully!");
-  else
-    log_logging("Error Initializing MCP2515...");
+  // Initialize MCP2515 running at 16MHz with a baudrate of 1000kb/s and the masks and filters disabled.
+  CANCHECK(CAN0.begin(MCP_ANY, CAN_1000KBPS, MCP_16MHZ));
+  
   CAN0.setMode(MCP_NORMAL);  // Set operation mode to normal so the MCP2515 sends acks to received data.
 
   // Explicitly disable One-Shot transmissions
@@ -411,6 +410,7 @@ void setup_CAN(){
   // CAN DEVICES
   CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
   CANCHECK(drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  
 }
 
 /*
