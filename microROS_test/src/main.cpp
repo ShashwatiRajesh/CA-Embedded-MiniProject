@@ -101,6 +101,8 @@ bool was_enabled = false;
 */
 SPARK_MAX drive_base_left = SPARK_MAX(11);
 SPARK_MAX drive_base_right = SPARK_MAX(10);
+SPARK_MAX test1 = SPARK_MAX(12);
+SPARK_MAX test2 = SPARK_MAX(13);
 
 /*
  * Other
@@ -169,11 +171,11 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
         //log_logging("Error Sending Heartbeat...!!!...");
       }
 
-      //log_logging(CAN_Helper.send_message().c_str());
-      CAN_Helper.send_message();
+      log_logging(CAN_Helper.send_message().c_str());
+      //CAN_Helper.send_message();
 
-      //log_logging(CAN_Helper.send_message().c_str());
-      CAN_Helper.send_message();
+      log_logging(CAN_Helper.send_message().c_str());
+      //CAN_Helper.send_message();
     }
     else{
       if (was_enabled){
@@ -410,7 +412,11 @@ void setup_CAN(){
 
   // CAN DEVICES
   CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  CANCHECK(test1.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  //test1.set_active(false);
   CANCHECK(drive_base_right.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  CANCHECK(test2.initialize_SPARK_MAX(CAN_Helper, CAN0));
+  //test2.set_active(false);
 }
 
 /*
