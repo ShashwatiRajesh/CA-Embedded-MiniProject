@@ -81,7 +81,7 @@ const char * microros_ns = "";
 /*
  * Timers
  */
-rcl_timer_t sensor_timer;
+rcl_timer_t robot_status_timer;
 rcl_timer_t CAN_core_timer;
 rcl_timer_t read_timer;
 
@@ -171,9 +171,6 @@ void robot_status_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
  * Timer callback function to be called periodically
  */
 void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {  
-  // the current method of logging takes 10ms
-  //start_time = millis();
-
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   
   if (timer != NULL) {
@@ -204,8 +201,6 @@ void CAN_core_callback(rcl_timer_t * timer, int64_t last_call_time) {
       }
     }
   }
-  //snprintf(hearbeat_start_string, sizeof(hearbeat_start_string), ": end |||| start: [%lu ms]", start_time);
-  //log_logging(hearbeat_start_string);
 }
 
 /*
@@ -215,7 +210,9 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   // If both recieve buffers are full the buffered messages are not overwritten. The user has to read the buffer before new information can be accepted
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
+    start_time = millis();
     log_logging(CAN_Helper.parse_CAN_frame().c_str());
+    log_logging(String("Took " + String(millis() - start_time) + " ms to run").c_str());
     //CAN_Helper.parse_CAN_frame();
   }
 }
@@ -326,7 +323,7 @@ void loop() {
 void setup_timers(){
   // Timer to control publisher for the "robot_data" topic
   RCCHECK(rclc_timer_init_default(
-    &sensor_timer,
+    &robot_status_timer,
     &support,
     RCL_MS_TO_NS(250),
     robot_status_timer_callback));
@@ -393,7 +390,7 @@ void setup_executor(){
   // Order added defines execution hierarchy (FIFO)
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
-  RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
+  RCCHECK(rclc_executor_add_timer(&executor, &robot_status_timer))
   RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
