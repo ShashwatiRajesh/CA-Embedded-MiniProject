@@ -104,6 +104,10 @@ public:
     void update_status_1(float velocity, float temperature, float voltage, float current); // Updates the Velocity, Temperature, Voltage, and Current
     void update_status_2(float position); // Updates the Position
 
+    SPARK_MAX_status get_status(){
+        return status;
+    }
+
 
     // Default destructor
     ~SPARK_MAX(){

@@ -43,6 +43,7 @@ void setup_subscribers();
 void setup_executor();
 void initialize_vars();
 void setup_CAN();
+void update_robot_data_from_Spark_Max(SPARK_MAX *spark_max);
 
 // Micro ROS
 
@@ -137,11 +138,29 @@ void log_logging(const char *msg) {
 }
 
 /*
+* Updates a SPARK MAX message from a given SPARK MAX object
+*/
+void update_robot_data_from_Spark_Max(custom_messages__msg__SparkMaxMessage &spark_max_msg, SPARK_MAX *spark_max){
+  SPARK_MAX_status status = spark_max->get_status();
+
+  spark_max_msg.applied_output = status.applied_output;
+  spark_max_msg.current = status.current;
+  spark_max_msg.device_id = spark_max->get_device_id();
+  spark_max_msg.position = status.position;
+  spark_max_msg.temperature = status.temperature;
+  spark_max_msg.velocity = status.velocity;
+  spark_max_msg.voltage = status.voltage;
+}
+
+/*
  * Timer callback function to be called periodically
  */
-void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
+void robot_status_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
+    robot_data.enabled = enabled.data;
+    update_robot_data_from_Spark_Max(robot_data.left_drivebase, &drive_base_left);
+    update_robot_data_from_Spark_Max(robot_data.right_drivebase, &drive_base_right);
     RCSOFTCHECK(rcl_publish(&robot_data_publisher, &robot_data, NULL));
   }
 }
@@ -307,7 +326,7 @@ void setup_timers(){
     &sensor_timer,
     &support,
     RCL_MS_TO_NS(250),
-    sensor_timer_callback));
+    robot_status_timer_callback));
 
   // Timer for CAN_core
   RCCHECK(rclc_timer_init_default(
