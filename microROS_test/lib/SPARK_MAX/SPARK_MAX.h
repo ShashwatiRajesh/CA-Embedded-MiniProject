@@ -88,6 +88,7 @@ public:
 
     void parse_CAN_frame(u_int32_t rxId, u_int8_t len, u_int8_t *rxBuf) override{
         // Handle data parsing for specific frames
+        /*
         if ((rxId & FRC_dev_id_mask) == status_0) {
           parse_status_frame_0(rxBuf);
         } else if ((rxId & FRC_dev_id_mask) == status_1) {
@@ -95,6 +96,8 @@ public:
         } else if ((rxId & FRC_dev_id_mask) == status_2) {
           parse_status_frame_2(rxBuf, len);
         }
+        */
+        
         // Add more cases if necessary
     }
 

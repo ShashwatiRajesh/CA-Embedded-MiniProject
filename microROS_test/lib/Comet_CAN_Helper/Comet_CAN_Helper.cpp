@@ -12,6 +12,7 @@ String Comet_CAN_Helper::parse_CAN_frame(){
     int device_index = get_device_from_FRC_id(rxId & (~FRC_dev_id_mask)); // Filter out everything but FRC device ID
 
     if (device_index != NO_MATCHING_FRC_DEVICE_ID){
+      // Issue is here 
       can_devices[device_index]->parse_CAN_frame(rxId, len, rxBuf);
     }
     return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId & FRC_dev_id_mask, HEX);
