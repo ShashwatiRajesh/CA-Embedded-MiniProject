@@ -29,6 +29,7 @@
 #include <SPI.h>
 #include <mcp_can.h>
 #include <custom_messages/msg/spark_max_message.h>
+#include <custom_messages/msg/robot_status_message.h>
 #include "Comet_CAN_Helper.h"
 #include "SPARK_MAX.h"
 #include "Comet_CAN_Common.h"
@@ -48,8 +49,8 @@ void setup_CAN();
 /*
  * Publishers
  */
-rcl_publisher_t spark_max_data_publisher;
-custom_messages__msg__SparkMaxMessage spark_max_data;
+rcl_publisher_t robot_data_publisher;
+custom_messages__msg__RobotStatusMessage robot_data;
 // Logger
 rcl_publisher_t logging_publisher;
 std_msgs__msg__String logger;
@@ -141,7 +142,7 @@ void log_logging(const char *msg) {
 void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
-    RCSOFTCHECK(rcl_publish(&spark_max_data_publisher, &spark_max_data, NULL));
+    RCSOFTCHECK(rcl_publish(&robot_data_publisher, &robot_data, NULL));
   }
 }
 
@@ -301,7 +302,7 @@ void loop() {
  * Setup timers for various tasks
  */
 void setup_timers(){
-  // Timer to control publisher for the "spark_max_data" topic
+  // Timer to control publisher for the "robot_data" topic
   RCCHECK(rclc_timer_init_default(
     &sensor_timer,
     &support,
@@ -328,12 +329,12 @@ void setup_timers(){
  * Setup publishers for various topics
  */
 void setup_publishers(){
-  // Create a publisher for the "spark_max_data" topic
+  // Create a publisher for the "robot_data" topic
   RCCHECK(rclc_publisher_init_default(
-    &spark_max_data_publisher,
+    &robot_data_publisher,
     &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(custom_messages, msg, SparkMaxMessage),
-    "spark_max_data"));
+    ROSIDL_GET_MSG_TYPE_SUPPORT(custom_messages, msg, RobotStatusMessage),
+    "robot_data"));
 
   // Create a publisher for the "logging" topic
   RCCHECK(rclc_publisher_init_default(
@@ -401,12 +402,20 @@ void setup_CAN(){
  * initialize global vars
  */
 void initialize_vars(){
-  spark_max_data.applied_output = 0.0;
-  spark_max_data.current = 0.0;
-  spark_max_data.device_id = 0;
-  spark_max_data.position = 0.0;
-  spark_max_data.velocity = 0.0;
-  spark_max_data.voltage = 0.0;
+  robot_data.enabled = false;
+  robot_data.left_drivebase.applied_output = 0.0;
+  robot_data.left_drivebase.current = 0.0;
+  robot_data.left_drivebase.device_id = 0;
+  robot_data.left_drivebase.position = 0.0;
+  robot_data.left_drivebase.velocity = 0.0;
+  robot_data.left_drivebase.voltage = 0.0;
+  
+  robot_data.right_drivebase.applied_output = 0.0;
+  robot_data.right_drivebase.current = 0.0;
+  robot_data.right_drivebase.device_id = 0;
+  robot_data.right_drivebase.position = 0.0;
+  robot_data.right_drivebase.velocity = 0.0;
+  robot_data.right_drivebase.voltage = 0.0;
 
 
   logger.data.size = 100;
