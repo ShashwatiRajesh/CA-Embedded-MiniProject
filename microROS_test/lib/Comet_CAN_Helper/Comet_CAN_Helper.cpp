@@ -7,14 +7,15 @@
 *********************************************************************************************************/
 String Comet_CAN_Helper::parse_CAN_frame(){
   if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
-      CAN0.readMsgBuf(&rxId, &len, rxBuf);
+      uint8_t ext = 0; // Garbage variable to use correct overload of readMsgBuff
+      CAN0.readMsgBuf(&rxId, &ext, &len, rxBuf);
 
       int device_index = get_device_from_FRC_id(rxId & (~FRC_dev_id_mask)); // Filter out everything but FRC device ID
 
       if (device_index != NO_MATCHING_FRC_DEVICE_ID){
         can_devices[device_index]->parse_CAN_frame(rxId, len, rxBuf);
       }
-      return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId, HEX);
+      return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId & FRC_dev_id_mask, HEX);
     }
   return "Read Nothing";
 }
