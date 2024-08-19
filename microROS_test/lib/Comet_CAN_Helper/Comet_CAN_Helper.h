@@ -40,7 +40,7 @@ public:
     */
     // When parsing, if there is an 0x8 at the beggining, that is added by the mcp library to signify it's an extended frame
                 // See line 1233 in mcp_can.cpp
-    void parse_CAN_frame();
+    String parse_CAN_frame();
 
     // CAN Core functions
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat

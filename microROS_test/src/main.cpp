@@ -215,6 +215,7 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   // If both recieve buffers are full the buffered messages are not overwritten. The user has to read the buffer before new information can be accepted
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
+    log_logging("Reading from Input Buffer");
     CAN_Helper.parse_CAN_frame();
   }
 }

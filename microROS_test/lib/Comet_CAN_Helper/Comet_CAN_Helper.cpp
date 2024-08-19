@@ -5,7 +5,7 @@
 ** Function name:           parse_CAN_frame
 ** Descriptions:            Handles how to parse different CAN frames
 *********************************************************************************************************/
-void Comet_CAN_Helper::parse_CAN_frame(){
+String Comet_CAN_Helper::parse_CAN_frame(){
   if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
       CAN0.readMsgBuf(&rxId, &len, rxBuf);
 
@@ -14,7 +14,9 @@ void Comet_CAN_Helper::parse_CAN_frame(){
       if (device_index != NO_MATCHING_FRC_DEVICE_ID){
         can_devices[device_index]->parse_CAN_frame(rxId, len, rxBuf);
       }
+      return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId, HEX);
     }
+  return "Read Nothing";
 }
 
 /*********************************************************************************************************
