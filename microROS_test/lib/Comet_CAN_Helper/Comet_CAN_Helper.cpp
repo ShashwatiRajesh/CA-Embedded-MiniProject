@@ -18,6 +18,19 @@ void Comet_CAN_Helper::parse_CAN_frame(){
 }
 
 /*********************************************************************************************************
+** Function name:           send_enabled_heartbeat
+** Descriptions:            Send heartbeat to enable all devices
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::send_enabled_heartbeat(){
+  if(CAN0.sendMsgBuf(HEARTBEAT_ID, CAN_EXTID, HEARTBEAT_DLC, heartbeat_data_enabled) == CAN_OK){
+      return CAN_OK;
+    } 
+    else {
+      return CAN_FAIL;
+    }
+}
+
+/*********************************************************************************************************
 ** Function name:           send_disabled_heartbeat
 ** Descriptions:            Send heartbeat to disable all devices
 *********************************************************************************************************/
