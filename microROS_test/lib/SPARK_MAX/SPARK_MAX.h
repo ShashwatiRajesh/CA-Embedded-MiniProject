@@ -108,6 +108,16 @@ public:
         return status;
     }
 
+    String to_string(){
+        return "Device id: " + String(get_device_id()) + 
+                "\nApplied output: " + String(status.applied_output) +
+                "Velocity: " + String(status.velocity) +
+                "Temperature: " + String(status.temperature) +
+                "Voltage: " + String(status.voltage) +
+                "Current: " + String(status.current) +
+                "Position: " + String(status.position);
+    }
+
 
     // Default destructor
     ~SPARK_MAX(){

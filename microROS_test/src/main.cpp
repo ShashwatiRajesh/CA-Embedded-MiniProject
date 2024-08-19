@@ -160,7 +160,9 @@ void robot_status_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {
   if (timer != NULL) {
     robot_data.enabled = enabled.data;
     update_robot_data_from_Spark_Max(robot_data.left_drivebase, &drive_base_left);
+    log_logging(drive_base_left.to_string().c_str());
     update_robot_data_from_Spark_Max(robot_data.right_drivebase, &drive_base_right);
+    log_logging(drive_base_right.to_string().c_str());
     RCSOFTCHECK(rcl_publish(&robot_data_publisher, &robot_data, NULL));
   }
 }
