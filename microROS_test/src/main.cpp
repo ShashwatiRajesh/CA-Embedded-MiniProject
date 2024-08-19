@@ -215,7 +215,6 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   // If both recieve buffers are full the buffered messages are not overwritten. The user has to read the buffer before new information can be accepted
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
-    log_logging("Reading from Input Buffer");
     log_logging(CAN_Helper.parse_CAN_frame().c_str());
     //CAN_Helper.parse_CAN_frame();
   }
@@ -344,7 +343,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &read_timer,
     &support,
-    RCL_MS_TO_NS(100),
+    RCL_MS_TO_NS(25),
     read_callback));
 }
 
