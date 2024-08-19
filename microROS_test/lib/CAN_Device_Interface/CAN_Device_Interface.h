@@ -20,6 +20,9 @@ public:
 
     virtual void set_active(bool input) = 0; // Set's the active state of a CAN device
 
+    virtual void parse_CAN_frame(u_int32_t rxId, u_int8_t len, u_int8_t *rxBuf) = 0; // Function that will be specific for each CAN device to parse an incoming frame
+                                    // Will also need some way to tell for non-FRC devices which device and frame belongs to
+
     // Does not include a set_current_frame function since different CAN devices will required different parameters to generate a CAN frame.
         // There may also be multiple possible CAN frames 
 
