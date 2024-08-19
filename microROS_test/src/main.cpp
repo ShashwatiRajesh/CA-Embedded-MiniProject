@@ -438,6 +438,6 @@ void initialize_vars(){
 
 
   logger.data.size = 100;
-  enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
+  enabled.data = false; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
