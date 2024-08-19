@@ -66,6 +66,7 @@ public:
             return device_id;
         } else {
             return 0; // Return a default value or handle appropriately if ID cannot be reported
+                        // There should be no FRC devices with a device id equal to 0!
         }
     }
 

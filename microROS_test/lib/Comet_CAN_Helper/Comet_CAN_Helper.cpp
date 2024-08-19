@@ -28,8 +28,10 @@ float Comet_CAN_Helper::data_to_float_32_bit(uint8_t * data, uint8_t size){
 ** Descriptions:            gets the float value for the voltage and currrent of the SPARK MAX
 *********************************************************************************************************/
 void Comet_CAN_Helper::parse_volt_and_amp(float * voltage, float * current, uint8_t *data){
-  uint16_t voltage = ((uint16_t)data[6] << 8 & 0b00001111) | data[5]; // need to graph to find constant for converting into a float
-  uint16_t current = ((uint16_t)data[7] << 4) | (data[6] & 0b11110000); // need to graph to find constant for converting into a float
+  uint16_t voltage_p = ((uint16_t)data[6] << 8 & 0b00001111) | data[5]; // need to graph to find constant for converting into a float
+  uint16_t current_p = ((uint16_t)data[7] << 4) | (data[6] & 0b11110000); // need to graph to find constant for converting into a float
+  *voltage = voltage_p;
+  *current = current_p;
 }
 
 /*********************************************************************************************************
@@ -39,16 +41,20 @@ void Comet_CAN_Helper::parse_volt_and_amp(float * voltage, float * current, uint
 void Comet_CAN_Helper::parse_CAN_frame(){
   if(!digitalRead(CAN0_INT)) { // If CAN0_INT pin is low, read receive buffer
       CAN0.readMsgBuf(&rxId, &len, rxBuf);
-      
-      // Handle data parsing for specific frames
-      if ((rxId & FRC_dev_id_mask) == status_0) {
-        parse_status_frame_0(rxBuf);
-      } else if ((rxId & FRC_dev_id_mask) == status_1) {
-        parse_status_frame_1(rxBuf, len);
-      } else if ((rxId & FRC_dev_id_mask) == status_2) {
-        parse_status_frame_2(rxBuf, len);
+
+      uint8_t device_index = get_device_from_FRC_id(rxId & (~MASK0)); // Filter out everything but FRC device ID
+
+      if (device_index != NO_MATCHING_FRC_DEVICE_ID){
+        // Handle data parsing for specific frames
+        if ((rxId & FRC_dev_id_mask) == status_0) {
+          parse_status_frame_0(rxBuf);
+        } else if ((rxId & FRC_dev_id_mask) == status_1) {
+          parse_status_frame_1(rxBuf, len);
+        } else if ((rxId & FRC_dev_id_mask) == status_2) {
+          parse_status_frame_2(rxBuf, len);
+        }
+        // Add more cases if necessary
       }
-      // Add more cases if necessary
     }
 }
 
@@ -69,6 +75,8 @@ void Comet_CAN_Helper::parse_status_frame_1(uint8_t * data, uint8_t size){
   uint8_t temperature = data[5]; // Celcius
   float voltage = 0.0;
   float current = 0.0;
+  parse_volt_and_amp(&voltage, &current, data);
+
 }
 
 /*********************************************************************************************************
@@ -193,6 +201,18 @@ int16_t Comet_CAN_Helper::get_next_enabled_device(){
   return NO_ACTIVE_CAN_DEVICES;
 }
 
+/*********************************************************************************************************
+** Function name:           get_device_from_FRC_id
+** Descriptions:            returns the index in the CAN_dev_arr of the device with the given FRC_id
+*********************************************************************************************************/
+uint8_t Comet_CAN_Helper::get_device_from_FRC_id(uint8_t frc_id){
+  for(int i = 0; i < num_CAN_devs; i++){
+    if (can_devices[i]->get_device_id() == frc_id){
+      return i;
+    }
+  }
+  return NO_MATCHING_FRC_DEVICE_ID;
+}
 
 
 

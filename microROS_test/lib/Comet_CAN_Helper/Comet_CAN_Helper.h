@@ -10,7 +10,8 @@
 #ifndef COMET_CAN_HELPER_H
 #define COMET_CAN_HELPER_H
 #define NO_ACTIVE_CAN_DEVICES -1
-
+// There should be no FRC devices with a device id equal to 0!
+#define NO_MATCHING_FRC_DEVICE_ID 0
 
 #include <Arduino.h>
 #include <mcp_can.h>
@@ -40,9 +41,6 @@ public:
     // When parsing, if there is an 0x8 at the beggining, that is added by the mcp library to signify it's an extended frame
                 // See line 1233 in mcp_can.cpp
     void parse_CAN_frame();
-    void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
-    void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
-    void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
 
     // CAN Core functions
     uint8_t send_enabled_heartbeat();             // Send enabled heartbeat
@@ -51,7 +49,6 @@ public:
 
     // SHOULD ONLY BE CALLED IN SETUP() OR DURING DEVICE INITIALIZATION
     byte add_to_CAN_dev_arr(ICAN_Device *CAN_dev);        // Adds the Spark Max object to the list of Spark Maxs
-    int16_t get_next_enabled_device();
     
 
 private:
@@ -96,6 +93,12 @@ private:
     */
     float data_to_float_32_bit(uint8_t *data, uint8_t size); // Converts four bytes (little-endian) to a IEEE floating point number
     void parse_volt_and_amp(float * voltage, float * current, uint8_t *data); // Converts 12 bits (little-endian) to a floating point number
+    int16_t get_next_enabled_device();
+    uint8_t get_device_from_FRC_id(uint8_t frc_id);
+
+    void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
+    void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
+    void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
 };
 
 #endif
