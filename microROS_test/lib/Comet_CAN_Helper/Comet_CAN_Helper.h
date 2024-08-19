@@ -91,14 +91,9 @@ private:
     /*
     * Functions
     */
-    float data_to_float_32_bit(uint8_t *data, uint8_t size); // Converts four bytes (little-endian) to a IEEE floating point number
-    void parse_volt_and_amp(float * voltage, float * current, uint8_t *data); // Converts 12 bits (little-endian) to a floating point number
+    
     int16_t get_next_enabled_device();
     uint8_t get_device_from_FRC_id(uint8_t frc_id);
-
-    void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
-    void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
-    void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
 };
 
 #endif

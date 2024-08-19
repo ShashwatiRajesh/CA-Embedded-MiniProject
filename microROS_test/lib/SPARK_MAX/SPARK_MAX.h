@@ -86,6 +86,18 @@ public:
         active = input;
     }
 
+    void parse_CAN_frame(u_int32_t rxId, u_int8_t len, u_int8_t *rxBuf) override{
+        // Handle data parsing for specific frames
+        if ((rxId & FRC_dev_id_mask) == status_0) {
+          parse_status_frame_0(rxBuf);
+        } else if ((rxId & FRC_dev_id_mask) == status_1) {
+          parse_status_frame_1(rxBuf, len);
+        } else if ((rxId & FRC_dev_id_mask) == status_2) {
+          parse_status_frame_2(rxBuf, len);
+        }
+        // Add more cases if necessary
+    }
+
     uint8_t set_control_frame(const control_mode mode, const float setpoint); // Command SPARK MAX output
 
     void update_status_0(int applied_output); // Updates the applied ouput
@@ -124,6 +136,12 @@ private:
     uint8_t set_status_frame_period(const status_frame_id frame, const uint16_t period, MCP_CAN &CAN0); // Set period for SPARK MAX status frames
 
     void set_all_status_frame_periods(MCP_CAN &CAN0, u_int16_t period0, u_int16_t period1, u_int16_t period2, u_int16_t period3, u_int16_t period4);
+
+    float data_to_float_32_bit(uint8_t *data, uint8_t size); // Converts four bytes (little-endian) to a IEEE floating point number
+    void parse_volt_and_amp(float * voltage, float * current, uint8_t *data); // Converts 12 bits (little-endian) to a floating point number
+    void parse_status_frame_0(uint8_t *data);                 // Parse status frame 0
+    void parse_status_frame_1(uint8_t *data, uint8_t size);   // Parse status frame 1
+    void parse_status_frame_2(uint8_t *data, uint8_t size);   // Parse status frame 2
 };
 
 #endif
