@@ -29,7 +29,7 @@ public:
     SPARK_MAX(uint8_t device_id) : device_id(device_id){
     }
 
-    byte initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 25, const uint16_t period1 = 100, 
+    byte initialize_SPARK_MAX(Comet_CAN_Helper &CAN_Helper,  MCP_CAN &CAN0, const uint16_t period0 = 100, const uint16_t period1 = 100, 
                 const uint16_t period2 = 100, const uint16_t period3 = 1000, const uint16_t period4 = 1000 ){
 
         this->period0 = period0;

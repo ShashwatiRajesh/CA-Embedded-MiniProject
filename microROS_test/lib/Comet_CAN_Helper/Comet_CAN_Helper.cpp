@@ -12,6 +12,15 @@ String Comet_CAN_Helper::parse_CAN_frame(){
 
       int device_index = get_device_from_FRC_id(rxId & (~FRC_dev_id_mask)); // Filter out everything but FRC device ID
 
+      // debugging
+      if ((rxId & FRC_dev_id_mask) == status_0) {
+          return "status_0";
+        } else if ((rxId & FRC_dev_id_mask) == status_1) {
+          return "status_1";
+        } else if ((rxId & FRC_dev_id_mask) == status_2) {
+          return "status_2";
+        }
+
       if (device_index != NO_MATCHING_FRC_DEVICE_ID){
         can_devices[device_index]->parse_CAN_frame(rxId, len, rxBuf);
       }
