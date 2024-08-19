@@ -28,7 +28,8 @@
 #include <geometry_msgs/msg/twist.h>
 #include <SPI.h>
 #include <mcp_can.h>
-
+// #include <my_custom_message/msg/my_custom_message.h>
+#include <example_interfaces/srv/add_two_ints.h>
 #include "Comet_CAN_Helper.h"
 #include "SPARK_MAX.h"
 #include "Comet_CAN_Common.h"
