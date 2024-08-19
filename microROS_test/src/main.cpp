@@ -28,8 +28,7 @@
 #include <geometry_msgs/msg/twist.h>
 #include <SPI.h>
 #include <mcp_can.h>
-// #include <my_custom_message/msg/my_custom_message.h>
-#include <example_interfaces/srv/add_two_ints.h>
+#include <custom_messages/msg/spark_max_message.h>
 #include "Comet_CAN_Helper.h"
 #include "SPARK_MAX.h"
 #include "Comet_CAN_Common.h"
@@ -49,8 +48,8 @@ void setup_CAN();
 /*
  * Publishers
  */
-rcl_publisher_t sensor_data_publisher;
-std_msgs__msg__Bool sensor_data;
+rcl_publisher_t spark_max_data_publisher;
+custom_messages__msg__SparkMaxMessage spark_max_data;
 // Logger
 rcl_publisher_t logging_publisher;
 std_msgs__msg__String logger;
@@ -142,8 +141,7 @@ void log_logging(const char *msg) {
 void sensor_timer_callback(rcl_timer_t * timer, int64_t last_call_time) {  
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
-    RCSOFTCHECK(rcl_publish(&sensor_data_publisher, &sensor_data, NULL));
-    sensor_data.data = !sensor_data.data;
+    RCSOFTCHECK(rcl_publish(&spark_max_data_publisher, &spark_max_data, NULL));
   }
 }
 
@@ -303,7 +301,7 @@ void loop() {
  * Setup timers for various tasks
  */
 void setup_timers(){
-  // Timer to control publisher for the "sensor_data" topic
+  // Timer to control publisher for the "spark_max_data" topic
   RCCHECK(rclc_timer_init_default(
     &sensor_timer,
     &support,
@@ -317,25 +315,25 @@ void setup_timers(){
     RCL_MS_TO_NS(25),               // Was 25ms
     CAN_core_callback));
 
-  /*
+  
   // Timer for reading from CAN buffer
   RCCHECK(rclc_timer_init_default(
     &read_timer,
     &support,
     RCL_MS_TO_NS(25),
-    read_callback));*/
+    read_callback));
 }
 
 /*
  * Setup publishers for various topics
  */
 void setup_publishers(){
-  // Create a publisher for the "sensor_data" topic
+  // Create a publisher for the "spark_max_data" topic
   RCCHECK(rclc_publisher_init_default(
-    &sensor_data_publisher,
+    &spark_max_data_publisher,
     &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Bool),
-    "sensor_data"));
+    ROSIDL_GET_MSG_TYPE_SUPPORT(custom_messages, msg, SparkMaxMessage),
+    "spark_max_data"));
 
   // Create a publisher for the "logging" topic
   RCCHECK(rclc_publisher_init_default(
@@ -373,7 +371,7 @@ void setup_executor(){
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
   RCCHECK(rclc_executor_add_timer(&executor, &sensor_timer))
-  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 }
@@ -403,7 +401,14 @@ void setup_CAN(){
  * initialize global vars
  */
 void initialize_vars(){
-  sensor_data.data = false;
+  spark_max_data.applied_output = 0.0;
+  spark_max_data.current = 0.0;
+  spark_max_data.device_id = 0;
+  spark_max_data.position = 0.0;
+  spark_max_data.velocity = 0.0;
+  spark_max_data.voltage = 0.0;
+
+
   logger.data.size = 100;
   enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays

@@ -21,7 +21,7 @@ struct can_frame {
 * SPARK MAX status data structure
 */
 struct SPARK_MAX_status{
-    int applied_output;
+    float applied_output;
     float velocity;
     float position;
     uint8_t temperature;

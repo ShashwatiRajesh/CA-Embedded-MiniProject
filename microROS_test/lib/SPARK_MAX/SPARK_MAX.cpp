@@ -33,7 +33,7 @@ uint8_t SPARK_MAX::set_control_frame(const control_mode mode, const float setpoi
 ** Function name:           update_status_0
 ** Descriptions:            Updates the applied ouput
 *********************************************************************************************************/
-void SPARK_MAX::update_status_0(int applied_output){
+void SPARK_MAX::update_status_0(float applied_output){
   status.applied_output = applied_output;
 }
 
