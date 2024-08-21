@@ -114,7 +114,8 @@ float SPARK_MAX::data_to_float_32_bit(uint8_t * data, uint8_t size){
 void SPARK_MAX::parse_volt_and_amp(float * voltage, float * current, uint8_t *data){
   uint16_t voltage_p = (((uint16_t)data[6] & 0b00001111) << 8) | data[5]; // need to graph to find constant for converting into a float
   uint16_t current_p = ((uint16_t)data[7] << 4) | (data[6] >> 4); // need to graph to find constant for converting into a float
-  *voltage = voltage_p;
+  float voltage_r = voltage_p / 128.0; // Number to convert from binary int to floating point voltage
+  *voltage = voltage_r;
   *current = current_p;
 }
 
