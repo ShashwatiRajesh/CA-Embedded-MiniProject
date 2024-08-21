@@ -15,7 +15,7 @@ String Comet_CAN_Helper::parse_CAN_frame(){
       // Issue is here 
       can_devices[device_index]->parse_CAN_frame(rxId, len, rxBuf);
     }
-    return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId & FRC_dev_id_mask, HEX);
+    return "Read on device: " + String(device_index) + "With device id: " + String(rxId & (~FRC_dev_id_mask)) + "With Message id: " + String(rxId & FRC_dev_id_mask, HEX) + "\nRead Raw data: " + String(rxBuf[0], BIN) + " | " + String(rxBuf[1], BIN) + " | " + String(rxBuf[2], BIN) + " | "+ String(rxBuf[3], BIN) + " | "+ String(rxBuf[4], BIN) + " | "+ String(rxBuf[5], BIN) + " | "+ String(rxBuf[6], BIN) + " | "+ String(rxBuf[7], BIN);
   }
       
   return "Read Nothing";
