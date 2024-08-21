@@ -112,8 +112,8 @@ float SPARK_MAX::data_to_float_32_bit(uint8_t * data, uint8_t size){
 ** Descriptions:            gets the float value for the voltage and currrent of the SPARK MAX
 *********************************************************************************************************/
 void SPARK_MAX::parse_volt_and_amp(float * voltage, float * current, uint8_t *data){
-  uint16_t voltage_p = ((uint16_t)data[6] << 8 & 0b00001111) | data[5]; // need to graph to find constant for converting into a float
-  uint16_t current_p = ((uint16_t)data[7] << 4) | (data[6] & 0b11110000); // need to graph to find constant for converting into a float
+  uint16_t voltage_p = (((uint16_t)data[6] & 0b00001111) << 8) | data[5]; // need to graph to find constant for converting into a float
+  uint16_t current_p = ((uint16_t)data[7] << 4) | (data[6] >> 4); // need to graph to find constant for converting into a float
   *voltage = voltage_p;
   *current = current_p;
 }
@@ -125,6 +125,11 @@ void SPARK_MAX::parse_volt_and_amp(float * voltage, float * current, uint8_t *da
 void SPARK_MAX::parse_status_frame_0(uint8_t * data){
   float applied_output = ((static_cast<int>(data[1]) << 8) | data[0]) / 32764.0; // Range = [-1, 1]
 
+  // Check to see if send backwards (idk why this happens)
+  if (abs(applied_output) > 1){
+    applied_output = 2 - applied_output;
+  }
+
   update_status_0(applied_output);
 }
 
@@ -134,7 +139,7 @@ void SPARK_MAX::parse_status_frame_0(uint8_t * data){
 *********************************************************************************************************/
 void SPARK_MAX::parse_status_frame_1(uint8_t * data, uint8_t size){
   float velocity = data_to_float_32_bit(data, size); // RPM
-  uint8_t temperature = data[5]; // Celcius
+  uint8_t temperature = data[4]; // Celcius
   float voltage = 0.0;
   float current = 0.0;
   parse_volt_and_amp(&voltage, &current, data);

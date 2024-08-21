@@ -211,9 +211,9 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
     start_time = millis();
-    //log_logging(CAN_Helper.parse_CAN_frame().c_str());
+    log_logging(CAN_Helper.parse_CAN_frame().c_str());
     //log_logging(String("Took " + String(millis() - start_time) + " ms to run").c_str());
-    CAN_Helper.parse_CAN_frame();
+    //CAN_Helper.parse_CAN_frame();
   }
 }
  
