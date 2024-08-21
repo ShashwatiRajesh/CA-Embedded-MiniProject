@@ -340,7 +340,7 @@ void setup_timers(){
   RCCHECK(rclc_timer_init_default(
     &read_timer,
     &support,
-    RCL_MS_TO_NS(25),
+    RCL_MS_TO_NS(10),             // was 25ms
     read_callback));
 }
 
@@ -410,6 +410,9 @@ void setup_CAN(){
   
 
   delay(250);
+
+  // To wake up the CAN bus
+  CAN_Helper.send_disabled_heartbeat();
 
   // CAN DEVICES
   CANCHECK(drive_base_left.initialize_SPARK_MAX(CAN_Helper, CAN0));
