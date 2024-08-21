@@ -390,8 +390,8 @@ void setup_executor(){
   // Order added defines execution hierarchy (FIFO)
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
-  RCCHECK(rclc_executor_add_timer(&executor, &robot_status_timer))
-  RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
+  //RCCHECK(rclc_executor_add_timer(&executor, &robot_status_timer))
+  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 }
@@ -438,6 +438,6 @@ void initialize_vars(){
 
 
   logger.data.size = 100;
-  enabled.data = false; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
+  enabled.data = true; // Change to false by default once web GUI has been built (ONLY FOR TESTING)
   // may need to use something like std_msgs__msg__String__fini(&sub_msg); for messages that are arrays
 }
