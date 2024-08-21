@@ -211,9 +211,9 @@ void read_callback(rcl_timer_t * timer, int64_t last_call_time){
   RCLC_UNUSED(last_call_time);  // Prevent unused variable warning
   if (timer != NULL) {
     start_time = millis();
-    log_logging(CAN_Helper.parse_CAN_frame().c_str());
-    log_logging(String("Took " + String(millis() - start_time) + " ms to run").c_str());
-    //CAN_Helper.parse_CAN_frame();
+    //log_logging(CAN_Helper.parse_CAN_frame().c_str());
+    //log_logging(String("Took " + String(millis() - start_time) + " ms to run").c_str());
+    CAN_Helper.parse_CAN_frame();
   }
 }
  
@@ -390,8 +390,8 @@ void setup_executor(){
   // Order added defines execution hierarchy (FIFO)
   RCCHECK(rclc_executor_init(&executor, &support.context, 5, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &CAN_core_timer));
-  //RCCHECK(rclc_executor_add_timer(&executor, &robot_status_timer))
-  //RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &robot_status_timer))
+  RCCHECK(rclc_executor_add_timer(&executor, &read_timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &cmd_vel_subscriber, &cmd_vel, cmd_vel_callback, ON_NEW_DATA)); // or ALWAYS
   RCCHECK(rclc_executor_add_subscription(&executor, &enabled_subscriber, &enabled, enabled_callback, ALWAYS)); // or ALWAYS
 }
