@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="robot_ros2_control">
+
+    <ros2_control name="fws" type="system">
+      <hardware>
+          <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+
+    <joint name="front_right_knuckle_joint">
+      <command_interface name="position">
+        <param name="min">-3.14</param>
+        <param name="max">3.14</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="front_left_knuckle_joint">
+      <command_interface name="position">
+        <param name="min">-3.14</param>
+        <param name="max">3.14</param>
+      </command_interface>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="rl_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-3.14</param>
+        <param name="max">3.14</param>
+      </command_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="rr_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-3.14</param>
+        <param name="max">3.14</param>
+      </command_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+  </ros2_control>
+
+  <gazebo>
+    <plugin
+        filename="gz_ros2_control-system"
+        name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find robot_description)/config/robot_controller.yaml</parameters>
+    </plugin>
+    
+    <plugin
+        filename="gz-sim-joint-state-publisher-system"
+        name="gz::sim::systems::JointStatePublisher">
+    </plugin>
+
+    <plugin
+        filename="gz-sim-pose-publisher-system"
+        name="gz::sim::systems::PosePublisher">
+        <publish_link_pose>true</publish_link_pose>
+        <use_pose_vector_msg>true</use_pose_vector_msg>
+        <publish_nested_model_pose>true</publish_nested_model_pose>
+    </plugin>
+
+    <gazebo>
+      <plugin
+         filename="ignition-gazebo-sensors-system"
+         name="ignition::gazebo::systems::Sensors">
+         <render_engine>ogre2</render_engine>
+      </plugin>
+    </gazebo>
+
+    <plugin 
+        filename="gz-sim-imu-system"
+        name="gz::sim::systems::Imu">
+    </plugin>
+  </gazebo>
+
+</xacro:macro >
+</robot>

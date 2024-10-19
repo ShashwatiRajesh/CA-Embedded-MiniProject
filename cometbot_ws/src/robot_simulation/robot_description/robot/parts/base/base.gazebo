@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">  
+  <xacro:macro name="base_gazebo_v0">
+    <gazebo reference="base_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0.05" />
+      <mu2 value="0.05" />
+      <sensor name="imu_sensor" type="imu">
+      <always_on>1</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+</sensor>
+    </gazebo>
+  </xacro:macro>
+</robot>

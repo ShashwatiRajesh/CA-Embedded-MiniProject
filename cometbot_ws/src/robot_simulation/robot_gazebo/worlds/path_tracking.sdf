@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.10">
+  <world name='empty'>
+
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    
+    <gravity>0 0 -9.80665</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <name>path_tracking_stage</name>
+      <uri>model://path_tracking_stage</uri>
+      <static>true</static>
+      <pose>0 0 0.05 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
